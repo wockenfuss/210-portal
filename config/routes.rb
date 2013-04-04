@@ -5,6 +5,9 @@ Portal::Application.routes.draw do
   devise_scope :user do
     root :to => "devise/sessions#new"
   end
+
+  get '/users/:id' => 'users#show', :as => 'user_root'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
