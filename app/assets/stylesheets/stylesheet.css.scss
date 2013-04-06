@@ -1,0 +1,163 @@
+/*$primary-font: "Special Elite";*/
+$primary-font: "Patrick Hand SC";
+$secondary-font: "Roboto";
+
+body {
+	margin: 0;
+}
+
+p {
+	margin-top: 0;
+	font-family: $secondary-font;
+}
+
+a {
+	font-family: $secondary-font, sans-serif;
+	text-decoration: none;
+	color: #ddd;
+	&:hover {
+		color: lighten(#ccc, 60%);
+	}
+}
+
+a.navbar {
+	margin: 15px 30px 0 0;
+}
+
+li {
+	font-family: $secondary-font, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #666;
+	font-family: $secondary-font, sans-serif;
+}
+
+label {
+	font-family: $secondary-font, sans-serif;	
+}
+
+
+.pull-right {
+	float: right;
+}
+
+.brand {
+	display: inline-block;
+	font-size: 2em;
+	margin: 0 0 0 30px;
+	font-family: $primary-font, sans-serif;
+	color: #ddd;
+}
+
+
+nav {
+	width: 100%;
+	height: 50px;
+	background-color: #aaa;
+	opacity: .8;
+}
+
+.navLine {
+	width: 100%;
+	height: 5px;
+}
+
+.navLineTop {
+	background-color: #666;
+}
+
+.navLineMiddle {
+	background-color: #333;
+}
+
+.navLineBottom {
+	background-color: #ccc;
+}
+
+form {
+	input {
+		outline: 5px solid #aaa;
+		/*border: none;*/
+		font-family: $secondary-font;
+	}
+
+	input[type="submit"] {
+		border: none;
+		background-color: #ddd;
+	}
+	h3 {
+		margin: 15px 0 5px 0;
+	}
+}
+
+.container-fluid {
+	width: 100%;
+	min-height: 800px;
+	background: url('bg.jpg') no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contentContainer-fluid {
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: -25px;
+}
+
+.sidebar {
+	width: 20%;
+	float: left;
+	background-color: #ccc;
+	padding: 2%;
+	margin-top: 2% ;
+	border-radius: 5px;
+	border: 5px solid #666;
+}
+
+.contentInterior {
+	width: 65%;
+	float: left;
+	padding: 2%;
+	margin-top: 2% ;
+	opacity: .7;
+	border-radius: 5px;
+	border: 5px solid #666;
+	background-color: #ccc;
+}
+
+footer {
+	padding: 2% 4%;
+	background-color: #aaa;
+	height: 30px;
+}
+
+#pageTitle {
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	h1 {
+		color: #ddd;
+	}
+}
+
+#dropdown {
+	display: none;
+	width: 12%;
+	background-color: #aaa;
+	position: absolute;
+	right: 0;
+	top: 65px;
+	border: 5px solid #666;
+	ul {
+		list-style: none;
+		text-align: right;
+		margin-right: 10%;
+	}
+	.dropdown-divider {
+		border-top: solid 1px #E5E5E5;
+		margin: 5px 0;
+	}
+}

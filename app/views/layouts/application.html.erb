@@ -13,7 +13,8 @@
     <![endif]-->
 
     <%= stylesheet_link_tag "application", :media => "all" %>
-
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Istok+Web|Patrick+Hand+SC|Sintony|Roboto|Roboto+Condensed|Fredoka+One|Archivo+Narrow|Averia+Sans+Libre' rel='stylesheet' type='text/css'>
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
     <!--<#%= favicon_link_tag 'images/apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>-->
@@ -35,32 +36,35 @@
     <!--<#%= favicon_link_tag 'images/favicon.ico', :rel => 'shortcut icon' %>-->
   </head>
   <body>
-		<%= render 'layouts/navbar' %>
+		
 
     <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
-          <%= bootstrap_flash %>
+      <%= render 'layouts/navbar' %>
+      <%= render 'layouts/messages' %>
+      <div id="pageTitle">
+
+      
+        <h1>Narrative Strategies</h1>
+      </div>
+
+
+      <div class="contentContainer-fluid">
+        <div class="sidebar">
+        </div>
+        <div class="contentInterior">
           <%= yield %>
         </div>
       </div><!--/row-->
 
-      <footer>
-        <p>&copy; B Coughenour 2013</p>
-      </footer>
-
     </div> <!-- /container -->
-
+    <div class="divider">
+      <div class="navLine navLineTop"></div>
+      <div class="navLine navLineMiddle"></div>
+      <div class="navLine navLineBottom"></div>  
+    </div>
+    <footer>
+      <p>&copy; B Coughenour 2013</p>
+    </footer>
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
