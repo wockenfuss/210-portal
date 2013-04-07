@@ -25,7 +25,7 @@ p {
 a {
 	font-family: $secondary-font, sans-serif;
 	text-decoration: none;
-	color: #ddd;
+	color: #666;
 	&:hover {
 		color: lighten(#ccc, 60%);
 	}
@@ -40,7 +40,7 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #666;
+	color: #333;
 	font-family: $secondary-font, sans-serif;
 }
 
@@ -86,22 +86,36 @@ nav {
 	background-color: #ccc;
 }
 
+/*---- forms ----*/
 form {
 	input {
 		outline: 5px solid #aaa;
-		/*border: none;*/
+		margin: 10px 0;
 		font-family: $secondary-font;
 	}
 
 	input[type="submit"] {
 		border: none;
 		background-color: #ddd;
+		margin-left: 70px;
+		&:hover {
+			background-color: #fff;
+			cursor: hand; cursor: pointer;
+		}
 	}
+	input[value="Send me reset password instructions"] {
+		margin-left: 0;
+	}
+	input[value="Resend confirmation instructions"] {
+		margin-left: 0;
+	}
+
 	h3 {
 		margin: 15px 0 5px 0;
 	}
 }
 
+/*----- content containers -----*/
 .container-fluid {
 	width: 100%;
 	min-height: 800px;
@@ -130,6 +144,7 @@ form {
 
 .contentInterior {
 	width: 65%;
+	min-width: 195px;
 	float: left;
 	padding: 2%;
 	margin-top: 2% ;
