@@ -4,7 +4,7 @@
 	});
 
 	var bind = function() {
-		$('.alert, .error, .notice').fadeIn('normal', function() {
+		$('#flash_alert, #flash_error, #flash_notice').fadeIn('normal', function() {
 			$(this).delay(2500).fadeOut('slow');
 		});
 		$('#dropdownTrigger').on('click', function(e){

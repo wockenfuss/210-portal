@@ -1,6 +1,17 @@
 /*$primary-font: "Special Elite";*/
 $primary-font: "Patrick Hand SC";
 $secondary-font: "Roboto";
+$primaryWidth: 60%;
+
+@mixin flash {
+	width: $primaryWidth;
+	margin: 10px auto;
+	padding: 5px;
+	font-family: $secondary-font;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+}
 
 body {
 	margin: 0;
@@ -160,4 +171,20 @@ footer {
 		border-top: solid 1px #E5E5E5;
 		margin: 5px 0;
 	}
+}
+
+/*------ flash -----*/
+#flash_alert {
+	@include flash;
+	background-color: #b60;
+}
+
+#flash_error {
+	@include flash;
+	background-color: #f00;
+}
+
+#flash_notice {
+	@include flash;
+	background-color: #0b0;
 }
