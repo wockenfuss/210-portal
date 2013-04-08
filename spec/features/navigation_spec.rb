@@ -31,7 +31,8 @@ describe "Navigation", :js => true do
 			end
 
 			it "displays a sign out link" do
-				page.should have_content("Sign Out")
+				click_link("#{@user.email}")
+				page.should have_content("Sign out")
 			end
 
 			it "displays the users show page" do 
