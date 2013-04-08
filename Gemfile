@@ -7,6 +7,8 @@ gem 'rails', '3.2.12'
 
 gem 'pg'
 gem 'devise'
+gem 'cancan'
+gem 'rolify'
 gem 'thin'
 gem 'rest-client'
 
