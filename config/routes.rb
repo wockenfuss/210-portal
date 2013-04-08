@@ -8,6 +8,8 @@ Portal::Application.routes.draw do
 
   get '/users/:id' => 'users#show', :as => 'user_root'
 
+  resources :users, :only => [:index]
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
