@@ -12,6 +12,13 @@ describe "Navigation", :js => true do
 	  		visit root_path
   			page.should have_content("Sign in")
   		end
+
+			it "doesn't allow user to access other users pages" do
+				@user = FactoryGirl.create(:user)
+				@user.confirm!
+				visit user_root_path(@user)
+				page.should have_content("You need to sign in or sign up before continuing")
+			end
 	  end
 
 	  context "When user is signed in" do

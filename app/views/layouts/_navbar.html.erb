@@ -5,7 +5,7 @@
     <a href="#" id="dropdownTrigger" data-dropdown="#dropdown-1" class="pull-right navbar"><%= @user.email %></a>
     <div class="dropdown">
       <ul class="dropdown-menu">
-        <li><%= link_to "My Settings", root_path%></li>
+        <li><%= link_to "My Settings", edit_user_registration_path%></li>
         <!-- <li><#%= link_to "My Account", edit_user_registration_path(@user)%></li> -->
         <li class="dropdown-divider"></li>
         <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
@@ -20,7 +20,7 @@
         </ul>
       </div>        
     <% end %>
-    
+
   <% else %>
     <%= link_to "Sign in", new_user_session_path, :class => "pull-right navbar"%>
   <% end %>
