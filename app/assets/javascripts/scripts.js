@@ -17,6 +17,8 @@
 			}
 			$dropdown.slideToggle('fast');
 		});
+
+    $( ".datepicker" ).datepicker();
 	};
 
 })(window.myApp = window.myApp || {}, jQuery);

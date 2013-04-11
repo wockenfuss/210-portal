@@ -39,6 +39,7 @@ a.navbar {
 
 li {
 	font-family: $secondary-font, sans-serif;
+	list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,10 +55,6 @@ h2 {
 	font-size: 1.5em;
 }
 
-label {
-	font-family: $secondary-font, sans-serif;
-	font-size: 1em;
-}
 
 
 .pull-right {
@@ -98,6 +95,13 @@ nav {
 }
 
 /*---- forms ----*/
+
+label {
+	font-family: $secondary-font, sans-serif;
+	font-size: 1em;
+	margin: 0 5px;
+}
+
 form {
 	input {
 		outline: 5px solid #aaa;
@@ -123,6 +127,10 @@ form {
 
 	h3 {
 		margin: 15px 0 5px 0;
+	}
+
+	#quiz_duration {
+		width: 75px;
 	}
 }
 
@@ -202,7 +210,11 @@ footer {
 }
 
 /*------ flash -----*/
-#flash_alert {
+#alerts {
+	display:none;
+}
+
+#flash_alert, #alerts {
 	@include flash;
 	background-color: #b60;
 }
@@ -217,6 +229,44 @@ footer {
 	background-color: #0b0;
 }
 
+#error_explanation {
+	display: none;
+	background-color: #b60;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	h4 {
+		color: #ddd;
+	}
+	.close {
+		float: right;
+	}
+	a {
+		color: #ccc;
+		&:hover {
+			color: #fff;
+			cursor: hand; cursor: pointer;
+		}
+	}
+}
+
+
+/*----- datepicker -----*/
+.ui-datepicker {
+	background-color: #fff;
+	padding: 10px;
+	border: 8px #666 solid;
+	font-family: $secondary-font;
+	a:hover {
+		color: #aaa;
+	}
+	.ui-corner-all {
+		margin-right: 10px;
+		cursor: hand; cursor: pointer;
+	}
+}
+
+/*-----media queries-----*/
 @media screen and (max-width: 480px) {
 	.sidebar{
 		display: none;

@@ -1,0 +1,5 @@
+$('.contentInterior').prepend('<%= j render :partial => "shared/errors", :locals => { :current_object => current_object } %>');
+$('#error_explanation').slideToggle();
+$('.close').on('click', function(e) {
+	$(this).parent().slideToggle();
+});
