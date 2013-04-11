@@ -6,10 +6,11 @@ class Ability
     if user.has_role? :admin
       can :manage, :all
     else
-      can :read, :all
+      can :read, User
       cannot :read, User do |this_user|
         this_user.id != user.id
       end
+      # cannot :create, Quiz
     end
 
     # The first argument to `can` is the action you are giving the user permission to do.
