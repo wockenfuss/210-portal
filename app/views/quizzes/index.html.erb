@@ -4,7 +4,7 @@
 		<% @quizzes.each do |quiz| %>
 			<li class="quizName">
 				<span class="links"><%= quiz.name %></span> |
-				<%= link_to "View", quiz_path(quiz), :class => 'links'%> |
+				<%= link_to "View/Edit", edit_quiz_path(quiz), :class => 'links'%> |
 				<!--<#%= link_to "Edit", edit_quiz_path(quiz), :class => 'links'%>-->
 				<%= link_to "Delete", quiz_path(quiz), :confirm => 'Are you sure?', :method => :delete, :class => 'links'%>
 			</li>

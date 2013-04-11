@@ -7,9 +7,9 @@ class QuizzesController < ApplicationController
 		@quizzes = Quiz.all
 	end
 
-	def show
-		@quiz = Quiz.find(params[:id])
-	end
+	# def show
+	# 	@quiz = Quiz.find(params[:id])
+	# end
 
 	def new
 		@quiz = Quiz.new
@@ -19,7 +19,7 @@ class QuizzesController < ApplicationController
 		@quiz = Quiz.new(params[:quiz])
 		if @quiz.save
 			flash[:notice] = "Quiz successfully created"
-			js_redirect_to quiz_path(@quiz)
+			js_redirect_to quizzes_path
 		else
 			js_alert(@quiz)
 		end
@@ -30,6 +30,13 @@ class QuizzesController < ApplicationController
 	end
 
 	def update
+		@quiz = Quiz.find(params[:id])
+		if @quiz.update_attributes(params[:quiz])
+			flash[:notice] = "Quiz successfully updated"
+			js_redirect_to(quizzes_path)
+		else
+			js_alert(@quiz)
+		end
 	end
 
 	def destroy

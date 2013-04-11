@@ -59,8 +59,8 @@ describe "Quiz", :js => true do
 					pending
 				end
 
-				it "redirects to quiz show page on creation of new quiz" do
-				  page.should have_content "Blah"
+				it "redirects to quiz index page on creation of new quiz" do
+				  page.should have_content "Quizzes"
 				end
 
 				it "displays confirmation of creation of new quiz" do
@@ -118,13 +118,7 @@ describe "Quiz", :js => true do
 				page.should have_content @quiz2.name
 			end
 
-			it "allows the user to navigate to the edit page" do
-				within("li:contains('#{@quiz1.name}')") do
-					click_link "Edit"
-				end
-				page.should have_content("Edit Quiz")
-				find_field('Name').value.should eq @quiz1.name
-			end
+
 
 			it "links to the quizzes show page" do
 				within("li:contains('#{@quiz1.name}')") do
@@ -148,5 +142,127 @@ describe "Quiz", :js => true do
 		end
 
 	end
+
+	# describe "quiz#show" do
+	# 	let(:quiz) { FactoryGirl.create(:quiz) }
+
+	# 	context "when no user is signed in" do
+	# 		it "requires the user to sign in first" do
+	# 			visit quiz_path(quiz)
+	# 			page.should have_content("You need to sign in or sign up before continuing")
+	# 		end
+	# 	end
+
+	# 	context "when user is not an admin" do
+	# 		before(:each) do
+	# 			@user = FactoryGirl.create(:user)
+	# 			@user.confirm!
+	# 			login_as @user, :scope => :user	
+	# 		end
+
+	# 		after(:each) do
+	# 			logout(@user)
+	# 		end
+			
+	# 		it "doesn't allow user access" do 
+	# 			visit quiz_path(quiz)
+	# 			page.should have_content("You are not authorized to access this page")
+	# 		end
+	# 	end
+
+	# 	context "when user is an admin" do
+	# 		before(:each) do
+	# 			@admin = FactoryGirl.create(:user)
+	# 			@admin.confirm!
+	# 			@admin.add_role(:admin)
+	# 			login_as @admin, :scope => :user
+	# 			visit quiz_path(quiz)
+	# 		end			
+
+	# 		it "allows the user to navigate to the edit page" do
+	# 			click_button "Edit"
+	# 			page.should have_content("Edit Quiz")
+	# 			find_field('Name').value.should eq @quiz1.name
+	# 		end
+	# 	end
+	# end
+
+	describe "quiz#edit" do
+		let(:quiz) { FactoryGirl.create(:quiz) }
+
+		context "when no user is signed in" do
+			it "requires the user to sign in first" do
+				visit edit_quiz_path(quiz)
+				page.should have_content("You need to sign in or sign up before continuing")
+			end
+		end	
+
+		context "when user is not an admin" do
+			before(:each) do
+				@user = FactoryGirl.create(:user)
+				@user.confirm!
+				login_as @user, :scope => :user	
+			end
+
+			after(:each) do
+				logout(@user)
+			end
+			
+			it "doesn't allow user access" do 
+				visit edit_quiz_path(quiz)
+				page.should have_content("You are not authorized to access this page")
+			end
+		end
+
+		context "when user is admin" do
+			before(:each) do
+				@admin = FactoryGirl.create(:user)
+				@admin.confirm!
+				@admin.add_role(:admin)
+				login_as @admin, :scope => :user
+				visit edit_quiz_path(quiz)
+			end
+
+			it "links back to the index page" do
+				click_link "Back to Quiz List"
+				page.should have_content "Quizzes"
+			end
+
+			it "displays the quiz" do
+				page.should have_content quiz.name
+			end
+
+			it "allows user to update quiz" do
+				fill_in "Name", :with => "Foo"
+				click_button "Update Quiz"
+				find_field('Name').value.should eq "Foo"
+			end
+
+			it "notifies the user on successful update" do
+				fill_in "Name", :with => "Bar"
+				click_button "Update Quiz"
+				page.should have_content "Quiz successfully updated"
+			end
+
+			it "warns user when update fails" do
+				fill_in "Name", :with => ""
+				click_button "Update Quiz"
+				page.should have_content "Name can't be blank"
+			end
+
+			it "allows user to delete quiz" do
+				click_link "Delete"
+				page.driver.browser.switch_to.alert.accept
+				page.should have_content("Successfully deleted")
+			end
+
+			it "allows user to add or remove questions" do
+				pending
+			end
+		end
+
+	end
+
+
 	after{ Warden.test_reset! }
 end
