@@ -5,7 +5,7 @@ FactoryGirl.define do
 	end
 
 	factory :quiz do
-		name { Faker::Lorem.word }
+		name { Faker::Address.street_name }
 		duration { rand(15) + 1 }
 		release_date { Time.now }
 		close_date { Time.now + 1000 }

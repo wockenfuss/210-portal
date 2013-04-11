@@ -21,19 +21,21 @@ class QuizzesController < ApplicationController
 			flash[:notice] = "Quiz successfully created"
 			js_redirect_to quiz_path(@quiz)
 		else
-			# flash.now[:alert] = "There was a problem creating the quiz"
-			# render 'new'
 			js_alert(@quiz)
 		end
 	end
 
 	def edit
+		@quiz = Quiz.find(params[:id])
 	end
 
 	def update
 	end
 
-	def delete
+	def destroy
+		@quiz = Quiz.find(params[:id])
+		@quiz.destroy
+		redirect_to quizzes_path, :notice => "Successfully deleted"
 	end
 
 end

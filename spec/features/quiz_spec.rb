@@ -118,20 +118,32 @@ describe "Quiz", :js => true do
 				page.should have_content @quiz2.name
 			end
 
-			it "allows the user to edit a quiz" do
-				pending
+			it "allows the user to navigate to the edit page" do
+				within("li:contains('#{@quiz1.name}')") do
+					click_link "Edit"
+				end
+				page.should have_content("Edit Quiz")
+				find_field('Name').value.should eq @quiz1.name
 			end
 
 			it "links to the quizzes show page" do
-				pending
+				within("li:contains('#{@quiz1.name}')") do
+					click_link "View"
+				end
+				page.should have_content(@quiz1.name)
 			end
 
 			it "dislays a link to create a new quiz" do
-				pending
+				click_button "New Quiz"
+				page.should have_content("Create New Quiz")
 			end
 
 			it "allows the user to delete a quiz" do
-				pending
+				within("li:contains('#{@quiz1.name}')") do
+					click_link "Delete"
+				end
+				page.driver.browser.switch_to.alert.accept
+				page.should have_content("Successfully deleted")
 			end	
 		end
 

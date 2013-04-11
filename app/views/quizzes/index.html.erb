@@ -1,7 +1,14 @@
+<h1>Quizzes</h1>
 <div class="quizList">
-	<% @quizzes.each do |quiz| %>
 	<ul>
-		<li class="quizName"><%= quiz.name %></li>
+		<% @quizzes.each do |quiz| %>
+			<li class="quizName">
+				<span class="links"><%= quiz.name %></span> |
+				<%= link_to "View", quiz_path(quiz), :class => 'links'%> |
+				<!--<#%= link_to "Edit", edit_quiz_path(quiz), :class => 'links'%>-->
+				<%= link_to "Delete", quiz_path(quiz), :confirm => 'Are you sure?', :method => :delete, :class => 'links'%>
+			</li>
+		<% end %>
 	</ul>
-	<% end %>
+	<%= button_to "New Quiz", new_quiz_path, :method => 'get', :class => 'button', :id => 'new_quiz_btn' %>
 </div>
