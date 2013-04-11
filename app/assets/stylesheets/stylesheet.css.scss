@@ -56,7 +56,6 @@ h2 {
 }
 
 
-
 .pull-right {
 	float: right;
 }
@@ -93,6 +92,30 @@ nav {
 .navLineBottom {
 	background-color: #ccc;
 }
+
+
+/*-----rounded buttons -----*/
+input[type="submit"].button {
+	border-radius: 15px;
+	outline: none;
+	width: 100px;
+	height: 30px;
+	font-size: 1em;
+	color: #fff;
+	background-color: #999;
+	border: none;
+	margin: 0;
+	&:hover {
+		background-color: #555;
+	}
+}
+
+
+
+.links {
+	margin: 0 10px;
+}
+
 
 /*---- forms ----*/
 
@@ -250,6 +273,9 @@ footer {
 	}
 }
 
+#new_quiz_btn {
+	margin: 5%;
+}
 
 /*----- datepicker -----*/
 .ui-datepicker {
@@ -265,6 +291,7 @@ footer {
 		cursor: hand; cursor: pointer;
 	}
 }
+
 
 /*-----media queries-----*/
 @media screen and (max-width: 480px) {
