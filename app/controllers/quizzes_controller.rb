@@ -1,9 +1,12 @@
 class QuizzesController < ApplicationController
+	before_filter :store_location
 	before_filter :authenticate_user!
 	before_filter :format_date, :only => [:create, :update]
+	before_filter :check_for_cancel, :only => [:create, :update]
+
 
 	load_and_authorize_resource
-	# respond_to :html, :json, :js
+	respond_to :html, :json, :js
 
 	def index
 		@quizzes = Quiz.all
@@ -25,6 +28,8 @@ class QuizzesController < ApplicationController
 
 	def edit
 		@quiz = Quiz.find(params[:id])
+		@question = Question.new
+		respond_with(@quiz, @question)
 	end
 
 	def update
@@ -59,6 +64,16 @@ class QuizzesController < ApplicationController
 			string = DateTime.strptime(string, '%m/%d/%Y')
 		end
 		string
+	end
+
+
+
+
+	def check_for_cancel
+		if params[:commit] == 'Cancel'
+			flash[:alert] = "Canceled"
+	 		js_redirect_to quizzes_path
+		end
 	end
 
 end
