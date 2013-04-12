@@ -1,5 +1,11 @@
-$('.contentInterior').prepend('<%= j render :partial => "shared/errors", :locals => { :current_object => current_object } %>');
+$('#errors').html = ""
+$('#errors').append('<%= j render :partial => "shared/errors", :locals => { :current_object => current_object } %>');
 $('#error_explanation').slideToggle();
+$('input[type="submit"]').on('click', function(e){
+	$('#errors').empty();
+});
 $('.close').on('click', function(e) {
-	$(this).parent().slideToggle();
+	$(this).parent().slideToggle(function() {
+		$('#errors').empty();
+	});
 });

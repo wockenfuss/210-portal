@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(:version => 20130410173753) do
 
   create_table "quizzes", :force => true do |t|
     t.integer  "duration", :null => false
-    t.datetime "release_date"
+    t.datetime "release_date", :null => false
     t.datetime "close_date"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
