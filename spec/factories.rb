@@ -10,4 +10,9 @@ FactoryGirl.define do
 		release_date { Time.now }
 		close_date { Time.now + 1000 }
 	end
+
+	factory :question do
+		name { Faker::Address.street_name }
+		content { Faker::Lorem.sentence(word_count = 5, supplemental = false ) }
+	end
 end
