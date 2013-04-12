@@ -2,7 +2,7 @@ Portal::Application.routes.draw do
 
   # resources :attempts
   resources :answers, :only => [:show]
-  resources :questions, :only => [:index, :show]
+  resources :questions
   resources :quizzes
 
   devise_for :users
