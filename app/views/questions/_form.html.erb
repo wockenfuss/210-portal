@@ -1,0 +1,13 @@
+<h2>New Question</h2>
+<%= form_for @question, :remote => true do |f| %>
+	<div class="inline">
+    <%= f.label :name %>
+    <%= f.text_field :name, :placeholder => "Enter question name"%>
+  </div>
+	<div class="inline">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+  <div class="inline"><%= f.submit %></div>
+	
+<% end %>

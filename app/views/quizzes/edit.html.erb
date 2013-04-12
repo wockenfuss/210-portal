@@ -1,3 +1,14 @@
-<%= link_to "<-- Back to Quiz List", quizzes_path %>
+<%= link_to "<-- Back to quiz list", quizzes_path %>
 <%= render 'linkbar' %>
-<%= render 'form' %>
+<div id="floatContainer">
+	<div id="formContainer">
+		<%= render 'form' %>
+	</div>
+	<div id="questionContainer">
+		<p>There are currently no questions in this quiz.</p>
+	</div>	
+</div>
+
+<div id="addQuestionForm">
+	<%= render 'questions/form' %>
+</div>
