@@ -224,7 +224,7 @@ describe "Quiz", :js => true do
 			end
 
 			it "links back to the index page" do
-				click_link "Back to Quiz List"
+				click_link "Back to quiz list"
 				page.should have_content "Quizzes"
 			end
 
@@ -233,19 +233,25 @@ describe "Quiz", :js => true do
 			end
 
 			it "allows user to update quiz" do
-				fill_in "Name", :with => "Foo"
+				within("div#formContainer") do
+					fill_in "Name", :with => "Foo"
+				end
 				click_button "Update Quiz"
-				find_field('Name').value.should eq "Foo"
+				page.should have_content "Foo"
 			end
 
 			it "notifies the user on successful update" do
-				fill_in "Name", :with => "Bar"
+				within("div#formContainer") do
+					fill_in "Name", :with => "Bar"
+				end
 				click_button "Update Quiz"
 				page.should have_content "Quiz successfully updated"
 			end
 
 			it "warns user when update fails" do
-				fill_in "Name", :with => ""
+				within("div#formContainer") do
+					fill_in "Name", :with => ""
+				end
 				click_button "Update Quiz"
 				page.should have_content "Name can't be blank"
 			end
