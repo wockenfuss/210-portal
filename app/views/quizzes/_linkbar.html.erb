@@ -1,6 +1,6 @@
 <div id="errors"></div>
 <div id="linkbar">	
 	<h2 class="linkbar_left"><%= @quiz.name %></h2>
-	<%= link_to "Add/Remove Questions", '#', :method => 'get', :class => 'linkbar_middle', :id => 'add_questions'  %>
-	<%= link_to "Delete", quiz_path(@quiz), :method => 'delete', :confirm => "Are you sure?", :class => 'linkbar_right' %>
+	<%= link_to "Add Questions", question_new_path(@quiz), :class => 'linkbar_middle', :id => 'add_questions', :remote => true %>
+	<%= link_to "Delete Quiz", quiz_path(@quiz), :method => 'delete', :confirm => "Are you sure?", :class => 'linkbar_right' %>
 </div>
