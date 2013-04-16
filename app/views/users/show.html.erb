@@ -1,1 +1,10 @@
-<p><%=	@user.email %></p>
+<h2>This week's schedule</h2>
+<% if @quizzes %>
+	<% @quizzes.each do |quiz| %>
+	<p>
+		<%= "#{quiz.name}––Duration: #{quiz.duration} minutes. Quiz closes in #{time_ago_in_words(quiz.close_date.to_date)}." %>
+	</p>
+	<% end %>
+<% else %>
+<p><%= "There are no scheduled items this week." %> </p>
+<% end %>
