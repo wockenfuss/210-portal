@@ -5,10 +5,14 @@
 		<%= render 'form' %>
 	</div>
 	<div id="questionContainer">
-		<p>There are currently no questions in this quiz.</p>
+		<%= render 'questions/index', :questions => @questions %>
 	</div>	
 </div>
 
 <div id="addQuestionForm">
-	<%= render 'questions/form' %>
+	<%= render 'questions/new' %>
 </div>
+<!-- <div id="answersForm">
+	<#%= render 'answers/new' %>
+	<#%= render 'answers/index' %>
+</div> -->
