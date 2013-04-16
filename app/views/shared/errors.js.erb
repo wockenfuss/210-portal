@@ -1,11 +1,11 @@
-$('#errors').html = ""
-$('#errors').append('<%= j render :partial => "shared/errors", :locals => { :current_object => current_object } %>');
+$('<%= target %>').html = ""
+$('<%= target %>').append('<%= j render :partial => "shared/errors", :locals => { :current_object => current_object } %>');
 $('#error_explanation').slideToggle();
 $('input[type="submit"]').on('click', function(e){
-	$('#errors').empty();
+	$('<%= target %>').empty();
 });
 $('.close').on('click', function(e) {
 	$(this).parent().slideToggle(function() {
-		$('#errors').empty();
+		// $(target).empty();
 	});
 });
