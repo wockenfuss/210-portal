@@ -1,5 +1,13 @@
-<h2>New Question</h2>
+<div id="questionErrors"></div>
 <%= form_for @question, :remote => true do |f| %>
+  <div>
+    <%= f.radio_button "multiple_choice", "false", :checked => true %>
+    <%= f.label :essay, 'Essay' %>
+  </div>
+  <div>
+    <%= f.radio_button "multiple_choice", "true", :checked => false %>
+    <%= f.label :multiple_choice, 'Multiple Choice' %>
+  </div>
 	<div class="inline">
     <%= f.label :name %>
     <%= f.text_field :name, :placeholder => "Enter question name"%>
@@ -9,5 +17,5 @@
     <%= f.text_area :content %>
   </div>
   <div class="inline"><%= f.submit %></div>
-	
+	<%= hidden_field_tag :quiz_id, @quiz.id %>
 <% end %>

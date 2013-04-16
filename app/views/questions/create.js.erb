@@ -1,0 +1,9 @@
+$('#questionContainer').html("");
+$('#questionContainer').append('<%= j render :partial => "questions/index", :locals => { :questions => @questions } %>');
+$('#question_name').val("");
+$('#question_content').val("");
+$('.questionLinks').parent().addClass('disabledLinks')
+	.bind('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+	});
