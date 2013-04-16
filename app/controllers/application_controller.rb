@@ -19,11 +19,20 @@ class ApplicationController < ActionController::Base
 	end
   
   def js_alert(current_object)
-  	render "shared/errors", :locals => { :current_object => current_object }
+  	render "shared/errors", :locals => { :current_object => current_object, :target => targetId(current_object) }
   end
 
   private
 	def after_sign_in_path_for(user)
 		user_root_path(:id => user.id)
 	end
+
+  def targetId(object)
+    case object
+    when @question
+      return '#questionErrors'
+    when @quiz
+      return '#errors'
+    end
+  end
 end
