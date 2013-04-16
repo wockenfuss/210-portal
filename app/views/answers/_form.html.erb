@@ -1,0 +1,7 @@
+<%= form_for @answer, :remote => true do |f| %>
+	<div>
+    <%= f.label :content %>
+    <%= f.text_field :content, :placeholder => "Enter answer"%>
+  </div>
+  <div class="inline"><%= f.submit %></div>
+<% end %>
