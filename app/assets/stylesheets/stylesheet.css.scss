@@ -126,7 +126,7 @@ input[type="submit"].button {
 	width: 100%;
 	text-align: center;
 	margin-top: 1%;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 	border-bottom: 2px solid #999;
 	h2 {
 		display: inline;
@@ -178,7 +178,30 @@ form {
 			background-color: #fff;
 			cursor: hand; cursor: pointer;
 		}
+
 	}
+
+	input[type="radio"] {
+		outline: none;
+		/*background: url('radio.png') no-repeat;*/
+/*    opacity: 0;    
+    float: left;
+    width: 36px;*/
+	}
+
+/*	input[type='radio'] + label {
+    margin: 0;
+    clear: none;
+    display: inline-block;
+    padding: 5px 0 4px 24px;
+    cursor: pointer;
+    background: url(unchecked_radio.png) left center no-repeat; 
+	}
+	input[type='radio']:checked + label {
+    background-image: url(checked_radio.png);
+  }*/
+
+
 	input[value="Send me reset password instructions"] {
 		margin-left: 0;
 	}
@@ -240,17 +263,44 @@ form {
 }
 
 #formContainer {
-	width: 45%;
+	width: 43%;
 	float: left;
-	/*background-color: #999;*/
+	/*background-color: red;*/
+	padding: 2% 1%;
 }
 
 #questionContainer {
-	width: 43%;
+	width: 45%;
 	float: left;
-	/*background-color: #666;*/
-	padding: 1% 3%;
-	margin-left: 5%;
+	margin-left: 1%;
+	/*background-color: orange;*/
+	padding: 1% 3% 1% 0;
+	h3 {
+		margin: 0;
+	}
+	ul {
+		font-size: .8em;
+		margin: 1% 0 1% -40px;
+	}
+	li {
+		display: inline-block;
+		border: 4px #555 solid;
+		background-color: #bbb;
+		margin: 3px 0;
+		padding: 3px;
+		color: #000;
+		width: 85%;
+	}
+
+	li.disabledLinks {
+		/*background-color: #666;*/
+		opacity: .4;
+		a:hover {
+			color: #666;
+			cursor: default;
+		}
+	}
+	/*margin-left: 5%;*/
 }
 
 #addQuestionForm {
@@ -260,10 +310,20 @@ form {
 	background-color: #888;
 	display: none;
 }
-/*#interiorPrimary {
-	width: 85%;
-	float: left;
-}*/
+
+.deleteButton {
+	display: inline-block;
+	background-color: #f77;
+	color: #fff;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	border: solid #666 5px;
+	cursor: pointer; cursor: hand;
+	display: none;
+}
+
+
 
 #floatContainer {
 	/*min-height: 320px;*/
