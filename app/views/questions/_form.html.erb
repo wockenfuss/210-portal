@@ -16,6 +16,11 @@
     <%= f.label :content %>
     <%= f.text_area :content %>
   </div>
+
   <div class="inline"><%= f.submit %></div>
 	<%= hidden_field_tag :quiz_id, @quiz.id %>
 <% end %>
+
+  <div id="answersForm">
+    <%= render 'answers/new', :answer => answer %>
+  </div>

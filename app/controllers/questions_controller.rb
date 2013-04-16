@@ -4,7 +4,8 @@ class QuestionsController < ApplicationController
 	def new
 		@question = Question.new
 		@quiz = Quiz.find(params[:quiz_id])
-		respond_with @question, @quiz
+		@answer = Answer.new
+		respond_with @question, @quiz, @answer
 	end
 
 	def create
@@ -22,7 +23,8 @@ class QuestionsController < ApplicationController
 	def edit
 		@question = Question.find(params[:id])
 		@quiz = @question.quizzes.first
-		respond_with @question, @quiz
+		@answer = Answer.new
+		respond_with @question, @quiz, @answer
 	end
 	
 	def update

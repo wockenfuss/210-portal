@@ -35,7 +35,7 @@ class QuizzesController < ApplicationController
 		@questions = @quiz.questions.order("created_at ASC")
 		@question = Question.new
 		@answer = Answer.new
-		respond_with(@quiz, @question)
+		respond_with(@quiz, @question, @answer)
 	end
 
 	def update

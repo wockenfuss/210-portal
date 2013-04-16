@@ -1,7 +1,7 @@
 <h3><%= "Quiz questions" %></h3>
-<% if @questions != [] %>
+<% if questions != [] %>
 	<ul>
-		<% @questions.each_with_index do |question, index| %>
+		<% questions.each_with_index do |question, index| %>
 			
 			<li>
 				<%= link_to "Question #{index + 1} - #{question.name if question.name}", edit_question_path(question), :remote => true, :class => 'questionLinks' %> 

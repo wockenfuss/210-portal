@@ -1,6 +1,6 @@
 var $form = $('#addQuestionForm');
 $form.html("");
-$form.append('<%= j render :partial => "questions/new", :locals => { :question => @question, :quiz => @quiz } %>');
+$form.append('<%= j render :partial => "questions/new", :locals => { :question => @question, :quiz => @quiz, :answer => @answer } %>');
 
 if ( $form.is(':visible') ) {
 	$('.questionLinks').parent().removeClass('disabledLinks')
