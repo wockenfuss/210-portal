@@ -26,9 +26,15 @@ class QuizzesController < ApplicationController
 		end
 	end
 
+	def show
+		@quiz = Quiz.find(params[:id])
+	end
+
 	def edit
 		@quiz = Quiz.find(params[:id])
+		@questions = @quiz.questions.order("created_at ASC")
 		@question = Question.new
+		@answer = Answer.new
 		respond_with(@quiz, @question)
 	end
 
