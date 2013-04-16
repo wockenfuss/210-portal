@@ -37,10 +37,8 @@ ActiveRecord::Schema.define(:version => 20130412041348) do
   end
 
   create_table "questions_quizzes", :force => true do |t|
-    t.integer  "question_id"
-    t.integer  "quiz_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer "question_id"
+    t.integer "quiz_id"
   end
 
   create_table "quizzes", :force => true do |t|
