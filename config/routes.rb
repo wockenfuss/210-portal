@@ -1,8 +1,8 @@
 Portal::Application.routes.draw do
 
   # resources :attempts
-  resources :answers, :only => [:show]
-  resources :questions
+  resources :answers, :only => [:show, :index]
+  resources :questions, :except => [:show]
   resources :quizzes
 
   devise_for :users
@@ -11,8 +11,10 @@ Portal::Application.routes.draw do
     root :to => "devise/sessions#new"
   end
 
-  get '/users/:id' => 'users#show', :as => 'user_root'
+  get "/users/:id" => "users#show", :as => "user_root"
+  get "/questions/:quiz_id/new" => "questions#new", :as => "question_new"
 
+  # post "/questions/:question_id/:quiz_id" => "questions#create", :as => "question_quiz"
   resources :users, :only => [:index]
   
   # The priority is based upon order of creation:
