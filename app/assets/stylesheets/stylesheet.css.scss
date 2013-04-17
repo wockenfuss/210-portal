@@ -1,5 +1,6 @@
 /*$primary-font: "Special Elite";*/
-$primary-font: "Patrick Hand SC";
+/*$primary-font: "Patrick Hand SC";*/
+$primary-font: "Roboto";
 $secondary-font: "Roboto";
 $primaryWidth: 60%;
 
@@ -70,8 +71,8 @@ h2 {
 
 .brand {
 	display: inline-block;
-	font-size: 2em;
-	margin: 0 0 0 30px;
+	font-size: 1.6em;
+	margin: .5% 0 0 2%;
 	font-family: $primary-font, sans-serif;
 	color: #ddd;
 }
@@ -231,8 +232,8 @@ form {
 
 .contentContainer-fluid {
 	width: 60%;
-	margin: 0 auto;
-	margin-bottom: 10%;
+	margin: 8% auto;
+	/*margin-bottom: 10%;*/
 }
 
 .sidebar {

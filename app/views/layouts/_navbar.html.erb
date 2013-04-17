@@ -1,5 +1,5 @@
 <nav>  
-  <%= link_to "Portal", root_path, :class => "brand" %>
+  <%= link_to "Narrative Strategies", root_path, :class => "brand" %>
 
   <% if user_signed_in? %>
     <a href="#" id="dropdownTrigger" data-dropdown="#dropdown-1" class="pull-right navbar"><%= current_user.email %></a>
@@ -23,9 +23,9 @@
       </div>        
     <% end %>
 
-    <%= link_to "Gradebook", "#", :class => "pull-right navbar" %>
-    <%= link_to "Theater", "#", :class => "pull-right navbar" %>
-    <%= link_to "Classroom", "#", :class => "pull-right navbar" %>
+<!--     <#%= link_to "Gradebook", "#", :class => "pull-right navbar" %>
+    <#%= link_to "Theater", "#", :class => "pull-right navbar" %>
+    <#%= link_to "Classroom", "#", :class => "pull-right navbar" %> -->
 
   <% else %>
     <%= link_to "Sign in", new_user_session_path, :class => "pull-right navbar"%>
