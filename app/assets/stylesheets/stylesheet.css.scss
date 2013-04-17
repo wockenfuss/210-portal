@@ -328,6 +328,20 @@ form {
 }
 
 
+#timer {
+	background: #555;
+	width: 15%;
+	text-align: center;
+	padding: 3%;
+	font-size: 1.5em;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.green {
+	color: #0a0;
+}
+
 #floatContainer {
 	/*min-height: 320px;*/
 	overflow: auto;
