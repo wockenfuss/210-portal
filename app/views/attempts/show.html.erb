@@ -1,0 +1,11 @@
+<div id="timer" class="pull-right"></div>
+<h2><%= @quiz.name %></h2>
+<% if @quiz.questions %>
+<ul>
+	<% @quiz.questions.each_with_index do |question, index| %>
+		<li><%= "Question #{index + 1}: #{question.content}" %></li>
+		<%= text_area_tag :answer %>
+	<% end %>
+</ul>
+<%= button_to "Submit quiz", attempt_path(@attempt), :method => 'put', :class => 'button', :confirm => 'Are you sure?' %>
+<% end %>

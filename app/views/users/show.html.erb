@@ -3,7 +3,12 @@
 <% if @quizzes %>
 	<% @quizzes.each do |quiz| %>
 	<p>
-		<%= "#{quiz.name}––Duration: #{quiz.duration} minutes. Quiz closes in #{time_ago_in_words(quiz.close_date.to_date)}." %>
+		<%= "#{quiz.name}––Duration: #{quiz.duration} minutes. Quiz closes in #{time_ago_in_words(quiz.close_date.to_date)}." %> 
+		<% if @user.attempts.where(:quiz_id => quiz.id) == [] %>
+			<%= link_to "Take Quiz", new_attempt_path(quiz, @user) %>
+		<% else %>
+			<span class="green">You've completed this week's quiz.</span>
+		<% end %>
 	</p>
 	<% end %>
 <% else %>

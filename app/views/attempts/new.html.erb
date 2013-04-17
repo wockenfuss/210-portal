@@ -1,0 +1,8 @@
+<%= link_to "<– Back", user_root_path(@user) %>
+<h2><%= @quiz.name %></h2>
+<p><%= "There are #{@quiz.questions.count} questions in this quiz." %></p><p><%= "You'll have #{@quiz.duration} minutes to complete this quiz once you begin." %></p>
+<!--<#%= button_tag "Begin Quiz", new_attempt_path(@quiz, @user)%>-->
+<!--<#%= button_to('Begin Quiz', new_attempt_path(@quiz, @user), :confirm => 'Are you sure?',
+          :method => "post", :remote => true ) %>-->
+
+<%= button_to "Begin Quiz", new_attempt_path, :method => 'post', :class => 'button', :id => 'new_attempt_btn', :confirm => "Are you sure you're ready?"%>

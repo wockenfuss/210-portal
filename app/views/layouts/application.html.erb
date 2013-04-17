@@ -11,7 +11,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
-
+    <%= javascript_include_tag "application" %>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Istok+Web|Patrick+Hand+SC|Sintony|Roboto|Roboto+Condensed|Fredoka+One|Archivo+Narrow|Averia+Sans+Libre' rel='stylesheet' type='text/css'>
@@ -39,7 +39,7 @@
 		
 
     <div class="container-fluid">
-
+      
       <%= render 'layouts/navbar' %>
       <%= render 'layouts/messages' %>
       <div id="alerts"></div>
@@ -54,6 +54,7 @@
           <%= yield %> 
         </div>
       </div><!--/row-->
+
     </div> <!-- /container -->
     <div class="divider">
       <div class="navLine navLineTop"></div>
@@ -63,10 +64,6 @@
     <footer>
       <p>&copy; B Coughenour 2013</p>
     </footer>
-    <!-- Javascripts
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "application" %>
 
   </body>
 </html>

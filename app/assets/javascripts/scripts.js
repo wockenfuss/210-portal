@@ -20,17 +20,6 @@
 
     $( ".datepicker" ).datepicker();
 
-   //  $('#add_questions').on('click', function(e) {
-			// $('#addQuestionForm').slideToggle();
-			// e.preventDefault();
-			// e.stopPropagation();
-   //  });
-
-    // $('.questionLink').on('click', function(e) {
-
-    // 	e.preventDefault();
-    // 	// e.stopPropagation();
-    // });
 	};
 
 })(window.myApp = window.myApp || {}, jQuery);
