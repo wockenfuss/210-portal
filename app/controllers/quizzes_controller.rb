@@ -9,7 +9,7 @@ class QuizzesController < ApplicationController
 	respond_to :html, :json, :js
 
 	def index
-		@quizzes = Quiz.all
+		@quizzes = Quiz.order("release_date ASC")
 	end
 
 	def new
