@@ -67,6 +67,7 @@ h2 {
 
 .inline {
 	display: inline;
+	/*background-color: blue;*/
 }
 
 .brand {
@@ -150,10 +151,12 @@ input[type="submit"].button {
 label {
 	font-family: $secondary-font, sans-serif;
 	font-size: 1em;
-	margin: 0 5px;
+	margin: 0 10px;
 }
 
 form {
+	/*background-color: orange;*/
+
 	input {
 		outline: 5px solid #aaa;
 		margin: 10px 0;
@@ -165,8 +168,8 @@ form {
 		margin: 10px 0;
 		font-family: $secondary-font;
 		border: none;	
-		width: 50%;
-		height: 100px;
+		width: 84%;
+		height: 40px;
 	}
 
 	input[type="submit"] {
@@ -219,6 +222,18 @@ form {
 	}
 	.points {
 		width: 5%;
+	}
+
+	.textArea {
+		display: inline-block;
+		width: 80%;
+		margin-top: 2%;
+		label {
+			vertical-align: top;
+		}
+		textarea {
+			vertical-align: bottom;
+		}
 	}
 }
 
