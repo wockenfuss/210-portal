@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130418005810) do
+ActiveRecord::Schema.define(:version => 20130418031817) do
 
   create_table "answers", :force => true do |t|
     t.string   "content",    :null => false
@@ -24,8 +24,9 @@ ActiveRecord::Schema.define(:version => 20130418005810) do
     t.datetime "end_time"
     t.integer  "quiz_id"
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.boolean  "graded",     :default => false
   end
 
   create_table "questions", :force => true do |t|
