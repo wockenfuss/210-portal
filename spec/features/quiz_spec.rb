@@ -14,7 +14,7 @@ describe "Quiz", :js => true do
 		context "when user is not an admin" do
 			before(:each) do
 				@user = FactoryGirl.create(:user)
-				@user.confirm!
+				# @user.skip_confirmation!
 				login_as @user, :scope => :user	
 			end
 
@@ -31,7 +31,7 @@ describe "Quiz", :js => true do
 		context "when user is an admin" do
 			before(:each) do
 				@admin = FactoryGirl.create(:user)
-				@admin.confirm!
+				# @admin.skip_confirmation!
 				@admin.add_role(:admin)
 				login_as @admin, :scope => :user
 			end
@@ -88,7 +88,7 @@ describe "Quiz", :js => true do
 		context "when user is not an admin" do
 			before(:each) do
 				@user = FactoryGirl.create(:user)
-				@user.confirm!
+				# @user.skip_confirmation!
 				login_as @user, :scope => :user	
 			end
 
@@ -107,7 +107,7 @@ describe "Quiz", :js => true do
 				@quiz1 = FactoryGirl.create(:quiz)
 				@quiz2 = FactoryGirl.create(:quiz)
 				@admin = FactoryGirl.create(:user)
-				@admin.confirm!
+				# @admin.skip_confirmation!
 				@admin.add_role(:admin)
 				login_as @admin, :scope => :user
 				visit quizzes_path
@@ -156,7 +156,7 @@ describe "Quiz", :js => true do
 	# 	context "when user is not an admin" do
 	# 		before(:each) do
 	# 			@user = FactoryGirl.create(:user)
-	# 			@user.confirm!
+				# @user.skip_confirmation!
 	# 			login_as @user, :scope => :user	
 	# 		end
 
@@ -173,7 +173,7 @@ describe "Quiz", :js => true do
 	# 	context "when user is an admin" do
 	# 		before(:each) do
 	# 			@admin = FactoryGirl.create(:user)
-	# 			@admin.confirm!
+				# @admin.skip_confirmation!
 	# 			@admin.add_role(:admin)
 	# 			login_as @admin, :scope => :user
 	# 			visit quiz_path(quiz)
@@ -200,7 +200,7 @@ describe "Quiz", :js => true do
 		context "when user is not an admin" do
 			before(:each) do
 				@user = FactoryGirl.create(:user)
-				@user.confirm!
+				# @user.skip_confirmation!
 				login_as @user, :scope => :user	
 			end
 
@@ -217,7 +217,7 @@ describe "Quiz", :js => true do
 		context "when user is admin" do
 			before(:each) do
 				@admin = FactoryGirl.create(:user)
-				@admin.confirm!
+				# @admin.skip_confirmation!
 				@admin.add_role(:admin)
 				login_as @admin, :scope => :user
 				visit edit_quiz_path(quiz)

@@ -15,7 +15,7 @@ describe "Navigation", :js => true do
 
 			it "doesn't allow user to access other users pages" do
 				@user = FactoryGirl.create(:user)
-				@user.confirm!
+				# @user.skip_confirmation!
 				visit user_root_path(@user)
 				page.should have_content("You need to sign in or sign up before continuing")
 			end
@@ -24,7 +24,7 @@ describe "Navigation", :js => true do
 	  context "When user is signed in" do
 			before(:each) do
 				@user = FactoryGirl.create(:user)
-				@user.confirm!
+				# @user.skip_confirmation!
 	      login_as @user, :scope => :user
 	      visit root_path
 			end

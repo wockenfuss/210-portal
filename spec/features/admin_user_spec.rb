@@ -5,9 +5,9 @@ describe "Roles", :js => true do
 
 	before(:each) do 
 		@user = FactoryGirl.create(:user)
-		@user.confirm!
+		# @user.skip_confirmation!
 		@admin = FactoryGirl.create(:user)
-		@admin.confirm!
+		# @admin.skip_confirmation!
 		@admin.add_role(:admin)
 	end
 
