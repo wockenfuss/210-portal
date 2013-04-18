@@ -1,6 +1,7 @@
 Portal::Application.routes.draw do
 
-  resources :attempts, :only => [:show, :update]
+  resources :responses, :only => [:new, :create]
+  resources :attempts, :only => [:show, :update, :destroy, :edit]
   resources :answers, :only => [:show, :index]
   resources :questions, :except => [:show]
   resources :quizzes
@@ -11,6 +12,7 @@ Portal::Application.routes.draw do
     root :to => "devise/sessions#new"
   end
 
+  # get "attempts/:id/:admin" => "attempts#show", :as => "grade_attempt"
   post "attempts/new/:quiz_id/:user_id" => "attempts#create", :as => "new_attempt"
   get "attempts/new/:quiz_id/:user_id" => "attempts#new", :as => "new_attempt"
   get "/users/:id" => "users#show", :as => "user_root"

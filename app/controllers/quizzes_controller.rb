@@ -20,7 +20,7 @@ class QuizzesController < ApplicationController
 		@quiz = Quiz.new(params[:quiz])
 		if @quiz.save
 			flash[:notice] = "Quiz successfully created"
-			js_redirect_to quizzes_path
+			js_redirect_to edit_quiz_path @quiz
 		else
 			js_alert(@quiz)
 		end

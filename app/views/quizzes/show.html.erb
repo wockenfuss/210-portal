@@ -13,7 +13,8 @@
 <ul>
 	<% @quiz.attempts.each do |attempt| %>
 	<li><%= "#{attempt.user.email}––Completed: #{attempt.updated_at.to_date}" %>
-		<%= link_to "Grade Attempt", attempt_path(attempt), :class => 'links'%>
+		<%= link_to "Grade Attempt", edit_attempt_path(attempt), :class => 'links'%>
+		<%= link_to "Delete Attempt", attempt_path(attempt), :class => 'links', :method => :delete, :confirm => "Are you sure?"%>
 	</li>
 	<% end %>
 </ul>

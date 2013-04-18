@@ -1,0 +1,17 @@
+<%= form_for @attempt do |f| %>
+
+	<% if quiz.questions %>
+		<ul>
+			<% quiz.questions.each_with_index do |question, index| %>
+				<li><%= "Question #{index + 1}: #{question.content}" %></li>
+				<%= f.fields_for :responses, current_response(@attempt, question) do |response_field| %>
+					<%= render 'responses/form', :response_field => response_field, :question => question %>
+				<% end %>
+			<% end %>
+		</ul>
+		<%= f.submit nil, :class => 'button', :confirm => 'Are you sure?' %>
+	<% else %>
+		<p>There are no questions in this quiz.</p>
+	<% end %>
+
+<% end %>

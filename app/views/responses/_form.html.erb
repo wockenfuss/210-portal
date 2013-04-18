@@ -1,0 +1,4 @@
+<%= response_field.text_area :content %>
+<%= response_field.hidden_field :question_id, :value => question.id %>
+<%= response_field.hidden_field :user_id, :value => @attempt.user_id %>
+<%= response_field.hidden_field :attempt_id, :value => @attempt.id %>
