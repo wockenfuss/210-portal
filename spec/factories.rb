@@ -16,4 +16,26 @@ FactoryGirl.define do
 		content { Faker::Lorem.sentence(word_count = 5, supplemental = false ) }
 		points 5
 	end
+
+	factory :gradebook do
+		user_id 1
+	end
+
+	factory :attempt do
+		start_time { Time.now }
+		end_time { Time.now }
+		quiz_id 1
+		user_id 1
+		graded false
+	end
+
+	factory :response do
+		answer_id nil
+		question_id 1
+		attempt_id 1
+		user_id 1
+		content { Faker::Lorem.sentence(word_count = 5, supplemental = false ) }
+		points 0
+	end
+
 end
