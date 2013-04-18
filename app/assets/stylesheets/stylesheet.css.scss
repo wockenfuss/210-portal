@@ -16,6 +16,7 @@ $primaryWidth: 60%;
 
 span {
 	font-family: $secondary-font;
+	margin: 0 1%;
 }
 
 body {
@@ -103,6 +104,9 @@ nav {
 	background-color: #ccc;
 }
 
+.attemptQuestions {
+	margin-top: 3%;
+}
 
 /*-----rounded buttons -----*/
 input[type="submit"].button {
@@ -114,7 +118,7 @@ input[type="submit"].button {
 	color: #fff;
 	background-color: #999;
 	border: none;
-	margin: 0;
+	margin: 4% 4% 4% 6%;
 	&:hover {
 		background-color: #555;
 	}
@@ -185,6 +189,12 @@ form {
 
 	}
 
+
+	input[type="checkbox"] {
+		outline: none;
+	}
+
+
 	input[type="radio"] {
 		outline: none;
 		/*background: url('radio.png') no-repeat;*/
@@ -239,6 +249,10 @@ form {
 
 #question_points {
 	width: 3%;
+}
+
+#markGraded {
+	margin-left: 5%;
 }
 
 /*----- content containers -----*/
