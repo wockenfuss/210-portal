@@ -14,5 +14,6 @@ FactoryGirl.define do
 	factory :question do
 		name { Faker::Address.street_name }
 		content { Faker::Lorem.sentence(word_count = 5, supplemental = false ) }
+		points 5
 	end
 end

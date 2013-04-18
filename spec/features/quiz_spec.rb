@@ -59,8 +59,8 @@ describe "Quiz", :js => true do
 					pending
 				end
 
-				it "redirects to quiz index page on creation of new quiz" do
-				  page.should have_content "Quizzes"
+				it "redirects to quiz edit page on creation of new quiz" do
+				  page.should have_content "Blah"
 				end
 
 				it "displays confirmation of creation of new quiz" do
