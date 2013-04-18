@@ -37,15 +37,19 @@ class AttemptsController < ApplicationController
 	def update
 		@attempt = Attempt.find(params[:id])
 		if params[:attempt][:responses_attributes]
-			params[:attempt][:responses_attributes].each do |response|
-				@response = Response.create(response[1])
+			params[:attempt][:responses_attributes].each_with_index do |response, index|
+				@response = Response.find_or_create_by_id(params[:attempt][:responses_attributes][index.to_s][:id])
+				@response.update_attributes(response[1])
+				p params[:attempt][:responses_attributes][index.to_s]
+				p response[1]
 				# unless @response.save
 				# 	@quiz = @attempt.quiz
 				# 	render 'show', :notice => "Something went wrong" and return
 				# end
 			end
 		end
-		if @attempt.update_attributes(:end_time => Time.now)
+		attempt_params = Hash[:end_time => Time.now, :graded => params[:attempt][:graded]]
+		if @attempt.update_attributes(attempt_params)
 			redirect_to user_root_path(@attempt.user), :notice => "Quiz completed"
 		else
 

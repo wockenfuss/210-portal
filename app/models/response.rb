@@ -8,5 +8,5 @@ class Response < ActiveRecord::Base
 	validates :attempt_id, :presence => true
 	validates :content, :presence => true
 
-  attr_accessible :answer_id, :content, :question_id, :user_id, :attempt_id
+  attr_accessible :answer_id, :content, :question_id, :user_id, :attempt_id, :points
 end
