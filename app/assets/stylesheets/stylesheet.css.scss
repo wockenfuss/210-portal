@@ -304,6 +304,14 @@ form {
 	/*margin-left: 5%;*/
 }
 
+#linkbar > a.disabledLinks {
+	opacity: .4;
+	&:hover {
+		color: #666;
+		cursor: default;
+	}
+}
+
 #addQuestionForm {
 	width: 94%;
 	padding: 3%;

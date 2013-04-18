@@ -5,14 +5,23 @@ var name = '<%= @question.name %>';
 if ( $form.is(':visible') ) {
 	$('.questionLinks').not(':contains("' + name + '")').parent().removeClass('disabledLinks')
 	.unbind('click');
+	$('#linkbar a').removeClass('disabledLinks')
+	.unbind('click');
 	$form.slideToggle();
 	$('.questionLinks:contains("' + name + '")').parent().next().hide();
 } else {
 	$('.questionLinks').not(':contains("' + name + '")').parent().addClass('disabledLinks')
-	.bind('click', function(e) {
+		.bind('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
 		});
+
+	$('#linkbar a').addClass('disabledLinks')
+		.bind('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+		});
+
 	$form.slideToggle();
 	$('.questionLinks:contains("' + name + '")').parent().next().css('display', 'inline-block');
 }
