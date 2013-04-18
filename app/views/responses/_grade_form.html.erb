@@ -1,5 +1,5 @@
 <%= response_field.text_area :content %>
-<% if !current_response(@attempt, question).new_record? %>
+<% if can? :manage, :all %>
 	<%= response_field.text_field :points, :class => "points" %> <span><%= " / #{question.points}" %></span>
 <% end %>
 <%= response_field.hidden_field :question_id, :value => question.id %>

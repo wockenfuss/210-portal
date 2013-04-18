@@ -9,7 +9,7 @@
 </ul>
 <#%= submit_tag "Submit quiz", :disabled => true %>
 <#% end %>-->
-<% if @quiz.attempts %>
+<% if @quiz.attempts != [] %>
 <ul>
 	<% @quiz.attempts.each do |attempt| %>
 	<li><%= "#{attempt.user.email}––Completed: #{attempt.updated_at.to_date}" %>
@@ -18,4 +18,6 @@
 	</li>
 	<% end %>
 </ul>
+<% else %>
+	<p>There are no attempts for this quiz.</p>
 <% end %>

@@ -4,7 +4,7 @@ class Attempt < ActiveRecord::Base
 	belongs_to :quiz
 	accepts_nested_attributes_for :responses, :allow_destroy => true
 
-  attr_accessible :end_time, :quiz_id, :start_time, :user_id
+  attr_accessible :end_time, :quiz_id, :start_time, :user_id, :points
   validates :quiz_id, :presence => true
   validates :user_id, :presence => true
   validates :start_time, :presence => true

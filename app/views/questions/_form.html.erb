@@ -16,6 +16,10 @@
     <%= f.label :content %>
     <%= f.text_area :content %>
   </div>
+  <div class="inline">
+    <%= f.label :points %>
+    <%= f.text_field :points %>
+  </div>
 
   <div class="inline"><%= f.submit %></div>
 	<%= hidden_field_tag :quiz_id, @quiz.id %>
