@@ -40,8 +40,6 @@ class AttemptsController < ApplicationController
 			params[:attempt][:responses_attributes].each_with_index do |response, index|
 				@response = Response.find_or_create_by_id(params[:attempt][:responses_attributes][index.to_s][:id])
 				@response.update_attributes(response[1])
-				p params[:attempt][:responses_attributes][index.to_s]
-				p response[1]
 				# unless @response.save
 				# 	@quiz = @attempt.quiz
 				# 	render 'show', :notice => "Something went wrong" and return

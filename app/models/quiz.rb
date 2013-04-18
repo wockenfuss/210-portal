@@ -9,4 +9,7 @@ class Quiz < ActiveRecord::Base
 
   attr_accessible :close_date, :duration, :release_date, :name
 
-end
+  def possible_points
+  	self.questions.inject(0) { |sum, question| sum + question.points } 
+  end
+ end

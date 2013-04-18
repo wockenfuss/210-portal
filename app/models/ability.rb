@@ -10,6 +10,9 @@ class Ability
       cannot :read, User do |this_user|
         this_user.id != user.id
       end
+      cannot :read, Gradebook do |this_user|
+        this_user.id != user.id
+      end
       # cannot :create, Quiz
     end
 

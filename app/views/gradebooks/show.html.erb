@@ -1,0 +1,20 @@
+<h2>Quizzes</h2>
+<div>
+	<% if @attempts != [] %>
+		<ul>
+			<% @attempts.each do |attempt| %>
+				<li>
+					<%= attempt.quiz.name%>
+					<span>–</span>
+					<% if attempt.graded? %>
+						<span><%= "Grade: #{calculated_grade(attempt)}"%></span>
+					<% else %>
+						<span><%= "Not yet graded" %></span>
+					<% end %>
+				</li>
+			<% end %>
+		</ul>
+	<% else %>
+		<p>You have no graded attempts.</p>
+	<% end %>
+</div>

@@ -13,4 +13,11 @@ class Attempt < ActiveRecord::Base
   	!!self.end_time && self.end_time < Time.now
   end
 
+  def graded_points
+    self.responses.inject(0) { |sum, response| sum + response.points }
+  end
+
+  def graded?
+    !!self.graded
+  end
 end

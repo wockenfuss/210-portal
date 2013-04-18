@@ -6,4 +6,5 @@ class Question < ActiveRecord::Base
   attr_accessible :content, :correct_answer_id, :name, :multiple_choice, :points
   attr_accessor :multiple_choice
   validates :content, :presence => true
+  validates :points, :presence => true
 end

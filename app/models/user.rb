@@ -9,13 +9,18 @@ class User < ActiveRecord::Base
 
   has_many :attempts
   has_many :responses
+  has_one :gradebook
   
-  # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation#, :remember_me
-  # attr_accessible :title, :body
+  after_create :create_gradebook
+
+  attr_accessible :email, :password, :password_confirmation, :gradebook_id
 
   def attempted?(quiz)
     self.attempts.where(:quiz_id => quiz.id) != []
+  end
+
+  def graded_attempts
+    self.attempts.where(:graded => true)
   end
 
 end
