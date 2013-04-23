@@ -9,7 +9,7 @@
 
 <% if !current_response(@attempt, question).new_record? %>
 	<div>
-		<span>Grade: </span><%= response_field.text_field :points, :class => "points", :value => grade_question(question, current_response(@attempt, question))%> <span><%= " / #{question.points}" %></span>	
+		<span>Grade: </span><%= response_field.text_field :points, :class => "points", :value => question_grade(question, current_response(@attempt, question))%> <span><%= " / #{question.points}" %></span>	
 	</div>
 <% end %>
 
