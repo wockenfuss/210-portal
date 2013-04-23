@@ -13,17 +13,13 @@ class Attempt < ActiveRecord::Base
   	!!self.end_time && self.end_time < Time.now
   end
 
-  def graded_points
-    self.responses.inject(0) { |sum, response| sum + response.points }
-  end
-
   def graded?
     !!self.graded
   end
 
-  def grade
+  def grade!
     score = self.responses.inject(0) do |sum, response|
-      sum + response.calculate_points
+      sum + response.calculate_points!
     end
     self.update_attributes(:score => score)
     self.update_attributes(:graded => true) if self.quiz.autograde

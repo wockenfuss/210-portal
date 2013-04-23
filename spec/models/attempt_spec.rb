@@ -26,15 +26,6 @@ describe Attempt do
 		end
 	end
 
-	describe "#graded_points" do
-		it "calculates the total value of graded points" do
-			response_params = { :attempt_id => @attempt.id, :points => 4 }
-			response1 = FactoryGirl.create(:response, response_params)
-			response2 = FactoryGirl.create(:response, response_params)
-			@attempt.graded_points.should eq 8
-		end
-	end
-
 	describe "#graded?" do
 		it "returns true if an attempt has been graded" do
 			@attempt.update_attributes(:graded => true)
@@ -44,6 +35,25 @@ describe Attempt do
 		it "returns false if an attempt has not been graded" do
 			@attempt.update_attributes(:graded => false)
 			@attempt.graded?.should be_false
+		end
+	end
+
+	describe "#grade!" do
+		before(:each) do
+			response_params = { :attempt_id => @attempt.id }
+			response = FactoryGirl.create(:response, response_params)
+			response2 = FactoryGirl.create(:response, response_params)
+			@attempt.quiz = FactoryGirl.create(:quiz, :autograde => true)
+			Response.any_instance.stub(:calculate_points!).and_return(4)
+			@attempt.grade!
+		end
+
+		it "assigns the correct score to a completed attempt" do	
+			@attempt.score.should eq 8
+		end
+
+		it "sets the attempt to graded if quiz is autograded" do
+			@attempt.graded.should be_true
 		end
 	end
 end

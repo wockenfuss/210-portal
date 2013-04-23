@@ -13,7 +13,7 @@ class Response < ActiveRecord::Base
   	self.answer_id && self.answer_id == self.question.correct_answer_id
   end
 
-  def calculate_points
+  def calculate_points!
   	points = self.correct_answer? ? self.question.points : 0
   	self.update_attributes(:points => points)
   	self.points

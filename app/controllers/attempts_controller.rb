@@ -48,7 +48,7 @@ class AttemptsController < ApplicationController
 		end
 		attempt_params = Hash[:end_time => Time.now, :graded => params[:attempt][:graded]]
 		if @attempt.update_attributes(attempt_params)
-			@attempt.grade unless @attempt.graded
+			@attempt.grade! unless @attempt.graded
 			redirect_to user_root_path(@attempt.user), :notice => "Quiz completed"
 		else
 
