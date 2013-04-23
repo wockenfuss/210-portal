@@ -15,6 +15,10 @@
     <%= f.label :close_date %>
     <%= f.text_field :close_date, :placeholder => "Click to select closing date", :class => "datepicker"%>
   </div>
+  <div>
+    <span class="formLabel">Autograde</span>
+    <%= f.check_box :autograde, {}, true, false %>
+  </div>
   <div class="inline"><%= f.submit %></div>
   <div class="inline"><%= f.submit :Cancel %></div>
 

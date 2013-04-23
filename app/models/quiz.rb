@@ -7,7 +7,7 @@ class Quiz < ActiveRecord::Base
 	validates :release_date, :presence => true
 	validates :close_date, :quiz_close_date => true
 
-  attr_accessible :close_date, :duration, :release_date, :name
+  attr_accessible :close_date, :duration, :release_date, :name, :autograde
 
   def possible_points
   	self.questions.inject(0) { |sum, question| sum + question.points } 

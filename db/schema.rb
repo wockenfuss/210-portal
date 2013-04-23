@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422223542) do
+ActiveRecord::Schema.define(:version => 20130423031303) do
 
   create_table "answers", :force => true do |t|
     t.string   "content",      :null => false
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20130422223542) do
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
     t.boolean  "graded",     :default => false
+    t.integer  "score",      :default => 0
   end
 
   create_table "gradebooks", :force => true do |t|
@@ -53,11 +54,12 @@ ActiveRecord::Schema.define(:version => 20130422223542) do
 
   create_table "quizzes", :force => true do |t|
     t.integer  "duration"
-    t.datetime "release_date", :null => false
+    t.datetime "release_date",                    :null => false
     t.datetime "close_date"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-    t.string   "name",         :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.string   "name",                            :null => false
+    t.boolean  "autograde",    :default => false
   end
 
   create_table "responses", :force => true do |t|

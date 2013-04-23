@@ -7,7 +7,7 @@
 					<%= attempt.quiz.name%>
 					<span>–</span>
 					<% if attempt.graded? %>
-						<span><%= "Grade: #{calculated_grade(attempt)}"%></span>
+						<span><%= "Grade: #{attempt.score} / #{attempt.quiz.possible_points}"%></span>
 					<% else %>
 						<span><%= "Not yet graded" %></span>
 					<% end %>

@@ -1,0 +1,18 @@
+<ul>
+	<% question.answers.each do |answer| %>
+  	<li>
+      <span><%= response_field.radio_button :answer_id, answer.id%></span>
+      <%= answer.content %>
+    </li>
+	<% end %>
+</ul>
+
+<% if !current_response(@attempt, question).new_record? %>
+	<div>
+		<span>Grade: </span><%= response_field.text_field :points, :class => "points", :value => grade_question(question, current_response(@attempt, question))%> <span><%= " / #{question.points}" %></span>	
+	</div>
+<% end %>
+
+<%= response_field.hidden_field :question_id, :value => question.id %>
+<%= response_field.hidden_field :user_id, :value => @attempt.user_id %>
+<%= response_field.hidden_field :attempt_id, :value => @attempt.id %>
