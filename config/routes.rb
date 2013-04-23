@@ -2,7 +2,7 @@ Portal::Application.routes.draw do
 
   resources :responses, :only => [:new, :create]
   resources :attempts, :only => [:show, :update, :destroy, :edit]
-  resources :answers, :only => [:show, :index]
+  resources :answers, :only => [:show, :index, :edit]
   resources :questions, :except => [:show]
   resources :quizzes
 

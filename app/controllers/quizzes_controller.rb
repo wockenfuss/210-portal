@@ -34,9 +34,7 @@ class QuizzesController < ApplicationController
 	def edit
 		@quiz = Quiz.find(params[:id])
 		@questions = @quiz.questions.order("created_at ASC")
-		@question = Question.new
-		@answer = Answer.new
-		respond_with(@quiz, @question, @answer)
+		respond_with(@quiz, @questions)#, @question)
 	end
 
 	def update
@@ -72,9 +70,6 @@ class QuizzesController < ApplicationController
 		end
 		string
 	end
-
-
-
 
 	def check_for_cancel
 		if params[:commit] == 'Cancel'

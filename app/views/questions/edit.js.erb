@@ -1,6 +1,6 @@
 var $form = $('#addQuestionForm');
 $form.html("");
-$form.append('<%= j render :partial => "questions/edit", :locals => { :question => @question, :quiz => @quiz, :answer => @answer } %>');
+$form.append('<%= j render :partial => "questions/edit", :locals => { :question => @question, :quiz => @quiz } %>');
 var name = '<%= @question.name %>';
 if ( $form.is(':visible') ) {
 	$('.questionLinks').not(':contains("' + name + '")').parent().removeClass('disabledLinks')
@@ -24,4 +24,8 @@ if ( $form.is(':visible') ) {
 
 	$form.slideToggle();
 	$('.questionLinks:contains("' + name + '")').parent().next().css('display', 'inline-block');
+	if ( $('#question_multiple_choice_true').prop('checked') === true ) {
+		$('#answersForm').slideToggle();
+	}
 }
+myApp.multipleChoiceQuestion();

@@ -2,33 +2,42 @@
 <%= form_for @question, :remote => true do |f| %>
   <div id="radioButtons">
     <div class="inline">
-      <%= f.radio_button "multiple_choice", "false", :checked => true %>
+      <%= f.radio_button "multiple_choice", "false" %>
       <%= f.label :essay, 'Essay' %>
     </div>
     <div class="inline">
-      <%= f.radio_button "multiple_choice", "true", :checked => false %>
+      <%= f.radio_button "multiple_choice", "true" %>
       <%= f.label :multiple_choice, 'Multiple Choice' %>
     </div>  
   </div>
   
 	<div class="inline">
     <%= f.label :name %>
-    <%= f.text_field :name, :placeholder => "Enter question name"%>
+    <%= f.text_field :name, :placeholder => "Enter question name", :class => "questionText"%>
   </div>
   <div class="inline">
     <%= f.label :points %>
-    <%= f.text_field :points %>
+    <%= f.text_field :points, :class => "questionText" %>
   </div>
 	<div class="inline textArea">
     <%= f.label :content %>
-    <%= f.text_area :content %>
+    <%= f.text_area :content, :class => "questionText" %>
   </div>
-
-
-  <div><%= f.submit %></div>
-	<%= hidden_field_tag :quiz_id, @quiz.id %>
-<% end %>
 
   <div id="answersForm">
-    <%= render 'answers/new', :answer => answer %>
+    <div id="answerErrors"></div>
+    <% if @answers %>
+    <% @answers.each_with_index do |answer, answer_number| %>
+      <%= f.fields_for :answers, answer do |answer_field| %>
+         <%= render 'answers/form', :answer_field => answer_field, :question => @question, :answer_number => answer_number, :f => f, :answer => answer %>
+      <% end %>
+    <% end %>  
+    <% end %>
+
   </div>
+
+  <div><%= f.submit %></div>
+  <%= hidden_field_tag :quiz_id, @quiz.id %>
+  <%= hidden_field_tag :question_id, @question.id %> 
+
+<% end %>

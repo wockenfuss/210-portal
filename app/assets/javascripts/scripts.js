@@ -22,5 +22,11 @@
 
 	};
 
+	myApp.multipleChoiceQuestion = function() {
+		$('input[name="question[multiple_choice]"]').on('change', function() {
+			$('#answersForm').slideToggle();
+		});
+	};
+
 })(window.myApp = window.myApp || {}, jQuery);
 

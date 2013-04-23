@@ -1,5 +1,5 @@
 class Attempt < ActiveRecord::Base
-	has_many :responses
+	has_many :responses, :dependent => :destroy
 	belongs_to :user
 	belongs_to :quiz
 	accepts_nested_attributes_for :responses, :allow_destroy => true
