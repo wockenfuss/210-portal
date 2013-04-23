@@ -22,15 +22,8 @@ class Attempt < ActiveRecord::Base
   end
 
   def grade
-    score = 0
-    self.responses.each do |response|
-      # response.calculate_points
-      if response.correct_answer?
-        response.points = response.question.points
-      else
-        response.points = 0
-      end
-      score += response.points
+    score = self.responses.inject(0) do |sum, response|
+      sum + response.calculate_points
     end
     self.update_attributes(:score => score)
     self.update_attributes(:graded => true) if self.quiz.autograde

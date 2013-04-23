@@ -1,9 +1,9 @@
 	<div>
     <%= answer_field.label "Choice #{answer_number + 1}:" %>
     <%= answer_field.text_field :content, :placeholder => "Enter answer", :class => "inline answersField" %>
-    <% if question.multiple_choice %>
+    <!-- <#% if question.multiple_choice %> -->
     	<%= answer_field.hidden_field :index_number, :value => answer_number %>
-    <% end %>
+    <!-- <#% end %> -->
     <div class="inline">
       <span><%= f.radio_button :correct_answer, answer_number %></span>
     </div>
