@@ -6,7 +6,11 @@
 				<div class="attemptQuestions">
 					<li><%= "Question #{index + 1}: #{question.content}" %></li>
 					<%= f.fields_for :responses, current_response(@attempt, question) do |response_field| %>
-						<%= render 'responses/form', :response_field => response_field, :question => question %>
+						<% if question.correct_answer_id %>
+							<%= render 'responses/mc_form', :response_field => response_field, :question => question %>
+						<% else %>
+							<%= render 'responses/essay_form', :response_field => response_field, :question => question %>
+						<% end %>
 					<% end %>
 				</div>
 			<% end %>	
@@ -15,6 +19,9 @@
 			<% if !current_response(@attempt, @quiz.questions.first).new_record? %>
 				<span>Mark as graded?</span>
 				<%= f.check_box :graded, {}, true, false %>
+				<div>
+					<span>Quiz Score: </span><%= f.text_field :score, :class => "points"%> <span><%= " / #{@quiz.possible_points}" %></span>	
+				</div>
 			<% end %>	
 		</div>
 	

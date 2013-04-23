@@ -1,9 +1,0 @@
-<%= response_field.text_area :content %>
-<% if !current_response(@attempt, question).new_record? %>
-	<div>
-		<span>Grade: </span><%= response_field.text_field :points, :class => "points"%> <span><%= " / #{question.points}" %></span>	
-	</div>
-<% end %>
-<%= response_field.hidden_field :question_id, :value => question.id %>
-<%= response_field.hidden_field :user_id, :value => @attempt.user_id %>
-<%= response_field.hidden_field :attempt_id, :value => @attempt.id %>
