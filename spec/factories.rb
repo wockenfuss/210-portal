@@ -38,4 +38,10 @@ FactoryGirl.define do
 		points 0
 	end
 
+	factory :answer do
+		content { Faker::Lorem.sentence(word_count = 3, supplemental = false ) }
+		question_id 1
+		index_number 1
+	end
+
 end

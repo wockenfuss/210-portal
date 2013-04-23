@@ -42,7 +42,7 @@ class QuestionsController < ApplicationController
 	def update
 		@question = Question.find(params[:id])
 		answers_params = params[:question].delete('answers_attributes')
-		Answer.update_from_question(answers_params) if params[:question][:multiple_choice]
+		update_answers(answers_params) if params[:question][:multiple_choice]
 		p params
 		if @question.update_attributes(params[:question])
 			flash[:notice] = "Question successfully updated"
@@ -61,6 +61,15 @@ class QuestionsController < ApplicationController
 		@question.destroy
 		flash[:notice] = "Successfully deleted"
 		js_redirect_to edit_quiz_path(@quiz)
+	end
+
+	private
+
+	def update_answers(params)
+		  params.each do |_, param|
+      answer = Answer.find(param[:id])
+      answer.update_attributes(param)
+    end
 	end
 
 end
