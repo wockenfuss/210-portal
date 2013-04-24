@@ -1,16 +1,20 @@
 var $form = $('#addQuestionForm');
 $form.html("");
 $form.append('<%= j render :partial => "questions/edit", :locals => { :question => @question, :quiz => @quiz } %>');
-var name = '<%= @question.name %>';
+
+var questionId = '<%= @question.id %>';
+var $selectedLink = $('[data-question="' + questionId + '"]');
+var $nonselectedLinks = $('.questionLinks').not('[data-question="' + questionId + '"]');
+
 if ( $form.is(':visible') ) {
-	$('.questionLinks').not(':contains("' + name + '")').parent().removeClass('disabledLinks')
-	.unbind('click');
+	$nonselectedLinks.parent().removeClass('disabledLinks')
+		.unbind('click');
 	$('#linkbar a').removeClass('disabledLinks')
-	.unbind('click');
+		.unbind('click');
 	$form.slideToggle();
-	$('.questionLinks:contains("' + name + '")').parent().next().hide();
+	$selectedLink.parent().next().hide();
 } else {
-	$('.questionLinks').not(':contains("' + name + '")').parent().addClass('disabledLinks')
+	$nonselectedLinks.parent().addClass('disabledLinks')
 		.bind('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
@@ -23,7 +27,8 @@ if ( $form.is(':visible') ) {
 		});
 
 	$form.slideToggle();
-	$('.questionLinks:contains("' + name + '")').parent().next().css('display', 'inline-block');
+	$selectedLink.parent().next().css('display', 'inline-block');
+
 	if ( $('#question_multiple_choice_true').prop('checked') === true ) {
 		$('#answersForm').slideToggle();
 	}
