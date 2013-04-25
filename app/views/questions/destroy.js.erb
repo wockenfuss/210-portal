@@ -1,0 +1,7 @@
+$('#questionContainer').html("");
+$('#questionContainer').append('<%= j render :partial => "questions/index", :locals => { :questions => @questions } %>');
+$('.questionText, .answersField').val("");
+$('input[name="question[correct_answer]"]').prop('checked', false);
+$('#addQuestionForm').slideToggle();
+$('#linkbar a').removeClass('disabledLinks')
+		.unbind('click');
