@@ -28,5 +28,12 @@
 		});
 	};
 
+	// myApp.listQuestions = function() {
+	// 	$('#questionContainer').html("");
+	// 	$('#questionContainer').append('<%= j render :partial => "questions/index", :locals => { :questions => @questions } %>');
+	// 	$('.questionText, .answersField').val("");
+	// 	$('input[name="question[correct_answer]"]').prop('checked', false);
+	// };
+
 })(window.myApp = window.myApp || {}, jQuery);
 
