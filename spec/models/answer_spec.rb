@@ -27,10 +27,10 @@ describe Answer do
 		end
 	end
 
-	describe ".create_answers" do
+	describe ".new_answers" do
 		let(:question) { FactoryGirl.create(:question) }
 		it "creates a list of new answers" do
-			answers = Answer.create_answers(question)
+			answers = Answer.new_answers(question)
 			answers.first.id.should be_nil
 			answers.last.id.should be_nil
 		end

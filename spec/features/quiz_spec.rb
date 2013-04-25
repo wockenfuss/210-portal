@@ -45,6 +45,12 @@ describe "Quiz", :js => true do
 				page.should have_content("Create New Quiz")
 			end
 
+			it "allows user to cancel out of form" do
+				visit new_quiz_path
+				click_button "Cancel"
+				page.should have_content "Quizzes"
+			end
+
 			context "for a valid quiz" do
 				before(:each) do
 					visit new_quiz_path
@@ -56,7 +62,9 @@ describe "Quiz", :js => true do
 				end
 
 				it "allows for creation of new quiz" do
-					pending
+					within('form') do
+						find_field("Name").value.should eq "Blah"
+					end
 				end
 
 				it "redirects to quiz edit page on creation of new quiz" do
@@ -143,49 +151,65 @@ describe "Quiz", :js => true do
 
 	end
 
-	# describe "quiz#show" do
-	# 	let(:quiz) { FactoryGirl.create(:quiz) }
+	describe "quiz#show" do
+		let(:quiz) { FactoryGirl.create(:quiz) }
 
-	# 	context "when no user is signed in" do
-	# 		it "requires the user to sign in first" do
-	# 			visit quiz_path(quiz)
-	# 			page.should have_content("You need to sign in or sign up before continuing")
-	# 		end
-	# 	end
+		context "when no user is signed in" do
+			it "requires the user to sign in first" do
+				visit quiz_path(quiz)
+				page.should have_content("You need to sign in or sign up before continuing")
+			end
+		end
 
-	# 	context "when user is not an admin" do
-	# 		before(:each) do
-	# 			@user = FactoryGirl.create(:user)
+		context "when user is not an admin" do
+			before(:each) do
+				@user = FactoryGirl.create(:user)
 				# @user.skip_confirmation!
-	# 			login_as @user, :scope => :user	
-	# 		end
+				login_as @user, :scope => :user	
+			end
 
-	# 		after(:each) do
-	# 			logout(@user)
-	# 		end
+			after(:each) do
+				logout(@user)
+			end
 			
-	# 		it "doesn't allow user access" do 
-	# 			visit quiz_path(quiz)
-	# 			page.should have_content("You are not authorized to access this page")
-	# 		end
-	# 	end
+			it "doesn't allow user access" do 
+				visit quiz_path(quiz)
+				page.should have_content("You are not authorized to access this page")
+			end
+		end
 
-	# 	context "when user is an admin" do
-	# 		before(:each) do
-	# 			@admin = FactoryGirl.create(:user)
+		context "when user is an admin" do
+			before(:each) do
+				@admin = FactoryGirl.create(:user)
 				# @admin.skip_confirmation!
-	# 			@admin.add_role(:admin)
-	# 			login_as @admin, :scope => :user
-	# 			visit quiz_path(quiz)
-	# 		end			
+				@admin.add_role(:admin)
+				login_as @admin, :scope => :user
+			end			
 
-	# 		it "allows the user to navigate to the edit page" do
-	# 			click_button "Edit"
-	# 			page.should have_content("Edit Quiz")
-	# 			find_field('Name').value.should eq @quiz1.name
-	# 		end
-	# 	end
-	# end
+			context "when attempts exist" do
+				before(:each) do
+					@user = FactoryGirl.create(:user)
+					@attempt = FactoryGirl.create(:attempt, :user_id => @user.id, :quiz_id => quiz.id)
+					visit quiz_path(quiz)
+				end
+
+				it "displays a list of quiz attempts" do
+					page.should have_content(@user.email)
+				end
+
+				it "displays a link to grade the quiz" do
+					page.should have_link "Grade Attempt", href: edit_attempt_path(@attempt)
+				end
+
+			end
+
+			it "displays a message if no attempts have been made" do
+				visit quiz_path(quiz)
+				page.should have_content("There are no attempts for this quiz.")
+			end
+
+		end
+	end
 
 	describe "quiz#edit" do
 		let(:quiz) { FactoryGirl.create(:quiz) }
@@ -262,9 +286,6 @@ describe "Quiz", :js => true do
 				page.should have_content("Successfully deleted")
 			end
 
-			it "allows user to add or remove questions" do
-				pending
-			end
 		end
 
 	end
