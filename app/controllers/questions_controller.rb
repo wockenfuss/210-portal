@@ -39,17 +39,19 @@ class QuestionsController < ApplicationController
 	
 	def update
 		@question = Question.find(params[:id])
-		answers_params = params[:question].delete('answers_attributes')
-		create_or_update_answers(answers_params, @question) if params[:question][:multiple_choice]
+		@quiz = @question.quizzes.first
+		unless params[:question][:multiple_choice] == "true"
+			params[:question][:answers_attributes].each do |_, attributes|
+				attributes.merge!(:_destroy => '1')
+			end
+		end
 		if @question.update_attributes(params[:question])
-			flash[:notice] = "Question successfully updated"
-			js_redirect_to(edit_quiz_path(@question.quizzes.first))
+			# flash[:notice] = "Question successfully updated"
+			@questions = @quiz.questions
+			respond_with @questions
 		else
 			js_alert(@question)
 		end
-	end
-
-	def index
 	end
 
 	def destroy
@@ -58,21 +60,6 @@ class QuestionsController < ApplicationController
 		@question.destroy
 		@questions = @quiz.questions
 		respond_with @questions
-		# flash[:notice] = "Successfully deleted"
-		# js_redirect_to edit_quiz_path(@quiz)
-	end
-
-	private
-
-	def create_or_update_answers(params, question)
-		params.each do |_, param|
-			if param[:id]
-      	answer = Answer.find(param[:id])
-      	answer.update_attributes(param)
-      else
-      	Answer.new_from_question(question, params)
-      end
-    end
 	end
 
 end

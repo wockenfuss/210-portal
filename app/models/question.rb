@@ -5,6 +5,7 @@ class Question < ActiveRecord::Base
 
 	validates :content, :presence => true
   validates :points, :presence => true
+  # validates :correct_answer_id, :presence => true
   # validates_associated :answers
 	accepts_nested_attributes_for :answers, :allow_destroy => true
 

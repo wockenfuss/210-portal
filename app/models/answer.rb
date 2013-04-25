@@ -2,6 +2,7 @@ class Answer < ActiveRecord::Base
 	belongs_to :question
 	
   validates :content, :presence => true
+  
   attr_accessible :content, :question_id, :index_number
 
   def self.new_from_question(question, params)
