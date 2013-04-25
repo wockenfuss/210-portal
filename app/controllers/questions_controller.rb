@@ -4,16 +4,14 @@ class QuestionsController < ApplicationController
 	def new
 		@question = Question.new(:multiple_choice => false)
 		@quiz = Quiz.find(params[:quiz_id])
-		@answers = Answer.create_answers(@question)
-		respond_with @question, @quiz, @answers
+		@answers = Answer.new_answers(@question)
+		respond_with @question#, @quiz, @answers
 	end
 
 	def create
 		@quiz = Quiz.find(params[:quiz_id])
-		answers_params = params[:question].delete('answers_attributes')
 		@question = Question.new(params[:question])
 		if @question.save
-			Answer.new_from_question(@question, answers_params) if params[:question][:multiple_choice]
 			correct_answer = Answer.where(:question_id => @question.id, :index_number => @question.correct_answer).first
 			@question.update_attributes(:correct_answer_id => correct_answer.id) if correct_answer
 			@quiz.questions << @question
@@ -34,7 +32,7 @@ class QuestionsController < ApplicationController
 			@question.multiple_choice = true
 		else
 			@question.multiple_choice = false
-			@answers = Answer.create_answers(@question)
+			@answers = Answer.new_answers(@question)
 		end
 		respond_with @question, @quiz, @answers
 	end
@@ -42,8 +40,7 @@ class QuestionsController < ApplicationController
 	def update
 		@question = Question.find(params[:id])
 		answers_params = params[:question].delete('answers_attributes')
-		update_answers(answers_params) if params[:question][:multiple_choice]
-		p params
+		create_or_update_answers(answers_params, @question) if params[:question][:multiple_choice]
 		if @question.update_attributes(params[:question])
 			flash[:notice] = "Question successfully updated"
 			js_redirect_to(edit_quiz_path(@question.quizzes.first))
@@ -59,16 +56,22 @@ class QuestionsController < ApplicationController
 		@question = Question.find(params[:id])
 		@quiz = @question.quizzes.first
 		@question.destroy
-		flash[:notice] = "Successfully deleted"
-		js_redirect_to edit_quiz_path(@quiz)
+		@questions = @quiz.questions
+		respond_with @questions
+		# flash[:notice] = "Successfully deleted"
+		# js_redirect_to edit_quiz_path(@quiz)
 	end
 
 	private
 
-	def update_answers(params)
-		  params.each do |_, param|
-      answer = Answer.find(param[:id])
-      answer.update_attributes(param)
+	def create_or_update_answers(params, question)
+		params.each do |_, param|
+			if param[:id]
+      	answer = Answer.find(param[:id])
+      	answer.update_attributes(param)
+      else
+      	Answer.new_from_question(question, params)
+      end
     end
 	end
 

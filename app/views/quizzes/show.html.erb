@@ -1,14 +1,6 @@
 <%= link_to "<-- Back to quiz list", quizzes_path %>
 <h2><%= @quiz.name %></h2>
-<!--<#% if @quiz.questions %>
-<ul>
-	<#% @quiz.questions.each_with_index do |question, index| %>
-		<li><#%= "Question #{index + 1}: #{question.content}" %></li>
-		<#%= text_area_tag :answer %>
-	<#% end %>
-</ul>
-<#%= submit_tag "Submit quiz", :disabled => true %>
-<#% end %>-->
+
 <% if @quiz.attempts != [] %>
 <ul>
 	<% @quiz.attempts.each do |attempt| %>

@@ -3,6 +3,7 @@
     <%= answer_field.text_field :content, :placeholder => "Enter answer", :class => "inline answersField" %>
     <!-- <#% if question.multiple_choice %> -->
     	<%= answer_field.hidden_field :index_number, :value => answer_number %>
+      <%= answer_field.hidden_field :question_id, :value => question.id %>
     <!-- <#% end %> -->
     <div class="inline">
       <span><%= f.radio_button :correct_answer, answer_number %></span>

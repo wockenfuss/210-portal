@@ -25,13 +25,12 @@
   </div>
 
   <div id="answersForm">
-    <div id="answerErrors"></div>
     <% if @answers %>
-    <% @answers.each_with_index do |answer, answer_number| %>
-      <%= f.fields_for :answers, answer do |answer_field| %>
-         <%= render 'answers/form', :answer_field => answer_field, :question => @question, :answer_number => answer_number, :f => f, :answer => answer %>
-      <% end %>
-    <% end %>  
+      <% @answers.each_with_index do |answer, answer_number| %>
+        <%= f.fields_for :answers, answer do |answer_field| %>
+           <%= render 'answers/form', :answer_field => answer_field, :question => @question, :answer_number => answer_number, :f => f, :answer => answer %>
+        <% end %>
+      <% end %>  
     <% end %>
 
   </div>
