@@ -16,10 +16,12 @@ Portal::Application.routes.draw do
   get "attempts/new/:quiz_id/:user_id" => "attempts#new", :as => "new_attempt"
   get "/users/:id" => "users#show", :as => "user_root"
   get "/questions/:quiz_id/new" => "questions#new", :as => "question_new"
+  get "/users/:user_id/gradebook" => "gradebooks#show", :as => "user_gradebook"
 
-  resources :users, :only => [:index] do
-    resources :gradebooks, :only => [:show]
-  end
+
+  resources :users, :only => [:index]# do
+    # resources :gradebooks, :only => [:show]
+  # end
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
