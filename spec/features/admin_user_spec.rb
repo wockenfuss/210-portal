@@ -30,6 +30,7 @@ describe "Roles", :js => true do
 			visit users_path
 			page.should_not have_content("You are not authorized to access this page")
 		end
+
 	end
 
 	context "when no user is logged in" do

@@ -119,7 +119,7 @@ describe "Question", :js => true do
       end
     end
 
-    it "displays a warning if update is invalid" do
+    it "displays a warning if question is invalid" do
       within('#addQuestionForm') do
         fill_in "Content", :with => ""
         find(:css, 'input[type="submit"]').click
@@ -143,28 +143,54 @@ describe "Question", :js => true do
       @essay_question.answers.count.should eq 4
     end
 
-    it "allows user to change question from multiple choice to essay" do
-      question = FactoryGirl.create(:question)
-      @quiz.questions << question
-      4.times { FactoryGirl.create(:answer, :question_id => question.id) }
-      visit edit_quiz_path(@quiz)
-      find(:css, 'a[data-question="' + question.id.to_s + '"]').click
-      find("#question_multiple_choice_false").click
-      within('#addQuestionForm') do
-        find(:css, 'input[type="submit"]').click
-      end
-      visit edit_quiz_path(@quiz)
-      find(:css, 'a[data-question="' + question.id.to_s + '"]').click
-      find(:css, "#question_multiple_choice_false").should be_checked
-      question.answers.count.should eq 0
-    end
-
     it "allows user to delete questions" do
       expect do
         find(:css, '.deleteButton').click
         page.driver.browser.switch_to.alert.accept
         visit edit_quiz_path(@quiz)
       end.to change(Question, :count).by -1
+    end
+
+    context "multiple choice question" do
+      before(:each) do
+        @mc_question = FactoryGirl.create(:question)
+        @quiz.questions << @mc_question
+        4.times { FactoryGirl.create(:answer, :question_id => @mc_question.id) }
+        visit edit_quiz_path(@quiz)
+        find(:css, 'a[data-question="' + @mc_question.id.to_s + '"]').click
+      end
+
+      it "allows user to change question from multiple choice to essay" do
+        find("#question_multiple_choice_false").click
+        within('#addQuestionForm') do
+          find(:css, 'input[type="submit"]').click
+        end
+        visit edit_quiz_path(@quiz)
+        find(:css, 'a[data-question="' + @mc_question.id.to_s + '"]').click
+        find(:css, "#question_multiple_choice_false").should be_checked
+        @mc_question.answers.count.should eq 0
+      end
+
+      it "displays a warning if answers are invalid" do
+        fill_in("question_answers_attributes_0_content", :with => "")
+        within('#addQuestionForm') do
+          find(:css, 'input[type="submit"]').click
+        end
+        page.should have_content("Answers content can't be blank")
+      end
+
+      it "allows user to change correct answer" do
+        pending
+      end
+
+      it "deletes associated answers when multiple choice question is deleted" do
+        expect do
+          find(:css, 'a[href="/questions/' + @mc_question.id.to_s + '"]').click
+          page.driver.browser.switch_to.alert.accept
+          visit edit_quiz_path(@quiz)
+        end.to change(Answer, :count).by -4
+      end
+
     end
 
   end
