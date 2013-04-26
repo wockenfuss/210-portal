@@ -4,33 +4,8 @@ $form.append('<%= j render :partial => "questions/edit", :locals => { :question 
 
 var questionId = '<%= @question.id %>';
 var $selectedLink = $('[data-question="' + questionId + '"]');
-var $nonselectedLinks = $('.questionLinks').not('[data-question="' + questionId + '"]');
+var $nonselectedLinks = $('#linkbarLinks a, .questionLinks').not('[data-question="' + questionId + '"]');
 
-if ( $form.is(':visible') ) {
-	$nonselectedLinks.parent().removeClass('disabledLinks')
-		.unbind('click');
-	$('#linkbar a').removeClass('disabledLinks')
-		.unbind('click');
-	$form.slideToggle();
-	$selectedLink.parent().next().hide();
-} else {
-	$nonselectedLinks.parent().addClass('disabledLinks')
-		.bind('click', function(e) {
-			e.preventDefault();
-			e.stopPropagation();
-		});
+myApp.toggleQuestionLinksAndForms();
 
-	$('#linkbar a').addClass('disabledLinks')
-		.bind('click', function(e) {
-			e.preventDefault();
-			e.stopPropagation();
-		});
-
-	$form.slideToggle();
-	$selectedLink.parent().next().css('display', 'inline-block');
-
-	if ( $('#question_multiple_choice_true').prop('checked') === true ) {
-		$('#answersForm').slideToggle();
-	}
-}
 myApp.multipleChoiceQuestion();

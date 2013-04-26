@@ -1,9 +1,5 @@
-$('#questionContainer').html("");
-$('#questionContainer').append('<%= j render :partial => "questions/index", :locals => { :questions => @questions } %>');
-$('.questionText, .answersField').val("");
-$('input[name="question[correct_answer]"]').prop('checked', false);
-$('.questionLinks').parent().addClass('disabledLinks')
-	.bind('click', function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-	});
+$('#questionContainer').html("")
+	.append('<%= j render :partial => "questions/index", :locals => { :questions => @questions } %>');
+
+myApp.clearForm($('#addQuestionForm form'));
+myApp.disableLink($('.questionLinks'));

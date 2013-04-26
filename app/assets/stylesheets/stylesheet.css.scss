@@ -130,13 +130,21 @@ input[type="submit"].button {
 
 #linkbar {
 	width: 100%;
-	text-align: center;
 	margin-top: 1%;
 	margin-bottom: 2%;
 	border-bottom: 2px solid #999;
-	h2 {
+/*	h2 {
 		display: inline;
-	}
+	}*/
+}
+
+.linkbarLinks {
+	width: 100%;
+	text-align: center;
+}
+
+.linkbarTitle {
+	margin: 0 0 2% 3%;
 }
 
 .linkbar_left {
@@ -344,12 +352,15 @@ form {
 	/*margin-left: 5%;*/
 }
 
-#linkbar > a.disabledLinks {
+#linkbarLinks.disabledLinks {
 	opacity: .4;
-	&:hover {
-		color: #666;
-		cursor: default;
+	a {
+		&:hover {
+			color: #666;
+			cursor: default;
+		}
 	}
+		
 }
 
 #addQuestionForm {

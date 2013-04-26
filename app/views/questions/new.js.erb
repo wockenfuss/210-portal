@@ -1,16 +1,10 @@
 var $form = $('#addQuestionForm');
-$form.html("");
-$form.append('<%= j render :partial => "questions/new", :locals => { :question => @question, :quiz => @quiz, :answer => @answer } %>');
+var $links = $('.questionLinks');
 
-if ( $form.is(':visible') ) {
-	$('.questionLinks').parent().removeClass('disabledLinks')
-			.unbind('click');
-} else {
-	$('.questionLinks').parent().addClass('disabledLinks')
-		.bind('click', function(e) {
-			e.preventDefault();
-			e.stopPropagation();
-		});
-}
-$form.slideToggle();
+myApp.disableLinksConditionally($form, $links);
+
+$form.html("")
+	.append('<%= j render :partial => "questions/new", :locals => { :question => @question, :quiz => @quiz, :answer => @answer } %>')
+	.slideToggle();
+
 myApp.multipleChoiceQuestion();
