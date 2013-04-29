@@ -153,9 +153,13 @@ describe "Question", :js => true do
 
     context "multiple choice question" do
       before(:each) do
+        @answers = Hash.new
         @mc_question = FactoryGirl.create(:question)
         @quiz.questions << @mc_question
-        4.times { FactoryGirl.create(:answer, :question_id => @mc_question.id) }
+        4.times do |index|
+          @answers[index] = FactoryGirl.create(:answer, :question_id => @mc_question.id, :index_number => index)
+        end
+        @mc_question.update_attributes(:correct_answer_id => @answers[0].id)
         visit edit_quiz_path(@quiz)
         find(:css, 'a[data-question="' + @mc_question.id.to_s + '"]').click
       end
@@ -180,7 +184,15 @@ describe "Question", :js => true do
       end
 
       it "allows user to change correct answer" do
-        pending
+        find(:css, '#question_correct_answer_0').should be_checked 
+        within('#answersForm') do
+          find('#question_correct_answer_3').click
+        end
+        within('#addQuestionForm') do
+          find(:css, 'input[type="submit"]').click
+        end
+        find(:css, 'a[data-question="' + @mc_question.id.to_s + '"]').click        
+        find(:css, '#question_correct_answer_3').should be_checked 
       end
 
       it "deletes associated answers when multiple choice question is deleted" do
