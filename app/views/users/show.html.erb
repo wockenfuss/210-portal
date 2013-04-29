@@ -1,17 +1,20 @@
 <h2><%= "This week's schedule" %></h2>
 <p><%= @user.email %></p>
 <% if @quizzes %>
-	<% @quizzes.each do |quiz| %>
-	<p>
-		<%= "#{quiz.name}––Duration: #{quiz.duration} minutes. Quiz closes in #{time_ago_in_words(quiz.close_date.to_date)}." %> 
-		<!-- <# if @user.attempts.where(:quiz_id => quiz.id) == [] %>  -->
-		<% unless @user.attempted?(quiz) %> 
-			<%= link_to "Take Quiz", new_attempt_path(quiz, @user) %>
-		<% else %>
-			<span class="green">You've completed this quiz.</span>
-		<% end %>
-	</p>
-	<% end %>
+	<ul>
+		<% @quizzes.each do |quiz| %>
+			<li>
+				<%= "#{quiz.name}––Duration: #{quiz.duration} minutes."%>
+				<span><%= "Quiz closes in #{time_ago_in_words(quiz.close_date.to_date)}." %> </span>   
+				<!-- <# if @user.attempts.where(:quiz_id => quiz.id) == [] %>  -->
+				<% unless @user.attempted?(quiz) %> 
+					<span><%= link_to "Take Quiz", new_attempt_path(quiz, @user) %></span>
+				<% else %>
+					<span class="green">You've completed this quiz.</span>
+				<% end %>
+			</li>
+		<% end %>	
+	</ul>
 <% else %>
 <p><%= "There are no scheduled items this week." %> </p>
 <% end %>
