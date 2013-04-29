@@ -12,4 +12,8 @@ class Quiz < ActiveRecord::Base
   def possible_points
   	self.questions.inject(0) { |sum, question| sum + question.points } 
   end
+
+  def released?
+  	self.release_date < Time.now && self.close_date > Time.now
+  end
  end
