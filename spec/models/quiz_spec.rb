@@ -43,4 +43,20 @@ describe Quiz do
 			@quiz.released?.should be_false
 		end
 	end
+
+	describe ".released_quizzes" do
+		before(:each) do
+			@quiz1 = FactoryGirl.create(:quiz)
+			@quiz2 = FactoryGirl.create(:quiz)
+			@unreleased = FactoryGirl.create(:quiz, :release_date => (Time.now - 10000), :close_date => (Time.now - 500))
+		end
+
+		it "returns a list of released quizzes" do
+			Quiz.released_quizzes.should include(@quiz1, @quiz2)
+		end
+
+		it "does not return unreleased quizzes" do
+			Quiz.released_quizzes.should_not include @unreleased
+		end
+	end
 end

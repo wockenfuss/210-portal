@@ -17,4 +17,8 @@ class Quiz < ActiveRecord::Base
   def released?
   	release_date < Time.now && close_date > Time.now
   end
+
+  def self.released_quizzes
+		Quiz.where("release_date < ? AND close_date > ?", Time.now, Time.now)
+  end
 end

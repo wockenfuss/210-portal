@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 	
 	def show
 		@user = User.find(params[:id])
-		@quizzes = Quiz.where("release_date <= :current_time AND close_date >= :current_time", { :current_time => Time.now })
+		@quizzes = Quiz.released_quizzes
 	end
 
 	def index
