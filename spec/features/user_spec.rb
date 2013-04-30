@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "User" do
-	require Warden::Test::Helpers
+	include Warden::Test::Helpers
 
 	describe "users#show" do
 		context "when not signed in" do

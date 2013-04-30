@@ -14,7 +14,7 @@ describe Quiz do
 
 	context "custom validations" do
 		it "validates that the closing date is later than the release date" do
-			FactoryGirl.build(:quiz, :release_date => Time.now + 10000).should_not be_valid
+			FactoryGirl.build(:quiz, :release_date => Time.now + 100000).should_not be_valid
 		end
 	end	
 
