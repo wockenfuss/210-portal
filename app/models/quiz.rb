@@ -9,11 +9,12 @@ class Quiz < ActiveRecord::Base
 
   attr_accessible :close_date, :duration, :release_date, :name, :autograde
 
+
   def possible_points
   	self.questions.inject(0) { |sum, question| sum + question.points } 
   end
 
   def released?
-  	self.release_date < Time.now && self.close_date > Time.now
+  	release_date < Time.now && close_date > Time.now
   end
- end
+end

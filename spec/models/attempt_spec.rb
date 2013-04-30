@@ -56,4 +56,18 @@ describe Attempt do
 			@attempt.graded.should be_true
 		end
 	end
+
+	describe "#released" do
+		before(:each) do
+			@attempt.quiz = FactoryGirl.create(:quiz)
+		end
+		it "returns true if attempt belongs to a released quiz" do
+			@attempt.released.should be_true
+		end
+
+		it "returns false if attempt belongs to unreleased quiz" do
+			@attempt.quiz.update_attributes(:release_date => Time.now + 5000)
+			@attempt.released.should be_false
+		end
+	end
 end

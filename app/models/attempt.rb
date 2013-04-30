@@ -4,7 +4,8 @@ class Attempt < ActiveRecord::Base
 	belongs_to :quiz
 	accepts_nested_attributes_for :responses, :allow_destroy => true
 
-  attr_accessible :end_time, :quiz_id, :start_time, :user_id, :graded, :score
+  attr_accessible :end_time, :quiz_id, :start_time, :user_id, :graded, :score#, :released
+  # attr_accessor :released
   validates :quiz_id, :presence => true
   validates :user_id, :presence => true
   validates :start_time, :presence => true
@@ -24,4 +25,13 @@ class Attempt < ActiveRecord::Base
     self.update_attributes(:score => score)
     self.update_attributes(:graded => true) if self.quiz.autograde
   end
+
+  def released?
+    quiz.released?
+  end
+
+  def attempted?
+    self.quiz.attempts.where(:user_id => self.user.id).count != 0
+  end
+
 end

@@ -8,7 +8,7 @@ FactoryGirl.define do
 		name { Faker::Address.street_name }
 		duration { rand(15) + 1 }
 		release_date { Time.now }
-		close_date { Time.now + 1000 }
+		close_date { Time.now + 10000 }
 	end
 
 	factory :question do

@@ -1,11 +1,14 @@
 class AttemptsController < ApplicationController
 	before_filter :store_location
 	before_filter :authenticate_user!
+
 	respond_to :js, :html, :json
 	def new
-		@attempt = Attempt.new
 		@user = User.find(params[:user_id])
 		@quiz = Quiz.find(params[:quiz_id])
+		@attempt = @quiz.attempts.build
+		@user.attempts << @attempt
+		authorize! :new, @attempt
 	end
 
 	def create
