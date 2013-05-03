@@ -19,7 +19,7 @@
 		});
 
     $( ".datepicker" ).datepicker();
-
+    $('#timer').timer();
 	};
 
 	myApp.multipleChoiceQuestion = function() {
@@ -74,6 +74,14 @@
 		}
 	};
 
+	// myApp.removeUserRole = function() {
+	// 	var remote = $.ajax({
+	// 		type: "POST",
+	// 		url: "/users/update",
+	// 		async: false,
+	// 		dataType: 'json'
+	// 	}).responseText;
+	// 	return remote;
+	// };
 
 })(window.myApp = window.myApp || {}, jQuery);
-

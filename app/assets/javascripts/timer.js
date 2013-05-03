@@ -1,92 +1,75 @@
-// (function(myApp, $, undefined) {
+(function( $ ) {
+	var settings = {
+		duration: 5,
+		tick: 1000
+	};
 
-// 	$(document).ready(function() {
-// 		myApp.timer = TimerFactory();
-// 		myApp.timer.init();
-// 		// console.log(makeTime(60000));
-// 	});
+	Number.prototype.toTime = function() {
+		return methods.timeFormat(this);
+	};
 
+	var methods = {
+		init: function( options ) {
+			$.extend( settings, options );
+			settings.target = this;
+			methods.setDuration(this, methods.startTimer);
+		},
+		setDuration: function($target, callback) {
+			$.ajax({
+				url: window.location.pathname,
+				dataType: 'json',
+				type: 'get',
+				success: function(result) {
+					if ( result.duration ) {
+						settings.duration = result.duration;
+					}
+					callback.call(null, $target);
 
-// 	var TimerFactory = function() {
-// 		var timer = {
-// 			init: function() {
-// 				$.ajax({
-// 					url: window.location.pathname,
-// 					dataType: 'json',
-// 					type: 'get',
-// 					success: function(result) {
-// 						if ( result ) {
-// 							$('#timer').html(result.duration.toTime());
-// 						}
-// 					}
-// 				});
-// 			}
-// 		};
-// 		return timer;
-// 	};
+				}
+			});
+		},
+		startTimer: function($target) {
+			settings.startTime = new Date().getTime();
+			settings.millisecondsDuration = settings.duration * 60000;
+			methods.displayTimer($target, settings.millisecondsDuration);
+			setTimeout(methods.tick, settings.tick);
+		},
+		tick: function() {
+			var timePassed = (new Date().getTime()) - settings.startTime;
+			var millisecondsRemaining = settings.millisecondsDuration - timePassed;
+			methods.displayTimer(settings.target, millisecondsRemaining);
+			if ( millisecondsRemaining <= 0 ) {
+				alert("Time's up");
+			} else {
+				setTimeout(methods.tick, settings.tick);
+			}
+		},
+		displayTimer: function($target, millisecondsRemaining) {
+			$target.html(millisecondsRemaining.toTime());
+		},
+		timeFormat: function(milliseconds) {
+			if ( milliseconds < 0 ) {
+				return "00:00";
+			}
+			var tt = milliseconds + 999;
+			var hours = Math.floor(tt/3600000);
+			hours = (hours > 0) ? hours + ":" : "";
+			var minutes = methods.zeroPad(Math.floor( tt/60000 ) % 60);
+			var seconds = methods.zeroPad(Math.floor( tt/1000 ) % 60);
+			return hours + minutes + ":" + seconds;
+		},
+		zeroPad : function(n) {
+			if ( n < 10 ) return "0" + n;
+			return "" + n;
+		}
 
-// 	Number.prototype.toTime = function() {
-// 		return makeTime(this * 60000);
-// 	};
+	};
 
-// 	makeTime = function(milliseconds) {
-// 		if ( milliseconds < 0 ) {
-// 			return "0:00:00";
-// 		}
-// 		var tt = milliseconds + 999;
-// 		return Math.floor( tt/3600000 ) + ":" +
-// 		zeroPad(Math.floor( tt/60000 ) % 60) + ":" +
-// 		zeroPad(Math.floor( tt/1000 ) % 60);
-// 	};
-
-// 	zeroPad = function(n) {
-// 		if ( n < 10 ) return "0" + n;
-// 		return "" + n;
-// 	};
-
-// 	// function startTimer(milliseconds) {
-// 	// 	nextdue = new Date().getTime();
-// 	// 	timeleft = milliseconds;
-// 	// 	runTimer();
-// 	// }
-
-
-
-// 	// function runTimer() {
-// 	// 	$('#timer').html(makeTime(timeleft));
-// 	// 	if (timeleft<=0) {
-// 	// 		alert ("Time's up!");
-// 	// 	} else {
-// 	// 		var timecorr = (new Date().getTime())-nextdue;
-// 	// 		if (timecorr>0 && timecorr<3000) {
-// 	// 	  	timeleft -= (tick+timecorr);
-// 	// 	  	nextdue += tick;
-// 	// 	  	if (timeleft<1) setTimeout ("runTimer()",tick+timeleft);
-// 	// 	  	else setTimeout("runTimer()",Math.max(1,tick-timecorr));
-// 	// 	  }
-// 	// 	  else {
-// 	// 	  	nextdue=(new Date().getTime())+tick;
-// 	// 	  	timeleft-=tick;
-// 	// 	  	if (timeleft<1) setTimeout ("runTimer()",tick+timeleft);
-// 	// 	  	else setTimeout("runTimer()",tick);
-// 	// 	  }
-// 	// 	} 
-// 	// }
-
-// })(window.myApp || {}, jQuery);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  $.fn.timer = function( method ) {
+		if ( typeof method === 'number' || ! method ) {
+      return methods.init.apply( this, [{duration: method}]);
+    } else {
+      $.error( 'Method ' +  method + ' does not exist on jQuery.timer' );
+    }
+  };
+})( jQuery );
