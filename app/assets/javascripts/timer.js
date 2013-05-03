@@ -1,75 +1,82 @@
 (function( $ ) {
-	var settings = {
-		duration: 5,
-		tick: 1000
-	};
-
-	Number.prototype.toTime = function() {
-		return methods.timeFormat(this);
-	};
-
-	var methods = {
-		init: function( options ) {
-			$.extend( settings, options );
-			settings.target = this;
-			methods.setDuration(this, methods.startTimer);
+	var timer = {
+		duration: 5, //default time in minutes
+		tickInterval: 1000,
+		callback: function() {
+			alert("Time's up");
 		},
-		setDuration: function($target, callback) {
-			$.ajax({
-				url: window.location.pathname,
-				dataType: 'json',
-				type: 'get',
-				success: function(result) {
-					if ( result.duration ) {
-						settings.duration = result.duration;
-					}
-					callback.call(null, $target);
-
-				}
-			});
-		},
-		startTimer: function($target) {
-			settings.startTime = new Date().getTime();
-			settings.millisecondsDuration = settings.duration * 60000;
-			methods.displayTimer($target, settings.millisecondsDuration);
-			setTimeout(methods.tick, settings.tick);
+		elapsedTime: function() {
+			return (new Date().getTime()) - this.startTime;
 		},
 		tick: function() {
-			var timePassed = (new Date().getTime()) - settings.startTime;
-			var millisecondsRemaining = settings.millisecondsDuration - timePassed;
-			methods.displayTimer(settings.target, millisecondsRemaining);
+			var millisecondsRemaining = timer.millisecondsDuration - timer.elapsedTime();
+			timer.display(millisecondsRemaining);
 			if ( millisecondsRemaining <= 0 ) {
-				alert("Time's up");
+				timer.target.trigger('out-of-time');
+				// this.callback();
 			} else {
-				setTimeout(methods.tick, settings.tick);
+				setTimeout(timer.tick, timer.tickInterval);
 			}
 		},
-		displayTimer: function($target, millisecondsRemaining) {
-			$target.html(millisecondsRemaining.toTime());
+		display: function(millisecondsRemaining) {
+			timer.target.html(timer.timeFormat(millisecondsRemaining));
 		},
 		timeFormat: function(milliseconds) {
 			if ( milliseconds < 0 ) {
 				return "00:00";
 			}
-			var tt = milliseconds + 999;
-			var hours = Math.floor(tt/3600000);
-			hours = (hours > 0) ? hours + ":" : "";
-			var minutes = methods.zeroPad(Math.floor( tt/60000 ) % 60);
-			var seconds = methods.zeroPad(Math.floor( tt/1000 ) % 60);
-			return hours + minutes + ":" + seconds;
+			var padded = milliseconds + 999;
+			return timer.hours(padded) + timer.minutes(padded) + ":" + timer.seconds(padded);
 		},
-		zeroPad : function(n) {
+		hours: function(time) {
+			var hours = Math.floor(time/3600000);
+			hours = (hours > 0) ? hours + ":" : "";
+			return hours;
+		},
+		minutes: function(time) {
+			return timer.zeroPad(Math.floor( time/60000 ) % 60);
+		},
+		seconds: function(time) {
+			return timer.zeroPad(Math.floor( time/1000 ) % 60);
+		},
+		zeroPad: function(n) {
 			if ( n < 10 ) return "0" + n;
 			return "" + n;
 		}
-
 	};
 
-  $.fn.timer = function( method ) {
-		if ( typeof method === 'number' || ! method ) {
-      return methods.init.apply( this, [{duration: method}]);
+	var bind = function() {
+		timer.target.on('out-of-time', function() {
+			$(this).css('background-color', '#f00');
+			timer.callback();
+		});
+	};
+
+	var methods = {
+		init: function( options ) {
+			if ( Array.prototype.slice.call( arguments, 1 ).length > 0 ) {
+				timer.callback = Array.prototype.slice.call( arguments, 1 )[0];
+			}
+			$.extend(timer, { duration: options });
+			timer.target = this;
+			timer.millisecondsDuration = timer.duration * 60000;
+			bind();
+			timer.display(timer.millisecondsDuration);
+		},
+		start: function() {
+			timer.startTime = new Date().getTime();
+			timer.display(timer.millisecondsDuration);
+			setTimeout(timer.tick, timer.tickInterval);
+		}
+	};
+
+  $.fn.timer = function( option ) {
+		if ( methods[option] ) {
+      return methods[option].apply( this, Array.prototype.slice.call( arguments, 1 ));
+    } else if ( typeof option === 'number' || ! option ) {
+      return methods.init.apply( this, arguments);
     } else {
-      $.error( 'Method ' +  method + ' does not exist on jQuery.timer' );
+      $.error( 'Method ' +  option + ' does not exist on jQuery.timer' );
     }
   };
 })( jQuery );

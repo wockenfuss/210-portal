@@ -19,7 +19,20 @@
 		});
 
     $( ".datepicker" ).datepicker();
-    $('#timer').timer();
+
+    if ( $('#timer').length > 0 ) {
+			$.ajax({
+				url: window.location.pathname,
+				dataType: 'json',
+				type: 'get',
+				success: function(result) {
+					if ( result.duration ) {
+						$('#timer').timer(result.duration);
+						$('#timer').timer('start');
+					}
+				}
+			});
+		}
 	};
 
 	myApp.multipleChoiceQuestion = function() {
