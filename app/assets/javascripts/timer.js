@@ -1,8 +1,28 @@
-(function( $ ) {
-	var timer = {
-		duration: 5, //default time in minutes
-		tickInterval: 1000,
-		callback: function() {
+/*
+Very simple jQuery countdown timer
+Displays a countdown in an HTML element.
+
+Sets the background of the element to red on completion.
+
+Can optionally be initialized with a duration and a function to execute
+on completion.
+
+$(element).timer();
+$(element).timer(durationInMinutes);
+$(element).timer(durationInMinutes, function);
+$(element).timer(function);
+
+$(element).timer('start')
+
+*/
+
+
+
+(function( $, undefined ) {
+	timer = {
+		duration: 0.1, //default time in minutes
+		tickInterval: 1000, //timer interval in milliseconds
+		callback: function() { //default callback executed on timer completion
 			alert("Time's up");
 		},
 		elapsedTime: function() {
@@ -13,8 +33,8 @@
 			timer.display(millisecondsRemaining);
 			if ( millisecondsRemaining <= 0 ) {
 				timer.target.trigger('out-of-time');
-				// this.callback();
 			} else {
+				console.log('tick');
 				setTimeout(timer.tick, timer.tickInterval);
 			}
 		},
@@ -54,18 +74,24 @@
 
 	var methods = {
 		init: function( options ) {
-			if ( Array.prototype.slice.call( arguments, 1 ).length > 0 ) {
+			if ( arguments.length > 1 ) {
 				timer.callback = Array.prototype.slice.call( arguments, 1 )[0];
+				$.extend(timer, { duration: options });
+			} else if ( typeof arguments[0] === 'function' ) {
+				timer.callback = arguments[0];
+			} else {
+				$.extend(timer, { duration: options });
 			}
-			$.extend(timer, { duration: options });
 			timer.target = this;
 			timer.millisecondsDuration = timer.duration * 60000;
 			bind();
 			timer.display(timer.millisecondsDuration);
 		},
 		start: function() {
+			if ( timer.target === undefined ) {
+				methods.init.apply( this, arguments );
+			}
 			timer.startTime = new Date().getTime();
-			timer.display(timer.millisecondsDuration);
 			setTimeout(timer.tick, timer.tickInterval);
 		}
 	};
@@ -73,8 +99,8 @@
   $.fn.timer = function( option ) {
 		if ( methods[option] ) {
       return methods[option].apply( this, Array.prototype.slice.call( arguments, 1 ));
-    } else if ( typeof option === 'number' || ! option ) {
-      return methods.init.apply( this, arguments);
+    } else if ( typeof option === 'function' || typeof option === 'number' || !option ) {
+			return methods.init.apply( this, arguments );
     } else {
       $.error( 'Method ' +  option + ' does not exist on jQuery.timer' );
     }

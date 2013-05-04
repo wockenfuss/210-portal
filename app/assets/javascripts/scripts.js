@@ -20,6 +20,9 @@
 
     $( ".datepicker" ).datepicker();
 
+function pop() {
+	alert('pop');
+}
     if ( $('#timer').length > 0 ) {
 			$.ajax({
 				url: window.location.pathname,
@@ -27,8 +30,7 @@
 				type: 'get',
 				success: function(result) {
 					if ( result.duration ) {
-						$('#timer').timer(result.duration);
-						$('#timer').timer('start');
+						$('#timer').timer('start', result.duration);
 					}
 				}
 			});
