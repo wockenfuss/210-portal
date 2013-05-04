@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "User" do
+describe "User", :js => true do
 	include Warden::Test::Helpers
 
 	describe "users#show" do

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Gradebook do
+describe Gradebook, :js => true do
   include Warden::Test::Helpers
 
   before(:each) do

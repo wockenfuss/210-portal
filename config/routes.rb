@@ -19,9 +19,8 @@ Portal::Application.routes.draw do
   get "/users/:user_id/gradebook" => "gradebooks#show", :as => "user_gradebook"
 
 
-  resources :users, :only => [:index]# do
-    # resources :gradebooks, :only => [:show]
-  # end
+  resources :users, :only => [:index]
+  post "/users/update" => "users#update", :as => "user_role_update"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

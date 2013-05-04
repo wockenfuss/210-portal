@@ -1,3 +1,4 @@
-<%= link_to "<-- Back to quiz", quiz_path(@quiz) %>
+<%= javascript_tag render(:partial => 'attempts', :formats => [:js]) %>
+<div id="timer" class="pull-right"></div>
 <h2><%= @quiz.name %></h2>
 <%= render 'attempts/form', :quiz => @quiz %>

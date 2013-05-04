@@ -1,3 +1,3 @@
-<div id="timer" class="pull-right"></div>
+<%= link_to "<-- Back to quiz", quiz_path(@quiz) %>
 <h2><%= @quiz.name %></h2>
 <%= render 'attempts/form', :quiz => @quiz %>

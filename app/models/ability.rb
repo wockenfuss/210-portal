@@ -6,7 +6,10 @@ class Ability
     if user.has_role? :admin
       can :manage, :all
     elsif user.has_role? :quiz_taker
-      # can [:read, :update], Attempt, :user_id => user.id
+      can :create, Attempt, :user_id => user.id, :released? => true, :attempted? => false
+      can [:read, :update], Attempt, :user_id => user.id
+      can [:read, :update], User, :id => user.id
+      can :read, Gradebook, :user => { :id => user.id }
     else
       can :read, User
       cannot :read, User do |this_user|
