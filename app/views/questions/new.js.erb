@@ -1,7 +1,8 @@
 var $form = $('#addQuestionForm');
-var $links = $('.questionLinks');
+// var $links = $('.questionLinks');
 
-myApp.disableLinksConditionally($form, $links);
+// myApp.disableLinksConditionally($form, $links);
+myApp.Questions().toggleAll();
 
 $form.html("")
 	.append('<%= j render :partial => "questions/new", :locals => { :question => @question, :quiz => @quiz, :answer => @answer } %>')

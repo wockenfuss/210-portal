@@ -3,9 +3,12 @@ $form.html("");
 $form.append('<%= j render :partial => "questions/edit", :locals => { :question => @question, :quiz => @quiz } %>');
 
 var questionId = '<%= @question.id %>';
-var $selectedLink = $('[data-question="' + questionId + '"]');
-var $nonselectedLinks = $('#linkbarLinks a, .questionLinks').not('[data-question="' + questionId + '"]');
+// var $selectedLink = $('[data-question="' + questionId + '"]');
+// var $nonselectedLinks = $('#linkbarLinks a, .questionLinks').not('[data-question="' + questionId + '"]');
+console.log("questions");
 
-myApp.toggleQuestionLinksAndForms();
+myApp.Questions(questionId).toggle();
+
+// myApp.toggleQuestionLinksAndForms($selectedLink, $nonselectedLinks);
 
 myApp.multipleChoiceQuestion();

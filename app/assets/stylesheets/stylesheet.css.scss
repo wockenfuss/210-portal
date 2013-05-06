@@ -21,7 +21,7 @@ span {
 
 body {
 	margin: 0;
-	background-color: black;
+	background-color: #666;
 }
 
 p {
@@ -155,7 +155,7 @@ input[type="submit"].button {
 }
 
 .linkbar_middle {
-	margin: 0 13%;
+	margin: 0 8%;
 }
 
 /*---- forms ----*/
@@ -271,7 +271,7 @@ form {
 .container-fluid {
 	width: 100%;
 	overflow: auto;
-	background: url('bg.jpg') no-repeat top center fixed; 
+	/*background: url('bg.jpg') no-repeat top center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -359,8 +359,25 @@ form {
 			color: #666;
 			cursor: default;
 		}
+	}	
+}
+
+a.disabledLinks {
+	/*background-color: #666;*/
+	opacity: .4;
+	&:hover {
+		color: #666;
+		cursor: default;
 	}
-		
+}
+
+#questionContainer li.dragAndDrop {
+	background-color: #f33;
+	border: 4px #444 solid;
+	cursor: pointer; cursor: hand;
+	a {
+		color: #fff;
+	}
 }
 
 #addQuestionForm {

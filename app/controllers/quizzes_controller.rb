@@ -33,7 +33,11 @@ class QuizzesController < ApplicationController
 	def edit
 		@quiz = Quiz.find(params[:id])
 		@questions = @quiz.questions.order("created_at ASC")
-		respond_with(@quiz, @questions)#, @question)
+		respond_to do |format|
+      format.html
+      format.js { render 'edit.js.erb', :locals => { :data => params[:data] } }
+    end
+		# respond_with(@quiz, @questions)#, @question)
 	end
 
 	def update

@@ -20,9 +20,6 @@
 
     $( ".datepicker" ).datepicker();
 
-function pop() {
-	alert('pop');
-}
     if ( $('#timer').length > 0 ) {
 			$.ajax({
 				url: window.location.pathname,
@@ -35,6 +32,12 @@ function pop() {
 				}
 			});
 		}
+
+		$('#reorder_questions').on('click', function() {
+			console.log("reorder");
+		});
+
+		myApp.Links('#linkbarLinks a').listen();
 	};
 
 	myApp.multipleChoiceQuestion = function() {
@@ -43,44 +46,30 @@ function pop() {
 		});
 	};
 
-	myApp.disableLinksConditionally = function($condition, $linkSelector) {
-		if ( $condition.is(':visible') ) {
-			myApp.enableLink($linkSelector);
-		} else {
-			myApp.disableLink($linkSelector);
-		}
-	};
+	// myApp.disableLinksConditionally = function($condition, $linkSelector) {
+	// 	if ( $condition.is(':visible') ) {
+	// 		myApp.enableLink($linkSelector);
+	// 	} else {
+	// 		myApp.disableLink($linkSelector);
+	// 	}
+	// };
 
-	myApp.disableLink = function($linkSelector) {
-			$linkSelector.parent().addClass('disabledLinks')
-				.bind('click', function(e) {
-					e.preventDefault();
-					e.stopPropagation();
-			});
-	};
+	// myApp.disableLink = function($linkSelector) {
+	// 		$linkSelector.parent().addClass('disabledLinks')
+	// 			.bind('click', function(e) {
+	// 				e.preventDefault();
+	// 				e.stopPropagation();
+	// 		});
+	// };
 
 	myApp.enableLink = function($linkSelector) {
-		$linkSelector.parent().removeClass('disabledLinks')
+		$linkSelector.removeClass('disabledLinks')
 				.unbind('click');
 	};
 
 	myApp.clearForm = function($selector) {
 		$selector.find("input[type=text], textarea").val("");
 		$('input[name="question[correct_answer]"]').prop('checked', false);
-	};
-
-	myApp.toggleQuestionLinksAndForms = function() {
-		if ( $form.is(':visible') ) {
-			myApp.enableLink($nonselectedLinks);
-			$form.slideToggle();
-			$selectedLink.parent().next().hide();
-		} else {
-			myApp.disableLink($nonselectedLinks);
-			$form.slideToggle();
-			$selectedLink.parent().next().css('display', 'inline-block');
-
-			myApp.toggleAnswersForm();
-		}
 	};
 
 	myApp.toggleAnswersForm = function() {

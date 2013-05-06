@@ -2,4 +2,5 @@ $('#questionContainer').html("")
 	.append('<%= j render :partial => "questions/index", :locals => { :questions => @questions } %>');
 
 myApp.clearForm($('#addQuestionForm form'));
-myApp.disableLink($('.questionLinks'));
+// myApp.disableLink($('.questionLinks'));
+myApp.Questions().disable($('.questionLinks'));

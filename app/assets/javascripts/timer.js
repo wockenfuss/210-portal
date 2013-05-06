@@ -34,7 +34,6 @@ $(element).timer('start')
 			if ( millisecondsRemaining <= 0 ) {
 				timer.target.trigger('out-of-time');
 			} else {
-				console.log('tick');
 				setTimeout(timer.tick, timer.tickInterval);
 			}
 		},

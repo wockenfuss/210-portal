@@ -3,7 +3,8 @@
 	<h2 class="linkbarTitle"><%= @quiz.name %></h2>
 	<div id="linkbarLinks">
 		<%= link_to "Add Questions", question_new_path(@quiz), :class => 'linkbar_left', :id => 'add_questions', :remote => true %>
-		<%= link_to "Remove Questions", "#", :class => 'linkbar_middle', :id => 'remove_questions', :remote => true %>		<%= link_to "Delete Quiz", quiz_path(@quiz), :method => 'delete', :confirm => "Are you sure?", :class => 'linkbar_right' %>		
+		<%= link_to "Reorder Questions", edit_quiz_path(@quiz, :data => "reorder"), :class => 'linkbar_middle', :id => 'reorder_questions', :remote => true %>		
+		<%= link_to "Remove Questions", edit_quiz_path(@quiz, :data => "remove"), :class => 'linkbar_right', :id => 'remove_questions', :remote => true%>				
 	</div>
 		
 </div>
