@@ -42,13 +42,15 @@ class QuestionsController < ApplicationController
 	def update
 		@question = Question.find(params[:id])
 		@quiz = @question.quizzes.first
-		unless params[:question][:multiple_choice] == "true"
-			params[:question][:answers_attributes].each do |_, attributes|
-				attributes.merge!(:_destroy => '1')
+		if params[:question][:multiple_choice]
+			unless params[:question][:multiple_choice] == "true"
+				params[:question][:answers_attributes].each do |_, attributes|
+					attributes.merge!(:_destroy => '1')
+				end
+			else
+				correct_answer = Answer.where(:question_id => @question.id, :index_number => params[:question][:correct_answer]).first
+				params[:question].merge!(:correct_answer_id => correct_answer.id ) if correct_answer
 			end
-		else
-			correct_answer = Answer.where(:question_id => @question.id, :index_number => params[:question][:correct_answer]).first
-			params[:question].merge!(:correct_answer_id => correct_answer.id ) if correct_answer
 		end
 		if @question.update_attributes(params[:question])
 			# flash[:notice] = "Question successfully updated"

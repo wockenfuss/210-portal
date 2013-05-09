@@ -32,7 +32,8 @@ class QuizzesController < ApplicationController
 
 	def edit
 		@quiz = Quiz.find(params[:id])
-		@questions = @quiz.questions.order("sort_number ASC")
+		@questions = @quiz.questions
+		p @questions
 		respond_to do |format|
       format.html
       format.js { render 'edit.js.erb', :locals => { :data => params[:data] } }

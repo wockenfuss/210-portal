@@ -59,7 +59,6 @@
 				$questions.unbind('click');
 				$questions.removeClass('dragAndDrop');
 				$('#sortable').sortable('destroy');
-				// $questions.dragAndDrop('remove');
 			} else {
 				$questions.bind('click', function(e) {
 					e.preventDefault();
@@ -67,25 +66,43 @@
 				});
 				$questions.addClass('dragAndDrop');
 				$('#sortable').sortable({
-					'opacity': 0.7,
 					update: function(event, ui) {
-						console.log('event: ' + event.target);
-						console.log('item: ' + ui.item);
-						eventObject = event.target;
-						object = ui;
+						updateOrder(event, ui);
 					}
 				});
-				// $questions.dragAndDrop();
 			}
 		};
 
-		// var addDragListeners = function($selector) {
-		// 	$selector.on('click', function(e) {
-		// 		console.log('reorder');
-		// 		e.preventDefault();
-		// 		e.stopPropagation();
-		// 	});
-		// };
+		var updateNames = function() {
+			var re = /Question (\d)/
+			var $questions = $('a:contains("Question ")');
+			$.each($questions, function(index, value) {
+				number = $(value).attr('data-sort');
+				// name = $(value).text();
+				new_name = $(value).text().replace(re, "Question " + number);
+				$(value).text(new_name);
+			});
+		};
+
+		var updateOrder = function(e, ui) {
+			$.each(e.target.children, function(index, value) {
+				var question = $(value).find('div a');
+				question.attr('data-sort', index + 1);
+				var question_id = question.attr('data-question');
+				var data = {
+					question: {
+						sort_number: question.attr('data-sort')
+					}
+				};
+				$.ajax({
+					url: '/questions/' + question_id,
+					dataType: 'json',
+					data: data,
+					type: 'put',
+					success: updateNames
+				});
+			});
+		};
 
 		var removeDragListeners = function() {
 			$('#questionContainer li').off('click');

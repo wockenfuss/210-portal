@@ -34,10 +34,10 @@
     <% end %>
 
   </div>
-
   <div><%= f.submit :class => 'reset' %></div>
   <%= hidden_field_tag :quiz_id, @quiz.id %>
   <%= hidden_field_tag :question_id, @question.id %> 
-  <%= hidden_field_tag :sort_number, @sort_number %> 
+  <%= f.hidden_field :sort_number, :value => @sort_number %> 
+
 
 <% end %>
