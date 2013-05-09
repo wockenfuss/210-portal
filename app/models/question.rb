@@ -12,7 +12,7 @@ class Question < ActiveRecord::Base
 	before_validation :delete_essay_answers
 
   attr_accessible :content, :correct_answer_id, :name, :multiple_choice, 
-  								:points, :correct_answer, :answers_attributes
+  								:points, :correct_answer, :answers_attributes, :sort_number
 	attr_accessor :multiple_choice, :correct_answer
 
 	private

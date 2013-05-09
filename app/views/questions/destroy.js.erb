@@ -1,6 +1,10 @@
 $('#questionContainer').html("");
 $('#questionContainer').append('<%= j render :partial => "questions/index", :locals => { :questions => @questions } %>');
-myApp.clearForm($('#addQuestionForm form'));
 
-$('#addQuestionForm').slideToggle();
+if ( $('#addQuestionForm form').is(':visible') ) {
+	myApp.clearForm($('#addQuestionForm form'));
+	$('#addQuestionForm').slideToggle();
+} else {
+	myApp.Questions().toggleDelete();
+}
 myApp.Links('#linkbarLinks a').enableAll();

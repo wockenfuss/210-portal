@@ -33,10 +33,11 @@
 			});
 		}
 
-		$('#reorder_questions').on('click', function() {
-			console.log("reorder");
-		});
-
+		// $('#reorder_questions').on('click', function() {
+		// 	console.log("reorder");
+		// });
+		// $('#sortable').sortable();
+		// $('#sortable').disableSelection();
 		myApp.Links('#linkbarLinks a').listen();
 	};
 

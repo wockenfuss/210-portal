@@ -6,12 +6,12 @@
 		var $form = $('#addQuestionForm');
 
 		var enableLink = function($selector) {
-			$selector.parent().removeClass('disabledLinks')
+			$selector.closest('li').removeClass('disabledLinks')
 				.unbind('click');
 		};
 
 		var disableLink = function($selector) {
-			$selector.parent().addClass('disabledLinks')
+			$selector.closest('li').addClass('disabledLinks')
 				.bind('click', function(e) {
 					e.preventDefault();
 					e.stopPropagation();
@@ -42,10 +42,13 @@
 		var toggleDelete = function() {
 			var $buttons = $('.deleteButton');
 			if ( $buttons.is(':visible') ) {
-				enableLink($questions);
+				$questions.unbind('click');
 				$buttons.hide();
 			} else {
-				disableLink($questions);
+				$questions.bind('click', function(e) {
+					e.preventDefault();
+					e.stopPropagation();
+				});
 				$buttons.css('display', 'inline-block');
 			}
 		};
@@ -53,21 +56,36 @@
 		var toggleDrag = function() {
 			var $questions = $('#questionContainer li');
 			if ( $questions.hasClass('dragAndDrop') ) {
-				removeDragListeners();
-				$('#questionContainer li').removeClass('dragAndDrop');
+				$questions.unbind('click');
+				$questions.removeClass('dragAndDrop');
+				$('#sortable').sortable('destroy');
+				// $questions.dragAndDrop('remove');
 			} else {
-				addDragListeners();
-				$('#questionContainer li').addClass('dragAndDrop');
+				$questions.bind('click', function(e) {
+					e.preventDefault();
+					e.stopPropagation();
+				});
+				$questions.addClass('dragAndDrop');
+				$('#sortable').sortable({
+					'opacity': 0.7,
+					update: function(event, ui) {
+						console.log('event: ' + event.target);
+						console.log('item: ' + ui.item);
+						eventObject = event.target;
+						object = ui;
+					}
+				});
+				// $questions.dragAndDrop();
 			}
 		};
 
-		var addDragListeners = function() {
-			$('#questionContainer li').on('click', function(e) {
-				console.log('reorder');
-				e.preventDefault();
-				e.stopPropagation();
-			});
-		};
+		// var addDragListeners = function($selector) {
+		// 	$selector.on('click', function(e) {
+		// 		console.log('reorder');
+		// 		e.preventDefault();
+		// 		e.stopPropagation();
+		// 	});
+		// };
 
 		var removeDragListeners = function() {
 			$('#questionContainer li').off('click');

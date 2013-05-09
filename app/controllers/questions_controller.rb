@@ -5,6 +5,8 @@ class QuestionsController < ApplicationController
 		@question = Question.new(:multiple_choice => false)
 		@quiz = Quiz.find(params[:quiz_id])
 		@answers = Answer.new_answers(@question)
+		@sort_number = @quiz.questions.count + 1
+		puts "sort number = #{@sort_number}"
 		respond_with @question#, @quiz, @answers
 	end
 
