@@ -22,6 +22,22 @@ class ApplicationController < ActionController::Base
   	render "shared/errors", :locals => { :current_object => current_object, :target => targetId(current_object) }
   end
 
+  def format_date
+    release = params[:quiz][:release_date] || ""
+    close = params[:quiz][:close_date] || ""
+    params[:quiz][:release_date] = test_date(release) unless release == ""
+    params[:quiz][:close_date] = test_date(close) unless close == ""
+  end
+
+  def test_date(string)
+    begin
+      string = DateTime.strptime(string, '%Y-%m-%d %H:%M:%S')
+    rescue => error
+      string = DateTime.strptime(string, '%m/%d/%Y')
+    end
+    string
+  end
+
   private
 	def after_sign_in_path_for(user)
 		user_root_path(:id => user.id)
