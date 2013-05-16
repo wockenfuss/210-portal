@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130509161207) do
+ActiveRecord::Schema.define(:version => 20130515193635) do
 
   create_table "answers", :force => true do |t|
     t.string   "content",      :null => false
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(:version => 20130509161207) do
 
   create_table "gradebooks", :force => true do |t|
     t.integer  "user_id",    :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "lectures", :force => true do |t|
+    t.string   "name",       :null => false
+    t.integer  "unit_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -84,6 +91,14 @@ ActiveRecord::Schema.define(:version => 20130509161207) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], :name => "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], :name => "index_roles_on_name"
+
+  create_table "units", :force => true do |t|
+    t.datetime "release_date"
+    t.datetime "close_date"
+    t.string   "name",         :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

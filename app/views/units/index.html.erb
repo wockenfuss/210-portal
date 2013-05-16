@@ -1,0 +1,14 @@
+<h2 class="inline">Content</h2>
+<span><%= link_to "Add unit", new_unit_path, :remote => true %></span>
+<div id="unit-form">
+	<%= render 'form' %>
+</div>
+<ul>
+	<% @units.each do |unit| %>
+	<li>
+		<span><%= link_to unit.name, unit_path(unit), :remote => true %></span>
+		<span><%= unit.release_date.to_date %></span>
+		<span><%= link_to "Edit", edit_unit_path(unit), :remote => true %></span>
+	</li>
+	<% end %>	
+</ul>

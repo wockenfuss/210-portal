@@ -1,7 +1,7 @@
 class QuizzesController < ApplicationController
 	before_filter :store_location
 	before_filter :authenticate_user!
-	before_filter :format_date, :only => [:create, :update]
+	before_filter :parse_quiz_params, :only => [:create, :update]
 	before_filter :check_for_cancel, :only => [:create, :update]
 
 
@@ -58,6 +58,10 @@ class QuizzesController < ApplicationController
 	end
 
 	private
+
+  def parse_quiz_params
+  	parse_dates(params[:quiz])
+  end
 
 	def check_for_cancel
 		if params[:commit] == 'Cancel'

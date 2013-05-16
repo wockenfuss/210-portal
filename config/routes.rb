@@ -5,7 +5,8 @@ Portal::Application.routes.draw do
   resources :answers, :only => [:show, :index, :edit]
   resources :questions, :except => [:show]
   resources :quizzes
-
+  resources :units
+  
   devise_for :users
 
   devise_scope :user do

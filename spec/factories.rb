@@ -44,4 +44,14 @@ FactoryGirl.define do
 		index_number 1
 	end
 
+	factory :unit do
+		name { Faker::Lorem.sentence(word_count = 2, supplemental = false) }
+		release_date { Time.now }
+		close_date { Time.now + 10000 }
+	end
+
+	factory :lecture do
+		name { Faker::Lorem.sentence(word_count = 2, supplemental = false) }
+	end
+
 end

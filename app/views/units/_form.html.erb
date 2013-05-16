@@ -1,0 +1,18 @@
+<span><h3>Add new unit</h3></span>
+<%= form_for @unit, :remote => true do |f| %>
+	<div class="inline">
+		<%= f.label :name %>
+		<%= f.text_field :name, :placeholder => "Enter unit name" %>
+	</div>
+  <div class="inline">
+    <%= f.label :release %>
+    <%= f.text_field :release_date, :placeholder => "Click to select release date", :class => "datepicker"%>
+  </div>
+  <div class="inline">
+    <%= f.label :close %>
+    <%= f.text_field :close_date, :placeholder => "Click to select closing date", :class => "datepicker"%>
+  </div>
+  <div>
+  	<%= f.submit %>
+  </div>
+<% end %>

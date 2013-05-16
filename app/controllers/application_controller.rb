@@ -22,14 +22,14 @@ class ApplicationController < ActionController::Base
   	render "shared/errors", :locals => { :current_object => current_object, :target => targetId(current_object) }
   end
 
-  def format_date
-    release = params[:quiz][:release_date] || ""
-    close = params[:quiz][:close_date] || ""
-    params[:quiz][:release_date] = test_date(release) unless release == ""
-    params[:quiz][:close_date] = test_date(close) unless close == ""
+  def parse_dates(params)
+    release = params[:release_date] || ""
+    close = params[:close_date] || ""
+    params[:release_date] = parsed_date(release) unless release == ""
+    params[:close_date] = parsed_date(close) unless close == ""
   end
 
-  def test_date(string)
+  def parsed_date(string)
     begin
       string = DateTime.strptime(string, '%Y-%m-%d %H:%M:%S')
     rescue => error

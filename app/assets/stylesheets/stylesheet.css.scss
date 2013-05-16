@@ -524,6 +524,23 @@ footer {
 	margin-left: 10px;
 }
 
+#unit-form {
+	h3 {
+		color: #fff;
+		margin: 0;
+		display: inline;
+	}
+	display: none;
+	background-color: #666;
+	padding: 4%;
+	margin: 2%;
+	border-radius: 5px;
+	color: #fff;
+	input {
+		width: 20%;
+	}
+}
+
 /*----- datepicker -----*/
 .ui-datepicker {
 	display: none;
