@@ -19,7 +19,7 @@ $(element).timer('start')
 
 
 (function( $, undefined ) {
-	timer = {
+	var timer = {
 		duration: 0.1, //default time in minutes
 		tickInterval: 1000, //timer interval in milliseconds
 		callback: function() { //default callback executed on timer completion
