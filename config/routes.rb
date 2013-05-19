@@ -6,6 +6,7 @@ Portal::Application.routes.draw do
   resources :questions, :except => [:show]
   resources :quizzes
   resources :units
+  resources :lectures, :only => [:index, :show]
   
   devise_for :users
 

@@ -1,0 +1,9 @@
+<h2>Lectures</h2>
+<ul>
+	<% @lectures.each do |lecture| %>
+		<li>
+			<%= link_to lecture.name, lecture_path(lecture) %>		
+		</li>
+	<% end %>
+</ul>
+	

@@ -1,20 +1,32 @@
 <h2><%= "This week's schedule" %></h2>
-<p><%= @user.email %></p>
-<% if @quizzes %>
-	<ul>
-		<% @quizzes.each do |quiz| %>
-			<li>
-				<%= "#{quiz.name}––Duration: #{quiz.duration} minutes."%>
-				<span><%= "Quiz closes in #{time_ago_in_words(quiz.close_date.to_date)}." %> </span>   
-				<!-- <# if @user.attempts.where(:quiz_id => quiz.id) == [] %>  -->
-				<% unless @user.attempted?(quiz) %> 
-					<span><%= link_to "Take Quiz", new_attempt_path(quiz, @user) %></span>
-				<% else %>
-					<span class="green">You've completed this quiz.</span>
+<!-- <p><#%= @user.email %></p> -->
+<% if @units %>
+	<div>
+		<% @units.each do |unit| %>
+			<p>
+				<%= unit.name %>
+			</p>
+			<ul>
+				<% if unit.lectures != [] %>
+					<li>
+						<%= link_to unit.lectures.first.name, lecture_path(unit.lectures.first) %>
+					</li>
 				<% end %>
+			</ul>
+				
+		<% end %>
+<!-- 		<#% @quizzes.each do |quiz| %>
+			<li>
+				<#%= "#{quiz.name}––Duration: #{quiz.duration} minutes."%>
+				<span><#%= "Quiz closes in #{time_ago_in_words(quiz.close_date.to_date)}." %> </span>   
+				<#% unless @user.attempted?(quiz) %> 
+					<span><#%= link_to "Take Quiz", new_attempt_path(quiz, @user) %></span>
+				<#% else %>
+					<span class="green">You've completed this quiz.</span>
+				<#% end %>
 			</li>
-		<% end %>	
-	</ul>
+		<#% end %>	 -->
+	</div>
 <% else %>
 <p><%= "There are no scheduled items this week." %> </p>
 <% end %>

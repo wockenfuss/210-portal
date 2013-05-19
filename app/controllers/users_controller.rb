@@ -7,8 +7,9 @@ class UsersController < ApplicationController
 	
 	def show
 		@user = User.find(params[:id])
-		# @user.remove_role :quiz_taker
-		@quizzes = Quiz.released_quizzes
+		@units = Unit.current
+		p @units
+		# @quizzes = Quiz.released_quizzes
 	end
 
 	def index

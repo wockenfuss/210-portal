@@ -1,0 +1,7 @@
+<div id="lectureNavbar">
+	<h2 class="inline"><%= @lecture.name %></h2>
+	<%= link_to "Back", user_root_path(current_user), :class => "inline", :id => "back_link" %>
+</div>
+<div id="lectureContainer">
+	<%= render parse_lecture_name(@lecture.name) %>	
+</div>
