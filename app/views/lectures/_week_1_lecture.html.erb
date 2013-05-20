@@ -1,6 +1,7 @@
-<div id="graphic_section_1" data-trigger-out="#section_2" class="graphic powerpoint">		
+<div id="graphic_section_1" data-trigger-out="#section_2" class="graphic powerpoint">	
 	<h1>NARRATIVE STRATEGIES</h1>	
 </div>
+
 <div class="graphic">
 	<div id="graphic_section_2" data-trigger-in="#section_2" data-trigger-out="#expectations" class="powerpoint">
 		<h2>Repetitions of form create conventions</h2>
@@ -25,8 +26,7 @@
 </div>
 <div id="section_1" >
 	<div id="sub_section_1" class="section">
-		<!-- <h3>NARRATIVE STRATEGIES </h3> -->
-		<p id="top_paragraph">
+		<p class="first_paragraph">
 			As perhaps you've guessed from the class's name, we're going to spend this semester trying to dig into the narrative form of filmmaking and examine in depth different techniques that filmmakers have employed in order to tell stories with images. 	
 		</p>
 		<p>
@@ -55,13 +55,12 @@
 		<p>
 			Each of these strategies can result in a variety of different effects on the viewer. When expectations are <em>fulfilled</em>, a viewer is likely to experience one of a range of emotions, from satisfaction to relief to perhaps a sense of well-being. <em>Delayed</em> expectations may result in curiosity, suspense or anxiety. <em>Thwarted</em> expectations may result in somewhat unpleasant emotions like disappointment or frustration. 
 		</p>
-		<p>
-			It might seem that, since thwarting expectations results primarily in negative emotions, a filmmaker should primarily be interested in fulfilling viewer expectations. But can you think of reasons why thwarting viewer <span id="graphic_5_out"></span>expectations might be useful?
-		</p>
-		<div id="comment_section_1" class="comments">
-			<%= render 'comments/form' %>
+
+		<div id="graphic_5_out" class="lectureQuestion">
+			<%= render 'lecture_questions/show', :question => parse_lecture_question(@lecture, 1) %>	
 		</div>
-		<div id="comment_response_section_1">
+		
+		<div id="comment_response_section_1" class="first_paragraph">
 			<p>
 				While it's true that a viewer typically gets satisfaction out of fulfilled expectations and dissatisfaction from thwarted expectations, there are a number of compelling reasons why a filmmaker might be willing to risk causing a bit of viewer frustration. 
 			</p>
@@ -154,5 +153,4 @@
 			It's going to be most useful for us this week to first watch the film without too much information about it. That way we can let the film work on us in the way Sayles intends. Then we can look back and examine what kind of experience Sayles' choices created for us and why they had the impact that they did. So at this point, if you haven't watched the film, you should watch it now.	
 		</p>
 	</div>
-</div>
-	
+</div>	
