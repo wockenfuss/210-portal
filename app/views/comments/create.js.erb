@@ -1,0 +1,14 @@
+// console.log("comment created");
+// $('#question_1_comments').html("");
+// $('#question_1_comments').html("Comment created");
+// var commentText = '<%= @comment.content %>';
+var $target = $('#question_1_comments');
+$target
+	.html("")
+	.append('<%= j render :partial => "comments/index", :locals => { :question => @comment.commentable } %>')
+	.scrollTop($target[0].scrollHeight)
+	.children().last().css('background-color', 'yellow')
+	.animate({
+		'background-color': 'white'
+	}, 1000);
+$('.lectureQuestion textarea').val('');

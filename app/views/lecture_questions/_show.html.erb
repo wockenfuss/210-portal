@@ -1,0 +1,10 @@
+<div class="firstColumn column">
+	<p><%= question.content %></p>
+	<%= render 'comments/form', :commentable => question %>
+</div>
+<div class="secondColumn column">
+	<div id="question_1_comments" class="commentDisplay">
+		<%= render 'comments/index', :question  => @lecture.lecture_questions.first %>	
+	</div>
+</div>
+

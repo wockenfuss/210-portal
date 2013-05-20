@@ -1,4 +1,4 @@
-class LectureQuestions < ActiveRecord::Base
+class LectureQuestion < ActiveRecord::Base
 	belongs_to :lecture
 	has_many :comments, :as => :commentable
 
