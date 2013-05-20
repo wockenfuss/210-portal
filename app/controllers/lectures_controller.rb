@@ -6,7 +6,11 @@ class LecturesController < ApplicationController
 	end
 
 	def show
+		@user = current_user
 		@lecture = Lecture.find(params[:id])
+		if @lecture.lecture_questions.any?
+			@comment = Comment.new
+		end
 	end
 
 end
