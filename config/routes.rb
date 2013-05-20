@@ -6,7 +6,10 @@ Portal::Application.routes.draw do
   resources :questions, :except => [:show]
   resources :quizzes
   resources :units
-  resources :lectures, :only => [:index, :show]
+  resources :lectures, :only => [:index, :show] do 
+    resources :lecture_questions, :only => [:new, :create]
+  end
+  resources :comments, :only => [:new, :create]
   
   devise_for :users
 

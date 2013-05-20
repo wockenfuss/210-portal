@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20130519182823) do
     t.integer  "commentable_id",   :null => false
     t.string   "commentable_type", :null => false
     t.string   "content",          :null => false
-    t.integer  "users_id",         :null => false
+    t.integer  "user_id",          :null => false
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(:version => 20130519182823) do
   end
 
   create_table "lecture_questions", :force => true do |t|
-    t.integer  "lectures_id", :null => false
+    t.integer  "lecture_id",  :null => false
     t.string   "content",     :null => false
     t.integer  "order_index", :null => false
     t.datetime "created_at",  :null => false
