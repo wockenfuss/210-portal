@@ -23,28 +23,28 @@
 	var setOpacity = function() {
 		var scrollTop = $(window).scrollTop();
 		var position = scrollTop - pp.screenOffset;
-		// var opacity;
 		var fadeInPoint = this.inTriggerPosition - position;
 		var fadeOutPoint = this.outTriggerPosition - position;
 		if ( (fadeInPoint !== null && fadeInPoint > 0) || (fadeOutPoint !== null && fadeOutPoint < 0)  ) {
-			// $(this.target).stop().fadeOut();
-			opacity = 0;
+			$(this.target).stop().hide();
 		} else {
-			if ( fadeInPoint < -200 ) {
-				// $(this.target).stop().fadeOut();
-				opacity = fadeOutPoint/200;
+			if ( fadeInPoint < 0 ) {
+				$(this.target).stop().show();
 			} else {
-				// $(this.target).stop().fadeIn();
-				opacity = fadeInPoint/-200;
+				$(this.target).stop().hide();
 			}
 		}
-		$(this.target).css('opacity', opacity);
 	};
 
 	var init = function() {
 		this.outTriggerPosition = $(this.target.attr('data-trigger-out')).position().top;
 		if ( this.target.attr('data-trigger-in') ) {
-			this.inTriggerPosition = $(this.target.attr('data-trigger-in')).position().top + 200;					
+			// this.inTriggerPosition = $(this.target.parent()).position().top + 200;		
+			this.inTriggerPosition = $(this.target.attr('data-trigger-in')).position().top + 200;
+			// console.log("trigger position: " + this.inTriggerPosition);
+			// var parentPos = $(this.target.parent()).position().top + 200;
+
+			// console.log("parent: " + parentPos);
 		}
 	};
 
