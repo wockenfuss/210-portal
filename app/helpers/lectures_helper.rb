@@ -8,5 +8,9 @@ module LecturesHelper
 		end
 		new_name
 	end
+
+	def parse_lecture_question(lecture, index)
+		lecture.lecture_questions.find_by_order_index(index)
+	end
 end
 	
