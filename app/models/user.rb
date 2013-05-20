@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   has_many :attempts
   has_many :responses
   has_one :gradebook
+  has_many :comments
   
   after_create :create_gradebook
   attr_accessible :email, :password, :password_confirmation
