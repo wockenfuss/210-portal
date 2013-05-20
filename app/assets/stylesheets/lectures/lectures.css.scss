@@ -60,14 +60,26 @@ body {
 
 .section {
 	font-family: $standard;
-	padding: 5%;
-	width: 30%;
+	/*padding: 5%;*/
+	width: 35%;
 	margin-left: 10%;
 	color: #000;
 	p {
+		padding: 0 13%;
+		padding-bottom: 10%;
 		font-size: 1.2em;
 		line-height: 2em;
-		margin: 10% 0;
+		/*margin: 10% 0;*/
+	}
+	h3 {
+		padding: 10% 13%;
+		margin: 0;
+	}
+	div {
+		/*padding-top: 8%;*/
+	}
+	.first_paragraph {
+		padding-top: 25%;
 	}
 }
 
@@ -87,11 +99,12 @@ body {
 	div {
 		margin: 5% 0;
 	}
+	/*z-index: 5;*/
 }
 
 #section_1 {
 	@include section(green);
-	background: url('bg.jpg') no-repeat top center fixed; 
+	background: image-url('bg.jpg') no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -103,10 +116,7 @@ body {
 
 #sub_section_1 {
 	background-color: yellow;
-	/*background: url('yellowtrans.png') top center; */
-	#top_paragraph {
-		padding-top: 15%;
-	}
+	/*background: image-url('yellowtrans.png') top center; */
 }
 
 #section_2 {
@@ -127,7 +137,7 @@ body {
 
 #section_5 {
 	@include section(violet);
-	background: url('limbo_1.jpg') no-repeat top center fixed; 
+	background: image-url('limbo_1.jpg') no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -135,18 +145,76 @@ body {
 }
 
 #sub_section_5 {
-	background: url('yellowtrans.png') top center;
+	background: image-url('yellowtrans.png') top center;
 }
 
-.comments {
+.lectureQuestion {
+	overflow: auto;
+	/*width: 200%;*/
 	background-color: brown;
 	color: white;
-	padding: 3%;
-	border-radius: 5px;
+	padding: 8% 0;
+	/*padding-top: 10%;*/
+	.column {
+		width: 46%;
+		float: left;
+		padding: 0 2%;
+	}
+	.commentDisplay {
+		font-size: .8em;
+		background-color: white;
+		overflow: scroll;
+		height: 500px;
+		color: black;
+		p {
+			padding: 0 0 0 6%;
+		}
+		div {
+			margin-bottom: 5%;
+		}
+
+	}
+}
+
+.attribution {
+	margin-left: 4%;
 }
 
 #comment_response_section_1 {
 	opacity: 0;
+}
+
+form {
+	padding-bottom: 10%;
+	input {
+		outline: 5px solid #aaa;
+	}
+
+	textarea {
+		margin: 10px 0;
+		border: none;	
+		width: 100%;
+		height: 200px;
+	}
+
+	input[type="submit"] {
+		outline: 0;
+		padding: 3%;
+		border-radius: 5px;
+		background-color: orange;
+		display: block;
+		margin: auto;
+		&:hover {
+			background-color: yellow;
+			cursor: hand; cursor: pointer;
+		}
+
+	}
+
+	h3 {
+		margin: 15px 0 5px 0;
+	}
+
 }
 
 footer {
