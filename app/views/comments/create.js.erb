@@ -1,14 +1,12 @@
-// console.log("comment created");
-// $('#question_1_comments').html("");
-// $('#question_1_comments').html("Comment created");
-// var commentText = '<%= @comment.content %>';
-var $target = $('#question_1_comments');
+var questionNumber = '<%= @comment.commentable.order_index %>';
+var $target = $('.commentDisplay[value="' + questionNumber + '"]');
+
 $target
 	.html("")
 	.append('<%= j render :partial => "comments/index", :locals => { :question => @comment.commentable } %>')
 	.scrollTop($target[0].scrollHeight)
 	.children().last().css('background-color', 'yellow')
 	.animate({
-		'background-color': 'white'
+		'background-color': '#fffcbe'
 	}, 1000);
-$('.lectureQuestion textarea').val('');
+$('textarea').val('');
