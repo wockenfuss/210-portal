@@ -3,7 +3,7 @@ class LectureQuestionsController < ApplicationController
 
 	def new
 		@lecture = Lecture.find(params[:lecture_id])
-		@question = @lecture.lecture_questions.build
+		@question = LectureQuestion.new
 		@index = @lecture.lecture_questions.count + 1
 		respond_with @question, @index
 	end
@@ -15,5 +15,10 @@ class LectureQuestionsController < ApplicationController
 		else
 			render 'lecture_questions/new', :notice => "Something went wrong"
 		end
+	end
+
+	def destroy
+		@question = LectureQuestion.find(params[:id])
+		@question.destroy
 	end
 end

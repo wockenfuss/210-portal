@@ -8,6 +8,8 @@ class LecturesController < ApplicationController
 	def show
 		@user = current_user
 		@lecture = Lecture.find(params[:id])
+		@question = @lecture.lecture_questions.build
+		@index = @lecture.lecture_questions.count + 1
 		if @lecture.lecture_questions.any?
 			@comment = Comment.new
 		end

@@ -3,8 +3,7 @@
 	<%= render 'comments/form', :commentable => question %>
 </div>
 <div class="secondColumn column">
-	<div id="question_1_comments" class="commentDisplay">
-		<%= render 'comments/index', :question  => @lecture.lecture_questions.first %>	
+	<div class="commentDisplay" value="<%= question.order_index %>">
+		<%= render 'comments/index', :question  => question %>	
 	</div>
 </div>
-

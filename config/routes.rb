@@ -7,7 +7,7 @@ Portal::Application.routes.draw do
   resources :quizzes
   resources :units
   resources :lectures, :only => [:index, :show] do 
-    resources :lecture_questions, :only => [:new, :create]
+    resources :lecture_questions, :only => [:new, :create, :destroy]
   end
   resources :comments, :only => [:new, :create]
   
