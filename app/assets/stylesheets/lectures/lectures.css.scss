@@ -1,34 +1,97 @@
 $bannerFont: "Monoton";
 /*$standard: "News Cycle";*/
 $standard: "Pontano Sans";
+/*
+$color: #fdff73;
+$color2: #ffc273;
+$color3: #ff9a40;
+*/
+$color: #e9e7c6;
+$color2: #bdba8a;
+$color3: #8c8851;
+
+$buttonColor: #bf3030;
+
+@mixin bodyText {
+	font-family: $standard;
+	p {
+		padding: 0 13%;
+		padding-bottom: 10%;
+		font-size: 1.2em;
+		line-height: 2em;
+	}
+	h3 {
+		padding: 10% 13%;
+		margin: 0;
+	}
+}
+
+@mixin fullStripe {
+	@include bodyText;
+	@include color3rgb;
+	padding: 2% 0 1% 0;
+	.firstColumn {
+		margin-left: 10%;
+	}
+	color: black;
+	overflow: auto;
+	position: relative;
+	z-index: 10;
+}
+
+@mixin color2rgb {
+	/*background-color: rgba(255,194,115, .9);	*/
+	background-color: rgba(233,231,198, .9);	
+}
+
+@mixin colorrgb {
+	/*background-color: rgba(253,255,115, .9);	*/
+	background-color: rgba(213,211,180, .9);	
+}
+
+@mixin color3rgb {
+	/*background-color: rgba(255, 154, 64, .9);*/
+	background-color: rgba(140,136,81, .9);
+}
 
 @mixin section($color) {
 	width: 100%;
 	background-color: $color;
 	overflow: auto;
 }
+@mixin button {
+	font-family: $standard;
+	background-color: $buttonColor;
+	outline: none;
+	border: none;
+	padding: 10px;	
+	color: #fff;
+	border-radius: 5px;
+	&:hover {
+		background-color: lighten($buttonColor, 15%);
+		cursor: hand; cursor: pointer;
+	}
+}
 
 body, div, h1, h2, form, fieldset, input, textarea, footer, p, img {
     margin: 0; padding: 0; border: 0; outline: none;
 }
-a { text-decoration:none; color: #fff;}
+
+a { 
+	text-decoration:none; color: #fff;
+}
 
 body {
 	background-color: #000;
 	margin: 0;
 }
 
-
-
 #lectureNavbar {
 	position: fixed;
+	z-index: 20;
 	background-color: #fff;
 	width: 100%;
-	/*margin-top: -75px;*/
-	padding: 5px;
-	/*overflow: auto;*/
-	padding-left: 5%;
-	/*opacity: 0;*/
+	padding: 0 5%;
 	.inline {
 		display: inline-block;
 	}
@@ -42,25 +105,27 @@ body {
 	}
 	h2 {
 		font-family: $bannerFont;
+		margin-top: .5%;
+	}
+	button {
+		@include button;
+		float: right;
+		margin: 1% 5% 1% 1%;
 	}
 }
 
 #lectureContainer {
 	overflow: auto;
-
 }
 
-
-
-#back_link {
+.navbar_link {
 	width: 150px;
 	float: right;
-	margin: 1.5% 5% 0 0;
+	margin: 1% 0;
 }
 
 .section {
 	font-family: $standard;
-	/*padding: 5%;*/
 	width: 35%;
 	margin-left: 10%;
 	color: #000;
@@ -69,14 +134,10 @@ body {
 		padding-bottom: 10%;
 		font-size: 1.2em;
 		line-height: 2em;
-		/*margin: 10% 0;*/
 	}
 	h3 {
 		padding: 10% 13%;
 		margin: 0;
-	}
-	div {
-		/*padding-top: 8%;*/
 	}
 	.first_paragraph {
 		padding-top: 25%;
@@ -84,85 +145,147 @@ body {
 }
 
 #graphic_section_1 {	
-	color: #fff;
+	color: black;
 	font-size: 2em;
+}
+
+.powerpoint {
+	border: $color3 4px solid;
+	background-color: $color;
+	border-radius: 5px;
+	padding: 2%;
+	z-index: 5;
+	opacity: .9;
 }
 
 .graphic {
 	font-family: $standard;
 	position: fixed;
+	z-index: 0;
 	width: 40%;
-	height: 300px;
 	top: 25%;
 	right: 5%;
 	text-align: center;
 	div {
 		margin: 5% 0;
 	}
-	/*z-index: 5;*/
 }
 
 #section_1 {
-	@include section(green);
-	background: image-url('bg.jpg') no-repeat top center fixed; 
+	@include section(black);
+	background: image-url('limbo_5.jpg') no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-/*  p, h3 {
-  	color: #fff;
-  }*/
 }
 
 #sub_section_1 {
-	background-color: yellow;
-	/*background: image-url('yellowtrans.png') top center; */
+	@include colorrgb;
 }
 
 #section_2 {
-	@include section(blue);
-}
-
-#sub_section_2 {
-	background-color: lightgreen;
-}
-
-#section_3 {
-	@include section(orange);	
-}
-
-#section_4 {
-	@include section(yellow);
-}
-
-#section_5 {
-	@include section(violet);
-	background: image-url('limbo_1.jpg') no-repeat top center fixed; 
+	background: image-url('limbo_5.jpg') no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-#sub_section_5 {
-	background: image-url('yellowtrans.png') top center;
+#section_2_overlay, #section_2b_overlay {
+	@include section($color2);
+	@include color2rgb;
+}
+
+.sub_section_2 {
+	color: white;
+	background: image-url('limbo_5.jpg') no-repeat top center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#section_3 {
+	background: image-url('limbo_1.jpg') no-repeat top center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.sub_section_3 {
+	@include color2rgb;
+}
+
+#section_4 {
+	background: image-url('limbo_1.jpg') no-repeat top center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#section_4_overlay {
+	@include section($color);
+	@include colorrgb;
+}
+
+#sub_section_4 {
+	background: image-url('limbo_1.jpg') no-repeat top center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+#section_5 {
+	background: image-url('limbo_3.jpg') no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.sub_section_5 {
+	@include colorrgb;
+}
+
+#section_6 {
+	background: image-url('limbo_3.jpg') no-repeat top center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#section_6_overlay {
+	@include color3rgb;
+}
+
+#sub_section_6 {
+  color: $color;
+	background: image-url('limbo_3.jpg') no-repeat top center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+}
+
+
+.column {
+	width: 46%;
+	float: left;
+	padding: 0 2%;
 }
 
 .lectureQuestion {
-	overflow: auto;
-	/*width: 200%;*/
-	background-color: brown;
-	color: white;
-	padding: 8% 0;
-	/*padding-top: 10%;*/
-	.column {
-		width: 46%;
-		float: left;
-		padding: 0 2%;
-	}
+	@include fullStripe;
+
 	.commentDisplay {
 		font-size: .8em;
-		background-color: white;
+		background-color: #fff;
 		overflow: scroll;
 		height: 500px;
 		color: black;
@@ -172,7 +295,10 @@ body {
 		div {
 			margin-bottom: 5%;
 		}
-
+	}
+	.commentDate {
+		padding-left: 2%;
+		font-size: .7em;
 	}
 }
 
@@ -189,34 +315,40 @@ form {
 	input {
 		outline: 5px solid #aaa;
 	}
-
 	textarea {
+		font-family: $standard;
 		margin: 10px 0;
 		border: none;	
 		width: 100%;
 		height: 200px;
+		background-color: #fff;
 	}
-
 	input[type="submit"] {
-		outline: 0;
-		padding: 3%;
-		border-radius: 5px;
-		background-color: orange;
+		@include button;
 		display: block;
 		margin: auto;
-		&:hover {
-			background-color: yellow;
-			cursor: hand; cursor: pointer;
-		}
-
 	}
-
 	h3 {
 		margin: 15px 0 5px 0;
 	}
 
 }
 
+.videoContainer {
+	@include fullStripe;
+	.secondColumn {
+		text-align: center;
+	}
+}
+
+.emptyDiv {
+	height: 500px;
+}
+
 footer {
-	color: #fff;
+	background-color: $color2;
+	color: $color3;
+	padding: 1%;
+	font-family: $standard;
+	font-size: .8em;
 }
