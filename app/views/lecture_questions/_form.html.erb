@@ -3,8 +3,6 @@
 	<%= f.label :content %>
 	<%= f.text_area :content, :placeholder => "Enter question" %>	
 </div>
+<%= f.label "Number: " %>
 <%= f.text_field :order_index, :value => @index %>
-<div>
-	<%= render 'lecture_questions/index' %>
-</div>
 <% end %>

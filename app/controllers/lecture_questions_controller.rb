@@ -18,7 +18,10 @@ class LectureQuestionsController < ApplicationController
 	end
 
 	def destroy
+		@lecture = Lecture.find(params[:lecture_id])
 		@question = LectureQuestion.find(params[:id])
-		@question.destroy
+		if @question.destroy
+			respond_with @lecture
+		end
 	end
 end
