@@ -1,4 +1,4 @@
-$bannerFont: "Monoton";
+$bannerFont: "Special Elite";
 /*$standard: "News Cycle";*/
 $standard: "Pontano Sans";
 /*
@@ -12,10 +12,18 @@ $color3: #8c8851;
 
 $buttonColor: #bf3030;
 
+@mixin backgroundImageStyle($imageUrl) {
+	background: image-url($imageUrl) no-repeat top left fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @mixin bodyText {
 	font-family: $standard;
 	p {
-		padding: 0 13%;
+		padding: 0 9%;
 		padding-bottom: 10%;
 		font-size: 1.2em;
 		line-height: 2em;
@@ -29,10 +37,13 @@ $buttonColor: #bf3030;
 @mixin fullStripe {
 	@include bodyText;
 	@include color3rgb;
-	padding: 2% 0 1% 0;
-	.firstColumn {
-		margin-left: 10%;
+
+	.secondColumn {
+		padding-left: 5%;
+		padding-bottom: 5%;
 	}
+
+	padding: 2% 0 1% 0;
 	color: black;
 	overflow: auto;
 	position: relative;
@@ -132,10 +143,11 @@ span.gap {
 }
 
 .section {
+	float: left;
 	font-family: $standard;
 	min-width: 350px;
-	width: 35%;
-	margin-left: 10%;
+	width: 45%;
+	/*margin-left: 10%;*/
 	color: #000;
 	p {
 		padding: 0 13%;
@@ -150,6 +162,14 @@ span.gap {
 	.first_paragraph {
 		padding-top: 25%;
 	}
+}
+
+.sectionContainer {
+	overflow: auto;
+	min-width: 760px;
+	width: 100%;
+	margin: auto;
+	/*background-color: gray;*/
 }
 
 #graphic_section_1 {	
@@ -168,12 +188,12 @@ span.gap {
 }
 
 .graphic {
-	font-family: $standard;
 	position: fixed;
-	z-index: 0;
-	width: 40%;
+	width: 39%;
 	top: 25%;
-	right: 5%;
+	right: 10%;
+	min-width: 350px;
+	font-family: $standard;
 	text-align: center;
 	div {
 		margin: 5% 0;
@@ -182,11 +202,12 @@ span.gap {
 
 #section_1 {
 	@include section(black);
-	background: image-url('limbo_5.jpg') no-repeat top center fixed; 
+	@include backgroundImageStyle('limbo_5.jpg');
+	/*background: image-url('limbo_5.jpg') no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #sub_section_1 {
@@ -194,11 +215,12 @@ span.gap {
 }
 
 #section_2 {
-	background: image-url('limbo_5.jpg') no-repeat top center fixed; 
+	@include backgroundImageStyle('limbo_5.jpg');
+/*	background: image-url('limbo_5.jpg') no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #section_2_overlay, #section_2b_overlay {
@@ -208,30 +230,35 @@ span.gap {
 
 .sub_section_2 {
 	color: white;
-	background: image-url('limbo_5.jpg') no-repeat top center fixed;
+	@include backgroundImageStyle('limbo_5.jpg');
+
+	/*background: image-url('limbo_5.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #section_3 {
-	background: image-url('limbo_1.jpg') no-repeat top center fixed;
+	@include backgroundImageStyle('limbo_1.jpg');
+
+	/*background: image-url('limbo_1.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 .sub_section_3 {
 	@include color2rgb;
 }
 
 #section_4 {
-	background: image-url('limbo_1.jpg') no-repeat top center fixed;
+	@include backgroundImageStyle('limbo_1.jpg');
+/*	background: image-url('limbo_1.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #section_4_overlay {
@@ -240,20 +267,22 @@ span.gap {
 }
 
 #sub_section_4 {
-	background: image-url('limbo_1.jpg') no-repeat top center fixed;
+	@include backgroundImageStyle('limbo_1.jpg');	
+	/*background: image-url('limbo_1.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   color: #fff;
 }
 
 #section_5 {
-	background: image-url('limbo_3.jpg') no-repeat top center fixed; 
+	@include backgroundImageStyle('limbo_3.jpg');
+/*	background: image-url('limbo_3.jpg') no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .sub_section_5 {
@@ -261,24 +290,28 @@ span.gap {
 }
 
 #section_6 {
-	background: image-url('limbo_3.jpg') no-repeat top center fixed;
+	@include backgroundImageStyle('limbo_3.jpg');	
+/*	background: image-url('limbo_3.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #section_6_overlay {
 	@include color3rgb;
+	overflow: auto;
+	/*height: 300px;*/
 }
 
 #sub_section_6 {
   color: $color;
-	background: image-url('limbo_3.jpg') no-repeat top center fixed;
+	@include backgroundImageStyle('limbo_3.jpg');
+/*	background: image-url('limbo_3.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   height: 1000px;
 }
 
@@ -363,9 +396,27 @@ footer {
 }
 
 
-@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:320px) { 
+/* smartphones, iPhone, portrait 480x320 phones */ 
+}
+@media (max-width:481px) { 
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+	.section {
+		width: 100%;
+	}
+}
+@media (max-width: 860px) { 
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+	.graphic {
+		display: none;
+	}
+	.sectionContainer {
+		min-width: 350px;
+	}
+	.secondColumn {
+		width: 90%;
+	}
+}
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
