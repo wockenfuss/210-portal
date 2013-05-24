@@ -1,0 +1,4 @@
+$('#lecture_question_index').html('').append('<%= j render :partial => "lecture_questions/index" %>');
+$('#lecture_question_order_index').val('<%= @index %>');
+$('#lecture_question_content').val('');
+$( '#dialog-form' ).dialog( "close" );

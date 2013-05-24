@@ -11,17 +11,27 @@ class LectureQuestionsController < ApplicationController
 	def create
 		@lecture = Lecture.find(params[:lecture_id])
 		if @lecture.lecture_questions.create(params[:lecture_question])
-			redirect_to lecture_path(@lecture), :notice => "Question created"
-		else
-			render 'lecture_questions/new', :notice => "Something went wrong"
+			@question = LectureQuestion.new
+			@index = @lecture.lecture_questions.count + 1
+			respond_with @lecture, @question, @index
 		end
+	end
+
+	def edit
+		@lecture = Lecture.find(params[:lecture_id])
+		@question = LectureQuestion.find(params[:id])
+		respond_with @lecture, @question
+	end
+
+	def update
 	end
 
 	def destroy
 		@lecture = Lecture.find(params[:lecture_id])
 		@question = LectureQuestion.find(params[:id])
 		if @question.destroy
-			respond_with @lecture
+			@index = @lecture.lecture_questions.count + 1
+			respond_with @lecture, @index
 		end
 	end
 end

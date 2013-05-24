@@ -1,9 +1,12 @@
 <h3>Lecture questions</h3>
 <% if @lecture.lecture_questions.any? %>
 	<% @lecture.lecture_questions.each do |question| %>
-	<p>
+	<p id="<%= question.order_index%>">
 		<%= "#{question.order_index}. " %>
-		<%= question.content %>
+		<%= "#{question.content}" %>
+<!-- 		<span class="gap">|</span>
+		<#%= link_to "Edit", edit_lecture_lecture_question_path([@lecture], [question]), :remote => true %> -->
+		<span class="gap">|</span>		
 		<%= link_to "Delete", lecture_lecture_question_path([@lecture],[question]), :method => "delete", :remote => true, :confirm => "Are you sure you want to delete this question?"%>
 	</p>
 	<% end %>

@@ -5,4 +5,5 @@
 </div>
 <%= f.label "Number: " %>
 <%= f.text_field :order_index, :value => @index %>
+<%= f.hidden_field :lecture_id, :value => @lecture.id %>
 <% end %>

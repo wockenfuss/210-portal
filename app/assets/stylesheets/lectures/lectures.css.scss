@@ -79,11 +79,18 @@ body, div, h1, h2, form, fieldset, input, textarea, footer, p, img {
 
 a { 
 	text-decoration:none; color: #fff;
+	&:hover {
+		color: yellow;
+	}
 }
 
 body {
 	background-color: #000;
 	margin: 0;
+}
+
+span.gap {
+	margin: 2%
 }
 
 #lectureNavbar {
