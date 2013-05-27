@@ -4,7 +4,7 @@
 		<% questions.each_with_index do |question, index| %>
 			
 			<li>
-				<div class="inline">
+				<div class="questionLink">
 					<%= link_to "Question #{index + 1} - #{question.name if question.name}", edit_question_path(question), :remote => true, :class => 'questionLinks', :data => {:question => question.id, :sort => question.sort_number} %> 
 				</div>
 				

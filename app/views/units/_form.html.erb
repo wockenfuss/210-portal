@@ -12,6 +12,38 @@
     <%= f.label :close %>
     <%= f.text_field :close_date, :placeholder => "Click to select closing date", :class => "datepicker"%>
   </div>
+<!--   <div class="unitComponentList">
+    <p>Add components</p>
+    <div class="componentListItem">
+      <% if @lectures.size > 0 %>
+        <span>Lectures: </span>
+        <ul>
+          <% @lectures.each do |lecture| %>
+            <li>
+              <%= check_box_tag :lecture%>
+              <span><%= lecture.name %></span>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+
+    <div class="componentListItem">
+      <% if @quizzes.size > 0 %>
+        <span>Quizzes: </span>
+        <ul>
+          <% @quizzes.each do |quiz| %>
+            <li>
+              <%= check_box_tag :quiz %>
+              <span><%= quiz.name %></span>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div> -->
+
+    
+  <!-- </div> -->
   <div>
   	<%= f.submit %>
   </div>

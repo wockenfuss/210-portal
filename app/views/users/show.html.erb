@@ -1,16 +1,19 @@
-<h2><%= "This week's schedule" %></h2>
+<h2><%= "Current Schedule" %></h2>
 <!-- <p><#%= @user.email %></p> -->
 <% if @units %>
-	<div>
+	<div class="unit">
 		<% @units.each do |unit| %>
 			<p>
 				<%= unit.name %>
 			</p>
 			<ul>
-				<% if unit.lectures != [] %>
+				<% puts "---------------#{unit.id}"  %>
+				<% if unit.components.size != 0 %>
 					<li>
-						<%= link_to unit.lectures.first.name, lecture_path(unit.lectures.first) %>
+						<%= link_to unit.components.first.name, lecture_path(unit.components.first) %>
 					</li>
+				<% else %>
+				<%= "else" %>
 				<% end %>
 			</ul>
 				
@@ -28,5 +31,5 @@
 		<#% end %>	 -->
 	</div>
 <% else %>
-<p><%= "There are no scheduled items this week." %> </p>
+<p><%= "There are currently no scheduled items." %> </p>
 <% end %>

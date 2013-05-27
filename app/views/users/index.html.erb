@@ -1,4 +1,9 @@
-<% @users.each do |user| %>
-	<p><%= "#{user.email} -- Last signed in: #{time_ago_in_words(user.last_sign_in_at) if user.last_sign_in_at} ago."%>
-		<%= link_to "View", user_root_path(user) %></p>
-<% end %>
+<ul>
+	<% @users.each do |user| %>
+		<li>
+			<span><%= "#{user.email}"%></span> 
+			<span><%= "Last signed in: #{time_ago_in_words(user.last_sign_in_at) if user.last_sign_in_at} ago."%></span>
+			<%= link_to "View", user_root_path(user) %>
+		</li>
+	<% end %>	
+</ul>

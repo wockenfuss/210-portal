@@ -1,10 +1,26 @@
 /*$primary-font: "Special Elite";*/
 /*$primary-font: "Patrick Hand SC";*/
-$primary-font: "Roboto";
-$secondary-font: "Roboto";
+$primary-font: "Pompiere";
+$secondary-font: "Special Elite";
+$tertiary-font: "Karla";
+
 $primaryWidth: 60%;
 
-@mixin flash {
+/*$backgroundColor: #666;*/
+/*$backgroundColor: #253f72;*/
+
+$backgroundColor: #7085ad;
+$midLightColor: #aebcd7;
+
+@mixin backgroundrgba($opacity) {
+	background-color: rgba(62,83,123, $opacity);
+}
+
+
+@mixin flash($color) {
+	position: absolute;
+	top: 50px;
+	left: $primaryWidth/3;
 	width: $primaryWidth;
 	margin: 10px auto;
 	padding: 5px;
@@ -12,6 +28,19 @@ $primaryWidth: 60%;
 	text-align: center;
 	color: #fff;
 	border-radius: 5px;
+	background-color: $color;
+}
+
+@mixin roundedButtons {
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	color: #fff;
+	background-color: darken($backgroundColor, 10%);
+	&:hover {
+		background-color: $backgroundColor;
+		cursor: pointer; cursor: hand;
+	}
 }
 
 span {
@@ -21,7 +50,8 @@ span {
 
 body {
 	margin: 0;
-	background-color: #666;
+	/*background-color: $backgroundColor;*/
+	background: image-url('mochaGrunge.png');
 }
 
 p {
@@ -33,14 +63,15 @@ a {
 	font-family: $secondary-font, sans-serif;
 	font-size: 1em;
 	text-decoration: none;
-	color: #666;
+	color: darken($backgroundColor, 30%);
 	&:hover {
-		color: lighten(#ccc, 60%);
+		color: $backgroundColor;
 	}
 }
 
-a.navbar {
+.navbar {
 	margin: 15px 30px 0 0;
+	display: inline-block;
 }
 
 li {
@@ -76,18 +107,52 @@ h2 {
 	font-size: 1.6em;
 	margin: .5% 0 0 2%;
 	font-family: $primary-font, sans-serif;
-	color: #ddd;
+	color: darken($backgroundColor, 30%);
 }
 
+#navBackground {
+	background: image-url('mooning.png');
+
+}
 
 nav {
 	width: 100%;
 	height: 50px;
-	background-color: #aaa;
+	/*background-color: #aaa;*/
+	/*background: image-url('yellowtrans.png');*/
+	/*background-color: rgba(0, 128, 255, .2);*/
 	opacity: .8;
+	border-bottom: 5px #333 solid;
+	a:hover {
+		color: #fff;
+	}
 }
 
-.navLine {
+.dropdown {
+	display: none;
+	width: 12%;
+	background: image-url('mooning.png');
+	/*background-color: #aaa;*/
+	position: absolute;
+	right: 0;
+	top: 50px;
+	/*border: 5px solid #343459;*/
+	border: 5px solid #444;
+	ul {
+		list-style: none;
+		text-align: right;
+		margin-right: 10%;
+		li {
+			margin: 6px 0;
+		}
+	}
+	.dropdown-divider {
+		border-top: solid 1px #E5E5E5;
+		margin: 5px 0;
+	}
+}
+
+/*.navLine {
 	width: 100%;
 	height: 5px;
 }
@@ -102,30 +167,45 @@ nav {
 
 .navLineBottom {
 	background-color: #ccc;
-}
+}*/
 
 .attemptQuestions {
 	margin-top: 3%;
 }
 
-/*-----rounded buttons -----*/
-input[type="submit"].button {
-	border-radius: 15px;
-	outline: none;
-	width: 100px;
-	height: 30px;
-	font-size: 1em;
-	color: #fff;
-	background-color: #999;
-	border: none;
-	margin: 4% 4% 4% 6%;
-	&:hover {
-		background-color: #555;
-	}
-}
-
 .links {
 	margin: 0 10px;
+}
+
+.quizLinks {
+	float:left;
+	/*width: 10%;*/
+	margin: 0 2% 0 2%;
+}
+
+.quizListing {
+	overflow: auto;
+	background-color: rgba(255,255,255,.7);
+	padding: 2%;
+	margin: 1%;
+	width: 90%;
+}
+
+.quizName {
+	float: left;
+	width: 18%;
+}
+
+.quizDate {
+	float: left;
+	width: 30%;
+}
+
+
+.unit {
+	background-color: rgba(255,255,255, .7);
+	padding: 2%;
+	margin: 1%;
 }
 
 #linkbar {
@@ -170,59 +250,36 @@ form {
 	/*background-color: orange;*/
 
 	input {
-		outline: 5px solid #aaa;
+		outline: 5px solid darken($backgroundColor, 10%);
 		margin: 10px 0;
-		font-family: $secondary-font;
+		font-family: $tertiary-font;
+		line-height: 150%;
 	}
 
 	textarea {
-		outline: 5px solid #aaa;
+		outline: 5px solid $backgroundColor;
 		margin: 10px 0;
-		font-family: $secondary-font;
+		font-family: $tertiary-font;
 		border: none;	
 		width: 84%;
 		height: 40px;
 	}
 
 	input[type="submit"] {
-		border: none;
-		/*display: inline-block;*/
-		background-color: #ddd;
+		@include roundedButtons;
+		padding: 1% 3%;
 		margin-top: 25px;
 		margin-left: 70px;
-		&:hover {
-			background-color: #fff;
-			cursor: hand; cursor: pointer;
-		}
-
+		font-size: 1em;
 	}
-
 
 	input[type="checkbox"] {
 		outline: none;
 	}
 
-
 	input[type="radio"] {
 		outline: none;
-		/*background: url('radio.png') no-repeat;*/
-/*    opacity: 0;    
-    float: left;
-    width: 36px;*/
 	}
-
-/*	input[type='radio'] + label {
-    margin: 0;
-    clear: none;
-    display: inline-block;
-    padding: 5px 0 4px 24px;
-    cursor: pointer;
-    background: url(unchecked_radio.png) left center no-repeat; 
-	}
-	input[type='radio']:checked + label {
-    background-image: url(checked_radio.png);
-  }*/
-
 
 	input[value="Send me reset password instructions"] {
 		margin-left: 0;
@@ -259,6 +316,15 @@ form {
 	}
 }
 
+input[type="submit"].button {
+	@include roundedButtons;
+	width: 100px;
+	height: 30px;
+	font-size: 1em;
+	margin: 4% 4% 4% 6%;
+	padding: 0;
+}
+
 #question_points {
 	width: 3%;
 }
@@ -271,11 +337,12 @@ form {
 .container-fluid {
 	width: 100%;
 	overflow: auto;
+	background-color: rgba(112, 133, 173, 0.4);
 	/*background: url('bg.jpg') no-repeat top center fixed; */
-  -webkit-background-size: cover;
+/*  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .contentContainer-fluid {
@@ -306,9 +373,10 @@ form {
 	padding: 2%;
 	margin-top: 2% ;
 	opacity: .9;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 	border: 5px solid #fff;
-	background-color: #ccc;
+	/*background-color: lighten($backgroundColor, 10%);*/
+	background: image-url('mooning.png');
 }
 
 #formContainer {
@@ -322,7 +390,6 @@ form {
 	width: 45%;
 	float: left;
 	margin-left: 1%;
-	/*background-color: orange;*/
 	padding: 1% 3% 1% 0;
 	h3 {
 		margin: 0;
@@ -333,16 +400,28 @@ form {
 	}
 	li {
 		display: inline-block;
-		border: 4px #555 solid;
-		background-color: #bbb;
+		border: 4px darken($backgroundColor, 25%) solid;		
+		background-color: lighten($backgroundColor, 30%);
+		/*background-color: #bbb;*/
 		margin: 3px 0;
 		padding: 3px;
 		color: #000;
 		width: 85%;
+		height: 30px;
+		a:hover {
+			color: darken($backgroundColor, 60%);
+		}
+		.questionLink {
+			display: inline-block;
+			margin-top: 5px;
+		}
+	}
+
+	.questionLinks {
+		font-family: $tertiary-font;
 	}
 
 	li.disabledLinks {
-		/*background-color: #666;*/
 		opacity: .4;
 		a:hover {
 			color: #666;
@@ -372,7 +451,7 @@ a.disabledLinks {
 }
 
 #questionContainer li.dragAndDrop {
-	background-color: #f33;
+	background-color: #cd6767;
 	border: 4px #444 solid;
 	cursor: pointer; cursor: hand;
 	a {
@@ -383,12 +462,20 @@ a.disabledLinks {
 #addQuestionForm {
 	width: 94%;
 	padding: 3%;
-	/*text-align: center;*/
-	background-color: #888;
+	background-color: rgba(0, 0, 0, .2);
 	display: none;
+	textarea, input {
+		outline: none;
+		border: 5px solid darken($backgroundColor, 20%);
+	}
+	input[type="submit"] {
+		padding: 1% 3%;
+		border: none;
+	}
 }
 
 .deleteButton {
+	font-family: $tertiary-font;
 	display: inline-block;
 	background-color: #f77;
 	color: #fff;
@@ -407,7 +494,6 @@ a.disabledLinks {
 .answersField {
 	width: 45%;
 }
-
 
 #timer {
 	background: #555;
@@ -441,8 +527,11 @@ a.disabledLinks {
 }
 */
 footer {
+	color: darken($backgroundColor, 20%);
 	padding: 2% 4%;
-	background-color: #aaa;
+	background: image-url('mooning.png');
+	/*background-color: lighten($backgroundColor, 30%);*/
+	/*background-color: #aaa;*/
 	height: 30px;
 }
 
@@ -455,48 +544,30 @@ footer {
 	}
 }
 
-.dropdown {
-	display: none;
-	width: 12%;
-	background-color: #aaa;
-	position: absolute;
-	right: 0;
-	top: 65px;
-	border: 5px solid #666;
-	ul {
-		list-style: none;
-		text-align: right;
-		margin-right: 10%;
-	}
-	.dropdown-divider {
-		border-top: solid 1px #E5E5E5;
-		margin: 5px 0;
-	}
-}
-
 /*------ flash -----*/
 #alerts {
 	display:none;
 }
 
 #flash_alert, #alerts {
-	@include flash;
-	background-color: #b60;
+	@include flash(#bc5656);
+	/*background-color: #b60;*/
 }
 
 #flash_error {
-	@include flash;
-	background-color: #f00;
+	@include flash(#f00);
+	/*background-color: #f00;*/
 }
 
 #flash_notice {
-	@include flash;
-	background-color: #0b0;
+	@include flash(#0b0);
+	/*background-color: #0b0;*/
 }
 
 #error_explanation {
 	display: none;
-	background-color: #b60;
+	background-color: #bc5656;
+	/*background-color: #b60;*/
 	padding: 2% 2% 2% 6%;
 	border-radius: 5px;
 	color: #fff;
@@ -531,7 +602,8 @@ footer {
 		display: inline;
 	}
 	display: none;
-	background-color: #666;
+	/*@include backgroundrgba(.5);*/
+	background-color: rgba(0,0,0,.2);
 	padding: 4%;
 	margin: 2%;
 	border-radius: 5px;
@@ -539,7 +611,27 @@ footer {
 	input {
 		width: 20%;
 	}
+	input[type="checkbox"] {
+		width: 4%;
+	}
+
+	.unitComponentList {
+		overflow: auto;
+		width: 90%;
+		margin: 3% 0%;
+		min-height: 200px;
+		padding: 2%;
+		/*background-color: brown;*/
+	}
+	.componentListItem {
+		/*background-color: blue;*/
+		float: left;
+		width: 30%;
+		margin-right: 2%;
+	}
 }
+
+
 
 /*----- datepicker -----*/
 .ui-datepicker {
