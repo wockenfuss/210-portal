@@ -24,22 +24,28 @@ $buttonColor: #bf3030;
 
 .ui-dialog-titlebar, .ui-dialog-buttonpane {
 	color: #000;
-	font-family: $standard;
+	span {
+		font-family: $standard;
+	}
 	background-color: #dbcfbc;
-	padding: 2%;
+	padding: 5%;
 }
 
 .ui-dialog-buttonpane {
 	button {
 		@include button;
 	}
+	.ui-button {
+		margin: 0 3%;
+	}
 }
+
 
 button.ui-dialog-titlebar-close {
 	color: #dbcfbc;
-	width: 5%;
-	height: 5%;
-	background-color: red;
+	width: 10%;
+	height: 10%;
+	background-color: $buttonColor;
 	float: right;
 	outline: none;
 	border: none;
@@ -47,7 +53,7 @@ button.ui-dialog-titlebar-close {
 	&:hover {
 		cursor: hand; cursor: pointer;
 		color: #fff;
-		background-color: lighten(red, 15%);
+		background-color: lighten($buttonColor, 15%);
 	}
 }
 
@@ -65,10 +71,19 @@ button.ui-dialog-titlebar-close {
 	z-index: 100;
 }
 
+.ui-dialog-content {
+	p {
+		font-family: $standard;
+	}
+	background-color: #b9af9a;	
+	padding: 5%;
+	min-height: 0;
+}
+
 #dialog-form {
 	overflow: auto;
 	font-family: $standard;
-	background-color: #b9af9a;
+	/*background-color: #b9af9a;*/
 	form {
 		padding-bottom: 0;
 		input { 
@@ -83,6 +98,6 @@ button.ui-dialog-titlebar-close {
   h1 { font-size: 1.2em; margin: .6em 0; }
   .ui-dialog .ui-state-error { padding: .3em; }
   .validateTips { border: 1px solid transparent; padding: 0.3em; }
-  padding: 5%;
+  /*padding: 5%;*/
 }
 	

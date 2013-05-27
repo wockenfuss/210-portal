@@ -1,4 +1,5 @@
-$(function() {
+(function($, undefined) {
+  $(document).ready(function() {
     var content = $('#lecture_question_content'),
       index = $('#lecture_question_order_index'),
       lecture_id = $('#lecture_question_lecture_id');
@@ -64,3 +65,5 @@ $(function() {
         $( "#dialog-form" ).dialog( "open" );
       });
   });
+    
+  })(jQuery);

@@ -7,13 +7,17 @@
 		$('#flash_alert, #flash_error, #flash_notice').fadeIn('normal', function() {
 			$(this).delay(2500).fadeOut('slow');
 		});
-		$('#dropdownTrigger, #managerDropdownTrigger').on('click', function(e){
+		$('#dropdownTrigger, #managerDropdownTrigger').on('mouseover', function(e){
 			var $trigger = $(this);
 			var $dropdown = $trigger.next();
 			if ( !$dropdown.is(':visible') ) {
 				$('.dropdown:visible').slideToggle('fast');
 				var position = $trigger.position().left + $trigger.width() - $dropdown.width() + parseInt($trigger.css('margin-right'), 10) - 10;
 				$dropdown.css('left', position);
+				$dropdown.on('mouseleave', function() {
+					$dropdown.slideToggle('fast');
+					$dropdown.off('mouseleave');
+				});
 			}
 			$dropdown.slideToggle('fast');
 		});
@@ -32,13 +36,9 @@
 				}
 			});
 		}
-
-		// $('#reorder_questions').on('click', function() {
-		// 	console.log("reorder");
-		// });
-		// $('#sortable').sortable();
-		// $('#sortable').disableSelection();
+		
 		myApp.Links('#linkbarLinks a').listen();
+
 	};
 
 	myApp.multipleChoiceQuestion = function() {
