@@ -1,5 +1,6 @@
 class LecturesController < ApplicationController
 	layout "lectures", :only => [:show]
+	layout "application", :only => [:index]
 
 	def index
 		@lectures = Lecture.all

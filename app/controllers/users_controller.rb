@@ -8,8 +8,6 @@ class UsersController < ApplicationController
 	def show
 		@user = User.find(params[:id])
 		@units = Unit.current
-		p @units
-		# @quizzes = Quiz.released_quizzes
 	end
 
 	def index
