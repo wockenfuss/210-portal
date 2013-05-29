@@ -4,33 +4,37 @@
       <%= link_to "Narrative Strategies", root_path, :class => "brand" %>
 
       <% if user_signed_in? %>
-        <a href="#" id="dropdownTrigger" data-dropdown="#dropdown-1" class="pull-right navbar"><%= current_user.email %></a>
-        <div class="dropdown">
-          <ul class="dropdown-menu">
+
+        <div class="dropdown pull-right navbar">
+          <%= link_to current_user.email, "#" %>
+          <ul class="dropdownMenu">
             <li><%= link_to "Home Page", user_root_path(current_user)%></li>
             <li><%= link_to "My Settings", edit_user_registration_path(current_user)%></li>
-            <!-- <li><#%= link_to "My Account", edit_user_registration_path(@user)%></li> -->
             <li class="dropdown-divider"></li>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
           </ul>
         </div>
 
         <% if can? :manage, :all %>
-          <%= link_to "Manage", "#", :id => "managerDropdownTrigger", :class => "pull-right navbar" %>
-          <div class="dropdown">
-            <ul class="dropdown-menu">
+
+          <div class="dropdown pull-right navbar">
+            <%= link_to "Manage", "#"%>
+            <ul class="dropdownMenu">
               <li><%= link_to "Lectures", lectures_path %></li>  
-              <li><%= link_to "Content", units_path %></li>  
+              <li><%= link_to "Units", units_path %></li>  
               <li><%= link_to "Users", users_path %></li>  
               <li><%= link_to "Quizzes", quizzes_path %></li>  
             </ul>
-          </div>        
+          </div>
+                    
         <% end %>
 
-        <%= link_to "Gradebook", user_gradebook_path(current_user), :class => "pull-right navbar" %>
+        <div class="pull-right navbar">
+          <%= link_to "Gradebook", user_gradebook_path(current_user) %>  
+        </div>
+        
         <!-- <#%= link_to "Theater", "#", :class => "pull-right navbar" %> -->
         <!-- <#%= link_to "Classroom", "#", :class => "pull-right navbar" %> -->
-
       <% else %>
         <%= link_to "Sign in", new_user_session_path, :class => "pull-right navbar"%>
       <% end %>
