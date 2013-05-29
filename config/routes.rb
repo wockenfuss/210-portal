@@ -10,6 +10,7 @@ Portal::Application.routes.draw do
     resources :lecture_questions, :except => [:index]
   end
   resources :comments, :only => [:new, :create]
+  resources :components, :only => [:destroy, :update]
   
   devise_for :users
 

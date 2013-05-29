@@ -1,0 +1,10 @@
+	<% if unit.components.size != 0 %>
+		<ul id="sortable">
+			<% unit.components.each do |component| %>
+				<li>
+					<%= link_to component.name, component.path(current_user), :data => { :sort => component.component_index, :component => component.id } %>
+					<%= link_to "x", component_path(component), :method => 'delete', :remote => true ,:class => 'deleteButton pull-right', :confirm => "Are you sure you want to remove this component?"%>
+				</li>
+			<% end %>
+		</ul>
+	<% end %>
