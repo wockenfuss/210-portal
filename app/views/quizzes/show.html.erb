@@ -1,4 +1,4 @@
-<%= link_to "<-- Back to quiz list", quizzes_path %>
+<%= link_to "<-- Back to quiz list", quizzes_path, :class => 'backLink' %> 
 <h2><%= "#{@quiz.name} Attempts" %></h2>
 
 <% if @quiz.attempts != [] %>

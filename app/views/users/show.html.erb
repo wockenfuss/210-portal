@@ -7,16 +7,12 @@
 				<%= unit.name %>
 			</p>
 			<ul>
-				<% puts "---------------#{unit.id}"  %>
-				<% if unit.components.size != 0 %>
-					<li>
-						<%= link_to unit.components.first.name, lecture_path(unit.components.first) %>
-					</li>
-				<% else %>
-				<%= "else" %>
-				<% end %>
+				<% unit.components.each do |component| %>
+					<li><%= link_to component.name, component.path(current_user) %></li>
+				<% end %>	
 			</ul>
-				
+			
+			<!-- <#%= render :partial => 'components/index', :locals => { :unit => unit} %> -->
 		<% end %>
 <!-- 		<#% @quizzes.each do |quiz| %>
 			<li>

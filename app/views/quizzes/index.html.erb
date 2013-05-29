@@ -2,13 +2,13 @@
 <div class="quizList">
 	<ul>
 		<% @quizzes.each do |quiz| %>
-			<li class="quizListing">
-				<span class="quizName"><%= quiz.name %></span>
-				<span class="quizDate"><%= "Release: #{quiz.release_date.to_date}" %></span>
+			<li class="resourceListing">
+				<span class="resourceName"><%= quiz.name %></span>
+				<span class="resourceDate"><%= "Release: #{quiz.release_date.to_date}" %></span>
 				<!-- <span class="links"><#%= "Close: #{quiz.close_date.to_date}" %></span> | -->
-				<%= link_to "View/Edit", edit_quiz_path(quiz), :class => 'quizLinks'%>
-				<%= link_to "Grade", quiz_path(quiz), :class => 'quizLinks' %>
-				<%= link_to "Delete", quiz_path(quiz), :class => 'quizLinks', :confirm => 'Are you sure you want to delete this quiz?', :method => :delete%>				
+				<%= link_to "View/Edit", edit_quiz_path(quiz), :class => 'resourceLinks'%>
+				<%= link_to "Grade", quiz_path(quiz), :class => 'resourceLinks' %>
+				<%= link_to "Delete", quiz_path(quiz), :class => 'resourceLinks', :confirm => 'Are you sure you want to delete this quiz?', :method => :delete%>				
 				<!--<#%= link_to "Preview", quiz_path(quiz), :class => 'links'%>-->
 			</li>
 		<% end %>

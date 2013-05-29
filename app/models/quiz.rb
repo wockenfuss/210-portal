@@ -1,5 +1,8 @@
 class Quiz < ActiveRecord::Base
+  include Rails.application.routes.url_helpers
 
+  has_and_belongs_to_many :components
+  # has_and_belongs_to_many :units
 	has_and_belongs_to_many :questions, :order=>'sort_number ASC'#, :join_table => :questions_quizzes
 	has_many :attempts
 	
@@ -9,6 +12,13 @@ class Quiz < ActiveRecord::Base
 
   attr_accessible :close_date, :duration, :release_date, :name, :autograde
 
+  def path(user)
+    if user.has_role(:admin)
+      return edit_quiz_path(self)
+    else
+      return new_attempt_path(self, user)
+    end
+  end
 
   def possible_points
   	self.questions.inject(0) { |sum, question| sum + question.points } 

@@ -1,0 +1,21 @@
+var component_index = '<%= @component_index %>';
+$('#component_index').val(component_index);
+
+$("select option").filter(function() {
+    return $(this).text() === ""; 
+}).prop('selected', true);
+
+switch('<%= @data %>') {
+case "add":
+	$('#addComponentDrawer').slideToggle();
+  break;
+case "reorder":
+	console.log('reorder');
+	myApp.toggleDrag('#componentList li', myApp.updateComponentOrder);
+	break;
+case "remove": 
+	$('.deleteButton').toggle();
+	break; 
+default:
+	$('#componentList').html("").append('<%= j render :partial => "components/index", :locals => { :unit => @unit} %>');
+}

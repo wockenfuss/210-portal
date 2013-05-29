@@ -53,28 +53,12 @@
 			}
 		};
 
-		var toggleDrag = function() {
-			var $questions = $('#questionContainer li');
-			if ( $questions.hasClass('dragAndDrop') ) {
-				$questions.unbind('click');
-				$questions.removeClass('dragAndDrop');
-				$('#sortable').sortable('destroy');
-			} else {
-				$questions.bind('click', function(e) {
-					e.preventDefault();
-					e.stopPropagation();
-				});
-				$questions.addClass('dragAndDrop');
-				$('#sortable').sortable({
-					update: function(event, ui) {
-						updateOrder(event, ui);
-					}
-				});
-			}
+		var toggleDrag = function(target) {
+			myApp.toggleDrag(target, updateOrder);
 		};
 
 		var updateNames = function() {
-			var re = /Question (\d)/
+			var re = /Question (\d)/;
 			var $questions = $('a:contains("Question ")');
 			$.each($questions, function(index, value) {
 				number = $(value).attr('data-sort');

@@ -2,5 +2,5 @@ var action = '<%= j data %>';
 if ( action === 'remove' ) {
 	myApp.Questions().toggleDelete();
 } else if ( action === 'reorder' ) {
-	myApp.Questions().toggleDrag();
+	myApp.Questions().toggleDrag('#questionContainer li');
 }

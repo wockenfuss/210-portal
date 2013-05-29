@@ -1,5 +1,7 @@
-<%= link_to "<-- Back to quiz list", quizzes_path %>
+<%= link_to "<-- Back to quiz list", quizzes_path, :class => 'backLink' %>
+
 <%= render 'linkbar' %>
+
 <div id="floatContainer">
 	<div id="formContainer">
 		<%= render 'form' %>

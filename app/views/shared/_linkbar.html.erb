@@ -1,0 +1,9 @@
+<div id="errors"></div>
+<div id="linkbar">	
+	<h2 class="linkbarTitle"><%= name %></h2>
+	<div id="linkbarLinks">
+		<%= link_to "Add #{element.capitalize}", unit_path(unit, :data => "add"), :method => 'put', :class => 'linkbar_left', :remote => true %>
+		<%= link_to "Reorder #{element.capitalize}", unit_path(unit, :data => "reorder"), :method => 'put', :class => 'linkbar_middle', :remote => true %>		
+		<%= link_to "Remove #{element.capitalize}", unit_path(unit, :data => "remove"), :method => 'put', :class => 'linkbar_right', :id => "remove", :remote => true%>				
+	</div>
+</div>

@@ -1,1 +1,33 @@
-<span><%= @unit.name %></span>
+<%= link_to "<-- Back to Unit List", units_path, :class => 'backLink' %>
+
+<%= render :partial => 'shared/linkbar', :locals => { :name => @unit.name, :element => "element", :unit => @unit } %>
+
+<div>
+
+	<div id="componentList">
+		<%= render :partial => 'components/index', :locals => { :unit => @unit }%>
+	</div>
+</div>
+
+
+<div id="addComponentDrawer">
+	<div>
+		<%= form_tag(unit_path(@unit), :method => 'put', :remote => true) do%>
+		<div>
+			<span>Lectures:</span>
+			<%= select_tag "lectures", options_from_collection_for_select(@lectures, "id", "name"), :include_blank => true%>
+		</div>
+		<div>
+			<span>Quizzes:</span>
+			<%= select_tag "quizzes", options_from_collection_for_select(@quizzes, "id", "name"), :include_blank => true %>
+		</div>
+		<%= submit_tag "Add to Unit"%>
+		<%= hidden_field_tag 'component_index', "#{@component_index}" %>
+
+		<% end %>
+	</div>
+</div>
+
+<div class="upperMargin">
+	<%= render :partial => 'units/form' %>	
+</div>
