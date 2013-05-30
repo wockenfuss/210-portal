@@ -5,7 +5,7 @@ class Lecture < ActiveRecord::Base
 
 	has_many :lecture_questions
 	has_many :commments, :through => :lecture_questions
-  attr_accessible :name, :unit_id
+  attr_accessible :name, :unit_id, :subtitle
   validates :name, :presence => true
 
   def path(user)
