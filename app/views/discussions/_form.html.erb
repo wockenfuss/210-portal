@@ -1,0 +1,21 @@
+<%= form_for @discussion, :remote => true do |f| %>
+<div class="inline">
+	<%= f.label :name %>
+	<%= f.text_field :name, :class => "discussionText" %>
+</div>
+<div>
+	<%= f.label :content %>
+	<%= f.text_area :content, :class => "discussionText"  %>
+</div>
+<div class="inline">
+	<%= f.label :release %>
+	<%= f.text_field :release_date, :placeholder => "Click to select release date", :class => "datepicker discussionText"%>
+</div>
+<div class="inline">
+  <%= f.label :close %>
+  <%= f.text_field :close_date, :placeholder => "Click to select closing date", :class => "datepicker discussionText"%>
+</div>
+<div>
+	<%= f.submit %>
+</div>
+<% end %>

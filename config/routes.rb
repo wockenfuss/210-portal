@@ -6,7 +6,7 @@ Portal::Application.routes.draw do
   resources :questions, :except => [:show]
   resources :quizzes
   resources :units
-  resources :lectures, :only => [:index, :show] do 
+  resources :lectures do 
     resources :lecture_questions, :except => [:index]
   end
   resources :comments, :only => [:new, :create]
@@ -18,11 +18,14 @@ Portal::Application.routes.draw do
     root :to => "devise/sessions#new"
   end
 
+  get "discussions" => "discussions#index", :as => "manage_discussions"
   post "attempts/new/:quiz_id/:user_id" => "attempts#create", :as => "new_attempt"
   get "attempts/new/:quiz_id/:user_id" => "attempts#new", :as => "new_attempt"
   get "/users/:id" => "users#show", :as => "user_root"
   get "/questions/:quiz_id/new" => "questions#new", :as => "question_new"
   get "/users/:user_id/gradebook" => "gradebooks#show", :as => "user_gradebook"
+
+  resources :discussions
 
 
   resources :users, :only => [:index]
