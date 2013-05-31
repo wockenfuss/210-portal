@@ -10,6 +10,14 @@ class QuizzesController < ApplicationController
 
 	def index
 		@quizzes = Quiz.order("release_date ASC")
+		@quiz = Quiz.new
+		respond_with do |format|
+			format.html { render 'shared/manage',
+						  										:locals => {
+		  														:resource_name => "quiz",
+		  														:resources => @quizzes
+		  														} }
+		end
 	end
 
 	def new
@@ -19,8 +27,10 @@ class QuizzesController < ApplicationController
 	def create
 		@quiz = Quiz.new(params[:quiz])
 		if @quiz.save
-			flash[:notice] = "Quiz successfully created"
-			js_redirect_to edit_quiz_path @quiz
+			@quizzes = Quiz.order('release_date, created_at')
+			respond_with @quizzes
+			# flash[:notice] = "Quiz successfully created"
+			# js_redirect_to edit_quiz_path @quiz
 		else
 			js_alert(@quiz)
 		end
@@ -54,7 +64,9 @@ class QuizzesController < ApplicationController
 	def destroy
 		@quiz = Quiz.find(params[:id])
 		@quiz.destroy
-		redirect_to quizzes_path, :notice => "Successfully deleted"
+		@quizzes = Quiz.order('release_date, created_at')
+		respond_with @quizzes
+		# redirect_to quizzes_path, :notice => "Successfully deleted"
 	end
 
 	private

@@ -1,0 +1,13 @@
+<%= form_for @lecture, :remote => true do |f| %>
+<div class="inline">
+	<%= f.label :name %>
+	<%= f.text_field :name, :placeholder => "Enter lecture name", :class => 'lectureText' %>
+</div>
+<div class="inline">
+	<%= f.label :subtitle %>
+	<%= f.text_field :subtitle, :placeholder => "Enter subtitle" , :class => 'lectureText' %>
+</div>
+<div>
+	<%= f.submit %>
+</div>
+<% end %>

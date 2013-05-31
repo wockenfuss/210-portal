@@ -1,0 +1,5 @@
+<span class="resourceName"><%= resource.name %></span>
+<span class="resourceDate"><%= "#{resource.release_date.to_date}" %></span>
+<%= link_to "View/Edit", edit_quiz_path(resource), :class => 'resourceLinks'%>
+<%= link_to "Grade", quiz_path(resource), :class => 'resourceLinks' %>
+<%= link_to "Delete", quiz_path(resource), :class => 'resourceLinks', :confirm => 'Are you sure you want to delete this quiz?', :method => :delete, :remote => true %>	

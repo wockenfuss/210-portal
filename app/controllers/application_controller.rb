@@ -4,11 +4,22 @@ class ApplicationController < ActionController::Base
   def store_location
     session[:return_to] = request.url
   end
-
+  
   # def redirect_back_or_default(default) 
   #   redirect_to(session[:return_to] || default) 
   #   session[:return_to] = nil 
   # end 
+
+
+  def parse_lecture_name(name)
+    new_name = ""
+    words = name.split(" ")
+    words.each_with_index do |word, index|
+      new_name << "_" unless index == 0
+      new_name << word.downcase
+    end
+    new_name
+  end
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to user_root_path(current_user), :alert => exception.message

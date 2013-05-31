@@ -51,6 +51,26 @@ $midLightColor: #aebcd7;
 	}
 }
 
+@mixin toggleForm {
+	h3 {
+		color: #fff;
+		margin: 0;
+		display: inline;
+	}
+	display: none;
+	background-color: rgba(0,0,0,.2);
+	padding: 4%;
+	margin: 2%;
+	border-radius: 5px;
+	color: #fff;
+	input {
+		/*width: 20%;*/
+	}
+	input[type="checkbox"] {
+		width: 4%;
+	}
+}
+
 span {
 	font-family: $secondary-font;
 	margin: 0 1%;
@@ -115,6 +135,10 @@ h2 {
 	margin-bottom: 2%;
 }
 
+.createLink {
+	margin-left: 5%;
+}
+
 .upperMargin {
 	margin-top: 5%;
 }
@@ -133,6 +157,8 @@ h2 {
 }
 
 nav {
+	position: relative;
+	z-index: 100;
 	width: 100%;
 	height: 50px;
 	/*background-color: #aaa;*/
@@ -221,7 +247,7 @@ nav {
 .resourceLinks {
 	float:left;
 	/*width: 10%;*/
-	margin: 0 2% 0 2%;
+	margin: 0 5% 0 0;
 }
 
 .resourceListing {
@@ -234,12 +260,27 @@ nav {
 
 .resourceName {
 	float: left;
-	width: 18%;
+	width: 25%;
 }
 
 .resourceDate {
-	float: left;
+	/*float: left;*/
+	margin-left: 5%;
 	width: 30%;
+}
+
+#discussionContainer {
+	.resourceName {
+		width: 30%;
+	}
+
+	.resourceDate {
+		width: 20%;
+		/*float: none;*/
+	}
+	.resourceLinks {
+		margin: 0 4%;
+	}
 }
 
 
@@ -298,7 +339,7 @@ form {
 	}
 
 	textarea {
-		outline: 5px solid $backgroundColor;
+		outline: 5px solid darken($backgroundColor, 10%);
 		margin: 10px 0;
 		font-family: $tertiary-font;
 		border: none;	
@@ -500,6 +541,7 @@ a.disabledLinks {
 	border: none;
 }
 
+
 #addQuestionForm {
 	width: 94%;
 	padding: 3%;
@@ -637,37 +679,36 @@ footer {
 }
 
 #unit-form {
-	h3 {
-		color: #fff;
-		margin: 0;
-		display: inline;
-	}
-	display: none;
-	/*@include backgroundrgba(.5);*/
-	background-color: rgba(0,0,0,.2);
-	padding: 4%;
-	margin: 2%;
-	border-radius: 5px;
-	color: #fff;
-	input {
-		width: 20%;
-	}
-	input[type="checkbox"] {
-		width: 4%;
-	}
+	@include toggleForm;
+}
 
-/*	.unitComponentList {
-		overflow: auto;
-		width: 90%;
-		margin: 3% 0%;
-		min-height: 200px;
-		padding: 2%;
+#discussion-form {
+	@include toggleForm;
+}
+
+#quiz-form {
+	@include toggleForm;
+}
+
+#lecture-form {
+	@include toggleForm;
+}
+
+#lectureContainer {
+	.resourceListing {
+		input {
+			width: 30%;
+			outline: 5px solid darken($backgroundColor, 10%);
+			margin: 0 2% 0 0;
+			font-family: $secondary-font;
+			line-height: 125%;		
+		}
+		.updateLink {
+			float: none;
+			margin-left: 3%;
+			padding-top: 1%;
+		}
 	}
-	.componentListItem {
-		float: left;
-		width: 30%;
-		margin-right: 2%;
-	}*/
 }
 
 #addComponentDrawer {
@@ -728,7 +769,7 @@ span.customSelect.changed {
 	display: none;
 	background-color: #fff;
 	padding: 10px;
-	border: 8px #666 solid;
+	border: 8px darken($backgroundColor, 10%) solid;
 	font-family: $secondary-font;
 	a:hover {
 		color: #aaa;

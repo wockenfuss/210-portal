@@ -1,26 +1,26 @@
 <%= form_for @quiz, :remote => true do |f| %>
 	<div>
     <%= f.label :name %>
-    <%= f.text_field :name, :placeholder => "Enter quiz name"%>
+    <%= f.text_field :name, :placeholder => "Enter quiz name", :class => "quizText"%>
   </div>
 	<div>
     <%= f.label :duration %>
-    <%= f.text_field :duration, :placeholder => "minutes"%><span class="separation">min.</span>
+    <%= f.text_field :duration, :placeholder => "minutes", :class => "quizText"%><span class="separation">min.</span>
   </div>
   <div>
     <%= f.label :release_date %>
-    <%= f.text_field :release_date, :placeholder => "Click to select release date", :class => "datepicker"%>
+    <%= f.text_field :release_date, :placeholder => "Click to select release date", :class => "datepicker quizText"%>
   </div>
   <div>
     <%= f.label :close_date %>
-    <%= f.text_field :close_date, :placeholder => "Click to select closing date", :class => "datepicker"%>
+    <%= f.text_field :close_date, :placeholder => "Click to select closing date", :class => "datepicker quizText"%>
   </div>
   <div>
     <span class="formLabel">Autograde</span>
     <%= f.check_box :autograde, {}, true, false %>
   </div>
   <div class="inline"><%= f.submit %></div>
-  <div class="inline"><%= f.submit :Cancel %></div>
+  <!-- <div class="inline"><#%= f.submit :Cancel %></div> -->
 
 <% end %>
 

@@ -1,15 +1,15 @@
 <%= form_for @unit, :remote => true do |f| %>
-	<div class="inline">
+	<div>
 		<%= f.label :name %>
-		<%= f.text_field :name, :placeholder => "Enter unit name" %>
+		<%= f.text_field :name, :placeholder => "Enter unit name", :class => 'unitText' %>
 	</div>
   <div class="inline">
     <%= f.label :release %>
-    <%= f.text_field :release_date, :placeholder => "Click to select release date", :class => "datepicker"%>
+    <%= f.text_field :release_date, :placeholder => "Click to select release date", :class => "datepicker unitText" %>
   </div>
   <div class="inline">
     <%= f.label :close %>
-    <%= f.text_field :close_date, :placeholder => "Click to select closing date", :class => "datepicker"%>
+    <%= f.text_field :close_date, :placeholder => "Click to select closing date", :class => "datepicker unitText"%>
   </div>
   <div>
   	<%= f.submit %>

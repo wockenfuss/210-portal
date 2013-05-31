@@ -1,0 +1,4 @@
+<span class="resourceName"><%= resource.name%></span>
+<%= link_to "View", "#{resource_name.pluralize}/#{resource.id}", :class => 'resourceLinks' %>
+<%= link_to "Edit", "#{resource_name.pluralize}/#{resource.id}/edit", :class => 'resourceLinks', :remote => true %>
+<%= link_to "Delete", "#{resource_name.pluralize}/#{resource.id}", :confirm => 'Are you sure you want to delete this resource?', :method => :delete, :remote => true %>

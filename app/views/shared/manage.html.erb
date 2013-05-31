@@ -1,0 +1,15 @@
+<h1 class="inline"><%= resource_name.capitalize.pluralize %></h1>
+<%= link_to "Create #{resource_name.capitalize}", "#{resource_name.pluralize}/new", :remote => true, :class => "createLink" %>
+<div id='<%= "#{resource_name}-form"%>'>
+	<%= render "#{resource_name.pluralize}/form" %>
+</div>
+
+<% if resources.size > 0 %> 
+	
+	<div id='<%="#{resource_name}Container"%>'>
+		<%= render :partial => "shared/index", :locals => {:resources => resources, :resource_name => resource_name} %>	
+	</div>
+
+<% else %>
+	<p class="upperMargin"><%="There are no #{resource_name.pluralize}"%></p>
+<% end %>

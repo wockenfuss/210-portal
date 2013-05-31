@@ -1,0 +1,9 @@
+<ul>
+	<% resources.each do |resource| %>
+		<li class="resourceListing">
+			<%= render :partial => "#{resource_name.pluralize}/indexlinks", 
+								:locals => { :resource => resource, 
+														:resource_name => resource_name } %>
+		</li>
+	<% end %>
+</ul>

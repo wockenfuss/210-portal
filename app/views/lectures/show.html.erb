@@ -9,5 +9,5 @@
 	<% end %>
 </div>
 <div id="lectureContainer">
-	<%= render parse_lecture_name(@lecture.name) %>	
+	<%= render "lectures/content/#{parse_lecture_name(@lecture.name)}" %>	
 </div>

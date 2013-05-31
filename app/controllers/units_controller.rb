@@ -10,8 +10,10 @@ class UnitsController < ApplicationController
 	def create
 		@unit = Unit.create(params[:unit])
 		if @unit.save
-			flash[:notice] = "Unit created."
-			js_redirect_to(units_path)
+			@units = Unit.order('release_date, created_at')
+			respond_with @units
+			# flash[:notice] = "Unit created."
+			# js_redirect_to(units_path)
 		end
 	end
 
@@ -20,17 +22,24 @@ class UnitsController < ApplicationController
 		@lectures = Lecture.all
 		@unit = Unit.new
 		@units = Unit.order('release_date')
+		respond_with do |format|
+			format.html { render 'shared/manage', 
+		  												:locals => {
+		  														:resource_name => "unit",
+		  														:resources => @units
+		  														} }
+		end
 	end
 
 	def show
+	end
+
+	def edit
 		@quizzes = Quiz.all
 		@lectures = Lecture.all
 		@unit = Unit.find(params[:id])
 		@component_index = @unit.components.count + 1
 		respond_with @unit
-	end
-
-	def edit
 	end
 
 	def update
@@ -58,6 +67,9 @@ class UnitsController < ApplicationController
 	end
 
 	def destroy
+		@unit = Unit.find(params[:id])
+		@unit.destroy
+		@units = Unit.order('release_date, created_at')
 	end
 
 	private

@@ -1,0 +1,11 @@
+<%= form_for @lecture, :remote => true do |f| %>
+<div class="inline">
+	<%= f.text_field :name, :class => 'lectureText' %>
+</div>
+<div class="inline">
+	<%= f.text_field :subtitle , :class => 'lectureText' %>
+</div>
+<div class="inline">
+	<%= link_to_submit 'Update' %>
+</div>
+<% end %>

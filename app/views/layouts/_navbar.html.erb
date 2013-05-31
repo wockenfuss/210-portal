@@ -20,6 +20,7 @@
           <div class="dropdown pull-right navbar">
             <%= link_to "Manage", "#"%>
             <ul class="dropdownMenu">
+              <li><%= link_to "Discussions", manage_discussions_path(:manage => true)%></li>
               <li><%= link_to "Lectures", lectures_path %></li>  
               <li><%= link_to "Units", units_path %></li>  
               <li><%= link_to "Users", users_path %></li>  
@@ -28,7 +29,9 @@
           </div>
                     
         <% end %>
-
+        <div class="pull-right navbar">
+          <%= link_to "Discussions", discussions_path %>  
+        </div>
         <div class="pull-right navbar">
           <%= link_to "Gradebook", user_gradebook_path(current_user) %>  
         </div>

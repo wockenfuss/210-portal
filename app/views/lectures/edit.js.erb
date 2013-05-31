@@ -1,0 +1,11 @@
+var lecture_name = ('<%= @lecture.name %>');
+var $target = $('li:contains("' + lecture_name + '")');
+// $('#lecture-form').html("").append('<%= j render :partial => "form", :locals => {:lecture => @lecture} %>');
+// $target.empty().append('<div class="inline"><%= text_field_tag :name, @lecture.name, :class => "lectureText" %></div>')
+// 		.append('<div class="inline"><%= text_field_tag :subtitle, @lecture.subtitle, :class => "lectureText" %></div>')
+// 		.append('<%= link_to "Update", lecture_path(@lecture), :method => "put", :class => "resourceLinks updateLink" %>');
+
+
+
+$target.empty().append('<%= j render :partial => "inline_form", :locals => {:lecture => @lecture} %>');
+	
