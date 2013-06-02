@@ -11,13 +11,10 @@ class PostsController < ApplicationController
 	def create
 		@user = User.find(params[:post][:user_id])
 		@commentable = get_commentable(params[:post])
-		# @discussion = get_discussion(@commentable)
 		@current_post = @commentable.posts.build(params[:post])
 		if @current_post.save
-			# @post = Post.new
 			@posts = @commentable.posts
 			respond_with @posts
-			# redirect_to @commentable
 		else
 			#error
 		end
@@ -28,11 +25,4 @@ class PostsController < ApplicationController
     parameters[:commentable_type].constantize.find(parameters[:commentable_id])
 	end
 
-	# def get_discussion(commentable)
-	# 	if commentable.class == Discussion
-	# 		return commentable
-	# 	else
-	# 		return get_discussion(commentable.commentable)
-	# 	end
-	# end
 end

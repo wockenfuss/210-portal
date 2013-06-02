@@ -2,7 +2,6 @@ class Quiz < ActiveRecord::Base
   include Rails.application.routes.url_helpers
 
   has_and_belongs_to_many :components
-  # has_and_belongs_to_many :units
 	has_and_belongs_to_many :questions, :order=>'sort_number ASC'#, :join_table => :questions_quizzes
 	has_many :attempts
 	

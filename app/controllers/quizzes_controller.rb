@@ -29,8 +29,6 @@ class QuizzesController < ApplicationController
 		if @quiz.save
 			@quizzes = Quiz.order('release_date, created_at')
 			respond_with @quizzes
-			# flash[:notice] = "Quiz successfully created"
-			# js_redirect_to edit_quiz_path @quiz
 		else
 			js_alert(@quiz)
 		end
@@ -43,12 +41,10 @@ class QuizzesController < ApplicationController
 	def edit
 		@quiz = Quiz.find(params[:id])
 		@questions = @quiz.questions
-		# p @questions
 		respond_to do |format|
       format.html
       format.js { render 'edit.js.erb', :locals => { :data => params[:data] } }
     end
-		# respond_with(@quiz, @questions)#, @question)
 	end
 
 	def update
@@ -66,7 +62,6 @@ class QuizzesController < ApplicationController
 		@quiz.destroy
 		@quizzes = Quiz.order('release_date, created_at')
 		respond_with @quizzes
-		# redirect_to quizzes_path, :notice => "Successfully deleted"
 	end
 
 	private

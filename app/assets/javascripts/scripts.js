@@ -14,24 +14,6 @@
 
 		$('.dropdown a').on('mouseenter', myApp.dropdown); 
 
-		// $('#dropdownTrigger, #managerDropdownTrigger').on('mouseover', function(e){
-		// 	var $trigger = $(this);
-		// 	var $dropdown = $trigger.next();
-		// 	if ( !$dropdown.is(':visible') ) {
-		// 		$('.dropdown:visible').hide();
-		// 		var position = $trigger.position().left + $trigger.width() - $dropdown.width() + parseInt($trigger.css('margin-right'), 10) - 10;
-		// 		$dropdown.css('left', position);
-		// 		$dropdown.show()
-		// 		$dropdown.on('mouseleave', function() {
-		// 			$dropdown.hide();
-		// 			$dropdown.off('mouseleave');
-		// 		});
-		// 	} else {
-		// 		$dropdown.hide();
-		// 	}
-		// 	// $dropdown.toggle();
-		// });
-
     $( ".datepicker" ).datepicker();
 
     if ( $('#timer').length > 0 ) {

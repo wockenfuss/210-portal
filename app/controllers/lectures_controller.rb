@@ -13,7 +13,7 @@ class LecturesController < ApplicationController
 		@lecture = Lecture.new(params[:lecture])
 		if @lecture.save
 			@lectures = Lecture.order('created_at, name')
-			create_file(@lecture)
+			# create_file(@lecture)
 		else
 			# error
 		end
@@ -49,8 +49,6 @@ class LecturesController < ApplicationController
 	def update
 		@lecture = Lecture.find(params[:id])
 		if @lecture.update_attributes(params[:lecture])
-			# flash[:notice] = "Lecture updated."
-			# js_redirect_to lectures_path
 			@lectures = Lecture.order('created_at, name')
 			respond_with @lectures
 		else

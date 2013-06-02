@@ -12,15 +12,10 @@ class UnitsController < ApplicationController
 		if @unit.save
 			@units = Unit.order('release_date, created_at')
 			respond_with @units
-			# flash[:notice] = "Unit created."
-			# js_redirect_to(units_path)
 		end
 	end
 
 	def index
-		# @quizzes = Quiz.all
-		# @lectures = Lecture.all
-		# @dicussions = Discussion.all
 		@unit = Unit.new
 		@units = Unit.order('release_date')
 		respond_with do |format|
