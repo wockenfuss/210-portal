@@ -428,9 +428,10 @@ input[type="submit"].button {
 }
 
 .contentContainer-fluid {
+	min-height: 800px;
 	width: 60%;
 	margin: 8% auto;
-	/*margin-bottom: 10%;*/
+/*margin-bottom: 10%;*/
 }
 
 .sidebar {
@@ -449,7 +450,7 @@ input[type="submit"].button {
 .contentInterior {
 	width: 85%;
 	min-width: 195px;
-	min-height: 400px;
+	/*min-height: 400px;*/
 	margin: auto;
 	/*float: left;*/
 	padding: 2%;
@@ -763,6 +764,48 @@ span.customSelect.changed {
 }
 */
 
+/*-----accordion -----*/
+.accordion {
+	margin-top: 3%;
+	/*border-bottom: 5px solid rgba(62,83,123, .5);*/
+/*	border-left: 5px solid rgba(62,83,123, .8);
+	border-right: 5px solid rgba(62,83,123, .8);
+*/
+	/*@include backgroundrgba(.4);*/
+	/*outline: 5px solid white;*/
+	h3 {
+
+	}
+	.accordionLink {
+		/*border-radius: 5px;*/
+		background-color: rgba(255,255,255,.5);
+		border: 5px solid rgba(62,83,123, .5);
+		/*border-left: 5px solid rgba(62,83,123, .5);*/
+		/*border-top: 5px solid rgba(62,83,123, .5);*/
+		/*border-bottom: 5px solid rgba(62,83,123, .8);*/
+		margin: 0;
+		padding: 1%;
+		&:hover {
+			background-color: rgba(255,255,255,.8);
+			cursor:hand;cursor:pointer;
+		}
+
+	}
+	.accordionBody {
+		width: 95%;
+		margin: 0 auto;
+		display: none;
+		background-color: rgba(62,83,123, .2);
+		padding: 2%;
+		text-align: center;
+		p {
+			margin: 4% 0;
+			text-align: left;
+		}
+
+
+	}
+}
 
 /*----- datepicker -----*/
 .ui-datepicker {

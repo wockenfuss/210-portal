@@ -1,0 +1,19 @@
+<li class="post">
+	<span class="postSubject"><%= post.subject %></span>
+	<%= link_to "Reply", new_post_path(:comment => post.id), :remote => true, :class => 'pull-right postReply' %>
+	<em class="postDate"><%= "#{time_ago_in_words(post.updated_at)} ago" %></em>
+	<span class="postUser"><%= "#{post.user.email}"%></span>
+	
+	<div class="postContent" id="<%="post-#{post.id}" %>">
+		<p><%= post.content %></p>
+		<div class="replyForm">
+		</div>
+	</div>
+</li>
+<div class="postReplies">
+	<% if post.posts.size > 0 %>
+		<% post.posts.each do |subpost| %>
+			<%= render :partial => 'posts/show', :locals => { :post => subpost } %>
+		<% end %>				
+	<% end %>
+</div>

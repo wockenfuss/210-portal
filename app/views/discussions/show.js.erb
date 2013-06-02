@@ -1,0 +1,21 @@
+var $target = $('.discussionDisplay');
+if ( $target.is(':visible') ) {
+	$target.slideToggle(function() {
+		appendDiscussion($target);		
+	});	
+} else {
+	appendDiscussion($target);
+}
+
+
+
+
+var appendDiscussion = function(target) {
+	target.html('').append('<%= j render "show" %>');
+	target.slideToggle(addListeners);	
+}
+
+var addListeners = function() {
+	myApp.addDiscussionListeners();
+	myApp.addPostListeners();
+}

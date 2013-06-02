@@ -1,0 +1,14 @@
+var commentable = '<%= @current_post.commentable_type %>';
+console.log(commentable);
+if ( commentable === "Discussion") {
+	$('.postIndex').html('').append('<%= j render :partial => "posts/index" %>');
+	$('.postText').val('');
+	myApp.addPostListeners();
+} else {
+	var postId = ('<%= @current_post.id %>');
+	var $target =  $('#post-' + '<%= @current_post.commentable_id %>');
+	element = $target.parent().next();
+	element.append('<%= j render :partial => "posts/show", :locals => {:post => @current_post} %>');
+	$('.post').off('click');
+	myApp.addPostListeners();
+}

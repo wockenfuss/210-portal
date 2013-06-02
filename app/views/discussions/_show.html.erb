@@ -1,0 +1,17 @@
+<div id="discussionCollapse">
+	<h4><%= @discussion.name %></h4>
+</div>
+<div id=discussionAccordion>
+	<div class="discussionContent">
+		<%= @discussion.content.html_safe %>				
+	</div>
+	<div class="postForm">
+		<%= render :partial => 'posts/form', :locals => { :commentable => @discussion } %>
+	</div>
+</div>
+<div class="postList">
+	<h3><%= "#{@discussion.name} responses" %></h3>
+	<div class="postIndex">		
+		<%= render 'posts/index' %>
+	</div>
+</div>

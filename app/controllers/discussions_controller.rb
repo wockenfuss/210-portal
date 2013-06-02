@@ -5,6 +5,8 @@ class DiscussionsController < ApplicationController
 
 	def create
 		@discussion = Discussion.new(params[:discussion])
+		p params[:action]
+
 		if @discussion.save
 			@discussions = Discussion.order('release_date, created_at')
 			# respond_with @discussions
@@ -15,14 +17,18 @@ class DiscussionsController < ApplicationController
 	end
 
 	def show
+		@user = current_user
+		@post = Post.new
 		@discussion = Discussion.find(params[:id])
+		@commentable = @discussion
+		@posts = @discussion.posts
 		respond_with @discussion
 	end
 
 	def index
-		@discussion = Discussion.new
-		@discussions = Discussion.order('release_date, created_at')
 		if params[:manage] == "true"
+			@discussion = Discussion.new
+			@discussions = Discussion.order('release_date, created_at')
 		  respond_with do |format| 
 		  	# format.html { render 'discussions/manage' }
 		  	format.html { render 'shared/manage', 
@@ -32,6 +38,7 @@ class DiscussionsController < ApplicationController
 		  														} }
 		  end
 		else
+			@discussions = Discussion.released
 			respond_with @discussions
 		end
 	end
@@ -61,6 +68,10 @@ class DiscussionsController < ApplicationController
 	private
 	def parse_discussion_params
   	parse_dates(params[:discussion])
+  	if params[:action] == "create"
+	  	content = params[:discussion][:content] 
+			params[:discussion][:content] = "<p>" + content + "</p>"
+		end
   end
 
 

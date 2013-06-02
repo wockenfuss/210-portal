@@ -18,8 +18,9 @@ class UnitsController < ApplicationController
 	end
 
 	def index
-		@quizzes = Quiz.all
-		@lectures = Lecture.all
+		# @quizzes = Quiz.all
+		# @lectures = Lecture.all
+		# @dicussions = Discussion.all
 		@unit = Unit.new
 		@units = Unit.order('release_date')
 		respond_with do |format|
@@ -37,6 +38,7 @@ class UnitsController < ApplicationController
 	def edit
 		@quizzes = Quiz.all
 		@lectures = Lecture.all
+		@discussions = Discussion.all
 		@unit = Unit.find(params[:id])
 		@component_index = @unit.components.count + 1
 		respond_with @unit
@@ -54,6 +56,11 @@ class UnitsController < ApplicationController
 			@component = @unit.components.create(:component_index => params[:component_index])
 			@component.quizzes << @quiz
 		end
+		if params[:discussions] && params[:discussions] != "" 
+			@discussion = Discussion.find(params[:discussions])
+			@component = @unit.components.create(:component_index => params[:component_index])
+			@component.discussions << @discussion
+		end		
 		if params[:data]
 			@data = params[:data]
 		end

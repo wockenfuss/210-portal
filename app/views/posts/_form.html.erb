@@ -1,0 +1,17 @@
+<%= form_for @post, :remote => true do |f| %>
+	<div class="postSubject">
+		<%= f.text_field :subject, :class => 'inline postText', 
+				:placeholder => 'Subject', 
+				:value => post_form_subject(commentable) %>
+	</div>
+	<div class="postTextarea">
+		<%= f.text_area :content, :placeholder => "Two cents go here.", :class => 'postText'%>
+	</div>
+	<%= f.hidden_field :user_id, :value => @user.id %>
+	<%= f.hidden_field :commentable_id, :value => commentable.id %>
+	<%= f.hidden_field :commentable_type, :value => commentable.class.to_s %>
+	<div>
+		<%= f.submit "Add a comment"%>
+	</div>
+
+<% end %>

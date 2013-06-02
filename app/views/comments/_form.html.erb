@@ -1,5 +1,5 @@
 <%= form_for @comment, :remote => true do |f| %>
-	<div>
+	<div class="commentTextarea">
 		<%= f.text_area :content, :placeholder => "Two cents go here."%>
 	</div>
 	<%= f.hidden_field :user_id, :value => @user.id %>

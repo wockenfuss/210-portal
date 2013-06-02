@@ -49,6 +49,13 @@
 		
 		myApp.Links('#linkbarLinks a').listen();
 
+		// $('.accordionLink').on('click', function(e) {
+		// 	var $target = $(e.target);
+		// 	var body = $target.next();
+		// 	$(body).slideToggle();
+		// });
+
+
 		// $('select.customStyle').customSelect();
 	};
 
@@ -135,6 +142,19 @@
 			});
 		});
 	};
+
+
+	myApp.addDiscussionListeners = function() {
+		$('#discussionCollapse').on('click', function(e) {
+			$('#discussionAccordion').slideToggle();
+		});
+	}
+
+	myApp.addPostListeners = function() {
+		$('.post').on('click', function(e) {
+			$(e.target).find('.postContent').slideToggle();
+		})
+	}
 
 	// myApp.removeUserRole = function() {
 	// 	var remote = $.ajax({

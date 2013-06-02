@@ -13,14 +13,24 @@
 <div id="addComponentDrawer">
 	<div>
 		<%= form_tag(unit_path(@unit), :method => 'put', :remote => true) do%>
-		<div>
-			<span>Lectures:</span>
-			<%= select_tag "lectures", options_from_collection_for_select(@lectures, "id", "name"), :include_blank => true%>
-		</div>
-		<div>
-			<span>Quizzes:</span>
-			<%= select_tag "quizzes", options_from_collection_for_select(@quizzes, "id", "name"), :include_blank => true %>
-		</div>
+		<% if @lectures %>	
+			<div>
+				<span>Lectures:</span>
+				<%= select_tag "lectures", options_from_collection_for_select(@lectures, "id", "name"), :include_blank => true%>
+			</div>
+		<% end %>
+		<% if @quizzes %>	
+			<div>
+				<span>Quizzes:</span>
+				<%= select_tag "quizzes", options_from_collection_for_select(@quizzes, "id", "name"), :include_blank => true %>
+			</div>
+		<% end %>
+		<% if @discussions %>	
+			<div>
+				<span>Discussions:</span>
+				<%= select_tag "discussions", options_from_collection_for_select(@discussions, "id", "name"), :include_blank => true %>
+			</div>
+		<% end %>
 		<%= submit_tag "Add to Unit"%>
 		<%= hidden_field_tag 'component_index', "#{@component_index}" %>
 

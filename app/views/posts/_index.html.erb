@@ -1,0 +1,9 @@
+<% if @posts.size > 0 %>
+	<ul>
+		<% @posts.each do |post| %>
+			<%= render :partial => 'posts/show', :locals => { :post => post } %>
+		<% end %>
+	</ul>
+<% else %>
+	<p>There are no posts for this question.</p>
+<% end %>

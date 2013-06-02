@@ -1,0 +1,140 @@
+div.contentContainer-fluid {
+	width: 100%;
+	margin: 0 auto;
+}
+
+div.contentInterior {
+	margin-top: 0;
+	border: none;
+	overflow: auto;
+}
+
+.discussionList {
+	/*background-color: #fff;*/
+	width: 25%;
+	float: left;
+	.discussionItem {
+		display: inline-block;
+		width: 95%;
+		background-color: rgba(255,255,255,.5);
+		/*border: 5px solid rgba(62,83,123, .5);*/
+		margin: 2% 0;
+		padding: 2%;
+/*		&:hover {
+			background-color: rgba(255,255,255,.8);
+			cursor:hand;cursor:pointer;
+		}*/
+	}
+}
+
+.discussionDisplay {
+	overflow: auto;
+	margin-left: 3%;
+	float: left;
+	width: 70%;
+	background-color: rgba(62,83,123, .4);
+	/*height: 300px;*/
+	h4 {
+		padding: 3%;
+		margin: 0;
+		background-color: rgba(255,255,255,.8);
+	}
+}
+
+.discussionContent {
+	padding: 2%;
+	text-align: center;
+	p {
+		margin: 4% 0;
+		text-align: left;
+	}
+}
+
+#discussionCollapse {
+	&:hover {
+		cursor: hand;cursor: pointer;
+	}
+}
+
+.postForm {
+	border-radius: 5px;
+	margin: 3%;
+	background-color: rgba(255,255,255,.4);
+}
+
+form {
+	text-align: center;
+	padding: 4%;
+	.postTextarea {
+		padding: 2%;
+		textarea {
+			width: 100%;
+		}
+	}
+	input[type="submit"] {
+		margin: 0;
+		font-size: .6em;
+		padding: 1%;
+	}
+}
+
+.postList {
+	/*border-radius: 5px;*/
+	/*margin: 3%;*/
+	/*background-color: rgba(255,255,255,.4);*/
+	padding: 4%;
+	ul {
+		padding-left: 0;
+	}
+	.post {
+		border-radius: 5px;
+		border: 3px solid #fff;
+		margin: 1% 0;
+		padding: 2% 0;
+		/*background-color: #fff;*/
+		.postSubject {
+			margin-left: 5%;
+		}
+		.postHeader {
+			padding: 0 2%;
+		}
+		.postDate {
+			float: right;
+			font-size: .8em;
+			margin-right: 5%;
+		}
+		.postUser {
+			float: right;
+			margin-right: 5%;
+		}
+		.postReply {
+			margin-right: 5%;
+		}
+		.postContent {
+			margin-top: 3%;
+			/*background-color: rgba(255,255,255,.8);*/
+			/*background-color: rgba(62,83,123, .1);*/
+			padding: 3%;
+			display:none;
+			p {
+				margin: 2% 0 5% 0;
+			}
+		}
+		&:hover {
+			cursor:hand;cursor:pointer;
+		}
+	}
+}
+
+div.replyForm {
+	border-radius: 5px;
+	text-align: center;
+	background-color: rgba(255,255,255,.4);
+	/*background-color: rgba(62,83,123, .4);*/
+	padding: 0;
+}
+
+.postReplies {
+	/*border: 5px solid blue;*/
+	margin-left: 10%;
+}

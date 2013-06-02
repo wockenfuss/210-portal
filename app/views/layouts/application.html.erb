@@ -13,6 +13,7 @@
     <![endif]-->
     <%= javascript_include_tag "application" %>
     <%= stylesheet_link_tag "application-main", :media => "all" %>
+    <%= yield :head %>
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Pompiere|Josefin+Slab|Merriweather+Sans|Pontano+Sans|Titillium+Web|Karla|Patrick+Hand+SC|Sintony|Roboto|Roboto+Condensed|Fredoka+One|Archivo+Narrow|Averia+Sans+Libre' rel='stylesheet' type='text/css'>
     <!-- For third-generation iPad with high-resolution Retina display: -->
@@ -34,6 +35,7 @@
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
     <!--<#%= favicon_link_tag 'images/favicon.ico', :rel => 'shortcut icon' %>-->
+
   </head>
   <body>
 		
