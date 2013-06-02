@@ -6,6 +6,7 @@ Portal::Application.routes.draw do
   resources :questions, :except => [:show]
   resources :quizzes
   resources :units
+  resources :posts, :only => [:new, :create, :index]
   resources :lectures do 
     resources :lecture_questions, :except => [:index]
   end

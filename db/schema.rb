@@ -11,10 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130530211418) do
+ActiveRecord::Schema.define(:version => 20130601172834) do
 
   create_table "answers", :force => true do |t|
-    t.string   "content",      :null => false
+    t.text     "content",      :null => false
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
     t.integer  "question_id",  :null => false
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20130530211418) do
   create_table "comments", :force => true do |t|
     t.integer  "commentable_id",   :null => false
     t.string   "commentable_type", :null => false
-    t.string   "content",          :null => false
+    t.text     "content",          :null => false
     t.integer  "user_id",          :null => false
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
@@ -46,6 +46,11 @@ ActiveRecord::Schema.define(:version => 20130530211418) do
     t.integer  "unit_id",         :null => false
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "components_discussions", :force => true do |t|
+    t.integer "component_id"
+    t.integer "discussion_id"
   end
 
   create_table "components_lectures", :force => true do |t|
@@ -59,7 +64,7 @@ ActiveRecord::Schema.define(:version => 20130530211418) do
   end
 
   create_table "discussions", :force => true do |t|
-    t.string   "content",      :null => false
+    t.text     "content",      :null => false
     t.datetime "release_date"
     t.datetime "close_date"
     t.string   "name",         :null => false
@@ -75,7 +80,7 @@ ActiveRecord::Schema.define(:version => 20130530211418) do
 
   create_table "lecture_questions", :force => true do |t|
     t.integer  "lecture_id",  :null => false
-    t.string   "content",     :null => false
+    t.text     "content",     :null => false
     t.integer  "order_index", :null => false
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
@@ -88,8 +93,18 @@ ActiveRecord::Schema.define(:version => 20130530211418) do
     t.string   "subtitle"
   end
 
+  create_table "posts", :force => true do |t|
+    t.string   "subject",          :null => false
+    t.text     "content",          :null => false
+    t.integer  "user_id",          :null => false
+    t.integer  "commentable_id",   :null => false
+    t.string   "commentable_type", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
   create_table "questions", :force => true do |t|
-    t.string   "content",           :null => false
+    t.text     "content",           :null => false
     t.integer  "correct_answer_id"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
@@ -114,7 +129,7 @@ ActiveRecord::Schema.define(:version => 20130530211418) do
   end
 
   create_table "responses", :force => true do |t|
-    t.string   "content"
+    t.text     "content"
     t.integer  "answer_id"
     t.integer  "user_id",     :null => false
     t.integer  "question_id", :null => false
