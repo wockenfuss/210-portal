@@ -11,6 +11,7 @@ gem 'cancan'
 gem 'rolify'
 gem 'thin'
 gem 'rest-client'
+gem 'faker'
 
 
 # Gems used only for assets and not required
@@ -42,7 +43,6 @@ group :test do
   gem 'database_cleaner'
   gem 'debugger'
   gem 'factory_girl_rails'
-  gem 'faker'
   gem 'shoulda'
 end
 

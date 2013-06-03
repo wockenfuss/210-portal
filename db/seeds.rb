@@ -1,4 +1,3 @@
-require 'faker'
 admin = User.create(:email => "admin@admin.com", 
 										:password => "master1234")
 admin.add_role :admin
