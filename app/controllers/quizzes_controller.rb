@@ -22,6 +22,9 @@ class QuizzesController < ApplicationController
 
 	def new
 		@quiz = Quiz.new
+		respond_to do |format|
+			format.js
+		end
 	end
 
 	def create
