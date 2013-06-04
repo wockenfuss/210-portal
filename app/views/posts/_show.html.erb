@@ -1,11 +1,14 @@
 <li class="post">
-	<span class="postSubject"><%= post.subject %></span>
-	<%= link_to "Reply", new_post_path(:comment => post.id), :remote => true, :class => 'pull-right postReply' %>
-	<em class="postDate"><%= "#{time_ago_in_words(post.updated_at)} ago" %></em>
-	<span class="postUser"><%= "#{post.user.email}"%></span>
+	<div class="postHeader">
+		<span class="postSubject"><%= post.subject.ellipsify(30) %></span>
+
+		<em class="postDate"><%= "#{time_ago_in_words(post.updated_at)} ago" %></em>
+		<span class="postUser"><%= "#{strip_domain(post.user.email)}"%></span>	
+	</div>
 	
 	<div class="postContent" id="<%="post-#{post.id}" %>">
 		<p><%= post.content %></p>
+		<%= link_to "Reply", new_post_path(:comment => post.id), :remote => true, :class => 'postReply' %>
 		<div class="replyForm">
 		</div>
 	</div>

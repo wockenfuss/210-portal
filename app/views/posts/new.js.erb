@@ -1,14 +1,6 @@
 var id = '<%= @post.commentable_id %>';
-var $target = $("#post-" + id);
+var $target = $("#post-" + id).find('.replyForm');
 var html = '<%= j render :partial => "posts/form", :locals => {:commentable => @post.commentable} %>';
-
-if ( $target.is(':visible') ) {
-	$target.slideToggle(appendPostForm);
-} else {
-	appendPostForm();
-}
-$target.slideToggle();
-
-var appendPostForm = function() {
-	$target.find('.replyForm').empty().append(html);	
+if ( !$target.is(':visible') ) {
+	$target.append(html).slideToggle();
 }
