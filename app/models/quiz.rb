@@ -12,7 +12,7 @@ class Quiz < ActiveRecord::Base
   attr_accessible :close_date, :duration, :release_date, :name, :autograde
 
   def path(user)
-    if user.has_role(:admin)
+    if user.has_role?(:admin)
       return edit_quiz_path(self)
     else
       return new_attempt_path(self, user)
@@ -27,7 +27,12 @@ class Quiz < ActiveRecord::Base
   	release_date < Time.now && close_date > Time.now
   end
 
+  def attempted?(user)
+    self.attempts.where(:user_id => user.id).count > 0
+  end
+
   def self.released_quizzes
 		Quiz.where("release_date < ? AND close_date > ?", Time.now, Time.now)
   end
+
 end

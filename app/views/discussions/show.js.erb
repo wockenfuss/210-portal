@@ -7,9 +7,6 @@ if ( $target.is(':visible') ) {
 	appendDiscussion($target);
 }
 
-
-
-
 var appendDiscussion = function(target) {
 	target.html('').append('<%= j render "show" %>');
 	target.slideToggle(addListeners);	

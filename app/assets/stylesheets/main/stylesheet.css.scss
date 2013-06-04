@@ -288,6 +288,27 @@ nav {
 	background-color: rgba(255,255,255, .7);
 	padding: 2%;
 	margin: 1%;
+	em {
+		font-size: .9em;
+	}
+}
+
+.userComponents {
+	overflow: auto;
+	margin: 1% 0;
+	.componentColumn1 {
+		width: 30%;
+		float: left;
+	}
+	.componentColumn2 {
+		float: left;
+		width: 65%;
+		/*font-size: .9em;*/
+		a {
+			margin-left: 10%;
+		}
+	}
+
 }
 
 #linkbar {

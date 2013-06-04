@@ -8,4 +8,8 @@ module PostsHelper
 		end
 	end
 
+	def strip_domain(address)
+    address.slice(/(.*)@/, 1)
+  end
+
 end

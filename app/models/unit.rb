@@ -8,7 +8,7 @@ class Unit < ActiveRecord::Base
   validates :name, :presence => true
 
   def self.current
-		Unit.where("release_date < ?", Time.now)
+		Unit.where("release_date < ?", Time.now).order('release_date DESC')
   end
 
 end

@@ -96,9 +96,11 @@ form {
 			font-size: .8em;
 			margin-left: 5%;
 		}
-/*		.postHeader {
-			padding: 0 2%;
-		}*/
+		.postHeader {
+			&:hover {
+				cursor:hand;cursor:pointer;
+			}
+		}
 		.postDate {
 			float: right;
 			font-size: .8em;
@@ -122,18 +124,18 @@ form {
 				margin: 2% 0 5% 0;
 			}
 		}
-		&:hover {
-			cursor:hand;cursor:pointer;
-		}
+
 	}
 }
 
 div.replyForm {
+	display: none;
 	border-radius: 5px;
 	text-align: center;
 	background-color: rgba(255,255,255,.4);
 	/*background-color: rgba(62,83,123, .4);*/
 	padding: 0;
+	margin-top: 5%;
 }
 
 .postReplies {

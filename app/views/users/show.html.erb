@@ -1,32 +1,33 @@
-<h2><%= "Current Schedule" %></h2>
-<% p @units %>
-<!-- <p><#%= @user.email %></p> -->
+<h2><%= "Schedule" %></h2>
+
 <% if @units %>
-	<div class="unit">
-		<% @units.each do |unit| %>
-			<p>
-				<%= unit.name %>
-			</p>
-			<ul>
-				<% unit.components.each do |component| %>
-					<li><%= link_to component.name, component.path(current_user) %></li>
-				<% end %>	
+
+	<% @units.each do |unit| %>
+		<div class="unit">
+			<div class="unitHeader">
+				<p>
+					<%= "#{unit.name} - "%>
+					<em>
+						<%= "beginning #{unit.release_date.to_date}" %>
+					</em>
+				</p>
+			</div>
+				
+			<ul class="unitContent">
+				<% if unit.components.size > 0 %>
+					<% unit.components.each do |component| %>
+						<li class="userComponents">
+							<%= render :partial => partialize(component.element), :locals => { :component => component.element } %>
+						</li>	
+					<% end %>
+				<% else %>	
+					<p><%= "There are no assignments for this unit." %></p>
+				<% end %>
 			</ul>
-			
-			<!-- <#%= render :partial => 'components/index', :locals => { :unit => unit} %> -->
-		<% end %>
-<!-- 		<#% @quizzes.each do |quiz| %>
-			<li>
-				<#%= "#{quiz.name}––Duration: #{quiz.duration} minutes."%>
-				<span><#%= "Quiz closes in #{time_ago_in_words(quiz.close_date.to_date)}." %> </span>   
-				<#% unless @user.attempted?(quiz) %> 
-					<span><#%= link_to "Take Quiz", new_attempt_path(quiz, @user) %></span>
-				<#% else %>
-					<span class="green">You've completed this quiz.</span>
-				<#% end %>
-			</li>
-		<#% end %>	 -->
-	</div>
+		</div>
+	<% end %>
+
+
 <% else %>
 <p><%= "There are currently no scheduled items." %> </p>
 <% end %>
