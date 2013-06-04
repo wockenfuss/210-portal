@@ -133,8 +133,8 @@
 	}
 
 	myApp.addPostListeners = function() {
-		$('.post').on('click', function(e) {
-			$(e.target).find('.postContent').slideToggle();
+		$('.postHeader').on('click', function(e) {
+			$(this).parent().find('.postContent').slideToggle();
 		})
 	}
 
