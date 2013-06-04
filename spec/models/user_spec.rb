@@ -16,16 +16,16 @@ describe User do
 		@quiz = FactoryGirl.create(:quiz)
 	end
 
-	describe "#attempted?" do
-		it "returns true if user has attempted the given quiz" do	
-			attempt = FactoryGirl.create(:attempt, :user_id => @user.id, :quiz_id => @quiz.id)
-			@user.attempted?(@quiz).should be_true
-		end
+	# describe "#attempted?" do
+	# 	it "returns true if user has attempted the given quiz" do	
+	# 		attempt = FactoryGirl.create(:attempt, :user_id => @user.id, :quiz_id => @quiz.id)
+	# 		@user.attempted?(@quiz).should be_true
+	# 	end
 
-		it "returns false if user has not attempted quiz" do
-			@user.attempted?(@quiz).should be_false
-		end
-	end
+	# 	it "returns false if user has not attempted quiz" do
+	# 		@user.attempted?(@quiz).should be_false
+	# 	end
+	# end
 
 	describe "#graded_attempts" do
 

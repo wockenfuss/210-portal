@@ -59,4 +59,14 @@ describe Quiz do
 			Quiz.released_quizzes.should_not include @unreleased
 		end
 	end
+
+	describe "#attempted?" do
+		it "returns true if the current user has attempted the quiz" do
+			pending
+		end
+
+		it "returns false if the current user hasn't attempted the quiz" do
+			pending
+		end
+	end
 end

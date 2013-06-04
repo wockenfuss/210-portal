@@ -35,4 +35,5 @@ describe Discussion do
 			Discussion.released.should_not include @discussion3
 		end
 	end
+
 end

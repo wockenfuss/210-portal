@@ -32,4 +32,5 @@ describe Component do
 			@component.path(user).should eq @discussion.path(user)
 		end
 	end
+
 end

@@ -21,11 +21,6 @@ describe "Roles", :js => true do
 			page.should have_content("Manage")
 		end
 
-		it "allows admin to access other users pages" do
-			visit user_root_path(@user)
-			page.should have_content @user.email
-		end
-
 		it "allows admin to view users index" do
 			visit users_path
 			page.should_not have_content("You are not authorized to access this page")
