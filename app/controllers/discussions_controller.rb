@@ -1,4 +1,6 @@
 class DiscussionsController < ApplicationController
+	before_filter :authenticate_user!
+
 	respond_to :html, :json, :js
 	before_filter :parse_discussion_params, :only => [:create, :update]
 

@@ -12,7 +12,6 @@ class Component < ActiveRecord::Base
   end
 
   def name
-  	p self.element.class
   	self.element.name
   end
 

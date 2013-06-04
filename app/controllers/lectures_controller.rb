@@ -1,4 +1,6 @@
 class LecturesController < ApplicationController
+	before_filter :authenticate_user!
+
 	layout "lectures", :only => [:show]
 	layout "application", :only => [:index, :edit]
 

@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
+	before_filter :authenticate_user!
 	respond_to :js, :json
 
 	def new

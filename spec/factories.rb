@@ -54,4 +54,36 @@ FactoryGirl.define do
 		name { Faker::Lorem.sentence(word_count = 2, supplemental = false) }
 	end
 
+	factory :comment do 
+		commentable_id 1
+		commentable_type "LectureQuestion"
+		content { Faker::Lorem.sentence(word_count = 5, supplemental= false) }
+		user_id 1
+	end
+
+	factory :component do
+		component_index 1
+		unit_id 1
+	end
+
+	factory :lecture_question do
+		order_index 1
+		lecture_id 1
+		content { Faker::Lorem.sentence(word_count = 5, supplemental = false) }
+	end
+
+	factory :post do
+		self.subject { Faker::Lorem.sentence(word_count = 2, supplemental = false) }
+		content { Faker::Lorem.paragraph(sentence_count = 2, supplemental = false) }
+		user_id 1
+		commentable_id 1
+		commentable_type "Discussion"
+	end
+
+	factory :discussion do
+		content { Faker::Lorem.paragraph(sentence_count = 2, supplemental = false)}
+		release_date { Time.now }
+		name { Faker::Lorem.sentence(word_count = 2, supplemental = false)}
+	end
+
 end

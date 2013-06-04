@@ -1,4 +1,5 @@
 class UnitsController < ApplicationController
+	before_filter :authenticate_user!
 	before_filter :parse_unit_params, :only => [:create, :update]
 	respond_to :js, :html, :json
 
