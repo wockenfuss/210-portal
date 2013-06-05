@@ -5,9 +5,13 @@
 	<% if component.attempted?(current_user) %>
 		<span class="green"><%= "You've completed this quiz."%></span>
 	<% else %>
-		<em><%= "Closes in #{time_ago_in_words(component.close_date.to_date)}."%></em>
-		<span>
-			<%= link_to "Take quiz", component.path(current_user), :class => 'pull-right' %>
-		</span>
+		<% if component.released? %>
+			<em><%= "Closes in #{time_ago_in_words(component.close_date.to_date)}."%></em>
+			<span>
+				<%= link_to "Take quiz", component.path(current_user), :class => 'pull-right' %>
+			</span>
+		<% else %>
+			<em><%= "Quiz is closed." %></em>
+		<% end %>
 	<% end %>
 </span>

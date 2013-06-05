@@ -1,5 +1,11 @@
 <div id="discussionCollapse">
-	<h4><%= @discussion.name %></h4>
+	<h4 class="inline"><%= @discussion.name %></h4>
+	<span>
+		<em><%= "opens : #{@discussion.release_date.to_date}" %></em>
+	</span>	
+	<span>
+		<em><%= "closes : #{@discussion.close_date.to_date}" %></em>
+	</span>	 
 </div>
 <div id=discussionAccordion>
 	<div class="discussionContent">

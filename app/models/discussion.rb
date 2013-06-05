@@ -17,4 +17,9 @@ class Discussion < ActiveRecord::Base
   def self.released
   	Discussion.where("release_date < ?", Time.now).order('release_date DESC')
   end
+
+  def open?
+    self.release_date < Time.now && 
+    self.close_date && self.close_date > Time.now
+  end
 end

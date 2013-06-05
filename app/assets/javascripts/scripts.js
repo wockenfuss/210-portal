@@ -31,6 +31,11 @@
 		
 		myApp.Links('#linkbarLinks a').listen();
 
+		$('.unitHeader').on('click', function(e) {
+			$(this).next().slideToggle();
+		});
+
+		$('.unitContent').first().show();
 		// $('.accordionLink').on('click', function(e) {
 		// 	var $target = $(e.target);
 		// 	var body = $target.next();

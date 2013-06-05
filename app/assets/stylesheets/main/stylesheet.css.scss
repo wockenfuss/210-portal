@@ -285,11 +285,26 @@ nav {
 
 
 .unit {
+	p {
+		margin: 0;
+	}
 	background-color: rgba(255,255,255, .7);
-	padding: 2%;
-	margin: 1%;
+	/*padding: 2%;*/
+	margin-bottom: 2%;
 	em {
 		font-size: .9em;
+	}
+	.unitHeader {
+		padding: 2%;
+		background-color: white;
+		&:hover {			
+			cursor:hand;cursor:pointer;
+		}
+	}
+
+	.unitContent {
+		padding: 2%;
+		display:none;
 	}
 }
 

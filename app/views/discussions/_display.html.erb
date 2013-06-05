@@ -2,5 +2,12 @@
 	<%= link_to component.name, component.path(current_user) %>
 </span>
 <span class="componentColumn2">
-	<em><%= "Closes in #{time_ago_in_words(component.close_date)}." if component.close_date %></em>
+	<% if component.close_date %>
+		<% if component.open? %>
+			<em><%= "Closes in #{time_ago_in_words(component.close_date)}." %></em>		
+		<% else %>
+			<em>Discussion is closed.</em>
+		<% end %>
+	<% end %>
+	
 </span>
