@@ -36,4 +36,28 @@ describe Discussion do
 		end
 	end
 
+	describe "#open?" do
+		before(:each) do 
+			@open_1 = FactoryGirl.create(:discussion)
+			@open_2 = FactoryGirl.create(:discussion, :close_date => Time.now + 100000)
+			@unreleased = FactoryGirl.create(:discussion, :release_date => Time.now + 100000)
+			@closed = FactoryGirl.create(:discussion, 
+																		:release_date => Time.now - 200000,
+																		:close_date => Time.now - 100000)
+		end
+
+		it "returns true if discussion has been released and not closed" do
+			@open_1.open?.should be_true
+			@open_2.open?.should be_true
+		end
+
+		it "returns false if discussion has not been released" do
+			@unreleased.open?.should be_false
+		end
+
+		it "returns false if discussion has been closed" do
+			@closed.open?.should be_false
+		end
+	end
+
 end

@@ -19,7 +19,7 @@ class Discussion < ActiveRecord::Base
   end
 
   def open?
-    self.release_date < Time.now && 
-    self.close_date && self.close_date > Time.now
+    (self.release_date < Time.now && self.close_date.nil?) ||
+    (self.release_date < Time.now && self.close_date > Time.now)
   end
 end
