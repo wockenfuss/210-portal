@@ -24,6 +24,7 @@ class LecturesController < ApplicationController
 	def index
 		@lectures = Lecture.order('created_at')
 		@lecture = Lecture.new
+		authorize! :manage, @lectures
 	  respond_with do |format| 
 	  	format.html { render 'shared/manage', 
 	  												:locals => {

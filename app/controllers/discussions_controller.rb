@@ -31,6 +31,7 @@ class DiscussionsController < ApplicationController
 		if params[:manage] == "true"
 			@discussion = Discussion.new
 			@discussions = Discussion.order('release_date, created_at')
+			authorize! :manage, @discussions
 		  respond_with do |format| 
 		  	# format.html { render 'discussions/manage' }
 		  	format.html { render 'shared/manage', 
