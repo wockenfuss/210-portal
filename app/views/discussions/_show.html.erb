@@ -1,23 +1,28 @@
-<div id="discussionCollapse">
-	<h4 class="inline"><%= @discussion.name %></h4>
-	<span>
-		<em><%= "opens : #{@discussion.release_date.to_date}" %></em>
-	</span>	
-	<span>
-		<em><%= "closes : #{@discussion.close_date.to_date}" %></em>
-	</span>	 
+<div class="discussionDisplay">
+	<% if @discussion %>
+		<div id="discussionCollapse">
+			<h4 class="inline"><%= @discussion.name %></h4>
+			<span>
+				<em><%= "opens : #{@discussion.release_date.to_date}" %></em>
+			</span>	
+			<span>
+				<em><%= "closes : #{@discussion.close_date.to_date}" %></em>
+			</span>	 
+		</div>
+		<div id=discussionAccordion>
+			<div class="discussionContent">
+				<%= @discussion.content.html_safe %>				
+			</div>
+			<div class="postForm">
+				<%= render :partial => 'posts/form', :locals => { :commentable => @discussion } %>
+			</div>
+		</div>
+		<div class="postList">
+			<h3><%= "#{@discussion.name} responses" %></h3>
+			<div class="postIndex">		
+				<%= render 'posts/index' %>
+			</div>
+		</div>
+	<% end %>
 </div>
-<div id=discussionAccordion>
-	<div class="discussionContent">
-		<%= @discussion.content.html_safe %>				
-	</div>
-	<div class="postForm">
-		<%= render :partial => 'posts/form', :locals => { :commentable => @discussion } %>
-	</div>
-</div>
-<div class="postList">
-	<h3><%= "#{@discussion.name} responses" %></h3>
-	<div class="postIndex">		
-		<%= render 'posts/index' %>
-	</div>
-</div>
+	

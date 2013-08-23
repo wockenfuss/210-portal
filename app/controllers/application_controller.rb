@@ -51,7 +51,9 @@ class ApplicationController < ActionController::Base
 
   private
 	def after_sign_in_path_for(user)
-		user_root_path(:id => user.id)
+    path = session[:return_to]
+    session[:return_to] = nil 
+    path || user_root_path(:id => user.id)
 	end
 
   def targetId(object)
@@ -60,6 +62,8 @@ class ApplicationController < ActionController::Base
       return '#questionErrors'
     when @quiz
       return '#errors'
+    when @lecture
+      return '#lectureErrors'
     end
   end
 end

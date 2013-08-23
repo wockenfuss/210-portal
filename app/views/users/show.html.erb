@@ -1,33 +1,42 @@
-<h2><%= "Schedule" %></h2>
+<h2>Lectures</h2>
 
-<% if @units %>
+<% if @lectures.size > 0 %>
+	<ul>
+		<% @lectures.each do |lecture| %>
+			<li>
+				<%= link_to "#{lecture.name}: #{lecture.subtitle}", lecture_path(lecture) %>
+			</li>
+			
+		<% end %>	
+	</ul>
+	
 
-	<% @units.each do |unit| %>
+<!-- 	<#% @units.each do |unit| %>
 		<div class="unit">
 			<div class="unitHeader">
 				<p>
-					<%= "#{unit.name} - "%>
+					<#%= "#{unit.name} - "%>
 					<em>
-						<%= "beginning #{unit.release_date.to_date}" %>
+						<#%= "beginning #{unit.release_date.to_date}" %>
 					</em>
 				</p>
 			</div>
 				
 			<ul class="unitContent">
-				<% if unit.components.size > 0 %>
-					<% unit.components.each do |component| %>
+				<#% if unit.components.size > 0 %>
+					<#% unit.components.each do |component| %>
 						<li class="userComponents">
-							<%= render :partial => partialize(component.element), :locals => { :component => component.element } %>
+							<#%= render :partial => partialize(component.element), :locals => { :component => component.element } %>
 						</li>	
-					<% end %>
-				<% else %>	
-					<li><%= "There are no assignments for this unit." %></li>
-				<% end %>
+					<#% end %>
+				<#% else %>	
+					<li><#%= "There are no assignments for this unit." %></li>
+				<#% end %>
 			</ul>
 		</div>
-	<% end %>
-
+	<#% end %>
+ -->
 
 <% else %>
-<p><%= "There are currently no scheduled items." %> </p>
+<p><%= "There are currently no scheduled lectures." %> </p>
 <% end %>

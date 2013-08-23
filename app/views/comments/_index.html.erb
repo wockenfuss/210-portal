@@ -5,7 +5,7 @@
 				<%= comment.content %>
 			</p>
 			<p class="attribution">
-				<%= "-#{comment.user.email}" %>
+				<%= "-#{comment.user.name || comment.user.email}" %>
 				<em class="commentDate"><%= "#{time_ago_in_words(comment.updated_at)} ago" %></em>
 			</p>
 		</div>

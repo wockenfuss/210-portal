@@ -7,7 +7,8 @@ class UsersController < ApplicationController
 	
 	def show
 		@user = User.find(params[:id])
-		@units = Unit.current
+		# @units = Unit.current
+		@lectures = Lecture.released
 	end
 
 	def index

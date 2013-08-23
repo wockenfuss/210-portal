@@ -7,10 +7,14 @@ class Lecture < ActiveRecord::Base
 
   validates :name, :presence => true
 
-  attr_accessible :name, :subtitle
+  attr_accessible :name, :subtitle, :release_date
 
   def path(user)
   	lecture_path(self)
+  end
+
+  def self.released
+  	Lecture.where("release_date < ?", Time.now).order('release_date DESC')
   end
 
 end

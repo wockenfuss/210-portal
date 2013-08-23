@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   has_many :posts
   
   after_create :create_gradebook
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessible :email, :password, :password_confirmation, :name
 
   def graded_attempts
     self.attempts.where(:graded => true)

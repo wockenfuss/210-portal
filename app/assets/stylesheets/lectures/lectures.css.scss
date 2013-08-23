@@ -299,9 +299,18 @@ span.gap {
 }
 
 #section_6_overlay {
-	@include color3rgb;
+	@include colorrgb;
 	overflow: auto;
 	/*height: 300px;*/
+}
+
+
+#section_6b {
+	@include backgroundImageStyle('limbo_3.jpg');
+}
+
+.sub_section_6b {
+	@include colorrgb;
 }
 
 #sub_section_6 {
@@ -312,7 +321,7 @@ span.gap {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;*/
-  height: 1000px;
+  /*height: 1000px;*/
 }
 
 

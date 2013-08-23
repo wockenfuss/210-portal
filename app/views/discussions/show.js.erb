@@ -1,4 +1,5 @@
 var $target = $('.discussionDisplay');
+var discussionId = '<%= @discussion.id %>';
 if ( $target.is(':visible') ) {
 	$target.slideToggle(function() {
 		appendDiscussion($target);		
@@ -6,9 +7,10 @@ if ( $target.is(':visible') ) {
 } else {
 	appendDiscussion($target);
 }
+window.history.pushState({}, 'discussion', '/discussions/' + discussionId);
 
 var appendDiscussion = function(target) {
-	target.html('').append('<%= j render "show" %>');
+	target.replaceWith('<%= j render "show" %>');
 	target.slideToggle(addListeners);	
 }
 

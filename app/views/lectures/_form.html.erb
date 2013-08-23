@@ -1,4 +1,6 @@
 <%= form_for @lecture, :remote => true do |f| %>
+<div id="lectureErrors"></div>
+
 <div class="inline">
 	<%= f.label :name %>
 	<%= f.text_field :name, :placeholder => "Enter lecture name", :class => 'lectureText' %>
@@ -6,6 +8,10 @@
 <div class="inline">
 	<%= f.label :subtitle %>
 	<%= f.text_field :subtitle, :placeholder => "Enter subtitle" , :class => 'lectureText' %>
+</div>
+<div>
+	<%= f.label :release %>
+	<%= f.text_field :release_date, :placeholder => "Click to select release date", :class => "datepicker" %>
 </div>
 <div>
 	<%= f.submit %>

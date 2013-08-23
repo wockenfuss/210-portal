@@ -1,5 +1,8 @@
 class LecturesController < ApplicationController
+	before_filter :store_location
 	before_filter :authenticate_user!
+	before_filter :parse_lecture_params, :only => [:create, :update]
+
 
 	layout "lectures", :only => [:show]
 	layout "application", :only => [:index, :edit]
@@ -53,9 +56,11 @@ class LecturesController < ApplicationController
 		@lecture = Lecture.find(params[:id])
 		if @lecture.update_attributes(params[:lecture])
 			@lectures = Lecture.order('created_at, name')
-			respond_with @lectures
+			# respond_with @lectures
+			flash[:notice] = "Lecture updated"
+			js_redirect_to lectures_path
 		else
-			#error
+			js_alert(@lecture)
 		end
 	end
 
@@ -71,5 +76,9 @@ class LecturesController < ApplicationController
     lecture_file.puts(File.readlines('app/views/lectures/content/_boilerplate.html.erb'))
     lecture_file.close
 	end
+
+	def parse_lecture_params
+		parse_dates(params[:lecture]) if params[:lecture]
+  end
 
 end

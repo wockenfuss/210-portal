@@ -1,0 +1,16 @@
+<% content_for(:head) { stylesheet_link_tag 'application-discussions', :media => "all" } %>
+
+
+<h1>Discussions</h1>
+<% if @discussions.size > 0 %>
+
+
+	<div class="discussionList">
+		<% @discussions.each do |discussion| %>
+			<%= link_to discussion.name, discussion_path(discussion), :class => 'discussionItem', :remote => true %>
+		<% end %>
+	</div>
+<% else %>
+	<p>There are currently no discussions.</p>
+<% end %>
+

@@ -36,6 +36,8 @@
 		});
 
 		$('.unitContent').first().show();
+		myApp.addDiscussionListeners();
+		myApp.addPostListeners();
 		// $('.accordionLink').on('click', function(e) {
 		// 	var $target = $(e.target);
 		// 	var body = $target.next();

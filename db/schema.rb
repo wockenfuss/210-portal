@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130601172834) do
+ActiveRecord::Schema.define(:version => 20130823171226) do
 
   create_table "answers", :force => true do |t|
     t.text     "content",      :null => false
@@ -87,10 +87,11 @@ ActiveRecord::Schema.define(:version => 20130601172834) do
   end
 
   create_table "lectures", :force => true do |t|
-    t.string   "name",       :null => false
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "name",         :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.string   "subtitle"
+    t.datetime "release_date"
   end
 
   create_table "posts", :force => true do |t|
@@ -175,6 +176,7 @@ ActiveRecord::Schema.define(:version => 20130601172834) do
     t.string   "unconfirmed_email"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "name"
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true

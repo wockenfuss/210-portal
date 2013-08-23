@@ -8,4 +8,4 @@ var $target = $('li:contains("' + lecture_name + '")');
 
 
 $target.empty().append('<%= j render :partial => "inline_form", :locals => {:lecture => @lecture} %>');
-	
+$( ".datepicker" ).datepicker();	

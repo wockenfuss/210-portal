@@ -1,5 +1,6 @@
 class DiscussionsController < ApplicationController
 	before_filter :authenticate_user!
+	load_and_authorize_resource
 
 	respond_to :html, :json, :js
 	before_filter :parse_discussion_params, :only => [:create, :update]
@@ -20,11 +21,18 @@ class DiscussionsController < ApplicationController
 
 	def show
 		@user = current_user
-		@post = Post.new
+		@discussions = Discussion.released
 		@discussion = Discussion.find(params[:id])
-		@commentable = @discussion
-		@posts = @discussion.posts
-		respond_with @discussion
+		puts @discussion
+		if @discussions.include?(@discussion)		
+			puts "include"
+			@post = Post.new
+			@commentable = @discussion
+			@posts = @discussion.posts
+			respond_with @discussion
+		else
+			redirect_to discussions_path, :error => "Discussion is unavailable"
+		end
 	end
 
 	def index
@@ -42,7 +50,8 @@ class DiscussionsController < ApplicationController
 		  end
 		else
 			@discussions = Discussion.released
-			respond_with @discussions
+			@discussion = Discussion.released.last
+			respond_with @discussions, @discussion
 		end
 	end
 

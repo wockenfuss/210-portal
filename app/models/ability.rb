@@ -17,7 +17,7 @@ class Ability
       end
       can :read, Gradebook, :user => { :id => user.id }
       can :create, Attempt, :user_id => user.id, :released? => true, :attempted? => false
-
+      cannot :any, Discussion
     end
   end
 end

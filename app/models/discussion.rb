@@ -11,7 +11,7 @@ class Discussion < ActiveRecord::Base
 
 
   def path(user)
-  	discussions_path
+  	discussion_path(self)
   end
 
   def self.released

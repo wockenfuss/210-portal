@@ -29,15 +29,6 @@
           </div>
                     
         <% end %>
-        <div class="pull-right navbar">
-          <%= link_to "Discussions", discussions_path %>  
-        </div>
-        <div class="pull-right navbar">
-          <%= link_to "Gradebook", user_gradebook_path(current_user) %>  
-        </div>
-        
-        <!-- <#%= link_to "Theater", "#", :class => "pull-right navbar" %> -->
-        <!-- <#%= link_to "Classroom", "#", :class => "pull-right navbar" %> -->
       <% else %>
         <%= link_to "Sign in", new_user_session_path, :class => "pull-right navbar"%>
       <% end %>
