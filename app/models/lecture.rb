@@ -17,4 +17,8 @@ class Lecture < ActiveRecord::Base
   	Lecture.where("release_date < ?", Time.now).order('release_date DESC')
   end
 
+  def released?
+    self.release_date < Time.now
+  end
+
 end

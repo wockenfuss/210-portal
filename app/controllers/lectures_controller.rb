@@ -3,7 +3,6 @@ class LecturesController < ApplicationController
 	before_filter :authenticate_user!
 	before_filter :parse_lecture_params, :only => [:create, :update]
 
-
 	layout "lectures", :only => [:show]
 	layout "application", :only => [:index, :edit]
 
@@ -45,6 +44,7 @@ class LecturesController < ApplicationController
 		if @lecture.lecture_questions.any?
 			@comment = Comment.new
 		end
+		authorize! :read, @lecture
 	end
 
 	def edit

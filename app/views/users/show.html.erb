@@ -1,7 +1,7 @@
 <h2>Lectures</h2>
 
 <% if @lectures.size > 0 %>
-	<ul>
+	<ul class="lectureIndex">
 		<% @lectures.each do |lecture| %>
 			<li>
 				<%= link_to "#{lecture.name}: #{lecture.subtitle}", lecture_path(lecture) %>
