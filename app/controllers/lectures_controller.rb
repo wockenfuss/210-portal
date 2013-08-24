@@ -17,7 +17,7 @@ class LecturesController < ApplicationController
 		@lecture = Lecture.new(params[:lecture])
 		if @lecture.save
 			@lectures = Lecture.order('created_at, name')
-			# create_file(@lecture)
+			create_file(@lecture)
 		else
 			# error
 		end
