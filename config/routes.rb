@@ -13,7 +13,11 @@ Portal::Application.routes.draw do
   resources :comments, :only => [:new, :create]
   resources :components, :only => [:destroy, :update]
   
-  devise_for :users
+  devise_for :users, :skip => [:registrations]
+    as :user do
+      get 'users/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'    
+      put 'users' => 'registrations#update', :as => 'user_registration'            
+    end
 
   devise_scope :user do
     root :to => "devise/sessions#new"
