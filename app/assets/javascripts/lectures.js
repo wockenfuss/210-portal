@@ -1,7 +1,7 @@
 (function(myLecture, $, undefined) {
 	$(document).ready(function() {
 
-		if ($('#section_2').length > 0) {
+		if ($('#modal').length > 0) {
 			bind();
 		}
 
@@ -15,7 +15,7 @@
 
 	var bind = function() {
 		$(window).resize(function() {
-			console.log($(window).width());
+			// console.log($(window).width());
 			formatQuestions();
 		});
 
@@ -24,7 +24,7 @@
 
 		$('.powerpoint').powerpoint();
 
-		$(document).on('scroll', showCommentResponse);
+		// $(document).on('scroll', showCommentResponse);
 	};
 
 	var formatQuestions = function() {
@@ -39,7 +39,8 @@
 	};
 
 	var removeNavbar = function() {
-		var position = $('#section_2').position().top;
+		// var position = $('#section_2').position().top;
+		var position = 2200;
 		var scroll_top = $(window).scrollTop();
 		var screenPosition = scroll_top - position;
 		if ( screenPosition > 0 ) {
@@ -47,14 +48,14 @@
 			$(document).off('scroll', removeNavbar);
 		}
 	};
-	var showCommentResponse = function() {
-		var position = $('#comment_response_section_1').position().top;
-		var scroll_top = $(window).scrollTop();
-		var screenPosition = scroll_top - position;
-		if ( screenPosition > -$(window).height()/2 ) {
-			$('#comment_response_section_1').animate({'opacity': 1}, 500);
-		}
-	};
+	// var showCommentResponse = function() {
+	// 	var position = $('#comment_response_section_1').position().top;
+	// 	var scroll_top = $(window).scrollTop();
+	// 	var screenPosition = scroll_top - position;
+	// 	if ( screenPosition > -$(window).height()/2 ) {
+	// 		$('#comment_response_section_1').animate({'opacity': 1}, 500);
+	// 	}
+	// };
 
 
 })(myLecture = window.myLecture || {}, jQuery)

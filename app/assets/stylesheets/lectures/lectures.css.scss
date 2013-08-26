@@ -195,6 +195,15 @@ span.gap {
 	min-width: 350px;
 	font-family: $standard;
 	text-align: center;
+	.left {
+		margin: 2% 0 0 10%;
+		text-align: left;
+	}
+	li {
+		margin-left: 10%;
+		/*list-style: none;*/
+		font-size: 1.2em;
+	}
 	div {
 		margin: 5% 0;
 	}
@@ -203,11 +212,6 @@ span.gap {
 #section_1 {
 	@include section(black);
 	@include backgroundImageStyle('limbo_5.jpg');
-	/*background: image-url('limbo_5.jpg') no-repeat top center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
 #sub_section_1 {
@@ -216,11 +220,6 @@ span.gap {
 
 #section_2 {
 	@include backgroundImageStyle('limbo_5.jpg');
-/*	background: image-url('limbo_5.jpg') no-repeat top center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
 #section_2_overlay, #section_2b_overlay {
@@ -231,34 +230,18 @@ span.gap {
 .sub_section_2 {
 	color: white;
 	@include backgroundImageStyle('limbo_5.jpg');
-
-	/*background: image-url('limbo_5.jpg') no-repeat top center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
 #section_3 {
 	@include backgroundImageStyle('limbo_1.jpg');
-
-	/*background: image-url('limbo_1.jpg') no-repeat top center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
+
 .sub_section_3 {
 	@include color2rgb;
 }
 
 #section_4 {
 	@include backgroundImageStyle('limbo_1.jpg');
-/*	background: image-url('limbo_1.jpg') no-repeat top center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
 #section_4_overlay {
@@ -268,21 +251,11 @@ span.gap {
 
 #sub_section_4 {
 	@include backgroundImageStyle('limbo_1.jpg');	
-	/*background: image-url('limbo_1.jpg') no-repeat top center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
   color: #fff;
 }
 
 #section_5 {
 	@include backgroundImageStyle('limbo_3.jpg');
-/*	background: image-url('limbo_3.jpg') no-repeat top center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
 .sub_section_5 {
@@ -291,11 +264,6 @@ span.gap {
 
 #section_6 {
 	@include backgroundImageStyle('limbo_3.jpg');	
-/*	background: image-url('limbo_3.jpg') no-repeat top center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
 #section_6_overlay {
@@ -403,6 +371,35 @@ footer {
 	font-family: $standard;
 	font-size: .8em;
 }
+
+
+.three_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('big-night-1.jpg');
+}
+
+.three_section_2 {
+	@include backgroundImageStyle('big-night-1.jpg');
+}
+
+.three_sub_section {
+	@include colorrgb;
+}
+
+
+
+
+.quoteIndentation {
+	margin: 0 10%;
+}
+
+
+
+
+
+
+
+
 
 @media (min-width:320px) { 
 /* smartphones, iPhone, portrait 480x320 phones */ 
