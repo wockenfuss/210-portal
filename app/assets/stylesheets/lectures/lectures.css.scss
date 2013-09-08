@@ -386,7 +386,18 @@ footer {
 	@include colorrgb;
 }
 
+.four_section_1 {
+	@include section(black);
+	@include backgroundImageStyle("silence-of-the-lambs3.jpg");
+}
 
+.four_section_2 {
+	@include backgroundImageStyle("silence-of-the-lambs3.jpg");
+}
+
+.sub_section {
+	@include colorrgb;
+}
 
 
 .quoteIndentation {
