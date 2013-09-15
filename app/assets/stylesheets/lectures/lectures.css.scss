@@ -404,8 +404,15 @@ footer {
 	margin: 0 10%;
 }
 
+.five_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('bookie1.jpg');
+}
 
-
+.five_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('bookie2.jpg');
+}
 
 
 
