@@ -414,7 +414,15 @@ footer {
 	@include backgroundImageStyle('bookie2.jpg');
 }
 
+.six_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('bookie1.jpg');
+}
 
+.six_section_3 {
+	@include section(black);
+	@include backgroundImageStyle('alien3.jpg');
+}
 
 
 
