@@ -419,12 +419,20 @@ footer {
 	@include backgroundImageStyle('bookie1.jpg');
 }
 
+.six_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('thrones-1.jpg');
+}
+
 .six_section_3 {
 	@include section(black);
 	@include backgroundImageStyle('alien3.jpg');
 }
 
-
+.six_section_4 {
+	@include section(black);
+	@include backgroundImageStyle('oldjoy2.jpg');
+}
 
 
 @media (min-width:320px) { 
