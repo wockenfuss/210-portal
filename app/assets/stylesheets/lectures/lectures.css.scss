@@ -434,6 +434,15 @@ footer {
 	@include backgroundImageStyle('oldjoy2.jpg');
 }
 
+.seven_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('2001-5.jpg');
+}
+
+.seven_section_3 {
+	@include section(black);
+	@include backgroundImageStyle('2001-4.jpg');
+}
 
 @media (min-width:320px) { 
 /* smartphones, iPhone, portrait 480x320 phones */ 
