@@ -444,6 +444,26 @@ footer {
 	@include backgroundImageStyle('2001-4.jpg');
 }
 
+.eight_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('2001-2.jpg');
+}
+
+.eight_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('2001-5.jpg');
+}
+
+.eight_section_3 {
+	@include section(black);
+	@include backgroundImageStyle('2001-4.jpg');
+}
+
+.eight_section_4 {
+	@include section(black);
+	@include backgroundImageStyle('no_country_1.jpg');
+}
+
 @media (min-width:320px) { 
 /* smartphones, iPhone, portrait 480x320 phones */ 
 }
