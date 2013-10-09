@@ -7,7 +7,7 @@ $color2: #ffc273;
 $color3: #ff9a40;
 */
 $color: #e9e7c6;
-$color2: #bdba8a;
+$color2: #bbb;
 $color3: #8c8851;
 
 $buttonColor: #bf3030;
@@ -52,17 +52,17 @@ $buttonColor: #bf3030;
 
 @mixin color2rgb {
 	/*background-color: rgba(255,194,115, .9);	*/
-	background-color: rgba(233,231,198, .9);	
+	background-color: rgba(230,230,230, .9);	
 }
 
 @mixin colorrgb {
 	/*background-color: rgba(253,255,115, .9);	*/
-	background-color: rgba(213,211,180, .9);	
+	background-color: rgba(224,224,224, .9);	
 }
 
 @mixin color3rgb {
 	/*background-color: rgba(255, 154, 64, .9);*/
-	background-color: rgba(140,136,81, .9);
+	background-color: rgba(140,140,140, .9);
 }
 
 @mixin section($color) {
