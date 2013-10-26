@@ -464,6 +464,20 @@ footer {
 	@include backgroundImageStyle('no_country_1.jpg');
 }
 
+.nine_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('no_country_2.jpg');
+}
+
+.nine_section_3 {
+	@include section(black);
+	@include backgroundImageStyle('no_country_3.jpg');
+}
+
+.nine_section_4 {
+	@include section(black);
+	@include backgroundImageStyle('mulholland_1.jpg');
+}
 @media (min-width:320px) { 
 /* smartphones, iPhone, portrait 480x320 phones */ 
 }
