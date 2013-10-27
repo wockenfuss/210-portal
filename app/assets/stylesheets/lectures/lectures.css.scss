@@ -478,6 +478,22 @@ footer {
 	@include section(black);
 	@include backgroundImageStyle('mulholland_1.jpg');
 }
+
+.ten_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('mulholland_drive_2.jpg');
+}
+
+.ten_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('mulholland_drive_3.jpg');
+}
+
+.ten_section_3 {
+	@include section(black);
+	@include backgroundImageStyle('gummo_1.jpg');
+}
+
 @media (min-width:320px) { 
 /* smartphones, iPhone, portrait 480x320 phones */ 
 }
