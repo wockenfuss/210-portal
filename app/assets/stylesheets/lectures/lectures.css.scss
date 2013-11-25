@@ -517,6 +517,12 @@ footer {
 	@include section(black);
 	@include backgroundImageStyle('code-unknown.jpg');	
 }
+.fourteen_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('myewk_1.jpg');	
+}
+
+
 @media (min-width:320px) { 
 /* smartphones, iPhone, portrait 480x320 phones */ 
 }
