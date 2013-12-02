@@ -521,7 +521,10 @@ footer {
 	@include section(black);
 	@include backgroundImageStyle('myewk_1.jpg');	
 }
-
+.fifteen_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('largent.jpg');	
+}
 
 @media (min-width:320px) { 
 /* smartphones, iPhone, portrait 480x320 phones */ 
