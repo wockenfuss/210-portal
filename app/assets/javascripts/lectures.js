@@ -6,9 +6,9 @@
 		}
 
 		$('#lectureNavbar').on('mouseover', function(e) {
-			$(e.target).animate({'opacity': '1'}, 150);
+			$(this).animate({'opacity': '1'}, 150);
 		}).on('mouseleave', function(e) {
-			$(e.target).animate({'opacity': '0'}, 150);
+			$(this).animate({'opacity': '0'}, 150);
 		});
 
 	});
@@ -16,11 +16,11 @@
 	var bind = function() {
 		$(window).resize(function() {
 			// console.log($(window).width());
-			formatQuestions();
+			// formatQuestions();
 		});
 
 		$(document).on('scroll', removeNavbar);
-		formatQuestions();
+		// formatQuestions();
 
 		$('.powerpoint').powerpoint();
 

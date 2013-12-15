@@ -36,11 +36,21 @@ $buttonColor: #bf3030;
 
 @mixin fullStripe {
 	@include bodyText;
-	@include color3rgb;
-
+	@include colorrgb;
+	border: 15px solid #ccb;
+	p {
+		color: #000;
+		padding: 3% 5%;
+		font-size: 1.2em;
+		line-height: 2em;
+		background-color: rgba(255, 255, 255, .9);
+	}	
+	.firstColumn {
+		width: 45%;
+	}
 	.secondColumn {
-		padding-left: 5%;
-		padding-bottom: 5%;
+		width: 55%;
+		padding: 3%;
 	}
 
 	padding: 2% 0 1% 0;
@@ -57,7 +67,7 @@ $buttonColor: #bf3030;
 
 @mixin colorrgb {
 	/*background-color: rgba(253,255,115, .9);	*/
-	background-color: rgba(224,224,224, .9);	
+	background-color: rgba(224,224,224, .5);	
 }
 
 @mixin color3rgb {
@@ -95,6 +105,10 @@ a {
 	}
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
 body {
 	background-color: #000;
 	margin: 0;
@@ -123,7 +137,7 @@ span.gap {
 	}
 	h2 {
 		font-family: $bannerFont;
-		margin-top: .5%;
+		margin-top: 1%;
 	}
 	button {
 		@include button;
@@ -147,20 +161,22 @@ span.gap {
 	font-family: $standard;
 	min-width: 350px;
 	width: 45%;
-	/*margin-left: 10%;*/
+	padding: 4%;
 	color: #000;
 	p {
-		padding: 0 13%;
-		padding-bottom: 10%;
+		padding: 3% 5%;
 		font-size: 1.2em;
 		line-height: 2em;
+		background-color: rgba(255, 255, 255, .9);
 	}
 	h3 {
-		padding: 10% 13%;
-		margin: 0;
+		padding: 2% 2% 0 5%;
+		color: #fff;
+		border-radius: 5px;
+		margin-bottom: 1%;		
 	}
 	.first_paragraph {
-		padding-top: 25%;
+		margin-top: 25%;
 	}
 }
 
@@ -169,7 +185,6 @@ span.gap {
 	min-width: 760px;
 	width: 100%;
 	margin: auto;
-	/*background-color: gray;*/
 }
 
 #graphic_section_1 {	
@@ -206,6 +221,34 @@ span.gap {
 	}
 	div {
 		margin: 5% 0;
+	}
+}
+
+.column {
+	width: 46%;
+	float: left;
+	padding: 0 2%;
+}
+
+.lectureQuestion {
+	@include fullStripe;
+	.commentDisplay {
+		font-size: .8em;
+		border-radius: 5px;
+		background-color: #fff;
+		overflow: scroll;
+		height: 500px;
+		p {
+			padding: 0 0 0 6%;
+			color: black;
+		}
+		div {
+			margin-bottom: 5%;
+		}
+	}
+	.commentDate {
+		padding-left: 2%;
+		font-size: .7em;
 	}
 }
 
@@ -292,35 +335,6 @@ span.gap {
   /*height: 1000px;*/
 }
 
-
-.column {
-	width: 46%;
-	float: left;
-	padding: 0 2%;
-}
-
-.lectureQuestion {
-	@include fullStripe;
-
-	.commentDisplay {
-		font-size: .8em;
-		background-color: #fff;
-		overflow: scroll;
-		height: 500px;
-		color: black;
-		p {
-			padding: 0 0 0 6%;
-		}
-		div {
-			margin-bottom: 5%;
-		}
-	}
-	.commentDate {
-		padding-left: 2%;
-		font-size: .7em;
-	}
-}
-
 .attribution {
 	margin-left: 4%;
 }
@@ -341,6 +355,8 @@ form {
 		width: 100%;
 		height: 200px;
 		background-color: #fff;
+		border-radius: 5px;
+		padding: 2%;
 	}
 	input[type="submit"] {
 		@include button;
