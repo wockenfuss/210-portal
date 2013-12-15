@@ -1,0 +1,5 @@
+<div class="<%= section['class_name'] %>" >
+	<div class="lectureQuestion">
+		<%= render 'lecture_questions/show', :question => parse_lecture_question(@lecture, section['order_index']) %>
+	</div>
+</div>

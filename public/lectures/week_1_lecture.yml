@@ -1,0 +1,28 @@
+title: "Week 1 Lecture"
+subtitle: "Orientation"
+sections:
+  - class_name: "eight_section_1"
+    type: "section"
+    paragraphs:
+      - element: "h3"
+        class: "first_paragraph"
+        text: "DISCOURSE IN 2001: A SPACE ODYSSEY"
+      - text: "Stanley Kubrick, in his telling of the story <em>2001: A Space Odyssey</em>, makes some unusual discourse choices in terms of both narration and style."
+      - text: "The first of these unusual choices is the sheer duration of the story time. Few other films consider the entire span of human history as the duration of the story being told (only Malick’s <em>Tree of LIfe</em> comes to mind at the moment, although I guess you could make the case that <em>Prometheus</em> does this as well)."
+      - text: "Another unusual choice is his staunch commitment to visual storytelling. Rather than using voiceover or text on the screen in the manner of <em>Star Wars</em> to explain the opening scenario, he spends twenty minutes gradually unfolding narrative information through exclusively visual means. There are a number of other scenes where Kubrick unfolds the story in real time even though the actions occurring in the scene are relatively mundane. We’re given extended balletic sequences as Heywood Floyd travels by spacecraft to a space station and then from there to the moon. We get a long drawn-out sequence where the astronauts replace a faulty part. In more conventional films, these plot details would be dispatched through much shorter sequences with the filmmaker selecting only a few short shots to represent the longer space of story time. For some reason, Kubrick chooses to present far more of the details of the scene than are necessary to simply communicate the basic plot point to the viewer."
+      - text: "In order to shed some light on why Kubrick makes these choices, let’s dig a little bit deeper into the opening “Dawn of Man” sequence. I want to walk through each section of the sequence and distill it down to the specific information that Kubrick is imparting through visual means."
+  - class_name: "eight_section_1"
+    type: "video"
+    text: "NO COUNTRY FOR OLD MEN</br>This week we’re watching <em>No Country for Old Men</em> by the Coen brothers, an adaptation of a novel by Cormac McCarthy. There are a few unusual and interesting narrative strategies employed by the Coen brothers in this film, but I also want you to be examining the film’s approach to style. What patterns do you find in the Coen brothers use of technique in this film? How does the stylistic approach to technique enhance the subject matter? What is most important to the Coen brothers in this film: plot, character or theme?"
+    content: 
+      - image: "2001-intro-1.jpg"
+      - image: "2001-intro-10.jpg"
+  - class_name: "eight_section_1"
+    type: "video"
+    text: "NO COUNTRY FOR OLD MEN</br>This week we’re watching <em>No Country for Old Men</em> by the Coen brothers, an adaptation of a novel by Cormac McCarthy. There are a few unusual and interesting narrative strategies employed by the Coen brothers in this film, but I also want you to be examining the film’s approach to style. What patterns do you find in the Coen brothers use of technique in this film? How does the stylistic approach to technique enhance the subject matter? What is most important to the Coen brothers in this film: plot, character or theme?"
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: "eight_section_1"
+    type: "question"
+    content: "why is that happening?"
+    order_index: 1

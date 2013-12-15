@@ -1,0 +1,11 @@
+<div class="<%= section['class_name'] %>" >
+	<div class="sectionContainer">
+		<div class="sub_section section">
+			<% section['paragraphs'].each do |paragraph| %>
+				<<%= paragraph['element'] || 'p' %> class="<%= paragraph['class'] if paragraph['class'] %>">
+				<%= paragraph['text'].html_safe %>
+				</<%= paragraph['element'] %>>
+			<% end %>
+		</div>
+	</div>
+</div>

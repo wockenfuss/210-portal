@@ -17,7 +17,7 @@ class LecturesController < ApplicationController
 		@lecture = Lecture.new(params[:lecture])
 		if @lecture.save
 			@lectures = Lecture.order('created_at, name')
-			create_file(@lecture)
+			# create_file(@lecture)
 		else
 			# error
 		end
@@ -38,12 +38,8 @@ class LecturesController < ApplicationController
 
 	def show
 		@user = current_user
-		@lecture = Lecture.find(params[:id])
-		@question = LectureQuestion.new
-		@index = @lecture.lecture_questions.count + 1
-		if @lecture.lecture_questions.any?
-			@comment = Comment.new
-		end
+		@lecture = Lecture.find_with_content(params[:id])
+		@comment = Comment.new if @lecture.lecture_questions.any?
 		authorize! :read, @lecture
 	end
 
@@ -71,11 +67,11 @@ class LecturesController < ApplicationController
 	end
 
 	private
-	def create_file(lecture)
-		lecture_file = File.new("app/views/lectures/content/_#{parse_lecture_name(lecture.name)}.html.erb", "w")
-    lecture_file.puts(File.readlines('app/views/lectures/content/_boilerplate.html.erb'))
-    lecture_file.close
-	end
+	# def create_file(lecture)
+	# 	lecture_file = File.new("app/views/lectures/content/_#{parse_lecture_name(lecture.name)}.html.erb", "w")
+ #    lecture_file.puts(File.readlines('app/views/lectures/content/_boilerplate.html.erb'))
+ #    lecture_file.close
+	# end
 
 	def parse_lecture_params
 		parse_dates(params[:lecture]) if params[:lecture]

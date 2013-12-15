@@ -1,0 +1,14 @@
+<div class="<%= section['class_name'] %>" >
+	<div class="videoContainer">
+		<div class="column firstColumn">
+			<p>
+				<%= section['text'].html_safe %> 
+			</p>
+		</div>
+		<div class="column secondColumn">
+			<% section['content'].each do |content| %>
+				<%= content['video'] ? content['video'].html_safe : image_tag(content['image'], width:'700px') %>
+			<% end %>
+		</div>
+	</div>
+</div>

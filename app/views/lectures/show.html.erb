@@ -1,15 +1,15 @@
-
 <div id="lectureNavbar">
 	<h2 class="inline">
 		<%= "#{@lecture.name.upcase }:" %>
 		<%= @lecture.subtitle %>
 	</h2>
 	<%= link_to "Home", user_root_path(current_user), :class => "inline navbar_link" %>
-	<% if can? :manage, :all %>
-		<%= link_to "Add Question", new_lecture_lecture_question_path(@lecture), :remote => true, :id => 'add_question_button', :class => 'navbar_link' %>
-	<% end %>
 </div>
 
 <div id="lectureContainer">
-	<%= render "lectures/content/#{parse_lecture_name(@lecture.name)}" %>	
+	<% if @lecture.content %>
+		<% @lecture.content["sections"].each do |section| %>
+			<%= render section['type'], :section => section %>
+		<% end %>
+	<% end %>
 </div>

@@ -1,7 +1,6 @@
-
 <div id="navBackground">
   <nav>  
-      <%= link_to "Narrative Strategies", root_path, :class => "brand" %>
+      <%= link_to "Concepts in Media Production", root_path, :class => "brand" %>
 
       <% if user_signed_in? %>
 
@@ -32,13 +31,5 @@
       <% else %>
         <%= link_to "Sign in", new_user_session_path, :class => "pull-right navbar"%>
       <% end %>
-
   </nav>
-<!-- 
-  <div class="divider">
-    <div class="navLine navLineTop"></div>
-    <div class="navLine navLineMiddle"></div>
-    <div class="navLine navLineBottom"></div>  
-  </div>
- -->  
 </div>
