@@ -194,12 +194,15 @@ span.gap {
 
 .powerpoint {
 	min-width: 350px;
-	border: $color3 4px solid;
-	background-color: $color;
+	// border: $color3 4px solid;
+	background-color: rgba(240, 240, 240, .8);
 	border-radius: 5px;
-	padding: 2%;
+	// padding: 2%;
 	z-index: 5;
 	opacity: .9;
+	h2 {
+		padding: 3% 0;
+	}
 }
 
 .graphic {

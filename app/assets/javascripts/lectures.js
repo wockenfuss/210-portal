@@ -1,8 +1,8 @@
 (function(myLecture, $, undefined) {
 	$(document).ready(function() {
 
-		if ($('#modal').length > 0) {
-			bind();
+		if ($('.powerpoint').length > 0) {
+			$('.powerpoint').powerpoint();
 		}
 
 		$('#lectureNavbar').on('mouseover', function(e) {
@@ -13,19 +13,8 @@
 
 	});
 
-	var bind = function() {
-		$(window).resize(function() {
-			// console.log($(window).width());
-			// formatQuestions();
-		});
-
-		$(document).on('scroll', removeNavbar);
-		// formatQuestions();
-
-		$('.powerpoint').powerpoint();
-
-		// $(document).on('scroll', showCommentResponse);
-	};
+	// 	// $(document).on('scroll', showCommentResponse);
+	// };
 
 	var formatQuestions = function() {
 		$targets = $('.lectureQuestion, .videoContainer');

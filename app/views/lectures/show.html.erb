@@ -7,8 +7,8 @@
 </div>
 
 <div id="lectureContainer">
-	<% if @lecture.content %>
-		<% @lecture.content["sections"].each do |section| %>
+	<% if @lecture.content['sections'] %>
+		<% @lecture.content['sections'].each do |section| %>
 			<%= render section['type'], :section => section %>
 		<% end %>
 	<% end %>

@@ -39,7 +39,6 @@
 	var init = function() {
 		this.outTriggerPosition = $(this.target.attr('data-trigger-out')).position().top;
 		if ( this.target.attr('data-trigger-in') ) {
-			// this.inTriggerPosition = $(this.target.parent()).position().top + 200;		
 			this.inTriggerPosition = $(this.target.attr('data-trigger-in')).position().top + 200;
 			// console.log("trigger position: " + this.inTriggerPosition);
 			// var parentPos = $(this.target.parent()).position().top + 200;

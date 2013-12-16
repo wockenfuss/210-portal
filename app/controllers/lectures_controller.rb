@@ -17,7 +17,7 @@ class LecturesController < ApplicationController
 		@lecture = Lecture.new(params[:lecture])
 		if @lecture.save
 			@lectures = Lecture.order('created_at, name')
-			# create_file(@lecture)
+			create_file(@lecture)
 		else
 			# error
 		end
@@ -67,11 +67,11 @@ class LecturesController < ApplicationController
 	end
 
 	private
-	# def create_file(lecture)
-	# 	lecture_file = File.new("app/views/lectures/content/_#{parse_lecture_name(lecture.name)}.html.erb", "w")
- #    lecture_file.puts(File.readlines('app/views/lectures/content/_boilerplate.html.erb'))
- #    lecture_file.close
-	# end
+	def create_file(lecture)
+		lecture_file = File.new("public/lectures/#{parse_lecture_name(lecture.name)}.yml", "w")
+    lecture_file.puts("title: #{lecture.name}\nsubtitle: #{lecture.subtitle}\nsections:")
+    lecture_file.close
+	end
 
 	def parse_lecture_params
 		parse_dates(params[:lecture]) if params[:lecture]
