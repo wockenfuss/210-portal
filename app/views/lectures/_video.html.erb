@@ -7,7 +7,9 @@
 		</div>
 		<div class="column secondColumn">
 			<% section['content'].each do |content| %>
-				<%= content['video'] ? content['video'].html_safe : image_tag(content['image'], width:'700px') %>
+				<div class="videoWrapper">
+					<%= content['video'] ? content['video'].html_safe : image_tag(content['image']) %>
+				</div>
 			<% end %>
 		</div>
 	</div>

@@ -4,19 +4,21 @@
 			<% section['elements'].each do |element| %>
 				<<%= element['element'] || 'p' %> class="<%= element['class'] if element['class'] %>" id="<%= element['id'] if element['id'] %>">
 				<%= element['text'].html_safe %>
-				</<%= element['element'] %>>
+				</<%= element['element'] || 'p' %>>
 			<% end %>
 		</div>
-		<% section['powerpoint'].each do |graphic| %>
-		  <div class="graphic">
-		  	<% graphic.each do |section| %>
-		  		<div id="<%= section['id'] %>" data-trigger-in="<%= section['in'] if section['in'] %>" data-trigger-out="<%= section['out'] if section['out']%>" class="powerpoint">
-		  			<% section['content'].each do |content| %>
-		  			  <h2><%= content.html_safe %></h2>
-		  			<% end %>
-		  		</div>
-		  	<% end %>
-		  </div>
+		<% if section['powerpoint'] %>
+			<% section['powerpoint'].each do |graphic| %>
+			  <div class="graphic">
+			  	<% graphic.each do |section| %>
+			  		<div <%= "id=#{section['id']}" if section['id'] %> <%= "data-trigger-in=#{section['in']}" if section['in'] %> <%= "data-trigger-out=#{section['out']}" if section['out'] %> class="powerpoint">
+			  			<% section['content'].each do |content| %>
+			  			  <h2><%= content.html_safe %></h2>
+			  			<% end %>
+			  		</div>
+			  	<% end %>
+			  </div>
+			<% end %>
 		<% end %>
 	</div>
 </div>

@@ -1,0 +1,13 @@
+title: Week 2 Lecture
+subtitle: Traditional Narrative Structure
+sections:
+  - class_name: 'two_section_1'
+    type: 'section'
+    elements:
+      - text: "You should watch the film for this week, <em>Stagecoach</em>, by John Ford, before working through this lecture."
+        class: "first_paragraph"
+      - text: "This week we're going to work through two topics: first, we'll review traditional narrative structure and see how <em>Stagecoach</em> provides an illustration of that. Second, we'll think about how filmmakers make use of the frame to contribute to the meaning and effect of a film."
+      - text: "Let's start off by defining some of the basic components of narrative that we'll be discussing throughout the semester."
+      - text: "Over the course of the last century, the language of cinema has developed a variety of patterns that are regularly used to communicate with the viewer. Cinema is a language that communicates meaning. The grammar and syntax of that language––the system that we as viewers use to decode the images into a set of intended meanings––is a complicated one that relies in large part on a set of conventions."
+      - text: "What this means is that we understand what films communicate largely because we've seen a lot of other films. We've learned what certain combinations of images mean."
+      - text: "Let's take a look at an example of this idea:"

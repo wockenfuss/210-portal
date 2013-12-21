@@ -11,9 +11,32 @@
 			$(this).animate({'opacity': '0'}, 150);
 		});
 
+		var $fluidEl = $('.videoWrapper');
+		var $videos = $('.videoWrapper iframe');
+		$videos.each(function() {
+			$(this)
+				.data('aspectRatio', this.height / this.width)
+				.removeAttr('height')
+				.removeAttr('width');
+		});
+
+		$(window).resize(function() {
+			setVideoSize($fluidEl, $videos);
+		});
+
+		setVideoSize($fluidEl, $videos);
 	});
 
-	// 	// $(document).on('scroll', showCommentResponse);
+	function setVideoSize($fluidEl, $videos) {
+		var newWidth = $fluidEl.width();
+		$videos.each(function() {
+			var $el = $(this);
+			$el
+				.width(newWidth)
+				.height(newWidth * $el.data('aspectRatio'));
+		});
+	}
+	//// $(document).on('scroll', showCommentResponse);
 	// };
 
 	var formatQuestions = function() {
