@@ -1,15 +1,19 @@
 (function(myLecture, $, undefined) {
 	$(document).ready(function() {
 
-		if ($('.powerpoint').length > 0) {
-			$('.powerpoint').powerpoint();
-		}
+		window.setTimeout(function() {
+			if ($('.powerpoint').length > 0) {
+				$('.powerpoint').powerpoint();
+			}
+			setVideoSize($fluidEl, $videos);
+		}, 0);
+		
 
-		$('#lectureNavbar').on('mouseover', function(e) {
-			$(this).animate({'opacity': '1'}, 150);
-		}).on('mouseleave', function(e) {
-			$(this).animate({'opacity': '0'}, 150);
-		});
+		// $('#lectureNavbar').on('mouseover', function(e) {
+		// 	$(this).animate({'opacity': '1'}, 150);
+		// }).on('mouseleave', function(e) {
+		// 	$(this).animate({'opacity': '0'}, 150);
+		// });
 
 		var $fluidEl = $('.videoWrapper');
 		var $videos = $('.videoWrapper iframe');
@@ -24,7 +28,6 @@
 			setVideoSize($fluidEl, $videos);
 		});
 
-		setVideoSize($fluidEl, $videos);
 	});
 
 	function setVideoSize($fluidEl, $videos) {

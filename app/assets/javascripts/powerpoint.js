@@ -7,21 +7,29 @@
 	var bind = function() {
 		$(window).on('scroll', function() {
 			var scrollTop = $(window).scrollTop();
+			// console.log(scrollTop);
 			$.each(pp.elements, function() {
 				// if ( triggerOut > -100 && triggerOut < 300 ) {
-				this.setOpacity();
+				this.setOpacity(scrollTop);
 				// }
 			});
 		});
 		$(window).resize(function() {
+			console.log('resizing');
 			$.each(pp.elements, function() {
+				pp.screenOffset = -($(window).height() / 2);
 				this.init();
+				this.setOpacity($(window).scrollTop());
 			});
 		});
+
+		window.setTimeout(function() {
+			$(window).trigger('resize');
+		}, 0);
 	};
 
-	var setOpacity = function() {
-		var scrollTop = $(window).scrollTop();
+	var setOpacity = function(scrollTop) {
+		// var scrollTop = $(window).scrollTop();
 		var position = scrollTop - pp.screenOffset;
 		var fadeInPoint = this.inTriggerPosition - position;
 		var fadeOutPoint = this.outTriggerPosition - position;
@@ -37,6 +45,7 @@
 	};
 
 	var init = function() {
+		console.log(this);
 		this.outTriggerPosition = $(this.target.attr('data-trigger-out')).position().top;
 		if ( this.target.attr('data-trigger-in') ) {
 			this.inTriggerPosition = $(this.target.attr('data-trigger-in')).position().top + 200;
@@ -49,6 +58,7 @@
 
 	var methods = {
 		init: function( options ) {
+			// console.log(this);
 			$.each(this, function(index) {
 				var element = {
 					init: init,
@@ -57,9 +67,9 @@
 					setOpacity: setOpacity
 				};
 				element.target = $(this);
-				element.init();
+				// element.init();
 				pp.elements.push(element);
-				element.setOpacity();
+				// element.setOpacity();
 			});
 			bind();
 		}, 

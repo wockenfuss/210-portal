@@ -1,0 +1,189 @@
+title: Week 3 Lecture
+subtitle: Cinematography
+sections:
+  - class_name: 'killer_section_1'
+    type: 'section'
+    elements:
+      - element: 'h3'
+        text: "THE FRAME"
+        class: 'first_paragraph'
+      - text: "At the risk of stating the obvious, as an introduction to a discussion of cinematography, I'll say that the way that a filmmaker chooses to use the camera contributes significantly to a viewer's overall experience of the film. What we see on screen, in large part, constitutes the impressions we take from a film (although, as we'll discuss over the semester, somewhat more &quot;invisible&quot; things like story structure, sound, setting, etc. contribute more than we tend to give them credit for). The camera captures what we see, and we, as &quot;see-ers&quot; privilege the act of sight over our other senses. As is the case with any complicated tool, there are a myriad of variables in how someone can choose to use the camera, and each of these choices can result in a different effect on the viewer."
+      - text: "This week, we'll continue the discussion that we started last week on the frame, and we'll also think a bit about how light contributes to the images that we see on screen."
+        class: 'title_out'
+    powerpoint:
+      - - id: 'graphic_title'
+          out: '.title_out'
+          content:
+            - "FILM 210 WEEK 3"
+            - "Cinematography and the Frame"
+  - class_name: 'killer_section_1'
+    type: 'video'
+    text: "The cinematic frame functions as our window into the world of a film. When you're standing in your house and you look through a window, you are aware of that window as a separation between you and what is outside that window, just as in the image here you are both conscious of the play that is happening on the stage as well as of the audience watching that play."
+    content:
+      - image: 'sherlock_stage.jpg'
+  - class_name: 'killer_section_1'
+    type: 'video'
+    text: "But for us as viewers sitting in the cinema, are we aware of the window, or does the window disappear?"
+    content:
+      - image: 'sherlock_stage_2.jpg'
+  - class_name: 'killer_section_1'
+    elements:
+      - "Another way of asking this question is to say, &quot;Are we observers viewing something from the outside, or are we participants, vicariously experiencing this other world through the characters?&quot;"
+  - class_name: 'killer_section_1'
+    type: 'video'
+    text: "That distinction can be illustrated by this clip from <em>Psycho</em>."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'killer_section_1'
+    elements:
+      - "We begin the clip observing from the outside. Then we move, figuratively, into the body of Norman for a POV shot. We are inside the world. However, that leap from observer to participant is not jarring to us. The reason for that is that we weren't ever really observers at all. In fact, we had already entered the world of the film prior to this shot, prior to this scene. For most of us the boundary between our actual world and the world of the film dissolves almost instantaneously following the film's credits."
+      - "This duality––that we are both separate from and part of the film world at the same time––results in a constant tension in narrative cinema between objectivity––being external from something––and subjectivity–being part of it. That tension is something readily exploited by most narrative filmmakers who create a constant ebb and flow between those two poles. The position that we occupy at any given moment of the film along that spectrum between those poles is at least partly controlled by the way the frame is being used."
+      - "Your reading for last week walked through a number of the variables involved in framing, listing the various choices a filmmakers makes in regard to the positioning of the vantage point of the camera."
+      - "Another way to think about the frame, beyond where the filmmaker chooses to position the camera in relation to the scene, is composition: essentially, how the filmmaker positions the subject matter in relation to the edges of the frame."
+  - class_name: 'killer_section_2'
+    elements:
+      - element: 'h3'
+        text: "COMPOSITION"
+      - "Let's take a look at some of the principles of composition with frames from this week's film, <em>Killer's Kiss</em>, as illustration."
+      - "When you look at your friends' photos–oh, let's say, on Facebook–what's the first thing that you notice (well, not considering the actual content)? If they're taking a picture of somebody, how do they arrange the frame? Most likely, they've placed that person's face in the dead center of the image. I suppose this seems logical enough, but it is, in fact, the worst possible place to put it. The rest of the frame becomes haphazardly composed and irrelevant."
+      - "However, there are psychological guidelines that control how we see images. Our eyes parse images in a specific way, and it makes sense to understand how the eye takes in an image and use that as a guide in how to set up the image's composition."
+  - class_name: 'killer_section_2'
+    type: 'video'
+    text: "RULE OF THIRDS</br>The first rule of composition that we'll look at, is the <strong>rule of thirds</strong>. In the first two shots, nothing of interest is in the center of the frame. The objects of interest are placed loosely along lines that divide the image into thirds. These arrangements are more dynamic, less obvious, and allow the filmmaker to make use of some of the rules that follow."
+    content:
+      - image: 'killer_thirds_1.jpg'
+      - image: 'killer_thirds_2.jpg'
+      - image: 'killer_thirds_3.jpg'
+  - class_name: 'killer_section_2'
+    type: 'video'
+    text: "BALANCE</br>The second guide to composition is considering a frame's <strong>balance</strong>. In this image, objects of interest are placed in opposite corners. The entire frame is used, and each area of interest balances out the other."
+    content:
+      - image: 'killer_balance_1.jpg'
+  - class_name: 'killer_section_2'
+    type: 'video'
+    text: "In this image the foreground object of interest is larger and therefore has more &quot;weight&quot; than the area of interest in the background. However, that area is brighter than the foreground object. The brighter an object is, the more it &quot;weighs&quot; (or attracts our attention) so this image contains an interesting balance as well."
+    content:
+      - image: 'killer_balance_2.jpg'
+  - class_name: 'killer_section_2'
+    type: 'video'
+    text: "This image is intentionally unbalanced. It feels heavily weighted to the right-hand side. Kubrick makes use of this unbalanced composition to enhance the off-kilter mood and tension within the scene."
+    content:
+      - image: 'killer_balance_3.jpg'
+  - class_name: 'killer_section_2'
+    type: 'video'
+    text: "LEADING THE EYE</br>The third aspect of composition we'll discuss is <strong>leading the eye</strong>. In this image the diagonals of the staircase all push your eye toward their convergence point where our attention is supposed to be focused on Gloria."
+    content:
+      - image: 'killer_leading_1.jpg'
+  - class_name: 'killer_section_2'
+    type: 'video'
+    text: "Again in this image, we have the various perspective lines of the building that all lead our attention to the corner where the character is being chased by the two thugs."
+    content:
+      - image: 'killer_leading_2.jpg'
+  - class_name: 'killer_section_2'
+    type: 'video'
+    text: "Revisiting this unbalanced composition, Kubrick uses the mannequin hands to &quot;point&quot; at Davey."
+    content:
+      - image: 'killer_balance_3.jpg'
+  - class_name: 'killer_section_2'
+    type: 'video'
+    text: "We mentioned the balance in this composition, but beyond simply following the shapes in an image, our eye is also led by the brightness. The composition here dynamically leads our gaze through the image. Our eye is naturally drawn to the largest object in the frame, but it's also drawn to the brightest, so our eye moves first to one figure, then the other in a diagonal fashion."
+    content:
+      - image: 'killer_balance_2.jpg'
+  - class_name: 'killer_section_2'
+    elements:
+      - "In all these images we can see an integration of these three principles governing how our eyes perceive an image. Kubrick makes intentional use of facts about our physiological system of perception in order to maximize the impact the images have on us as we view them."    
+  - class_name: 'killer_section_3'
+    elements:
+      - element: 'h3'
+        text: "FILM NOIR"
+      - "This week, we watched a film that fits into the category of <em>film noir</em>."
+  - class_name: 'killer_section_3'
+    type: 'question'
+    content: "What do you typically think of when you hear that term?"
+    order_index: '1'
+  - class_name: 'killer_section_3'
+    elements:
+      - element: 'h3'
+        text: 'VISUAL STYLE'
+      - text: "Though we might make a lot of different associations with the term, there are essentially two elements that combine to create a <em>film noir</em>. In your reading for this week, Place and Petersen discuss one of these elements in detail. This is probably the first thing we think of in terms of noir: the <strong>visual style</strong>. The visual style of <em>film noir</em> is conspicuous. Rather than attempt to present the material in a neutral fashion, it makes use of the various technical elements to convey abstract ideas––to visualize the thematic and psychological elements present in the story and the characters. This conspicuous style presents a very specific way of seeing, incorporating a number of different influences, from German Expressionism to modernism to photo-journalism."
+      - "One of the more conspicuous visual characteristics of <em>noir</em> is its use of light. As we talked about with the frame, the way that light is used in cinematography can dramatically affect the emotional character of a scene. A scene that takes place in a well-lit environment might feel quite different if set in a high-contrast, low-lit situation. Your reading discusses the characteristics of <em>noir</em> lighting fairly thoroughly, so we'll simply illustrate it here by looking at a couple of clips."
+  - class_name: 'killer_section_3'
+    type: 'video'
+    text: "Here is a clip from <em>Touch of Evil</em> by Orson Welles, a film that is generally considered to mark the end of the <em>noir</em> era. Pay attention to how light is used and how it impacts the scene."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'killer_section_3'
+    elements:
+      - "There are a lot of things that combine to generate the mood of this scene. We could talk about the wide angle lens and handheld camera, but let’s concentrate on light."
+  - class_name: 'killer_section_3'
+    type: 'question'
+    content: "What characteristics of the lighting did you notice? How does the lighting impact this scene? How would it be different with more neutral lighting?"
+    order_index: '2'      
+  - class_name: 'killer_section_3'
+    elements:
+      - "Our primary association with light is that it is necessary to illuminate characters and objects. Of course that is happening in this scene, but Welles chooses to make the illumination high-contrast. Because light only comes from one direction, you end up with brightly exposed areas outlined in deep shadow. This obscuring of details in the shadow areas deepens a sense of mystery in the scene."
+      - "There's another significant way that the light contributes to this scene, performing a function that we don't usually associate with light: it takes a significant role in creating the sense of pacing and rhythm of the scene. This is something we usually attribute to editing or to sound, but here Welles creates a rhythmic lighting source for the scene that works in tandem with cutting to establish the rhythm. Certainly this is no accident. Welles could have chosen to have the scene lit by a bright sign outside the window that doesn't blink. But by using a blinking sign as a motivation for the high-contrast light, Welles deepens the sense of unpredictability in the scene, suddenly hiding or revealing the details of a shot, contributing a chaotic feeling of violence and danger."
+  - class_name: 'killer_section_3'
+    type: 'video'
+    text: "Let's look at another <em>noir</em> scene, this time from <em>Mildred Pierce</em>, again paying attention to the use of light:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'killer_section_3'
+    elements:
+      - "Typically a filmmaker uses the frame to hide and reveal what he/she wants us to see, showing a wide shot of a character so that we don't focus on the facial expression, for example; or showing close-ups of objects or body parts, then cutting to the face at just the time we are supposed to see a reaction. Here, the filmmaker instead uses lighting."
+      - "Mildred begins the scene in darkness, then enters the shaft of light just in time for us to catch her look of horror. The eyeline match of what she sees gives us just enough information so that we realize what's causing her reaction, but crucially, it hides from us the information we most want to know: what is their reaction to being caught?"
+      - "Only after a few agonizing moments is the information given to us, and again lighting is used to meter it out piece by piece. First we see the girl's reaction as she steps into the light, and then the man's reaction (if you'll pay close attention, you'll notice the man doesn't really move enough to enter the light, it's actually the light that is moved by the crew to reveal his face)."
+  - class_name: 'killer_section_3'
+    elements:
+      - "So lighting can be more complex than the &quot;high contrast equals dramatic&quot; equation that might sometimes dominate our consideration of lighting. Here we see several examples in which light can be used in a fairly complex way to engage in a give-and-take with other technical filmmaking processes."
+  - class_name: 'killer_section_3'
+    elements: 
+      - element: 'h3'
+        text: 'CULTURAL CONTEXT'
+      - text: "The second element that is part of the identity of <em>noir</em>, and a part that may not immediately come to mind, is the <strong>cultural context</strong> in which the films were created." 
+      - text: "Last week we looked at <em>Stagecoach</em> and spent a bit of time discussing how the film revealed certain cultural attitudes that existed during the time the film was made. That cultural context is always crucial to the ultimate meaning and interpretation of any film. In the case of <em>noir</em> that context is particularly important."
+      - "During the time period of <em>noir</em> (roughly 1940 – 1958), America went through significant cultural changes, marked by the end of World War II and the rise of suburbanization and consumerism. People moved out of cities. Technological advances changed the hallmarks of a modern lifestyle to include new appliances, goods, and services, as well as creating new markets, and methods for advertising those products. A post-war economy expanding after years of contraction and withdrawal contributed to the consumerist growth."
+      - "Disillusionment, brought about by the unexpected devastation of the war and felt by returning veterans, contributed to a sense of modern alienation, as did shifting gender roles as many women––forced into active places in the workforce during the war––did not necessarily want to return to their previous position as housewife. Fears of nuclear annihilation, espionage, and communism coincided with the rise of the cold war."
+      - text: "All of these elements constituted the cultural climate in which <em>noir</em> appeared, and many of the themes of <em>noir</em> reflect these anxieties. For example, the strain in gender relations can be seen in the theme of the <em>femme fatale</em>––the powerful woman who does not conform to the passive and meek traditional feminine role (in contrast, think of Dallas's acceptance of being cast in the wife/mother role in <em>Stagecoach</em>, a film made just prior to the <em>noir</em> period; her task there simply to birth children and make coffee for the men). "
+      - text: "For this reason, a film made today using <em>noir</em> visual style is still not a <em>film noir</em>, but would be rather a “neo-noir” or an homage. There are plenty of examples of these in <em>Breathless, Body Heat, L.A. Confidential, Red Rock West</em>, just to name a few. These films cannot be <em>noir</em> because they do not issue out of the same cultural context or represent the same reactions to the same cultural events as films made during the <em>noir</em> period."
+  - class_name: 'killer_section_4'
+    elements: 
+      - element: 'h3'
+        text: "KILLER'S KISS"
+      - "All of this brings us to this week’s film, <em>Killer's Kiss</em>, by Stanley Kubrick from 1955. This is a film that falls at the tail end of the noir period."
+      - text: "There is a specific element to post-war American culture that we’ll be thinking about this week: consumerism. It’s the subject of your supplemental screening of another episode of <em>Ways of Seeing</em>, and it figures heavily in the subtext of the Kubrick film, laying the foundation for the situation in which both the main characters find themselves: objects to be used for society's pleasure who are powerless to achieve their own desires or grasp the financial and physical pleasures they see everywhere around them."
+  - class_name: 'killer_section_4'
+    type: 'video'
+    text: "Here is a brief consumerist interlude that Kubrick uses to bridge two of the film's scenes:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'killer_section_4'
+    elements:
+      - "John Berger's descriptions of advertising culture are especially apt for this film:"
+      - text: "&quot;The pursuit of individual happiness has been acknowledged as a universal right. Yet the existing social conditions make the individual feel powerless. He lives in the contradiction between what he is and what he would like to be. . . . He lives, continually subject to an envy which, compounded with his sense of powerlessness, dissolves into recurrent day-dreams.&quot;"
+        class: 'attribution'
+      - "In consumer culture that’s marked heavily by advertising, "
+      - text: "&quot;Money is life. . . . Money is the token of, and the key to, every human capacity . . . . The power to spend money is the power to live.&quot;"
+        class: 'attribution'
+      - "What is the impact that this type of cultural climate has on those living in it? How does a person deal with the envy that is engendered by the advertising culture? What does a person do with the sense of powerlessness that is created by not having the means to reach that which lies just outside of one's grasp?"
+  - class_name: 'killer_section_4'
+    type: 'video'
+    text: "Other stills from the film point out the myriad ways Kubrick finds to insert echoes of consumerism and objectification."
+    content:
+      - image: "killer_consumer_1.jpg"
+      - image: "killer_consumer_2.jpg"
+      - image: "killer_consumer_3.jpg"
+  - class_name: 'killer_section_4'
+    elements:
+      - "There are several moments in the film that we could point to that underscore these ideas. In one sequence Kubrick cuts between Gloria's half-clothed body as she readies herself for her evening of being an object of desire for men while Davey's half-clothed body is rubbed with oil and prepared to be ogled by onlookers."
+      - "The most obvious moment is provided by the climactic fight sequence in which Davey and the &quot;villain&quot; engage in a hilariously awkward fight using female body parts from mannequins as weapons. Again, the decision to stage the fight in a &quot;mannequin warehouse&quot; is deliberate and provides for a visual pun on one of the film's core themes."
+  - class_name: 'killer_section_4'
+    type: 'video'
+    text: "Kubrick also makes use of traditional <em>noir</em> lighting to emphasize and underscore his themes. Consider this image of his hero for a moment. What mood do you get from the image? What is the sense of the character that the composition and lighting communicate to you?"
+    content:
+      - image: 'killer_bed.jpg'
+  - class_name: 'killer_section_4'
+    elements:
+      - "You'll make use of some of your observations of this image in this week's discussion posts."
+      - text: "Combined with the compositional choices we discussed at the beginning of the lecture and the high-contrast, low-key lighting style that's consistent with <em>noir</em>, Kubrick's cinematography and editing make use of elements of style to underscore and externalize his thematic concerns in the film, one of the hallmarks of the <em>noir</em> genre as discussed by Place and Peterson in your reading for the week."
+

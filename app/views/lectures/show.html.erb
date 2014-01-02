@@ -9,7 +9,7 @@
 <div id="lectureContainer">
 	<% if @lecture.content['sections'] %>
 		<% @lecture.content['sections'].each do |section| %>
-			<%= render section['type'], :section => section %>
+			<%= render (section['type'] ? section['type'] : 'section'), :section => section %>
 		<% end %>
 	<% end %>
 </div>

@@ -2,8 +2,10 @@
 	<div class="sectionContainer">
 		<div class="sub_section section">
 			<% section['elements'].each do |element| %>
-				<<%= element['element'] || 'p' %> class="<%= element['class'] if element['class'] %>" id="<%= element['id'] if element['id'] %>">
-				<%= element['text'].html_safe %>
+				<<%= element['element'] ? element['element'] : 'p' %> 
+					<%= "class=#{element['class']}" if element['class'] %>
+					<%= "id=#{element['id']}" if element['id'] %>>
+					<%= element['text'] ? element['text'].html_safe : element.html_safe  %>
 				</<%= element['element'] || 'p' %>>
 			<% end %>
 		</div>
@@ -13,7 +15,13 @@
 			  	<% graphic.each do |section| %>
 			  		<div <%= "id=#{section['id']}" if section['id'] %> <%= "data-trigger-in=#{section['in']}" if section['in'] %> <%= "data-trigger-out=#{section['out']}" if section['out'] %> class="powerpoint">
 			  			<% section['content'].each do |content| %>
-			  			  <h2><%= content.html_safe %></h2>
+			  			  <% if content['image'] %>
+				  			  <div class="videoWrapper">
+				  			  	<%= image_tag(content['image']) %>
+				  			  </div>
+			  			  <% else %>
+			  			  	<h2><%= content.html_safe %></h2>
+			  			  <% end %>
 			  			<% end %>
 			  		</div>
 			  	<% end %>

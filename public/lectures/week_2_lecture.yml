@@ -1,13 +1,171 @@
 title: Week 2 Lecture
 subtitle: Traditional Narrative Structure
 sections:
-  - class_name: 'two_section_1'
+  - class_name: 'stagecoach_section_1'
+    type: 'video'
+    text: "You should watch the film for this week, <em>Stagecoach</em>, by John Ford, before working through this lecture."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/57398615?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'stagecoach_section_1'
     type: 'section'
     elements:
-      - text: "You should watch the film for this week, <em>Stagecoach</em>, by John Ford, before working through this lecture."
-        class: "first_paragraph"
       - text: "This week we're going to work through two topics: first, we'll review traditional narrative structure and see how <em>Stagecoach</em> provides an illustration of that. Second, we'll think about how filmmakers make use of the frame to contribute to the meaning and effect of a film."
       - text: "Let's start off by defining some of the basic components of narrative that we'll be discussing throughout the semester."
       - text: "Over the course of the last century, the language of cinema has developed a variety of patterns that are regularly used to communicate with the viewer. Cinema is a language that communicates meaning. The grammar and syntax of that language––the system that we as viewers use to decode the images into a set of intended meanings––is a complicated one that relies in large part on a set of conventions."
+        class: 'title_out'
       - text: "What this means is that we understand what films communicate largely because we've seen a lot of other films. We've learned what certain combinations of images mean."
-      - text: "Let's take a look at an example of this idea:"
+    powerpoint:
+      - - id: 'graphic_title'
+          out: '.title_out'
+          content:
+            - "FILM 210 WEEK 2"
+            - "Traditional Narrative Structure"
+  - class_name: "stagecoach_section_1"
+    type: "video"
+    text: "Let's take a look at an example of this idea:"
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/48571519?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'stagecoach_section_1'
+    type: 'section'
+    elements:
+      - text: "When you watch this clip, you see Tim Robbins in a room. Then suddenly, after a cut, he's in a different space. However, we don't think that he's suddenly been teleported from one place to another. We understand that a portion of time has been excised from between those two shots." 
+      - text: "Early cinema viewers did not have the same experience of cinematic language, and there are stories of early viewers misunderstanding early filmic language in ways that to us seem simplistic and inconceivable (for example, thinking that an early close-up represented a disembodied head, or running from the theater in fear at the sight of an oncoming train)." 
+      - text: "It's not that somehow those people were stupid, while we happen to be highly intelligent. Rather, we have absorbed a history of images that gives us a foundation of understanding so that when we watch films, we understand them mostly without any conscious effort. Think of our use of spoken language: because most of us grew up immersed in English and gradually absorbed its structure over time, we don't have to put forth any conscious effort to understand or speak it."  
+      - text: "In much the same way, our processing of filmic language happens unconsciously. However, it can be useful to try to take apart some of these unconscious processes as a means of understanding the way film works on us psychologically."
+  - class_name: 'stagecoach_section_1'
+    type: 'section'
+    elements:
+      - element: 'h3'
+        text: "WHAT IS NARRATIVE?"
+        class: 'what_is_narrative'
+      - text: "If you've already taken Film 114, you might remember that we learned in some of our readings that narrative is essentially a combination of three elements: causality, time and space."
+      - text: "If we see a series of events that don't seem to have any cause and effect relationship, we would most likely not consider these to be a story. For example, if we were to spend a day sitting in a cafe, we might see a wide range of different interactions and occurrences, but because these things happen to a many different, unrelated people, and the events do not connect to each other in any way, they would not constitute a single unified story."
+      - text: "Also, even if we understand certain linkages between events, if we are not sure of where or when those events occurred, we will not be able to create a mental sense of the cause-and-effect chain. If we don't know the order [time] in which events occur, the causal relationship is impossible to determine. If we don't know the location [space] of events, we are disoriented."
+        class: 'narrative_out'
+      - text: "So let's file away these two elements as fundamental to the storytelling process: 1). A chain of cause-and-effect events. 2). The viewer's sense of orientation in space and time."
+    powerpoint:
+      - - id: 'graphic_section_1'
+          in: '.what_is_narrative'
+          out: '.narrative_out'
+          content: 
+            - image: 'lec_02_01.jpg'
+        - id: 'graphic_section_2'
+          in: '.narrative_out'
+          out: '.narrative_2_out'
+          content: 
+            - image: 'lec_02_02.jpg'            
+  - class_name: 'stagecoach_section_1'
+    type: 'section'
+    elements:
+      - text: "Let's consider these elements in relation to the film we've watched for this week: <em>Stagecoach</em>."
+      - text: "How does <em>Stagecoach</em> keep our interest, set up our expectations, and control what we're thinking about and anticipating at any given time?"
+        class: 'narrative_2_out'
+  - class_name: 'stagecoach_section_1'
+    type: 'section'
+    elements:
+      - text: "One strategy the film takes in creating an effective structure is to tie together our sense of space and time."
+        class: 'graphic_3_in'
+      - text: "At the opening of the film, we're immediately given the long-term goal of the film: to get the stagecoach from Tonto to Lordsburg. Both spatially and in terms of its running time, the film starts in Tonto and ends in Lordsburg."
+      - text: "The opening of the film, after establishing the long-term goal, also gives us the short-term goal: Dry Fork."
+    powerpoint:
+      - - id: 'graphic_section_3'
+          in: '.graphic_3_in'
+          out: '.graphic_3_out'
+          content:
+            - image: 'lec_02_03.jpg'
+  - class_name: 'stagecoach_section_1 graphic_3_out'
+    type: 'section'
+    elements:
+      - text: "The cause-and-effect chain in the film is essentially a map of the spatial movement, and we can fairly easily divide the film up into segments that map sections of time onto the distances being travelled. Each short-term goal meters out a certain amount of screen time. The distance from one place to another equals an x-minute segment of film."
+    powerpoint:
+      - - id: 'graphic_section_4'
+          in: '.graphic_3_out'
+          out: '.graphic_4_out'
+          content:
+            - image: 'lec_02_04.jpg'
+  - class_name: 'stagecoach_section_1 graphic_4_out'
+    type: 'section'
+    elements:
+      - text: "Each step along the way fulfills our short-term goal and replaces it with another short-term goal (cause-and-effect chain). Each link in that chain incrementally raises the stakes and increases the danger."
+      - text: "At Tonto, we hear about the danger of the Apaches, but the threat level is low. The citizens are with the cavalry, and there is still some distance between the stagecoach and the Apaches."
+      - text: "Then at Dry Fork, we hear about a battle with the Apaches. There's been actual conflict, and we know the cavalry is no longer going to be with the stagecoach, so the danger is higher."
+      - text: "At Apache Wells, we see the smoke signals of Apaches. Now they are physically close. The danger has moved from the realm of hearing to sight. Complicating matters further, the group is slowed down by the birth of the baby, an event that both increases our emotional interest and makes the trek harder."
+      - text: "Then at Lee's Ferry we see physical evidence of the Apaches' attacks: dead bodies, fire, smoke."
+      - text: "Lastly, on the way to Lordsburg, the last stop of the journey, we see the Apaches themselves and then encounter their attack."
+    powerpoint:
+      - - id: 'graphic_section_5'
+          in: '.graphic_4_out'
+          out: '.graphic_5_out'
+          content:
+            - image: 'lec_02_05.jpg'
+  - class_name: 'stagecoach_section_1'
+    elements:
+      - text: "This incremental raising of the stakes is what in narrative terms would be called an arc. A flat line correlates to something relatively mundane. Few of us would wait in line for a roller coaster that moved along a flat plane. That's called driving, and we do it virtually every day. Our interest is sustained by a pattern that incorporates change and variety. Traditionally that pattern of change in a drama is represented by the three-act structure."
+      - text: "In act one, we are given exposition. In <em>Stagecoach</em>, this means that we are introduced methodically to all the characters (to Ringo only by name) and their individual goals before they head out on their journey."
+      - text: "Act two introduces conflict in the form of obstacles that oppose the characters' goals. This portion of <em>Stagecoach</em> comprises the sections traveling to Dry Fork, Apache Wells, and Lee's Ferry. We see increased danger at every turn, and have the action complicated by the birth of the baby and the evolving relationships between the characters. Act two typically ends in the climax of the drama, as the conflict comes to a head. In <em>Stagecoach</em>, this is the moment when the Apaches attack. All the action in the film has been building up to this point."
+      - text: "Act three provides resolution to the conflict and the questions that have been raised through the first two acts. In <em>Stagecoach</em>, the resolution consists of the events once the stagecoach arrives at Lordsburg, when we see Ringo take revenge on the Plummer brothers and the various relationships between the characters are resolved."
+        class: 'graphic_5_out'
+  - class_name: 'stagecoach_section_1 graphic_6_in'
+    elements:
+      - text: "Any narrative film typically has multiple arcs going on concurrently: the arc of plot level action as well as multiple arcs of character development. <em>Stagecoach</em> is no different. In the film, a number of disparate characters are introduced. As the film progresses, they all end up following similar arcs of development, starting the film in some type of disgrace or dishonor and ending up engaging in some sort of act of redemption. Ringo is disgraced at the start of the film as an escaped convict, judged by society. Dallas is rejected and condemned by society for her position as a sex worker. Doc Boone, the town drunk, has been similarly judged and condemned. Hatfield is considered to be a man without honor as a gambler, though hints persist of an unknown past in which he occupied some sort of noble place. All of the characters are redeemed eventually. Ringo is shown to have been unjustly imprisoned and wins vengeance. Dallas, through her help during the birth and care of the baby, is presented as honorable (Yes, the idea that a woman is somehow &quot;redeemed&quot; through motherhood is a problematic idea, at least in our day, but it nevertheless describes John Ford's intended message fairly clearly). Doc Boone redeems himself through delivery of the baby and standing up to the Plummers, and Hatfield is redeemed by his noble protection and sacrifice for the &quot;noblewoman,&quot; Mrs. Mallory."
+      - text: "If we're trying to determine what the &quot;theme&quot; of a film is (not something we're too worried about for this class actually, but we'll mention it in passing), one way of determining that will be to identify ideas and arcs that are repeated multiple times. It seems fairly clear by the great pains John Ford takes to articulate this idea that the possibility of redemption, and the hypocrisy inherent in so much of society's passing of judgment, is one of his primary themes for this film (never mind that he takes an equally hypocritical stance in making no allowance for a &quot;redemption&quot; of the Apaches. To Ford, they're evil through and through)."
+    powerpoint:
+      - - id: 'graphic_section_6'
+          in: '.graphic_6_in'
+          out: '.graphic_6_out'
+          content:
+            - image: 'lec_02_07.jpg'
+  - class_name: 'stagecoach_section_1 graphic_6_out'
+    elements:
+      - "So in one sense we can say that the narrative arc––or plot line––in <em>Stagecoach</em> is the group's dangerous trip from Tonto to Lordsburg. In fact, if we watched the first ten minutes or so of the film and then stopped and asked &quot;Why are we watching this film?&quot; Most of us would probably answer, &quot;to see whether they make it to Lordsburg without getting attacked along the way by Apaches.&quot;"
+      - "However, is this actually why we're watching this film? By the time we get to the climax of the film when the Apaches attack, why are we watching? If we're just wondering whether they make it to Lordsburg, the film would end abruptly after the cavalry rescues them. There's a sort of bait-and-switch that's happened in this film that I think sheds some light on an interesting structural technique present in a lot of films." 
+      - "By the time the film ends, whether or not they get to Lordsburg isn't really our main concern. We want to know two things: what happens between Ringo and the Plummers, and what happens between Ringo and Dallas. The original goal of getting to Lordsburg just functions to get us interested long enough to develop an emotional connection to Ringo so that we care about the outcome of the other two plot lines. It is, in reality, what is called a MacGuffin, something that the film &quot;pretends&quot; to be about, when in effect, it's really about something else. We'll talk more about this idea as the semester progresses. Ultimately, what makes this film so effective is that it has multiple plot lines that intertwine and create interest for us."
+  - class_name: 'stagecoach_section_1'
+    elements:
+      - text: "In your reading for this week, you're going to be learning about the way a filmmaker chooses to use the frame. This is an aspect of cinematography that we will continue to talk about next week as well, but the reading will lay a foundation for our further discussion of it by laying out a lot of the terms for that discussion. I want to think a little bit this week about how John Ford makes use of the frame in <em>Stagecoach</em>, and specifically about what his framing choices reveal about his own ideas and preconceptions."
+      - text: "In addition to digging fairly deeply into certain technical components of the filmmaking process this semester, we're also going to return multiple times to the way that culture and our own cultural history contributes to the meaning we take from our own viewing of films. Last week you watched a segment of John Berger's <em>Ways of Seeing</em> in which he talked about how our own cultural background influences the meaning we take out of art. Here are a few statements from Berger that I want to look at in the context of <em>Stagecoach</em>:"
+  - class_name: 'stagecoach_section_1'
+    elements:      
+      - text: "&quot;We never look at just one thing. We are always looking at the relationship between things and ourselves.&quot;"
+        class: 'attribution'
+  - class_name: 'stagecoach_section_1'
+    elements:      
+      - text: "&quot;An image is a record of how x saw y.&quot;"
+        class: 'attribution'
+  - class_name: 'stagecoach_section_1'
+    elements:      
+      - text: "&quot;The past is never there waiting to be discovered, to be recognized for exactly what it is. History always constitutes the relationship between a present and its past.&quot;"
+        class: 'attribution'
+  - class_name: 'stagecoach_section_1'
+    elements:      
+      - "<em>Stagecoach</em> was made in 1939. That's a fairly long time ago. We live in a cultural framework that is very different from the one that was in place in 1939. Cultural attitudes toward gender, toward ethnicity, toward ideas like &quot;manifest destiny&quot; have shifted rather dramatically in the ensuing seventy-plus years. We are looking back on a record of the past and bringing to it our own cultural attitudes which are different from the ones surrounding the film in 1939. What complicates this even further is that <em>Stagecoach</em> is supposed to take place around 1880, when prevailing cultural attitudes were again quite different from those found in 1939. In a sense the film is a double record. Though it's not a record of 1880, it is a record of how some people in 1939 saw 1880; and it's also a record to some extent of people in 1939."
+  - class_name: 'stagecoach_section_1'
+    type: 'question'
+    content: "Getting back to the idea of a filmmaker's use of the frame that we've recently introduced, what insight can we gain into John Ford's ideas about his own material simply by observing the way that he chooses to make use of the camera? Are there any scenes or moments that stuck out to you from the film where you felt like you were getting insight into John Ford's opinion simply by the way he chose to film someone or something?"
+    order_index: 1
+  - class_name: 'stagecoach_section_1'
+    elements:       
+      - "No image exists as a neutral record. An image is recorded by some person, and the recording of that image entails a whole range of choices which that person makes in how to record that image. Those choices reveal something about how that person views his/her subject."
+  - class_name: 'stagecoach_section_1'
+    type: 'video'
+    text: "For just one example of this, let's take a look at the scene from <em>Stagecoach</em> where John Ford introduces Ringo."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/48571519?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'stagecoach_section_1'
+    type: 'video'
+    text: "Now let's take another look at the one shot in particular in which Ringo is introduced."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/48571519?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: "stagecoach_section_1"
+    type: "question"
+    content: "What do you notice that might be termed unusual about this shot?"
+    order_index: 2
+  - class_name: 'stagecoach_section_1'
+    elements:      
+      - "There are a number of things we can note about this shot. If we compare it to the rest of the shots in the film, it stands out as unique in a number of ways. First, it's one of the most aggressive uses of the camera in the entire film. There are only a few moments in the film when the camera moves in some way, and the few others occur during highly chaotic battle and chase scenes. Throughout the rest of the film, the camera acts as a more neutral recorder of the action. It is primarily static and stays at a fixed framing for the duration of a shot."
+      - element: 'p'
+        text: "Another unique element of this shot is the way the introduction of Ringo is handled compared to the introductions of all the other characters. None of the other characters are introduced with the same sort of fanfare or aggressive camerawork that we see in Ringo's introduction."
+      - "The duration of the shot is also unusual. Typically a cut would be used to transition between the two framings, medium shot and close-up. A cut is instantaneous, but here, we've got to wait something like an extra five seconds (an eternity in editing time) for the camera to move from one position to another."
+      - "Lastly, there is a rather odd transitional moment in which Ringo slips out of focus during the zoom-and-dolly move that the camera makes. This is a &quot;mistake&quot; that typically would get cut out, and is probably attributable to the complexity of the camera move, requiring several people to control the movement of the dolly, the camera, pull focus and zoom the lens all at the same time in synchrony (remember, there was no way for directors to see immediately what their footage looked like at this time. They'd have to wait a day for the film to be processed. And although one would guess they made several takes of this shot, this must have been the best of them). But the fact that John Ford chooses to leave the shot in the film despite its flaws indicates just how important the shot is to him. Clearly he's got an agenda in how he wants to introduce Ringo to us. He brings the momentum of the film to a grinding halt in order to present Ringo in a dramatic fashion, underscoring his place as hero."
+      - element: 'p'
+        text: "All of these choices reveal to us certain things about John Ford's attitude toward John Wayne, his attitude toward the character of Ringo, and also his attitude toward masculinity in general. Combine this shot with other elements from the film and we can surmise quite a bit about John Ford's attitudes toward traditional gender roles. In fact, this is what we're going to do for discussion this week."
