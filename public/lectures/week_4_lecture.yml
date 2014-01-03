@@ -1,0 +1,128 @@
+title: Week 4 Lecture
+subtitle: (Digital) Cinematography and Movement
+sections:
+  - class_name: 'dogma_section_1'
+    elements: 
+      - text: "We'll start off this week by talking about the <em>dogma 95</em> movement."
+        class: 'first_paragraph'
+      - "In 1995, cinema was roughly a hundred years old. If you've taken Film 114, you'll remember (hopefully) that cinema had its origins in the experiments of the Lumiere brothers and Thomas Edison in the early-to- mid-1890s. Over the course of the ensuing hundred years, the language of cinema (the way people put images together to evoke meaning) evolved dramatically, as did cinema's technology (though fundamentally, the basic aspect of cinema creation––the capture of imagery on film stock and its projection in a theater––had remained remarkably unchanged)."
+      - "In its early existence, the cinema relied on heavy and large machinery to capture images. Slower film stocks required a significant amount of light to render an image. These limitations forced filmmakers to work almost exclusively in the highly controlled setting of specially-constructed studios. This reliance on the studio setting is probably responsible for one of the repeated charges against narrative cinema: artificiality."
+      - "The 20th century saw a series of movements which rebelled against what they saw as a sense of disconnectedness, unreality, falsehood in the types of stories cinema generated. The most notable of these were the <em>Kino-pravda</em> (or &quot;cinema truth&quot;) movement of Dziga Vertov; the Italian neo-realists–– rebelling against the so-called &quot;white telephone&quot; melodramas that they saw as disconnected from the everyday lives of real Italians; the direct cinema and <em>cinema-verite</em> movements of the late 1950's; and the French New Wave. All of these movements took advantage of new techniques made possible by technological advances: faster film stocks, smaller, mobile cameras, and the portability of sound recording equipment combined to allow for on-location shooting, and the possibility of a smaller, more intimate crew created a less intrusive filming environment. They also shared a dissatisfaction with the current formula for movie-making and a desire to achieve greater realism."
+      - "This question of realism has haunted cinema from the earliest Edison and Lumiere <em>actualities</em> through to the contemporary phenomenon of &quot;reality television&quot;. How can cinema portray reality? What constitutes reality in cinema? Whatever it is, standards and ideas of what seems realistic have shifted and changed over the course of the century, and each attempt to inject a greater sense of realism is, for a variety of reasons, eventually seen as a failure. A new call, often accompanied by recent technological advance, arises for a dramatic break with the past and a &quot;new&quot; approach which is authentic and real."
+      - "I mentioned that for the first century, the mechanism of cinema had evolved, but in technical essence remained largely unchanged. Images were captured on film, edited on film, printed to film and projected from film. The introduction of video in the 50s and 60s and its expansion into the public marketplace in the 70s and 80s had a certain degree of impact on the cinematic industry––particularly in the area of distribution, with the rise, first of television as competition to the cinema, then of home video as a new market for distribution. However, the impact of video on cinematic production, while it existed, was relatively limited. However, digital video, arriving in the mid-90s, heralded the most dramatic break with established practice and would usher in a revolution in how movies were made."
+      - "There were a number of aspects of digital video that contributed to the impact it had on cinematic production. In all likelihood, digital video’s impact on the post-production process was even greater than its impact on production, but for this class, we’ll be thinking primarily of its role in production."
+  - class_name: 'dogma_section_1'
+    type: 'video'
+    text: "The graphic here illustrates just a few of the ways in which digital cameras altered the traditional production process:"
+    content:
+      - image: 'dogma_lecture_01.jpg'
+  - class_name: 'dogma_section_1'
+    elements:
+      - "As one might guess, much was made of the revolutionary potential for this new medium. And accompanying this new technology was a revival of the old call for a return to cinematic realism in the form of <em>dogma 95</em>."
+      - "In 1995 Danish filmmakers Lars von Trier and Thomas Vinterberg, eventually joined by Kristian Levring and Soren Kragh-Jacobsen, wrote a manifesto detailing their dissatisfaction with the current state of cinema and issuing a call to make films according to a strict set of ten rules which they called &quot;the vow of chastity.&quot;"
+  - class_name: 'dogma_section_1'
+    elements: 
+      - "You'll be reading their manifesto as part of your reading for the week, but here are some of their complaints regarding the state of cinema in 1995:"
+    powerpoint:
+      - - content: 
+            - image: 'dogma_lecture_02.jpg'
+  - class_name: 'dogma_section_1'
+    elements:
+      - "And their vows:"
+    powerpoint:
+      - - content:
+            - image: 'dogma_lecture_03.jpg'
+  - class_name: 'dogma_section_1'
+    elements:
+      - "We can relate most of these vows in some way to the desire for realism and authenticity (with perhaps the exception of the insistence on 35mm?)."
+      - "It's important when considering the <em>dogma</em> movement, to take the ideas presented with a grain of salt and to recognize that the filmmakers themselves were only half serious. Lars von Trier, the acknowledged ringleader of the group, is a notorious provocateur (his actual name is Lars Trier; he just inserted &quot;von&quot; to make it appear stately and sophisticated), and there's also a bit of self-contradiction involved in their manifesto. The cry against &quot;individual&quot; cinema and the <em>auteur</em> theory––as well as not crediting the director––appear rather naive given that the films certainly still bear the distinctive stylistic stamp of an individual perspective. In a list of contemporary directors who embody the French New Wave's concept of director as <em>auteur</em>, Lars von Trier would have to be near the top. "
+      - text: "Another point to note in regard to the filmmakers' commitment to this movement is that the filmmakers themselves each only made a single film in adherence to their own vows of chastity, then returned to making films which did not explicitly follow these rules. In essence we can read this movement, this manifesto, these vows, as the representation of a legitimate and real frustration with certain dominant elements of cinema and as an experiment in trying a different approach: &quot;Let's see what happens if we create a set of constrictions and use those as guidelines for making a film.&quot; What's intriguing to note is that a half-hearted, tongue-in-cheek attempt to define a &quot;new new wave&quot; actually succeeded in spreading throughout cinema and spawning over a hundred films."
+  - class_name: 'dogma_section_1'
+    elements:
+      - element: 'h3'
+        text: 'THE CELEBRATION'
+      - text: "All of this brings us to our film for this week, <em>The Celebration</em>. We can look at the ten rules in the vow of chastity as a recipe for a specific visual style. In much the same way as <em>film noir</em> (though <em>noir</em> was not the result of a codified set of rules) the <em>dogma</em> movement has a number of distinctive characteristics that are present in most or all of its films. <em>The Celebration</em> provides a good representation of these stylistic characteristics."
+      - text: "In some ways this movement is the antithesis of <em>noir</em> and its signature element: expressive, highly stylized lighting. In <em>dogma</em>, lighting is expressly prohibited. Instead, the most iconic element of <em>dogma</em> style is the camerawork. Perhaps the rule which creates the greatest stylistic impact for <em>dogma</em> is the use of a strictly handheld camera. Certainly, there was nothing revolutionary about a handheld camera in 1995. However, this handheld rule combined with the technological advance of digital video and the accompanying reduction in size of the camera, creates a handheld camera that has rather different characteristics from previous handheld styles and allows for the most aggressive role for the camera to date."
+  - class_name: 'dogma_section_1'
+    type: 'video'
+    text: "When cinema cameras began to shrink in the 50s and 60s so that handheld cameras were feasible, this is what &quot;handheld&quot; meant:"
+    content:
+      - image: 'cp16.png'
+  - class_name: 'dogma_section_1'
+    elements:
+      - "This camera is a CP-16, a 16mm camera often used for news-gathering and one of the tools that helped spawn the <em>direct cinema</em> movement. "
+      - "Certainly the camera is quite small in comparison to the huge Mitchell studio cameras of the silent era, but it still is big enough to sit over the operator's shoulder and create certain physical limitations. "
+      - "A pan required the operator to turn his/her body. There were certain physical constraints to how quickly and freely the camera could be moved."
+  - class_name: 'dogma_section_1'
+    type: 'video'
+    text: "In contrast, here is the camera on which <em>The Celebration</em> was shot: "
+    content:
+      - image: 'pc7.png'
+  - class_name: 'dogma_section_1'
+    type: 'video'
+    text: "The portable video camera is more or less the size of the grip for the CP-16. With this camera that is literally only a little larger than the operator's hand, virtually all physical constraints over motion are removed. A pan now requires only the bending of a wrist."          
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'dogma_section_1'
+    type: 'video'
+    text: "The operator can move the camera in any direction at will."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'dogma_section_1'
+    elements: 
+      - "<em>Dogma's</em> stipulation for a handheld camera means that, practically speaking, the camera is in constant motion throughout the duration of the film. This has dramatic implications on the way the film is presented by the filmmaker and received by the viewer. It is this idea of camera movement that I want to focus on in <em>The Celebration</em>."
+  - class_name: 'dogma_section_1'
+    elements:
+      - element: 'h3'
+        text: "CAMERA MOVEMENT"
+      - text: "One of the most significant decisions a filmmaker has to make is how to compress three dimensions down to two: essentially, how to treat space with the camera. We'll talk about this in more general terms later in the semester as well. "
+      - text: "If we think back on the first two films we've watched this semester, we can note the way the directors chose to use the cameras in space. One of the hallmarks of Ford's style in particular, as well as much of <em>Killer's Kiss</em>, is static composition. Both directors made occasional use of a moving camera, but for the most part, they were static––locked down on a tripod and unmoving. There are a number of by-products of this approach. First, it is effective in providing the viewer with a sense of spatial orientation. An unmoving vantage point allows us to get our bearings in space and maintain them."
+      - text: "Second, the static camera's gaze is generally neutral, meaning that the camera tends to disappear in the viewer's mind, while a moving camera calls at least subconscious attention to that which is causing the camera to move. We return to an idea we've addressed previously: the tension between objectivity and subjectivity. A neutral camera is objective while a moving camera raises the association of subjectivity."
+  - class_name: 'dogma_section_1'
+    type: 'video'
+    text: "The static camera also allows for careful attention to be paid to composition. You'll recognize iconic compositions from both films that we've pulled out of context and examined previously. A mobile camera changes the dynamics for these elements. It is much more difficult to find any iconic imagery from <em>The Celebration</em>. None of the compositions within its frame is onscreen long enough to impress itself on our consciousness or for us to observe its relationships in detail."
+    content:
+      - image: 'killer_bed.jpg'
+      - image: 'geronimo.jpg'
+  - class_name: 'dogma_section_1'
+    elements:
+      - "Let's examine some of the aspects of the moving camera: The <strong><em>zoom</em></strong> is an artificial motion. Though the frame is moving as the lens focal length changes, the camera itself is not." 
+      - "<strong><em>Mechanical movements</em></strong>–– such as panning and tilting, dollying or using a crane––move the camera fluidly through space. Though there is motion, the arc of the movement is steady and artificial. There is a relative neutrality in the shot as the movement does not overtly imply a human presence. "
+      - "<strong><em>Human movements</em></strong>, on the other hand, immediately invoke the subjectivity of a human presence creating the movement. The Steadicam allows for the greater mobility of the human body to impose itself on the camera while still retaining some degree of fluidity that distances slightly from the sense of human influence. The handheld camera imposes movement arcs that feel distinctly human and that carry with them the connotation of an operator, a presence."
+    powerpoint:
+      - - content:
+            - image: 'dogma_lecture_04.jpg'
+  - class_name: 'dogma_section_1'
+    elements:
+      - "The following graphic lays out a spectrum correlating the degree of movement present in the shot to the sense of subjectivity it contains."
+    powerpoint:
+      - - content:
+            - image: 'dogma_lecture_05.jpg'  
+  - class_name: 'dogma_section_1'
+    elements:
+      - "Since the handheld camera is in constant motion, where do the spatial cues come from? How does the viewer maintain a sense of orientation? With a static camera, these cues come primarily from the spatial relationships between characters onscreen governed by continuity editing principles such as screen direction and the axis of action. When these relationships are constantly shifting, as with a handheld camera, the viewer then has to rely on broader cues like the horizon line and wide angle shots that provide a sense of surrounding landmarks for his/her sense of orientation."
+      - "The principles of composition are also impacted by the handheld camera. Rather than providing the kinds of graphical relationships found in the still images of Ford and Kubrick, ideas of composition begin to resemble choreography. This does not mean that the rules of composition are ignored or do not apply (it's certainly possible to have poor handheld camerawork from an operator not concerned with composition). Rather, the camera operator is constantly moving from one composition to another, constantly finding brief pleasant graphical relationships between the subjects and the frame. The camera operator is choreographing the composition."
+      - "In other films, we've been able to isolate stills and look at them as providing evidence of the thematic interests and revealing to some extent the beliefs of the filmmaker. This is not the case with <em>The Celebration</em>. In this regard, perhaps, the handheld camera does achieve one of the goals of the <em>dogma</em> manifesto. There is less overt evidence of the individual's direct sensibility (or perhaps there is instead <em>different</em> evidence). Rather than communicating through iconic imagery, the film communicates instead through a gradual accumulation of meaning brought about in part by the way the camera moves through space."
+    powerpoint:
+      - - content:
+            - image: 'dogma_lecture_06.jpg'
+  - class_name: 'dogma_section_1'
+    elements:
+      - "The mobile handheld camera isn't the only stylistic trope common to the <em>dogma</em> films. This graphic lists several other technical features which contribute to their visual style. "
+      - "The insistence on only natural light results in a haphazard, sometimes &quot;ugly&quot; quality of illumination. "
+      - text: "The low-res nature of the cameras used creates a specific textural quality for the degraded imagery, not altogether dissimilar from the grainy nature of old fast film stocks. "
+      - "The experience of the films borders on disorientation due to the constant movement. "
+      - "The repeated use of wide angle lenses imposes bulbous distortion on characters and objects."
+    powerpoint:
+      - - content:
+            - image: 'dogma_lecture_07.jpg'
+  - class_name: 'dogma_section_1'
+    elements:
+      - "No movement in cinematic history is necessarily more important than any other. Each movement has caught on because it somehow captured the interest of a certain number of working filmmakers at the time, was somehow engendered by the right confluence of political and social influences. Each movement eventually flames out as its possibilities are exhausted or as interest on the part of audience or filmmaker wanes. "
+      - "The vow of chastity was undertaken at least partly as a lark, as an experiment. The way that vow caught on to spark a movement stands as yet another marker in testimony to the desire for some sort of &quot;realism&quot; in viewers and filmmakers alike. "
+  - class_name: 'dogma_section_1'
+    type: 'video'
+    text: "How successful is <em>The Celebration</em> at penetrating the illusory nature of cinema and revealing something &quot;real,&quot; something &quot;true?&quot; Does the vow of chastity help to overcome obstacles inherent in the cinematic system of production, or were the framers of the movement deluding themselves in thinking they could generate something real? After watching the film, we'll carry this conversation over to the discussion forums for this week and share our thoughts about it over there."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+

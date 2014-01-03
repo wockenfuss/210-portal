@@ -15,7 +15,7 @@
 			});
 		});
 		$(window).resize(function() {
-			console.log('resizing');
+			// console.log('resizing');
 			$.each(pp.elements, function() {
 				pp.screenOffset = -($(window).height() / 2);
 				this.init();
@@ -45,7 +45,7 @@
 	};
 
 	var init = function() {
-		console.log(this);
+		// console.log(this);
 		this.outTriggerPosition = $(this.target.attr('data-trigger-out')).position().top;
 		if ( this.target.attr('data-trigger-in') ) {
 			this.inTriggerPosition = $(this.target.attr('data-trigger-in')).position().top + 200;

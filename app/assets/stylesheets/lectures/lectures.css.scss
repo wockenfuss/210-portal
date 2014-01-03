@@ -13,11 +13,14 @@ $color3: #8c8851;
 $buttonColor: #bf3030;
 
 @mixin backgroundImageStyle($imageUrl) {
-	background: image-url($imageUrl) no-repeat top left fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #282a3d;
+	@media (min-width: 768px) {
+		background: image-url($imageUrl) no-repeat top left fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
 }
 
 @mixin bodyText {
@@ -39,8 +42,8 @@ $buttonColor: #bf3030;
 	background-color: rgba(240, 240, 240, .8);	
 	// @include colorrgb;
 	// border: 15px solid #ccb;
-	margin: 3% 0;
-	border-radius: 10px;
+	margin: 0 0;
+	// border-radius: 10px;
 	p {
 		color: #000;
 		padding: 3% 5%;
@@ -64,7 +67,7 @@ $buttonColor: #bf3030;
 		}
 	}
 
-	padding: 4% 0;
+	padding: 1% 0;
 	// padding: 2% 0 1% 0;
 	color: black;
 	overflow: auto;
@@ -232,25 +235,28 @@ span.gap {
 .powerpoint {
 	min-width: 350px;
 	// border: $color3 4px solid;
-	background-color: rgba(240, 240, 240, .8);
+	// background-color: rgba(240, 240, 240, .8);
 	border-radius: 5px;
 	// padding: 2%;
 	z-index: 5;
-	opacity: .9;
+	opacity: 1;
 	h2 {
 		padding: 3% 0;
 	}
 }
 
 .graphic {
-	position: fixed;
-	width: 39%;
-	top: 25%;
+	// position: fixed;
+	float: left;
+	// width: 39%;
+	width: 94%;
+	margin-left: 3%;
+	// top: 25%;
 	// right: 10%;
 	min-width: 350px;
 	font-family: $standard;
 	text-align: center;
-	display: none;
+	// display: none;
 	.left {
 		margin: 2% 0 0 10%;
 		text-align: left;
@@ -267,8 +273,8 @@ span.gap {
 
 @media (min-width: 768px) {
 	.graphic {
-		display: block;
-		right: 5%;
+		width: 50%;
+		margin-left: 3%;
 	}
 }
 
@@ -632,4 +638,8 @@ footer {
 .killer_section_4 {
 	@include section(black);
 	@include backgroundImageStyle('killer_heads.jpg');	
+}
+.dogma_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('dogma_1.jpg');	
 }
