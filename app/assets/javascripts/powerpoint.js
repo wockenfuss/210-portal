@@ -1,25 +1,31 @@
 (function( $, undefined ) {
 	var pp = {
 		elements: [],
-		screenOffset: -($(window).height() / 2)
+		screenOffset: -($(window).height() / 5)
 	}
 	var elements = [];
 	var bind = function() {
 		$(window).on('scroll', function() {
 			var scrollTop = $(window).scrollTop();
-			// console.log(scrollTop);
-			$.each(pp.elements, function() {
-				// if ( triggerOut > -100 && triggerOut < 300 ) {
-				this.setOpacity(scrollTop);
-				// }
-			});
+			// console.log('scrolltop: ' + scrollTop);
+			if ( $(window).width() > 768) {
+				$.each(pp.elements, function() {
+						this.checkPosition(scrollTop);
+					// this.setOpacity(scrollTop);
+				});
+			}
 		});
 		$(window).resize(function() {
 			// console.log('resizing');
 			$.each(pp.elements, function() {
-				pp.screenOffset = -($(window).height() / 2);
+				pp.screenOffset = -($(window).height() / 5);
 				this.init();
-				this.setOpacity($(window).scrollTop());
+				// this.setOpacity($(window).scrollTop());
+				if ( $(window).width() > 768) {
+					this.checkPosition($(window).scrollTop());
+				} else {
+					this.target.closest('.graphic').css({'position': 'static'})
+				}
 			});
 		});
 
@@ -44,7 +50,37 @@
 		}
 	};
 
-	var init = function() {
+	var checkPosition = function(scrollTop) {
+		// console.log('checking position');
+		// var position = this.target.position().top;
+		var containerTop = this.container.position().top + pp.screenOffset;
+		var containerEnd = this.container.position().top + (this.container.height() - this.target.height() + pp.screenOffset - 50);
+		// console.log('position: ' + position);
+		// console.log('offset ' + pp.screenOffset);
+		if (scrollTop > containerTop && scrollTop < containerEnd) {
+			if (this.target.closest('.graphic').css('position') !== 'fixed') {
+				this.target.closest('.graphic').css({'position': 'fixed',
+																						'right': '3%',
+																					  'top': this.target.position().top - pp.screenOffset});			
+			}
+		} else if (scrollTop < containerTop) {
+			if (this.target.closest('.graphic').css('position') === 'fixed') {
+				this.target.closest('.graphic').css({'position': 'absolute',
+																						'right': '3%',
+																						'top': 0,
+																						'bottom': ''});
+			}
+		} else {
+			if (this.target.closest('.graphic').css('position') === 'fixed') {
+				this.target.closest('.graphic').css({'position': 'absolute',
+																						'right': '3%',
+																						'top': '',
+																						'bottom': 0});
+			}
+		}
+	};
+
+	var oldinit = function() {
 		// console.log(this);
 		this.outTriggerPosition = $(this.target.attr('data-trigger-out')).position().top;
 		if ( this.target.attr('data-trigger-in') ) {
@@ -56,6 +92,20 @@
 		}
 	};
 
+	var init = function() {
+		// console.log('offset: ' + pp.screenOffset);
+		// console.log('initing');
+		// console.log(this);
+		// console.log('target: ');
+		// console.log(this.target);
+		this.container = $(this.target).closest('.sectionContainer').parent();
+		$(this.target).closest('.sectionContainer').css('min-height', $(this.target).height() + 50);
+		// this.begin = this.container.position().top; 
+		// this.end = this.container.position().top + this.container.height();
+		// console.log('beginning: ' + this.begin);
+		// console.log('end: ' + this.end);
+	};
+
 	var methods = {
 		init: function( options ) {
 			// console.log(this);
@@ -64,7 +114,8 @@
 					init: init,
 					inTriggerPosition: null,
 					outTriggerPosition: null,
-					setOpacity: setOpacity
+					checkPosition: checkPosition
+					// setOpacity: setOpacity
 				};
 				element.target = $(this);
 				// element.init();

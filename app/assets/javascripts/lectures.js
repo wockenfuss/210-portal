@@ -3,7 +3,7 @@
 
 		window.setTimeout(function() {
 			if ($('.powerpoint').length > 0) {
-				// $('.powerpoint').powerpoint();
+				$('.powerpoint').powerpoint();
 			}
 			setVideoSize($fluidEl, $videos);
 		}, 0);

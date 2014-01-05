@@ -1,5 +1,5 @@
 <div class="firstColumn column">
-	<p><%= question.content %></p>
+	<p><%= question.content.html_safe %></p>
 	<%= render 'comments/form', :commentable => question %>
 </div>
 <div class="secondColumn column">

@@ -213,6 +213,7 @@ span.gap {
 }
 
 .sectionContainer {
+	position: relative;
 	overflow: auto;
 	min-width: 320px;
 	// min-width: 760px;
@@ -235,7 +236,7 @@ span.gap {
 .powerpoint {
 	min-width: 350px;
 	// border: $color3 4px solid;
-	// background-color: rgba(240, 240, 240, .8);
+	background-color: rgba(240, 240, 240, .8);
 	border-radius: 5px;
 	// padding: 2%;
 	z-index: 5;
@@ -246,7 +247,7 @@ span.gap {
 }
 
 .graphic {
-	// position: fixed;
+	position: static;
 	float: left;
 	// width: 39%;
 	width: 94%;
@@ -273,14 +274,16 @@ span.gap {
 
 @media (min-width: 768px) {
 	.graphic {
+		position: absolute;
 		width: 50%;
 		margin-left: 3%;
+		right: 3%;
 	}
 }
 
 @media (min-width: 960px) {
 	.graphic {
-		right: 10%;
+		// right: 10%;
 	}
 }
 
@@ -397,7 +400,7 @@ span.gap {
 
 
 .section .attribution {
-	padding: 0 10%;
+	padding: 0 10% 5%;
 }
 
 #comment_response_section_1 {
@@ -642,4 +645,8 @@ footer {
 .dogma_section_1 {
 	@include section(black);
 	@include backgroundImageStyle('dogma_1.jpg');	
+}
+.mother_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('mother_01.jpg');	
 }

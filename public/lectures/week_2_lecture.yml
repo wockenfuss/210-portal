@@ -42,17 +42,18 @@ sections:
       - text: "If we see a series of events that don't seem to have any cause and effect relationship, we would most likely not consider these to be a story. For example, if we were to spend a day sitting in a cafe, we might see a wide range of different interactions and occurrences, but because these things happen to a many different, unrelated people, and the events do not connect to each other in any way, they would not constitute a single unified story."
       - text: "Also, even if we understand certain linkages between events, if we are not sure of where or when those events occurred, we will not be able to create a mental sense of the cause-and-effect chain. If we don't know the order [time] in which events occur, the causal relationship is impossible to determine. If we don't know the location [space] of events, we are disoriented."
         class: 'narrative_out'
-      - text: "So let's file away these two elements as fundamental to the storytelling process: 1). A chain of cause-and-effect events. 2). The viewer's sense of orientation in space and time."
     powerpoint:
       - - id: 'graphic_section_1'
           in: '.what_is_narrative'
           out: '.narrative_out'
           content: 
             - image: 'lec_02_01.jpg'
-        - id: 'graphic_section_2'
-          in: '.narrative_out'
-          out: '.narrative_2_out'
-          content: 
+
+  - class_name: 'stagecoach_section_1'
+    elements:
+      - text: "So let's file away these two elements as fundamental to the storytelling process: 1). A chain of cause-and-effect events. 2). The viewer's sense of orientation in space and time."
+    powerpoint:
+      - - content: 
             - image: 'lec_02_02.jpg'            
   - class_name: 'stagecoach_section_1'
     type: 'section'

@@ -1,0 +1,132 @@
+title: Week 5 Lecture
+subtitle: Mise-en-Scene and Film Style
+sections:
+  - class_name: 'mother_section_1'
+    elements:
+      - element: 'h3'
+        text: "STYLE"
+        class: 'first_paragraph'
+      - text: "What do we mean when we talk about the style of a film? Can we break film style down into constituent parts of some kind? A copout answer might be to say that every aspect of a film is part of its style. Each film's style is the sum of its use of technique. However, there are times when we use the phrase &quot;stylized&quot; in reference to a film."
+  - class_name: 'mother_section_1'
+    type: 'question'
+    content: "What do we typically mean when we describe something in this way? What do you think of if you hear someone describe a film as &quot;stylized?&quot; How about &quot;stylish?&quot;"
+    order_index: 1
+  - class_name: 'mother_section_1'
+    elements:
+      - "Even though every film has a style, there are certain ways of making films that might be classified as neutral. We watch the films, and we don't give any thought to the choices that went into the films' technique. These are films whose style conforms most closely to tradition or to the norm. Our experience with films gives us a sense of the traditional ways in which stories are told, the traditional ways in which the camera, lights, editing are used."
+  - class_name: 'mother_section_1'
+    elements:
+      - "Last week, we watched <em>The Celebration</em>. That film departs rather overtly from certain traditional patterns of how to make a movie, specifically in how you should use the camera. That use of the camera sticks out to us and feels unusual. Because it feels unusual, we think of it as stylized. However, John Ford's unobtrusive use of camera which conforms to the vast majority of traditional norms is also a style, just not an obtrusive one."
+    powerpoint:
+      - - content:
+            - image: 'mother_lecture_01.jpg'
+  - class_name: 'mother_section_1'
+    elements:
+      - "So the way in which a film chooses to employ cinematography is part of its style. Another aspect of its style is how a film makes use of mise-en-scene. As you've probably heard before, <em>mise-en-scene</em> literally means &quot;putting into the scene&quot; and refers to a number of choices the director makes in how to create the world of the story. It determines how the story world looks to us as viewers. Do things look the way they do in real life, or are they <em>stylized</em> in some way to appear different from our normal experience?"
+  - class_name: 'mother_section_1'
+    elements:
+      - "There are four aspects that make up the various components of <em>mise-en-scene</em>."
+      - "1) lighting. This is one we've already spent a bit of time talking about. I talked about it in connection with cinematography because from a production standpoint, it is generally lumped into the task of a cinematographer. Any cinematography course you take will spend a significant amount of time studying lighting."
+      - "2) costume/props. What will these things look like that make up the objects and clothing in the world of the film?"
+      - "3) acting/movement - what is the style of acting and movement? Realistic? Caricatured? Intentionally exaggerated?"
+      - "4) setting - where is the action located? And what style of setting is in use? For example. A film could be set in the &quot;Wild West&quot; and be shot in Monument Valley. Or it can be set in the wild west and be shot in a studio with a backdrop of Monument Valley and some sand and dirt."
+  - class_name: 'mother_section_1'
+    elements:
+      - element: 'h3'
+        text: 'MISE-EN-SCENE AND SETTING'
+  - class_name: 'mother_section_1'
+    type: 'video'
+    text: "Take a look at this shot from <em>Stagecoach</em>."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'mother_section_1'
+    type: 'question'
+    content: "What's odd about this shot? Why does it look &quot;wrong&quot;?"
+    order_index: 2
+  - class_name: 'mother_section_1'
+    elements:
+      - "You can have a number of different approaches to <em>mise-en-scene</em> ranging across a spectrum from realistic to highly stylized. A good example of highly stylized <em>mise-en- scene</em> would be German Expressionism, a movement that made use of painted backdrops with forced perspective and off-kilter angles, dramatically exaggerated make- up and caricatured movements. These things are stylized because they dramatically differ from the way things are in our real world and therefore from the way film typically chooses to depict these things. "
+      - "The other end of the spectrum would be capturing the world as it is. For some of its outdoor scenes, <em>Stagecoach</em> made use of a real landscape: Monument Valley. However, for some of its shots like the one above (typically these are the ones featuring close-ups of its important actors and/or dialog), <em>Stagecoach</em> made use of a studio setting with painted or photographic backdrops or rear projections. The people in the scene are real. The clothes they are wearing are real. Perhaps the props they are holding are also real. But the landscape around them is not real and doesn't really look it. This use of <em>mise-en-scene</em> falls somewhere between the overt theatricality of German Expressionism and naturalism."
+    powerpoint:
+      - - content:
+            - image: 'mother_lecture_02.jpg'
+  - class_name: 'mother_section_1'
+    elements: 
+      - element: 'h3'
+        text: 'PEDRO ALMODOVAR'
+      - text: "This week we'll be watching a film from 1999, <em>All About My Mother</em>, by Spanish director Pedro Almodovar, a director who's cultivated his own particular stylistic stamp over the course of his long career. "
+      - text: "Almodovar has described this particular film as a &quot;<strong>screwball drama</strong>,&quot; referring to an amalgam of two older styles of genre filmmaking: screwball comedy and melodrama. The screwball comedy had its origins in the 30s cinema of Hollywood and is characterized by themes of mistaken identity, cross-dressing and gender-bending, and an irreverent attitude toward social norms. Melodrama is a genre of filmmaking rooted in the 50s that often exaggerates and externalizes the emotional content of the film, often revolving around issues of romance, strained family relationships, illness and pathos."
+    powerpoint:
+      - - content:
+            - image: 'mother_lecture_03.jpg'
+  - class_name: 'mother_section_1'
+    type: 'question'
+    content: "What do you think of when you hear the term &quot;melodrama?&quot; Or what do we mean when we say someone is being &quot;melodramatic?&quot;"
+    order_index: 3
+  - class_name: 'mother_section_1'
+    elements: 
+      - element: 'h3'
+        text: 'MELODRAMA'
+      - text: "The quintessential examples of melodrama are often considered to be Douglas Sirk's films of the 1950s. These films are marked by a distinctive and conspicuous style incorporating vivid and unrealistic use of color. Interestingly (to me at least), critics dismissed Sirk's films at the time as being frivolous and unrealistic. Later in the 70s and 80s, Sirk's films were revisited by critics and reconsidered as masterpieces of cultural critique and irony. Melodrama is a style which is perhaps paradoxically considered to both reveal and conceal the film's core thematic content. In Sirk's case, the occasionally garish palette and stylistic appearance masked the subtlety of theme and critical undercurrent of his films. This is an example of the way in which the sumptuous and conspicuous style can both reveal certain elements of the film while concealing the deeper ideological concerns. "
+      - text: "<em>All About My Mother</em> incorporates many of the thematic concerns of both screwball comedy and melodrama while also making use of some of Sirk's melodramatic visual stylistic strategies. As an illustration of the thematically baroque nature of Almodovar's film (hopefully without scaring you off), the characters include an aging father suffering from Alzheimer's, an actress with a gruesome heroin habit, a transvestite prostitute constantly beaten by her customers, and two AIDS victims, one of whom is a pregnant nun(!). That's probably enough weighty, intense and emotionally fraught subject matter for about 4 films, and it really only scratches the surface of all that's going on in the film. "
+    powerpoint:
+      - - content:
+            - image: 'mother_lecture_04.jpg'
+  - class_name: 'mother_section_1'
+    elements:
+      - text: "These comments from Almodovar give us some sense of both his goals and his strategies for achieving those goals: "
+      - text: "&quot;I make fiction films because I like representation. Thatʼs why I donʼt make documentaries, and I donʼt think Iʼll ever make documentaries . . . . The colors of my movies are not completely real, because I like that distance, that this is a movie, and reality is over there. I donʼt want to make something that looks completely real. I want a representation of that. "
+        class: 'attribution'
+      - text: "&quot;The style sometimes gives you more strength to say things. Because there is something that the spectator has to identify himself with, and for me, the thing is the emotion. And that emotion can be isolated on a set that is completely artificial. I donʼt mean that everything is represented, fake, stylized. Not everything. There is something that should be very clear, and it is perhaps your guts, your heart, your sensibility.&quot;"
+        class: 'attribution'
+      - text: "We see that the goal for Almodovar is to exaggerate and heighten the emotional weight of the film while still achieving a facsimile of reality. It's important to note here that the goal is achieving a <em>representation</em> of reality, not reality itself. Last week we spent some time exploring the ideas of the <em>dogma</em> movement. We read their manifesto, in which they criticized the artifice and illusion predominant in cinema. Their stated goal was to strip away illusion and try to achieve some sort of truth."
+      - text: "In many ways the stated goals of Almodovar and the <em>dogma</em> movement sound as if they are in opposition. But the difference between the two may not be as pronounced as it seems. We see from Almodovar's quote that he is still seeking to achieve some sort of authenticity and truth in the emotional realm of the film. Perhaps we can summarize the goal by stating that through an unreal surface, Almodovar hopes to generate an authentic emotional experience for the viewer."
+      - text: "But I've intentionally chosen to show these two films back-to-back as a means of comparison. One approach that is attempting to &quot;feel&quot; as real as possible against another that is attempting to &quot;feel&quot; entirely artificial, but both of which are looking to penetrate to some kind of emotional truth. As &quot;film-studiers&quot; with an eye toward making our own films, we should be intrigued by the myriad different tactics and strategies that filmmakers have employed over the years, with analyzing the different ways of employing technique."
+  - class_name: 'mother_section_1'
+    type: 'video'
+    text: "In <em>All About My Mother</em> we'll see the way in which <em>mise-en-scene</em>, particularly the extravagant, excessive and unnatural use of color and the heightened reality in the sets, props, and costumes, is employed to create a sense of stylization. As evidenced in these stills, the emotional intensity of the story spills over and is absorbed into the surface of the film, saturating it throughout (can you imagine anyone actually living in the apartment depicted here, at least without having a permanent headache?)"
+    content:
+      - image: 'mother_apt.jpg'
+  - class_name: 'mother_section_1'
+    elements:
+      - "Another aspect of this film that draws from the traditional patterns of screwball comedy and melodrama are in the attitude toward gender––specifically, in its treatment of women. This issue is the subject of our supplementary viewing this week from <em>Ways of Seeing</em>, dealing with the historical role of and treatment of women in Western imagery."
+      - "One of the elements of screwball comedy that was unusual for its time was the fact that it often contained female characters who were presented as independent, strong and the equal of the male character. In a humorous context, it presented a forum for the possibility of questioning traditional gender roles."
+      - "Melodrama is a genre often associated with women, sometimes in a critical fashion. As a genre, it has been associated with being targeted toward and often told from the perspective of women. One of the reason Douglas Sirk's films were originally marginalized and criticized was that they were &quot;only&quot; concerned with trivial and mundane feminine matters. The word melodramatic is often used pejoratively to define an attitude that is overly focused on emotion, without the ability to engage in a rational analysis of a situation's gravity, similar to the way in which women, in previous cultural periods, were considered to be irrational, unable to grasp the intellectual ramifications of a situation."
+    powerpoint:
+      - - content:
+            - image: 'mother_lecture_05.jpg'
+  - class_name: 'mother_section_1'
+    elements:
+      - "When <em>The Social Network</em> came out a few years ago, among the many accolades the film received, there was also some criticism leveled at the film for the fact that women in the film are portrayed more or less exclusively as subservient to men––essentially as trophies or prizes that go hand-in-hand with a man's ability to succeed and generate a lot of money. One of the discussions that arose around this issue was the fact that it failed the &quot;Bechdel Test&quot;, named after cartoonist Alison Bechdel, who proposed a set of three criteria to measure what a film's baseline attitude is toward women: 1) Are there two or more women in the film that have names? 2) Do they talk to each other? 3) Do they talk about something other than a man? "
+    powerpoint:
+      - - content:
+            - image: 'mother_lecture_06.jpg'
+  - class_name: 'mother_section_1'
+    type: 'video'
+    text: "You might think that those aren't particularly stringent requirements to meet (and you're right, they're not!), but as you can see in this video, a staggering number of contemporary films don't pass this test."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'mother_section_1'
+    elements: 
+      - "The intent behind the Bechdel Test is not to suggest that every film has to pass in order to be a &quot;good&quot; film. The point is just that the sheer number of films that <em>don't</em> pass the test suggests a significant inequity in the representation of women in typical Hollywood filmmaking."
+  - class_name: 'mother_section_1'
+    elements:
+      - "While the Bechdel Test might point out the way in which women and the female perspective might be lacking in many contemporary popular films, it doesn't address another fundamental issue regarding the treatment of women in films." 
+  - class_name: 'mother_section_1'
+    elements: 
+      - "John Berger in <em>Ways of Seeing</em> talks about the fact that, in Western culture, women have traditionally been depicted as being on display for a viewer who is assumed to be male. The women are also aware of the viewer and are presented as consenting to be objects on display."
+    powerpoint:
+      - - content:
+            - image: 'mother_lecture_07.jpg'
+  - class_name: 'mother_section_1'
+    elements:
+      - "This can also summarize a criticism of the treatment of women throughout Western film. The viewpoint from which films are traditionally told is presumed to be male. The camera is motivated by and aligns itself with the male characters. When a film is presented from the viewpoint of women, it may be criticized, as in the case of Sirk, as being inconsequential or irrelevant or trivial."
+    powerpoint:
+      - - content:
+            - image: 'mother_lecture_08.jpg'
+  - class_name: 'mother_section_1'
+    elements: 
+      - "One of the things we'll be considering in the discussion forums for this week is the way in which <em>All About My Mother</em> differs from other contemporary films in its presentation of a female perspective."
+
+
+
