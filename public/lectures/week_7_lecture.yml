@@ -1,0 +1,12 @@
+title: Week 7 Lecture
+subtitle: "Editing, part 1"
+sections:
+  - class_name: 'mwmc_section_1'
+    elements:
+      - text: "So far we’ve been talking about several of the aspects of the production process and about how a filmmaker makes use of those variables to affect the story during the capture of the images. This week we’ll begin to talk about another facet of the filmmaking process: post-production and editing. We’ll talk about some of the different options a filmmaker has for compiling the raw materials of the film into something that makes sense."
+        class: 'first_paragraph'
+      - "The production process typically generates a vast quantity of materials––a pool of materials which could combine in an infinite number of ways to create an infinite number of different films, many of them with completely different meanings from the others. The editing process is what determines which of those infinite possible versions becomes the final, authoritative one. Certainly, if all of us in this class were given the same materials to work with, we would each come up with different versions. Some of those versions might vary drastically in their meaning, while others might be rather similar. But in the end, they would all be different from one another in some way."
+    powerpoint:
+      - - content:
+            - "FILM 210 WEEK 7"
+            - "Editing, part 1"

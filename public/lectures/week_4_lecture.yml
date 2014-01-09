@@ -11,6 +11,10 @@ sections:
       - "This question of realism has haunted cinema from the earliest Edison and Lumiere <em>actualities</em> through to the contemporary phenomenon of &quot;reality television&quot;. How can cinema portray reality? What constitutes reality in cinema? Whatever it is, standards and ideas of what seems realistic have shifted and changed over the course of the century, and each attempt to inject a greater sense of realism is, for a variety of reasons, eventually seen as a failure. A new call, often accompanied by recent technological advance, arises for a dramatic break with the past and a &quot;new&quot; approach which is authentic and real."
       - "I mentioned that for the first century, the mechanism of cinema had evolved, but in technical essence remained largely unchanged. Images were captured on film, edited on film, printed to film and projected from film. The introduction of video in the 50s and 60s and its expansion into the public marketplace in the 70s and 80s had a certain degree of impact on the cinematic industry––particularly in the area of distribution, with the rise, first of television as competition to the cinema, then of home video as a new market for distribution. However, the impact of video on cinematic production, while it existed, was relatively limited. However, digital video, arriving in the mid-90s, heralded the most dramatic break with established practice and would usher in a revolution in how movies were made."
       - "There were a number of aspects of digital video that contributed to the impact it had on cinematic production. In all likelihood, digital video’s impact on the post-production process was even greater than its impact on production, but for this class, we’ll be thinking primarily of its role in production."
+    powerpoint:
+      - - content:
+            - "FILM 210 WEEK 4"
+            - "Cinematography and Movement"      
   - class_name: 'dogma_section_1'
     type: 'video'
     text: "The graphic here illustrates just a few of the ways in which digital cameras altered the traditional production process:"
@@ -28,15 +32,14 @@ sections:
             - image: 'dogma_lecture_02.jpg'
   - class_name: 'dogma_section_1'
     elements:
-      - "And their vows:"
-    powerpoint:
-      - - content:
-            - image: 'dogma_lecture_03.jpg'
-  - class_name: 'dogma_section_1'
-    elements:
+      - text: "And their vows:"
+        class: 'first_paragraph'
       - "We can relate most of these vows in some way to the desire for realism and authenticity (with perhaps the exception of the insistence on 35mm?)."
       - "It's important when considering the <em>dogma</em> movement, to take the ideas presented with a grain of salt and to recognize that the filmmakers themselves were only half serious. Lars von Trier, the acknowledged ringleader of the group, is a notorious provocateur (his actual name is Lars Trier; he just inserted &quot;von&quot; to make it appear stately and sophisticated), and there's also a bit of self-contradiction involved in their manifesto. The cry against &quot;individual&quot; cinema and the <em>auteur</em> theory––as well as not crediting the director––appear rather naive given that the films certainly still bear the distinctive stylistic stamp of an individual perspective. In a list of contemporary directors who embody the French New Wave's concept of director as <em>auteur</em>, Lars von Trier would have to be near the top. "
       - text: "Another point to note in regard to the filmmakers' commitment to this movement is that the filmmakers themselves each only made a single film in adherence to their own vows of chastity, then returned to making films which did not explicitly follow these rules. In essence we can read this movement, this manifesto, these vows, as the representation of a legitimate and real frustration with certain dominant elements of cinema and as an experiment in trying a different approach: &quot;Let's see what happens if we create a set of constrictions and use those as guidelines for making a film.&quot; What's intriguing to note is that a half-hearted, tongue-in-cheek attempt to define a &quot;new new wave&quot; actually succeeded in spreading throughout cinema and spawning over a hundred films."
+    powerpoint:
+      - - content:
+            - image: 'dogma_lecture_03.jpg'      
   - class_name: 'dogma_section_1'
     elements:
       - element: 'h3'

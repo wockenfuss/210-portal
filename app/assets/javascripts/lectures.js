@@ -9,11 +9,11 @@
 		}, 0);
 		
 
-		// $('#lectureNavbar').on('mouseover', function(e) {
-		// 	$(this).animate({'opacity': '1'}, 150);
-		// }).on('mouseleave', function(e) {
-		// 	$(this).animate({'opacity': '0'}, 150);
-		// });
+		$('#lectureNavbar').on('mouseover', function(e) {
+			$(this).animate({'opacity': '1'}, 150);
+		}).on('mouseleave', function(e) {
+			$(this).animate({'opacity': '0'}, 150);
+		});
 
 		var $fluidEl = $('.videoWrapper');
 		var $videos = $('.videoWrapper iframe');
@@ -27,6 +27,8 @@
 		$(window).resize(function() {
 			setVideoSize($fluidEl, $videos);
 		});
+
+		$(document).on('scroll', removeNavbar);
 
 	});
 

@@ -134,8 +134,8 @@ span.gap {
 }
 
 #lectureNavbar {
-	display: inline-block;
-	// position: fixed;
+	display: none;
+	position: fixed;
 	z-index: 20;
 	background-color: #fff;
 	width: 100%;
@@ -153,6 +153,7 @@ span.gap {
 		}
 	}
 	h2 {
+		float: left;
 		font-family: $bannerFont;
 		margin-top: 1%;
 		font-size: 1em;
@@ -234,7 +235,7 @@ span.gap {
 }
 
 .powerpoint {
-	min-width: 350px;
+	min-width: 320px;
 	// border: $color3 4px solid;
 	background-color: rgba(240, 240, 240, .8);
 	border-radius: 5px;
@@ -251,10 +252,10 @@ span.gap {
 	float: left;
 	// width: 39%;
 	width: 94%;
-	margin-left: 3%;
+	// margin-left: 3%;
 	// top: 25%;
 	// right: 10%;
-	min-width: 350px;
+	min-width: 320px;
 	font-family: $standard;
 	text-align: center;
 	// display: none;
@@ -269,6 +270,11 @@ span.gap {
 	}
 	div {
 		margin: 5% 0;
+	}
+}
+@media (min-width: 340px) {
+	.graphic {
+		margin-left: 3%;
 	}
 }
 
@@ -649,4 +655,27 @@ footer {
 .mother_section_1 {
 	@include section(black);
 	@include backgroundImageStyle('mother_01.jpg');	
+}
+.picnic_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('picnic_feet.jpg');	
+}
+.picnic_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('picnic_mannequins_inverse.jpg');	
+}
+
+.picnic_section_3 {
+	@include section(black);
+	@include backgroundImageStyle('picnic_mannequins.jpg');	
+}
+
+.picnic_section_4 {
+	@include section(black);
+	@include backgroundImageStyle('picnic_miranda_rock.jpg');	
+}
+
+.mwmc_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('mwmc_filmstrip.jpg');	
 }

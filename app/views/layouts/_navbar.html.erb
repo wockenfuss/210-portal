@@ -4,7 +4,7 @@
 
       <% if user_signed_in? %>
 
-        <div class="dropdown pull-right navbar">
+        <div class="dropdown navbar">
           <%= link_to current_user.email, "#" %>
           <ul class="dropdownMenu">
             <li><%= link_to "Home Page", user_root_path(current_user)%></li>
@@ -16,7 +16,7 @@
 
         <% if can? :manage, :all %>
 
-          <div class="dropdown pull-right navbar">
+          <div class="dropdown navbar">
             <%= link_to "Manage", "#"%>
             <ul class="dropdownMenu">
               <li><%= link_to "Discussions", manage_discussions_path(:manage => true)%></li>

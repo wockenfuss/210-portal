@@ -7,6 +7,10 @@ sections:
         text: "STYLE"
         class: 'first_paragraph'
       - text: "What do we mean when we talk about the style of a film? Can we break film style down into constituent parts of some kind? A copout answer might be to say that every aspect of a film is part of its style. Each film's style is the sum of its use of technique. However, there are times when we use the phrase &quot;stylized&quot; in reference to a film."
+    powerpoint:
+      - - content:
+            - "FILM 210 WEEK 5"
+            - "<em>Mise-en-Scene</em> and Film Style"
   - class_name: 'mother_section_1'
     type: 'question'
     content: "What do we typically mean when we describe something in this way? What do you think of if you hear someone describe a film as &quot;stylized?&quot; How about &quot;stylish?&quot;"
@@ -89,9 +93,9 @@ sections:
       - image: 'mother_apt.jpg'
   - class_name: 'mother_section_1'
     elements:
-      - "Another aspect of this film that draws from the traditional patterns of screwball comedy and melodrama are in the attitude toward gender––specifically, in its treatment of women. This issue is the subject of our supplementary viewing this week from <em>Ways of Seeing</em>, dealing with the historical role of and treatment of women in Western imagery."
-      - "One of the elements of screwball comedy that was unusual for its time was the fact that it often contained female characters who were presented as independent, strong and the equal of the male character. In a humorous context, it presented a forum for the possibility of questioning traditional gender roles."
-      - "Melodrama is a genre often associated with women, sometimes in a critical fashion. As a genre, it has been associated with being targeted toward and often told from the perspective of women. One of the reason Douglas Sirk's films were originally marginalized and criticized was that they were &quot;only&quot; concerned with trivial and mundane feminine matters. The word melodramatic is often used pejoratively to define an attitude that is overly focused on emotion, without the ability to engage in a rational analysis of a situation's gravity, similar to the way in which women, in previous cultural periods, were considered to be irrational, unable to grasp the intellectual ramifications of a situation."
+      - text: "Another aspect of this film that draws from the traditional patterns of screwball comedy and melodrama are in the attitude toward gender––specifically, in its treatment of women. This issue is the subject of our supplementary viewing this week from <em>Ways of Seeing</em>, dealing with the historical role of and treatment of women in Western imagery."
+      - text: "One of the elements of screwball comedy that was unusual for its time was the fact that it often contained female characters who were presented as independent, strong and the equal of the male character. In a humorous context, it presented a forum for the possibility of questioning traditional gender roles."
+      - text: "Melodrama is a genre often associated with women, sometimes in a critical fashion. As a genre, it has been associated with being targeted toward and often told from the perspective of women. One of the reason Douglas Sirk's films were originally marginalized and criticized was that they were &quot;only&quot; concerned with trivial and mundane feminine matters. The word melodramatic is often used pejoratively to define an attitude that is overly focused on emotion, without the ability to engage in a rational analysis of a situation's gravity, similar to the way in which women, in previous cultural periods, were considered to be irrational, unable to grasp the intellectual ramifications of a situation."
     powerpoint:
       - - content:
             - image: 'mother_lecture_05.jpg'
@@ -127,6 +131,3 @@ sections:
   - class_name: 'mother_section_1'
     elements: 
       - "One of the things we'll be considering in the discussion forums for this week is the way in which <em>All About My Mother</em> differs from other contemporary films in its presentation of a female perspective."
-
-
-
