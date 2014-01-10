@@ -3,8 +3,9 @@ subtitle: Mise-en-Scene and Setting
 sections:
   - class_name: 'picnic_section_1'
     elements:
-      - text: "This week we'll be continuing our discussion of <em>mise-en-scene</em>, this time focusing on the element of setting. As we discussed last week, there are essentially four elements of <em>mise-en-scene</em>: lighting, costume/props, acting/movement, and setting."
+      - text: "As we discussed last week, there are essentially four elements of <em>mise-en-scene</em>: lighting, costume/props, acting/movement, and setting. This week we'll be continuing our discussion of <em>mise-en-scene</em>, focusing on the element of setting."
         class: 'first_paragraph'
+      - text: "We can think about setting in at least three different ways: style, content and atmosphere."
     powerpoint:
       - - content:
             - "FILM 210 WEEK 6"
@@ -13,10 +14,10 @@ sections:
     elements:
       - element: 'h3'
         text: "SETTING: STYLE"
-      - text: "We can think about setting in a few different ways. First, we can think of the <strong><em>style</em></strong> in which the setting is presented. In the earliest cinema, the setting was usually created by a painted backdrop. The film was more like a theatrical play. The choice to make use of an artificial setting certainly has an impact on how a story feels to us as a viewer. "
+      - text: "First, there's the <strong><em>style</em></strong> in which the setting is presented. In the earliest cinema, the setting was usually created by a painted backdrop. The film was more like a theatrical play. The choice to make use of an artificial setting certainly has an impact on how a story feels to us as a viewer."
   - class_name: 'picnic_section_1'
     elements:
-      - "We've discussed this a little bit already in the case of <em>Stagecoach</em> where we can compare the feeling of the shots that clearly take place in the actual outdoors with the shots that are clearly replicating the outdoors in a studio. The artificiality of the sets requires us to expend a certain amount of effort suspending our disbelief. We have to overlook the artificial quality and attempt to maintain our place in the story."
+      - "We've discussed this a little bit already in the case of <em>Stagecoach</em> where we can compare the feeling of the shots that take place in the actual outdoors with the shots that are clearly replicating the outdoors in a studio. The artificiality of the sets requires us to expend a certain amount of effort suspending our disbelief. We have to overlook the artificiality and attempt to maintain our place in the story."
     powerpoint:
       - - content:
             - image: 'picnic_lecture_01.jpg'
@@ -39,7 +40,8 @@ sections:
       - element: 'h3'
         text: "SETTING: CONTENT"
         class: 'first_paragraph'
-      - text: "Another way to consider setting is not in the style of how it's represented, but in the actual <strong><em>content</em></strong> and how it underscores or emphasizes the thematic elements of the film. We saw an example of this in <em>Killer's Kiss</em>, when the climactic fight sequence is fought in a machine shop filled with mannequins. "
+      - text: "Another way to consider setting is not in the style of how it's represented, but in the actual <strong><em>content</em></strong> and how it underscores or emphasizes the thematic elements of the film. To some extent, last week's film <em>All About My Mother</em> serves as a good illustration of this with its heavily stylized, colorful, patterned backdrops and wardrobes."
+      - text: "We saw an even better example of this in <em>Killer's Kiss</em>, when the climactic fight sequence is fought in a machine shop filled with mannequins."
   - class_name: 'picnic_section_2'
     type: 'video'
     text: "Watch the scene again, paying attention to the way in which the setting makes literal the thematic content built up in the story to this point."
@@ -81,7 +83,7 @@ sections:
   - class_name: 'picnic_section_2'
     elements:
       - "To a limited extent this happens in <em>Stagecoach</em>. Ford significantly features the buttes of Monument Valley in the backgrounds of shot after shot. He takes pains to create a false geography in which the monuments span across a great distance of several days' journey (in reality, they occupy only a few square miles). He carefully depicts John Wayne set against the backdrop of the butte to reinforce Wayne's iconic nature and the monumental quality of the rock. We see what is essentially the same rock formations over and over again as backdrops throughout the film."
-      - "However, I would say that in <em>Stagecoach</em>, though the landscape has a certain presence, it never becomes significant to the point of becoming a character in the film. It's influence and impact are limited in large degree by the way in which Ford uses––or perhaps more accurately, doesn't use––the landscape. Ford doesn't devote entire shots exclusively to the buttes. There are no cutaways or long duration shots which focus exclusively on the landscape. Our views of the landscape only occur when there are people moving through those landscapes, and as a result, the influence or sense of the landscape is muted."
+      - "However, I would say that in <em>Stagecoach</em>, though the landscape has a certain presence, it never becomes significant to the point of becoming a character in the film. It's influence and impact are limited in large degree by the way in which Ford uses––or perhaps more accurately, doesn't use––the landscape. Ford doesn't devote entire shots exclusively to the buttes. There are no cutaways or long duration shots which focus exclusively on the landscape. Our views of the landscape only occur when there are people moving through those landscapes, and as a result, the influence of the landscape––and our sense of it–– is muted."
     powerpoint:
       - - content:
             - image: 'stagecoach_buttes.jpg'
@@ -90,30 +92,55 @@ sections:
       - element: 'h3'
         text: "SETTING: ATMOSPHERE"
       - text: "Another way that we can talk about the role that location can play in a film is to talk about the idea of <strong><em>atmosphere</em></strong>."
-      - text: "When we talk about the atmosphere of a place, to what are we referring? The definition of atmosphere that I'm thinking of is essentially the sense of being physically present in a specific location."
+
+  - class_name: 'picnic_section_4'
+    type: 'question'
+    content: "When we talk about the atmosphere of a place, to what are we referring? What associations do you make with the idea of a place having an atmosphere? When you think of a film creating a sense of atmosphere, are there any particular films that come to mind?"
+    order_index: 1
+  - class_name: 'picnic_section_4'
+    elements:
+      - text: "The definition of atmosphere that I'm thinking of is essentially the sense of being physically present in a specific location."
       - text: "Take a moment to think about what places for you have a particular atmosphere. The beach? The state fair, summer camp, a family cabin?"
       - text: "What makes up the particular atmosphere of that place? When you're at the beach, what contributes to the sense of atmosphere? Perhaps the wide vista, the expanse of water, the sounds of waves, the smells, the feeling of wind and ocean spray. If you're at the state fair, perhaps you associate it with the specific flavor of elephant ears or cream puffs."
       - text: "When you are physically present in a space you are presented with stimuli to more or less all of your senses. That space impacts your physical body in certain ways and makes you aware of being present in it. Essentially, I think we can say that the accumulation of sensory impressions makes up the particular atmosphere that a place has."
       - text: "So if we are trying to evoke a particular atmosphere in a film. We are going to be significantly limited. Setting aside various failed attempts over the course of cinematic history to introduce things like Smell-O-Vision or Aromarama or John Waters' Odorama scratch and sniff cards (yes, these are real things), or current dubious ideas like D-Box, we only have two of the five senses that we can stimulate using a film: sight and sound."
-      - text: "If a film is trying to recreate an atmosphere or to give us a sense of being physically present in another place and time, it is going to have to replicate something that comes from a combination of all five senses with only two."
+      - text: "If a film is trying to recreate an atmosphere or to give us a sense of being physically present in another place and time, it is going to have to use only two senses to replicate a feeling that normally is the result of all five."
   - class_name: 'picnic_section_4'
     elements: 
       - element: 'h3'
         text: "PICNIC AT HANGING ROCK"
       - "The film we're watching this week, <em>Picnic at Hanging Rock</em>, is a film in which a sense of atmosphere plays a significant role. The film takes place in Australia in 1900 at the location of Hanging Rock, a distinctive geological formation. One of the primary goals for Peter Weir in this film is the creation of a sense of atmosphere."
-      - "We, the audience, are in a distant time and place from the one in which the film was shot. How does a filmmaker go about creating a sense in the viewer of being present in a different place and time? What techniques can he/she use? What does he/she choose to show and when? What sounds? Are there sounds and images that can recreate or imitate the effects of smell, taste and touch in order to create a sense of presence in a different space and time?"
+      - "We, the audience, are physically located in a distant time and place from the one in which the film was shot (and even further removed from the time and location in which the story takes place). How does a filmmaker go about creating a sense in the viewer of being present in a different place and time? What techniques can he/she use? What does he/she choose to show and when? What sounds? Are there sounds and images that can recreate or imitate the effects of smell, taste and touch in order to create a sense of presence in a different space and time?"
       - "In your reading for this week, a very brief interview with Peter Weir, he talks about some of his goals and strategies for this film."
       - text: "&quot;We worked very hard at creating an hallucinatory mesmeric rhythm, so that you lost awareness of facts, you stopped adding things up, and got into this enclosed atmosphere. I did everything in my power to hypnotize the audience away from the possibility of solutions.&quot;"
         class: 'attribution'
   - class_name: 'picnic_section_4'
     elements:
-      - "I want to spend a little bit of time thinking about the way a scene in a film is presented as the casting of a spell. Not just in this film, but in any film."
-      - "A filmmaker approaches a scene with a set of techniques and lays one after the other, piling them on in succession as a means of achieving a specific effect on the viewer. It's not simply the subject matter itself that creates the impact. We've all heard a joke that made us laugh, then tried to retell it and ended up butchering it so that it was no longer funny (well, I have anyway). A significant part of the humor of a joke lies in the <em>way</em> in which it is told. In the same way, a significant part of the emotional impact of a scene lies in the way in which those scenes are presented."
+      - element: 'h3'
+        text: 'CASTING A SPELL'
+      - text: "I want to spend a little bit of time thinking about the way a scene in a film is presented as the casting of a spell. Not just in this film, but in any film."
+      - "A filmmaker approaches a scene with a set of techniques and lays one after the other, piling them on in succession as a means of achieving a specific effect on the viewer. It's not simply the subject matter itself that creates the impact. We've all heard a joke that made us laugh, then tried to retell it and ended up butchering it so that it was no longer funny (well, I have anyway). A significant part of the humor of a joke lies in the <em>way</em> in which it is told. In the same way, a significant part of the emotional impact of a scene lies not just in the scene's content, but in the way in which that content is presented."
       - text: "If we watch a film that keeps us on the edge of our seat, we can think of the film as having cast a spell on us. It has ordered its various elements in such a way that it creates a specific psychological state. We may sit utterly oblivious to our surroundings, to how much time is passing, to other noises in the room. The film has created a specific state of mind. Usually that state of mind correlates to certain clearly labeled emotional categories: humor, sadness, suspense, fear."
       - "In virtually any filmmaking, an act of some kind of hypnosis is occurring. This is the entirety of the reason why the filmmaking language has evolved the way that it has. The continuity editing system, all the laws that are designed to draw the viewer into an emotional connection with the diegesis, the world of the film, operate on this principle. This is why when these things don't work, there is a slight but real jarring sensation. For example when a character looks into the camera and breaks the fourth wall (or you see a jump cut, or a violation of screen direction), you are reminded of the mechanism of the film. It destroys the spell which the filmmaker was weaving."
       - "Weir references the idea of mesmerizing or hypnotizing the viewer. Certainly he's speaking figuratively. But let's examine this idea for a minute. What happens to someone who is being mesmerized? What do you think of when we talk about hypnotism? What are some synonyms for these words? Perhaps &quot;trance,&quot; or &quot;spellbound.&quot;"
       - "All these words are referring to the creation of a different state of mind. The brain is operating in a different fashion from the way it normally functions. In a trance state, certain cognitive functions are disabled. There is a focused attention with a corresponding decrease in peripheral awareness. There is complete absorption with a single idea; a responsiveness to suggestion. All of these things can accurately describe the film-viewing experience. It is a state brought about through an intricate pattern of activity (and it also requires a certain amount of willing participation on the part of the viewer)."
-      - "As our senses receive stimuli, those stimuli affect us. They have the power to change the function of our brains. Those changes can add up to altering the function of our brain waves, which typically range from low-frequency delta waves (a sleeping state) through theta, and alpha waves associated more with meditation or relaxation to high frequency beta waves associated with active concentration or anxious thinking."
+      - "As our senses receive stimuli, those stimuli affect us. They have the power to change the way the brain is functioning. Those changes can add up to an alteration of the function of our brain waves, typically ranging from low-frequency delta waves (a sleeping state) through theta and alpha waves associated more with meditation or relaxation to high frequency beta waves associated with active concentration or anxious thinking."
       - "It is accurate for us to consider that a film does not merely have an intellectual or emotional impact on us. It has a physiological and neurological impact as well. If you've ever left a movie theater feeling like you were awakening from a dream, or that you had to put forth physical effort to return to the &quot;real&quot; world, you've experienced this shift in brain wave states. Your brain is, in a sense, shifting gears, returning to its typical alpha wave state after being in something like a trance."
-      - "So how in this film does Peter Weir go about trying to mesmerize us? I think this question goes hand in hand with the idea of atmosphere: creating a sense of physical presence that draws us into the film into almost an out-of-body experience--out-of-body in the sense that we we are no longer conscious of our physical bodies in their physical location."
-
+      - "<em>Picnic at Hanging Rock</em> is a film in which every shot, every sound, every cut and cross-fade combine, each intricately placed to move the viewer one step closer to the desired state of experiencing something akin to physical presence in the space of the film."
+      - "As you watch this week's film, I want you to pay careful attention to the way in which Weir chooses to present each scene.  How does he use aspects of sound and imagery to attempt to alter your mental awareness and create an &quot;out-of-body&quot; experience (out-of-body in the sense of no longer being conscious of our physical bodies in their physical location)? What are some unusual techniques you notice throughout the film?"
+  - class_name: 'picnic_section_4'
+    elements:
+      - "Apart from its unusually heavy emphasis on atmosphere, <em>Picnic at Hanging Rock</em> is unusual for a couple of other reasons. Most narrative films that we watch go to great lengths to engage viewers emotionally by causing them to identify closely with one or more of the film's main characters. <em>Picnic at Hanging Rock</em> does not do this. It's somewhat unusual in that the story is not told from any one character's perspective. We're not given a particular character to root for or identify with. "
+      - "This film keeps you a bit more at arm's length than many of the other films we've watched and will watch. For that reason, it's not quite as easily digestible as some contemporary films. It requires a bit more work on the viewer's part. It does these things intentionally. Weir has other goals with this film than to cause us to engage emotionally with a specific character. Another thing to think about as you watch is just what, exactly, Weir is interested in doing with this film."
+  - class_name: 'picnic_section_4'
+    elements:
+      - "Lastly, another unusual component of this film is the choices Weir makes with the ending. As Weir states in this week's reading:"
+      - text: "&quot;I usually find endings disappointing . . . . life doesn't have endings. It's always moving on to something else and there are always unexplained elements.&quot;"
+        class: 'attribution'
+      - text: "Why do we watch a film? We've asked this question of several of the other films that we've watched this semester. When we approach a film, we may think we know the reason that we are watching. We may have certain expectations about what we are going to get. However, the ultimate reason why we are watching is largely up to the director of the film. In some cases the director may play tricks on us. "
+      - text: "In several instances this semester, we thought we were watching for one reason, but after a variety of twists and turns, eventually discovered it was for another. With <em>Stagecoach</em> we think we are watching to find out whether the characters will make it to Lordsburg, but in reality we're watching to find out if Ringo gets vengeance and ends up with Dallas. "
+  - class_name: 'picnic_section_4'
+    type: 'video'
+    text: "Another way to phrase the question of why we're watching a film is to talk about what might be a film's thematic content. After you've watched the film for this week, we'll discuss the ending and possible thematic content in the discussion forum for this week."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
