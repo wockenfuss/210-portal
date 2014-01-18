@@ -65,12 +65,12 @@ sections:
     type: 'video'
     text: "The portable video camera is more or less the size of the grip for the CP-16. With this camera that is literally only a little larger than the operator's hand, virtually all physical constraints over motion are removed. A pan now requires only the bending of a wrist."          
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83943008?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'dogma_section_1'
     type: 'video'
     text: "The operator can move the camera in any direction at will."
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83943009?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'dogma_section_1'
     elements: 
       - "<em>Dogma's</em> stipulation for a handheld camera means that, practically speaking, the camera is in constant motion throughout the duration of the film. This has dramatic implications on the way the film is presented by the filmmaker and received by the viewer. It is this idea of camera movement that I want to focus on in <em>The Celebration</em>."
@@ -127,5 +127,5 @@ sections:
     type: 'video'
     text: "How successful is <em>The Celebration</em> at penetrating the illusory nature of cinema and revealing something &quot;real,&quot; something &quot;true?&quot; Does the vow of chastity help to overcome obstacles inherent in the cinematic system of production, or were the framers of the movement deluding themselves in thinking they could generate something real? After watching the film, we'll carry this conversation over to the discussion forums for this week and share our thoughts about it over there."
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/57464305?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
 

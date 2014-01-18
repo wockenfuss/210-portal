@@ -1,6 +1,6 @@
-/*$primary-font: "Special Elite";*/
+$primary-font: "PT Sans";
 /*$primary-font: "Patrick Hand SC";*/
-$primary-font: "Pompiere";
+// $primary-font: "Titillium Web";
 $secondary-font: "Special Elite";
 $tertiary-font: "Karla";
 
@@ -174,8 +174,8 @@ nav {
 	.brand {
 		float: left;
 		display: none;
-		font-size: 1.6em;
-		margin: 0.5% 0 0 2%;
+		font-size: 1.3em;
+		margin: 12px 0 0 2%;
 		font-family: $primary-font, sans-serif;
 		color: darken($backgroundColor, 30%);
 		@media (min-width: 500px) {

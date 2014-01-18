@@ -151,12 +151,12 @@ sections:
     type: 'video'
     text: "For just one example of this, let's take a look at the scene from <em>Stagecoach</em> where John Ford introduces Ringo."
     content: 
-      - video: '<iframe src="//player.vimeo.com/video/48571519?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83941678?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'stagecoach_section_1'
     type: 'video'
     text: "Now let's take another look at the one shot in particular in which Ringo is introduced."
     content: 
-      - video: '<iframe src="//player.vimeo.com/video/48571519?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83941677?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: "stagecoach_section_1"
     type: "question"
     content: "What do you notice that might be termed unusual about this shot?"

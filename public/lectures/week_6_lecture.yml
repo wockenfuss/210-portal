@@ -28,7 +28,7 @@ sections:
     type: 'video'
     text: "Here's a more contemporary example of this: the opening scene from <em>Dogville</em>, by Lars von Trier, our buddy from the <em>dogma</em> collective. As you watch this clip, notice the artificiality and try to identify how it changes your perception of the story. How would this scene feel had it been shot on location with an authentic-feeling background?"
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83944081?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="392" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'picnic_section_1'
     elements:
       - text: "Another style of setting might be digital compositing (or in <em>Tron's</em> case analog compositing) or a virtual set. This might be similar to the soundstage except that the surroundings are virtual rather than actual. They have different textures and looks that we associate specifically with digital compositing. "
@@ -46,7 +46,7 @@ sections:
     type: 'video'
     text: "Watch the scene again, paying attention to the way in which the setting makes literal the thematic content built up in the story to this point."
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83944082?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'picnic_section_2'
     elements:
       - "Imagine this fight scene taking place in some other environment: a bar, or a toy car factory. The impact would be significantly different. Here the battle between the main characters, which is essentially a fight over the female character, is conducted in the midst of––and using as weapons––these objects in the form of women."
@@ -143,4 +143,4 @@ sections:
     type: 'video'
     text: "Another way to phrase the question of why we're watching a film is to talk about what might be a film's thematic content. After you've watched the film for this week, we'll discuss the ending and possible thematic content in the discussion forum for this week."
     content: 
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/37390837?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'

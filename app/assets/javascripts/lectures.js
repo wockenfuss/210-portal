@@ -1,13 +1,15 @@
-(function(myLecture, $, undefined) {
+(function(Lecture, $, undefined) {
 	$(document).ready(function() {
 
 		window.setTimeout(function() {
 			if ($('.powerpoint').length > 0) {
 				$('.powerpoint').powerpoint();
 			}
-			setVideoSize($fluidEl, $videos);
+			// setVideoSize($fluidEl, $videos);
 		}, 0);
-		
+		window.setTimeout(function() {
+				$(window).resize();
+		}, 5000);
 
 		$('#lectureNavbar').on('mouseover', function(e) {
 			$(this).animate({'opacity': '1'}, 150);
@@ -34,6 +36,7 @@
 
 	function setVideoSize($fluidEl, $videos) {
 		var newWidth = $fluidEl.width();
+		// console.log('setting vid size: ' + newWidth);
 		$videos.each(function() {
 			var $el = $(this);
 			$el
@@ -75,4 +78,4 @@
 	// };
 
 
-})(myLecture = window.myLecture || {}, jQuery)
+})(Lecture = window.Lecture || {}, jQuery)

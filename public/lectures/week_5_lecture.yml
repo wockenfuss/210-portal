@@ -42,7 +42,7 @@ sections:
     type: 'video'
     text: "Take a look at this shot from <em>Stagecoach</em>."
     content: 
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83943595?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'mother_section_1'
     type: 'question'
     content: "What's odd about this shot? Why does it look &quot;wrong&quot;?"
@@ -109,7 +109,7 @@ sections:
     type: 'video'
     text: "You might think that those aren't particularly stringent requirements to meet (and you're right, they're not!), but as you can see in this video, a staggering number of contemporary films don't pass this test."
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83943594?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'mother_section_1'
     elements: 
       - "The intent behind the Bechdel Test is not to suggest that every film has to pass in order to be a &quot;good&quot; film. The point is just that the sheer number of films that <em>don't</em> pass the test suggests a significant inequity in the representation of women in typical Hollywood filmmaking."
@@ -129,5 +129,7 @@ sections:
       - - content:
             - image: 'mother_lecture_08.jpg'
   - class_name: 'mother_section_1'
-    elements: 
-      - "One of the things we'll be considering in the discussion forums for this week is the way in which <em>All About My Mother</em> differs from other contemporary films in its presentation of a female perspective."
+    type: 'video'
+    text: "One of the things we'll be considering in the discussion forums for this week is the way in which <em>All About My Mother</em> differs from other contemporary films in its presentation of a female perspective."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/37256385?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'

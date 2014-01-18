@@ -2,6 +2,11 @@ title: Week 3 Lecture
 subtitle: Cinematography
 sections:
   - class_name: 'killer_section_1'
+    type: 'video'
+    text: "Watch this week's film, <em>Killer's Kiss</em>, by Stanley Kubrick, before working through this lecture."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/57408012?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'killer_section_1'
     type: 'section'
     elements:
       - element: 'h3'
@@ -33,7 +38,7 @@ sections:
     type: 'video'
     text: "That distinction can be illustrated by this clip from <em>Psycho</em>."
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83941963?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'killer_section_1'
     elements:
       - "We begin the clip observing from the outside. Then we move, figuratively, into the body of Norman for a POV shot. We are inside the world. However, that leap from observer to participant is not jarring to us. The reason for that is that we weren't ever really observers at all. In fact, we had already entered the world of the film prior to this shot, prior to this scene. For most of us the boundary between our actual world and the world of the film dissolves almost instantaneously following the film's credits."
@@ -111,7 +116,7 @@ sections:
     type: 'video'
     text: "Here is a clip from <em>Touch of Evil</em> by Orson Welles, a film that is generally considered to mark the end of the <em>noir</em> era. Pay attention to how light is used and how it impacts the scene."
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83941964?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="381" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'killer_section_3'
     elements:
       - "There are a lot of things that combine to generate the mood of this scene. We could talk about the wide angle lens and handheld camera, but let’s concentrate on light."
@@ -127,7 +132,7 @@ sections:
     type: 'video'
     text: "Let's look at another <em>noir</em> scene, this time from <em>Mildred Pierce</em>, again paying attention to the use of light:"
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83941965?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'killer_section_3'
     elements:
       - "Typically a filmmaker uses the frame to hide and reveal what he/she wants us to see, showing a wide shot of a character so that we don't focus on the facial expression, for example; or showing close-ups of objects or body parts, then cutting to the face at just the time we are supposed to see a reaction. Here, the filmmaker instead uses lighting."
@@ -156,7 +161,7 @@ sections:
     type: 'video'
     text: "Here is a brief consumerist interlude that Kubrick uses to bridge two of the film's scenes:"
     content:
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - video: '<iframe src="//player.vimeo.com/video/83941966?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: 'killer_section_4'
     elements:
       - "John Berger's descriptions of advertising culture are especially apt for this film:"
