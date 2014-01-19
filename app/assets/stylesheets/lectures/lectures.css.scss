@@ -680,3 +680,8 @@ footer {
 	@include section(black);
 	@include backgroundImageStyle('mwmc_filmstrip.jpg');	
 }
+
+.orientation_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('noir.jpg');	
+}

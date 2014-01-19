@@ -1,55 +1,136 @@
 title: "Week 1 Lecture"
 subtitle: "Orientation"
 sections:
-  - class_name: "eight_section_1"
+  - class_name: "orientation_section_1"
     type: "section"
     elements:
       - element: "h3"
         class: "first_paragraph"
-        text: "DISCOURSE IN 2001: A SPACE ODYSSEY"
-      - text: "Stanley Kubrick, in his telling of the story <em>2001: A Space Odyssey</em>, makes some unusual discourse choices in terms of both narration and style."
-        id: 'graphic_3_in'
-      - text: "The first of these unusual choices is the sheer duration of the story time. Few other films consider the entire span of human history as the duration of the story being told (only Malick’s <em>Tree of LIfe</em> comes to mind at the moment, although I guess you could make the case that <em>Prometheus</em> does this as well)."
-        id: 'graphic_4_in'
-      - text: "Another unusual choice is his staunch commitment to visual storytelling. Rather than using voiceover or text on the screen in the manner of <em>Star Wars</em> to explain the opening scenario, he spends twenty minutes gradually unfolding narrative information through exclusively visual means. There are a number of other scenes where Kubrick unfolds the story in real time even though the actions occurring in the scene are relatively mundane. We’re given extended balletic sequences as Heywood Floyd travels by spacecraft to a space station and then from there to the moon. We get a long drawn-out sequence where the astronauts replace a faulty part. In more conventional films, these plot details would be dispatched through much shorter sequences with the filmmaker selecting only a few short shots to represent the longer space of story time. For some reason, Kubrick chooses to present far more of the details of the scene than are necessary to simply communicate the basic plot point to the viewer."
-        id: 'expectations'
-      - text: "In order to shed some light on why Kubrick makes these choices, let’s dig a little bit deeper into the opening “Dawn of Man” sequence. I want to walk through each section of the sequence and distill it down to the specific information that Kubrick is imparting through visual means."
-        id: 'graphic_5_out'
+        text: "Film 210: Concepts in Media Arts Production"
+      - text: "Meeting times/locations: This class takes place exclusively online. There are no set meeting times. However, there will be regular deadlines each week by which certain activities must take place."
+      - text: "E-mail contact: brentdc2@uwm.edu"
+      - text: "Film Department Office: Mitchell B70, phone: 229-6015"
     powerpoint:
-      - - id: 'graphic_section_2'
-          in: '.eight_section_1'
-          out: '#expectations'
-          content: 
-            - 'Repetitions of form create conventions'
-        - id: 'graphic_section_3'
-          in: '#graphic_3_in'
-          out: '#expectations'
-          content: 
-            - 'Conventions create viewer expectations'
-        - id: 'graphic_section_4'
-          in: '#graphic_4_in'
-          out: '#expectations'
-          content: 
-            - 'Viewer expectations determine how the film is experienced'
-      - - id: 'graphic_section_5'
-          in: '#expectations'
-          out: '#graphic_5_out'
-          content:
-            - 'What happens when expectations are <em>fulfilled</em>?'
-            - 'What happens when expectations are <em>delayed</em>?'
-            - 'What happens when expectations are <em>thwarted</em>?'
-  - class_name: "eight_section_1"
-    type: "video"
-    text: "NO COUNTRY FOR OLD MEN</br>This week we’re watching <em>No Country for Old Men</em> by the Coen brothers, an adaptation of a novel by Cormac McCarthy. There are a few unusual and interesting narrative strategies employed by the Coen brothers in this film, but I also want you to be examining the film’s approach to style. What patterns do you find in the Coen brothers use of technique in this film? How does the stylistic approach to technique enhance the subject matter? What is most important to the Coen brothers in this film: plot, character or theme?"
-    content: 
-      - image: "2001-intro-1.jpg"
-      - image: "2001-intro-10.jpg"
-  - class_name: "eight_section_1"
-    type: "video"
-    text: "NO COUNTRY FOR OLD MEN</br>This week we’re watching <em>No Country for Old Men</em> by the Coen brothers, an adaptation of a novel by Cormac McCarthy. There are a few unusual and interesting narrative strategies employed by the Coen brothers in this film, but I also want you to be examining the film’s approach to style. What patterns do you find in the Coen brothers use of technique in this film? How does the stylistic approach to technique enhance the subject matter? What is most important to the Coen brothers in this film: plot, character or theme?"
-    content: 
-      - video: '<iframe src="//player.vimeo.com/video/76232217?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
-  - class_name: "eight_section_1"
-    type: "question"
-    content: "why is that happening?"
-    order_index: 1
+      - - content: 
+            - 'FILM 210 WEEK 1'
+            - 'Orientation'
+  - class_name: 'orientation_section_1'
+    elements: 
+      - element: 'h3'
+        text: "Course Description"
+      - text: "This course is a study of several fundamental aspects of filmmaking technique, revolving primarily around an exploration of the way cinema makes use of the frame, mise-en-scene, editing, sound, time and space. Through weekly film screenings, readings, creative exercises, writing and discussion, students will develop an analytical approach toward their own film viewing and image-making practices, learning to think and write critically about the role of media in contemporary culture."
+  - class_name: 'orientation_section_1'
+    elements:
+      - element: h3
+        text: "Course Requirements"
+      - text: "Because this course takes place entirely online you will need several skills and resources to be able to participate fully."
+      - text: "-You will need basic word processing skills and some form of word processing software (Microsoft Word, Open Office, Pages, etc.)."
+      - text: "-You will need to be able to access and navigate the course D2L site. Google Chrome is the recommended browser to use, followed by Firefox and Safari at a distant third. Internet Explorer is strongly recommended against. There might be occasional issues with media playback and display on other browsers."
+      - text: "-Since e-mail will be one of the primary forms of communication for this class, you will need to check your campus e-mail account on a daily basis, or have e-mail forwarded to an address you check daily."
+      - text: "-You will need routine access to a computer with a broadband Internet connection or a campus network connection to the Web. Ideally this connection should be wired (i.e. Ethernet connection rather than Wi-Fi). If you don't have a computer or home broadband, you will need to make plans to use one of the campus lab computers (see the link to campus computer labs in the D2L &quot;Content&quot; section)."
+      - text: "-If you have technical difficulties with D2L contact the UWM Technology Help Desk through the link on the D2L Content page under Resources and Help"
+      - text: "-The computer you use must be able to view Quicktime videos (standard on Macs, see link in D2L &quot; Content&quot; section for Windows)."
+  - class_name: 'orientation_section_1'
+    elements:
+      - "Each week you will be assigned a film to watch. There are several possibilities as to how you can watch the films each week. Due to the occasionally precarious nature of technology, you should make contingency plans for alternate ways to view the film should your normal method not be available in a given week. Not being able to watch a film due to technical problems will not excuse you from that week's quiz and discussion requirements. In the class schedule section of this syllabus and on D2L there will be a list of the films we will watch each week and where they are currently available for streaming.Due to the contemporary system for licensing, streaming rights for films can be constantly in flux. Because of this, unfortunately, all of the films we will be watching this semester are not available for streaming through a single service. Some films available now for streaming on Netflix or Amazon, may not be available for streaming by the time we get to that film's week in the schedule. Here are the ways to view each week's film:"
+      - "<em>D2L Streaming</em>: I will be attempting to provide a free stream of each week’s film embedded in the D2L Content section. However, this may not always be possible, in which case, you may need to rent these films through Amazon streaming or iTunes. Be aware that the quality of the free stream will most likely be lower than what you'd get from streaming the film through Amazon or Netflix or downloading it from iTunes, so if you can at all afford it, I'd suggest watching it by another method."
+      - "<em>Amazon Instant Video</em>: Almost all the films for the semester are currently available for rental through Amazon Instant Video."
+      - "<em>iTunes store</em>: Roughly half the films we will be watching will be available for rental through the iTunes store."
+      - "<em>Netflix</em>: A few of the films we are watching are available for streaming through Netflix. Most of the films are available on DVD through Netflix, so if you currently have a Netflix subscription, or are planning to subscribe for the semester, you may wish to order the DVDs to watch each week. You will need to plan ahead however, to ensure that you have the appropriate DVD at the appropriate time. Also, if too many people are trying to access the DVD through Netflix, it's possible that Netflix will not have enough DVD copies of a film to meet demand. So have a backup plan in the case that you can't get the DVD on time!"
+      - "<em>Hulu and Hulu Plus</em>: Only a few films we will watch are available on Hulu."
+      - "<em>Library Reserve</em>: The library has a copy of most of the films we'll be watching. Each film will be on reserve in the Media Library (basement of West Wing of Golda Meir Library). You may check the DVD out for 2 hours at a time for viewing on the premises. Obviously there are not enough hours in the week for everyone to try to watch the film at the library using the reserve copy. This should be your last resort only if you have no other option."
+      - "<em>Other possibilities</em>: If you have access to cable, it is possible your provider offers some sort of On Demand streaming service. You may find a few of the films from this semester available on that service."
+  - class_name: 'orientation_section_1'
+    elements: 
+      - element: h3
+        text: "Discussion Sections"
+      - text: "Each student will be part of a discussion section of 15-20 other students. I've broken up the discussion sections into groups named for one of the directors we'll be watching this semester. You will engage with these smaller groups in online forums each week. Each group will be moderated and graded by a discussion group leader. The discussion group leaders are listed below. If you have questions or concerns about the class, please contact your discussion leader first. They will forward any pertinent questions on to me as necessary."
+      - text: "Sections Ford and Kubrick -Renata Carvalho Barreto, carvalh3@uwm.edu"
+      - text: "Sections Vinterberg and Almodovar - Kate Balsley,  balsleyk@uwm.edu"
+      - text: "Sections Weir and Vertov - Nazli Dincel, ndincel@uwm.edu"
+  - class_name: 'orientation_section_1'
+    elements: 
+      - "A note about online courses:"
+      - "For many of you this will be the first time taking a class online. You may have one of two misconceptions about the process:"
+      - "1) online classes are easier and less work than a traditional face-to-face class."
+      - "2) online classes are more intimidating and impersonal than traditional face-to-face classes."
+      - "Neither of these are necessarily true. While it may take some adjustment to get used the way a class functions online, many students discover that while the class is still a lot of work, it may in fact offer a very rich educational experience in which they are able to get to know their classmates and instructors better than through a traditional face-to-face class. In order to excel in the online environment, a few things are required of the student: 1) motivation. Since there are no fixed times for the class to meet, it will be up to you to fix time in your schedule each week to meet all the requirements. It is recommended that you set up a regularly weekly schedule that works best for you so that you will have time set aside each week for this class's required activities. 2) engagement. The old adage that you only get out what you put in is still true in the online environment. If you make an effort to think through the assignments and post thoughtful discussion to the forums, you will end up having a richer educational experience than if you simply try to meet the bare minimum of the requirements."
+  - class_name: 'orientation_section_1'
+    elements: 
+      - element: h3
+        text: "Grading Criteria and Policies"
+      - text: "Visual Essay 1: 10%<br>Visual Essay 2: 10%<br>Quizzes: 30%<br>Midterm Exam: 10%<br>Final Exam: 10%<br>Discussion: 30%"
+      - text: "The majority of your grade will come from quizzes and discussion posts. Quizzes will be weekly except for a few exceptions noted on the syllabus. The quizzes will cover material from the assigned weekly readings and from lecture. The worst quiz grade over the course of the semester will be dropped. You will also have a midterm and final exam, as well as two visual essay projects."
+      - text: "Discussion is a critical part of this class. You will post to discussion forums every week of the semester except for the two weeks in which we take exams. Unlike in your face-to-face discussions where you probably had several students who did all the talking while most students sat quietly in the background, in this class everyone will participate in the discussion about the movies and lectures. Each week you will take some time to reflect on the movie you've watched and the questions about the movie the lecture has raised for you, and you will post some thoughts about the film online in the D2L discussion forums. Then, a few days later, you will read other people's posts and respond to someone else's thoughts. We should be able to generate some vibrant ongoing conversations throughout the semester. "
+  - class_name: 'orientation_section_1'
+    elements:
+      - text: "Your discussion participation will figure heavily in your grade. A good discussion forum posts contains the following elements:"
+      - "Clarity- posts are well-articulated, with main ideas clearly identified."
+      - text: "Development - Content is accurate. Statements are followed up with explanations and reasons. Provides   support from text, other research or personal experience."
+      - "Critical thought - Clear evidence of analysis and evaluation, insight."
+      - "Responses - summarizes points of agreement or disagreement<br>Introduces new ideas and stimulates discussion<br>Engages others by inviting their contributions<br>Challenges the accuracy, logic, relevance, or clarity of others' statements (in a polite manner!)"
+      - "Procedural - Posts are at least 300 words<br>Responses are 50+ words each<br>Respectful of others' opinions and ideas<br>Uses proper grammar and academic tone.<br>Posted on time"
+      - "Your initial post is worth a maximum of 6 points. Responses to others' posts are worth a maximum of 2 points each. You may receive a total of 10 points for each week's discussion forum grade."
+  - class_name: 'orientation_section_1'
+    type: 'video'
+    text: "Here's a sample weekly schedule:"
+    content:
+      - image: 'sample_schedule.png'
+  - class_name: 'orientation_section_1'
+    elements:
+      - element: h3
+        text: "Extra Credit opportunities"
+      - text: "You are encouraged to attend screenings at the UWM Union Theatre. By attending any screening and writing a thoughtful response paper (from 350 - 700 words in length) relating the screening to an idea discussed in class, you may earn up to 2 percentage points per paper to add to your final grade. You may turn in via D2L drop box a maximum of 2 papers over the semester for a maximum of 4 percentage points. You must notify your discussion leader via e-mail if you turn in an extra-credit paper to the D2L extra-credit drop box."
+  - class_name: 'orientation_section_1'
+    elements: 
+      - element: h3
+        text: "Required course books"
+      - text: "<em>Film Art: An Introduction</em>, 10th Edition, David Bordwell and Kristin Thompson<br>Available through Amazon, Half.com, other online sources, and UWM Bookstore"
+      - text: "Other weekly readings available as .pdf in the &quot;Content&quot; section of D2L"
+      - text: "You are responsible to complete the assigned weekly readings prior to that week's discussion forum posts and quiz."
+  - class_name: 'orientation_section_1'
+    elements:
+      - element: h3
+        text: Additional Course and Departmental Policies
+      - text: "Special Needs and Questions:"
+      - text: "If you will need accommodations in order to meet any of the requirements of this course, please contact me as soon as possible. "
+      - text: "Feel free to visit me at my office during office hours to discuss assignments or any questions or requests you have."
+      - text: "The Department of Film follows UWM academic policies which are posted on the departmental bulletin board, or available online <a href='http://www.uwm.edu/Dept/SecU/SyllabusLinks.pdf' target='_blank'>here</a>"
+  - class_name: 'orientation_section_1'
+    elements:
+      - element: h3
+        text: "Late Assignments"
+      - text: "Quizzes not taken before the closure date may not be taken late. Exams may not be made up without a legitimate and documented excuse (to be submitted one week in advance unless it is a dire, health-related emergency). Late visual essays will be accepted only up to one week beyond the deadline. Late penalties apply: 1/3 letter grade penalty per 24-hour period. Except in the event of a dire, health-related emergency, you must address the issue with the instructor at least one day prior to the deadline for the assigned work."
+  - class_name: 'orientation_section_1'
+    elements:
+      - element: h3
+        text: "Drops & Incompletes"
+      - text: "Drops: No drops are permitted after the 5th week of the semester.  Incompletes will be considered ONLY for situations in which you are maintaining a “B” or better grade at the end of classes, and you are unable, because of illness or other circumstances beyond your control, to complete your course work.  You must provide written documentation to the instructor indicating that you were prevented from completing your course requirements.  You must complete course work for an Incomplete during the first eight weeks of the next semester of enrollment (excluding summer sessions). Access to department facilities for the purpose of completing course requirements is extended five weeks into the next semester."
+  - class_name: 'orientation_section_1'
+    elements:
+      - element: h3
+        text: Use of Copyrighted Material
+      - text: "Use of copyrighted material is strictly prohibited unless the images, sounds, texts, etc. are being significantly altered and it is clear in the opinion of the instructor that the original material is being studied, analyzed and commented upon by the student.  Grades for work failing to satisfy this requirement for copyrighted materials will be significantly lowered. The instructor reserves the right to determine what constitutes fair use of copyrighted material. A helpful resource concerning copyright and fair use is available at <http://www.utsystem.edu/ogc/intellectualproperty/cprtindx.htm>. The campus Learning Technology Center, located in the east wing of the Library, can also provide consultation and resources concerning these issues."
+  - class_name: 'orientation_section_1'
+    type: video
+    text: "Course Schedule: This schedule is subject to change. Check D2L regularly for notification of any changes."
+    content:
+      - image: 'schedule.jpg'
+  - class_name: 'orientation_section_1'
+    elements:
+      - element: h3
+        text: Bibliography
+      - text: "David Bordwell and Kristin Thompson, <em>Film Art: An Introduction</em>, McGraw Hill, 2010."
+      - text: "John Berger, <em>Ways of Seeing</em>, Penguin, 1972."
+      - text: "Janey Place and Lowell Peterson, <em>Some Visual Motifs of Film Noir</em>, Film Noir Reader, Alain Silver and James Ursini, Limelight Editions 2001."
+      - text: "Thomas Lind Laursen, <em>The Agitated Camera</em>, P.O.V. A Danish Journal of Film Studies, ed. Richard Raskin, Number 10, December 2000, pp. 77-88."
+      - text: "Lars Von Trier and Thomas Vinterberg, <em>The Dogma 95 Manifesto and Vow of Chastity</em>, P.O.V. A Danish Journal of Film Studies, ed. Richard Raskin, Number 10, December 2000, pp. 6,7."
+      - text: "Jan Dawson, <em>Picnic Under Capricorn</em>, Sight & Sound, Spring 1976."
+      - text: "Dziga Vertov, <em>Kino-eye: the Writings of Dziga Vertov</em>, University of California Press, 1984."
+      - text: "Francois Truffaut, <em>Hitchcock</em>, Simon and Schuster, 1984."
+      - text: "Andre Bazin, <em>Jean Renoir</em>, Dell Publishing, 1971."
+      - text: "J.J. Murphy, <em>The Temporal Complexity of Elephant</em>, Me and You and Memento and Fargo: How Independent Screenplays Work (Continuum International Publishing, 2007)."
+
+
+
+
