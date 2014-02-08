@@ -28,6 +28,8 @@
 				}
 			});
 		}
+
+		myApp.setTimezone();
 		
 		myApp.Links('#linkbarLinks a').listen();
 
@@ -131,6 +133,19 @@
 			});
 		});
 	};
+
+	myApp.setTimezone = function() {
+		var timezone = $(window).get_timezone();
+		// console.log(timezone);
+		$.ajax({
+			url: '/users',
+			type: 'get',
+			dataType: 'json',
+			data: {
+				time_zone: timezone
+			}
+		});
+	};	
 
 
 	myApp.addDiscussionListeners = function() {

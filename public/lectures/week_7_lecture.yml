@@ -3,10 +3,115 @@ subtitle: "Editing, part 1"
 sections:
   - class_name: 'mwmc_section_1'
     elements:
-      - text: "So far we’ve been talking about several of the aspects of the production process and about how a filmmaker makes use of those variables to affect the story during the capture of the images. This week we’ll begin to talk about another facet of the filmmaking process: post-production and editing. We’ll talk about some of the different options a filmmaker has for compiling the raw materials of the film into something that makes sense."
+      - text: "Last week, in discussing the role that setting can play in the effect that a film has on a viewer, we discussed how Peter Weir makes use of the landscape in the film <em>Picnic at Hanging Rock</em>. Specifically, we discussed the way in which he attempted to create an immersive sense of atmosphere. Weir used an array of various film techniques in an effort to “mesmerize” the viewer––to create a mental state in which the viewers lose track of their actual physical location."
         class: 'first_paragraph'
-      - "The production process typically generates a vast quantity of materials––a pool of materials which could combine in an infinite number of ways to create an infinite number of different films, many of them with completely different meanings from the others. The editing process is what determines which of those infinite possible versions becomes the final, authoritative one. Certainly, if all of us in this class were given the same materials to work with, we would each come up with different versions. Some of those versions might vary drastically in their meaning, while others might be rather similar. But in the end, they would all be different from one another in some way."
     powerpoint:
       - - content:
             - "FILM 210 WEEK 7"
             - "Editing, part 1"
+  - class_name: 'mwmc_section_1'
+    type: 'video'
+    text: "Revisit this scene from the film:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/36726760?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'mwmc_section_1'
+    type: 'question'
+    content: "What are some of the specific tools Weir uses in an effort to hypnotize the viewer?"
+    order_index: 1
+  - class_name: 'mwmc_section_1'
+    elements:
+      - text: "Let's break down some of the techniques Weir is using in this scene. First, there's the acting. The characters use exaggerated movements and unnatural phrasings. Their actions break from their established way of moving or speaking up until this point to create a sense of change in the character, as though they’ve become possessed by some supernatural force."
+      - "Secondly, the imagery is affected in several ways, moving in slow motion and with images superimposed on top of each other. Obviously, this breaks with the way that we see things with our eyes in the real world. Any breaks with the naturalistic patterns of perception that we normally experience serve to unsettle our experience of the moment."
+      - "Thirdly, the audio incorporates unnatural electronic sounds, ethereal pipe music and subjective sound design (with ambient sounds suddenly dropping out)."
+      - "Then there's the content of the narrative itself, where the idea of man's intrusion on nature is underscored repeatedly, and the hints at violation of natural laws (the suggestion of time stopping, etc.)."
+  - class_name: 'mwmc_section_1'
+    elements:
+      - element: h3
+        text: "EDITING"
+      - text: "Thus far in the semester we’ve been talking about several aspects of the production process and about how a filmmaker makes use of these variables to affect the story during the capture of the images. This week we’ll begin to talk about another facet of the filmmaking process: post-production, and specifically, editing. We’ll talk about some of the different options a filmmaker has for compiling the raw materials of the film into something that makes sense.  "
+      - text: "The production process typically generates a vast quantity of materials––materials that could combine in an infinite number of ways to create an infinite number of different films, many of them with completely different meanings from the others. The editing process is what determines which of those infinite possible versions becomes the final, authoritative one. Certainly, if all of us in this class were given the same materials to work with, we would each come up with different versions of that material. Some of those versions might vary drastically in their meaning, while others might be rather similar. But in the end, they would all be different from one another in some way."
+  - class_name: 'mwmc_section_1'
+    type: video
+    text: "As an example of the way in which editing creates meaning, we’ll take a look at a short video which takes footage shot for a specific purpose and creates an entirely different meaning out of it simply through employing various editing strategies. Pay attention to the types of connections the filmmaker makes here (as a disclaimer, let me note that this video brings with it a fairly ideological political bent. Feel free to disagree with the editor's worldview, but try to look past it to the means of communication)."
+    content:
+      - video: '<iframe width="640" height="480" src="//www.youtube.com/embed/HfuwNU0jsk0?rel=0" frameborder="0" allowfullscreen></iframe>'
+  - class_name: mwmc_section_1
+    type: question
+    content: "How is meaning between images generated?"
+    order_index: 2
+  - class_name: mwmc_section_2
+    elements:
+      - element: h3
+        text: "TIME AND SPACE"
+        class: first_paragraph
+      - text: "In creating meaning through editing, there are essentially two things being manipulated: time and space. A cut is typically used either to remove some section of time or to move the camera to a different position in space (or both). This week we'll think about how editing relates to the treatment of a single scene. What variables are at play in the way a filmmaker chooses to portray a continuous moment that takes place in a single location? "
+  - class_name: mwmc_section_2
+    elements: 
+      - element: h3
+        text: "CONTINUITY EDITING"
+      - text: "There are several broader categories that define traditional ways of approaching the editing of a scene. The first is probably the most familiar: <em>continuity editing</em>. This is the system of editing that has evolved around the type of narrative filmmaking which is designed to make the editing disappear, to be transparent and unnoticeable. It's a system for dealing with a single timeline in a single space.  "
+      - text: "The principles of continuity editing are ways of dealing with three-dimensional space in the 2D plane of the screen. They more or less operate in a contiguous time frame, meaning that each shot follows more or less immediately after the previous shot. Time is by and large moving in a strictly linear progression in a single space."
+      - text: "In early cinema, films were shot in a continuous take from a single vantage point. There was no editing within a scene. One positive thing about this approach is that the viewer is fully oriented in the &quot;story&quot; being presented. The viewer is aware of his/her location relative to the action presented on screen and is fully oriented as to when those actions are occurring. However, there are also several problems with this approach."
+  - class_name: mwmc_section_2
+    type: video
+    text: "Watch this scene and think about how it's different from the ways stories would be told today."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/86087174?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: mwmc_section_2
+    type: question
+    content: "What is this scene missing? What do you want from it that you aren’t getting?"
+    order_index: 3
+  - class_name: mwmc_section_2
+    elements:
+      - text: "We don’t have the optimal vantage point for emotionally engaging with the action in this scene. We are kept at a distance and feel more like observers than participants in the world of the story. You see this scene play out, and it carries no emotional weight (there's apparently supposed to be something of a slapstick joke when someone falls in a bucket of nitric acid, but it's not set up in any way that translates as funny at all). We don’t identify with the characters. It’s hard for us to get any sense of the specific details of the story without closeups of important objects and other details that communicate actions. It’s also rather slow and tedious. The single take begins to wear out our patience."
+  - class_name: mwmc_section_2
+    elements:
+      - "Based on this scene, we can see three immediate reasons to employ cuts: emotional engagement, narrative specificity through details, and pacing (in essence, each cut resets the viewer’s attention clock). In most traditional scenes we want to cut. However, inherent in cutting is the risk that the viewer might become disoriented. If we think back to last week, we talked about the way in which creating a film is a little bit like casting a spell on the viewer. You’re usually trying to create an immersive experience in which the viewer is drawn into the world you have created and is emotionally participating in that world together with the characters. You don’t want to break that spell by reminding the viewer that he/she is actually sitting in a dark theater rather than taking part in the story. As soon as we cut to a closeup of a character or a detail of the scene, there is the possibility of losing our sense of where this detail is located in relation to the overall space of the scene––or at least of having some slight sense of disorientation. We risk breaking that spell we're trying to weave.  "
+      - "We want to present the progression of a scene in a way that heightens and emphasizes whatever is important to the emotional impact of the material. This often means using close-ups of important details, presenting different angles of view that provide for changes of pace while also giving the best vantage point for that moment to the viewer. It means only showing certain parts of what is happening rather than every event. It means moving the camera around in space. If we present a wide shot of a scene in which it feels like the camera is some distance away from the subject, then we follow that with a medium close-up in which we feel rather close to the subject, we are leaping across space in the instant of the cut. Putting together a number of such cuts is the equivalent of tossing the viewer around in space––an experience that could easily be disorienting. Theoretically, we should have some difficulty keeping track of where we are located within the space of the scene.  "
+      - "In order to minimize this disorientation, a set of rules (conventions) has evolved that dictates more or less how you should cut so that you don’t break that spell which you are trying to weave on the viewer; so that you can toss them around in both time and space and still have them retain their sense of orientation. Your reading for this week works through the principles of continuity editing in depth."
+  - class_name: mwmc_section_2
+    elements: 
+      - element: h3
+        text: "PARALLEL EDITING"
+      - text: "Continuity editing is a system for dealing with a single timeline happening in a single space (we call this a <em>scene</em>). Another convention of editing involves dealing with multiple spaces within the context of a single timeline (you know this convention by the name parallel editing or cross-cutting). In this convention, the editor is interweaving multiple spatial threads throughout a single contiguous linear time frame. The events are more or less occurring at the same time and we alternate between them."
+  - class_name: mwmc_section_2
+    type: video
+    text: "This scene from <em>The Celebration</em> is an example of this:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/86087175?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: mwmc_section_2
+    elements:
+      - text: "In this particular instance, parallel editing is used to maximize the impact of the climactic moment in three separate scenes. We see them as if they all align together in sync and it enhances the &quot;pop&quot; effect of each individual moment. The more traditional way to employ parallel editing is as a means of heightening suspense, a way to delay gratification by perpetually cutting away from the resolution of a single strand of action to pick up another."
+  - class_name: mwmc_section_2
+    elements:
+      - element: h3
+        text: "DISCONTINUITY EDITING"
+      - text: "Continuity and parallel editing are designed to help the editing disappear from the viewer’s consciousness. The process melts into the content. Some filmmakers may take a different approach to editing where they intentionally violate the laws of continuity. We’ll call this discontinuity editing and it can take a few different forms.  Discontinuity editing can be applied to traditional narrative situations, in which case it takes on the characteristic of jump cuts. It’s an approach to the single timeline and single space scene that ignores the idea of maintaining viewer orientation. We saw this in <em>The Celebration</em> as cuts happen abruptly in succession and there is little effort to hide them from the viewer."
+      - text: "It violates traditional ideas of continuity in drawing a viewer into the world of the story, but as we saw with <em>The Celebration</em> it can still create a world that we invest in emotionally if the style is consistent."
+  - class_name: mwmc_section_2
+    elements:
+      - text: "Another version of discontinuity editing is cutting images together outside of the framework of a single timeline and single space and is known as <strong><em>dialectical montage</em></strong> (anyone remember what this is from 114?). This type of editing is typically not oriented around creating a believable, emotionally-engaging diegetic world. Instead, the editing is built around the power of context to create meaning in images.  "
+      - text: "All meaning is contextual. Continuity and parallel editing are making use of context to create meaning (the context is the time and space of the story), but the context disappears. Dialectical montage foregrounds the context. It considers that no shot exists in isolation and attempts to combine two shots in order to create a third meaning that does not exist in the two shots alone. Your reading for the week reminds you of how this occurs with the <em>Kuleshov effect</em>. Instead of considering editing as something functional whose purpose is simply to reveal passively what is in the original material, this approach looks to editing as a means of actively generating meaning. The idea is that we can take a single image and impose different meanings on that image by changing the context."
+  - class_name: mwmc_section_3
+    elements:
+      - element: h3
+        text: "MAN WITH A MOVIE CAMERA"
+      - text: "The film we're watching this week, Dziga Vertov's <em>Man With a Movie Camera</em>, makes heavy use of dialectical montage as a means of generating meaning through editing."
+      - text: "The film presents the activities of a city (Odessa, Ukraine during the height of Communism in the Soviet Union) over the course of one day as they are documented by a man with a movie camera. In that sense it functions sort of like a story––there's a recurring &quot;character&quot;. There's a narrative arc. However, the narrative is more of a thin structural framework than an attempt at a believable diegetic world. The real focus of the film is on advancing a set of ideas and statements about this city through the means of contextual manipulation (aka, editing)."
+      - text: "One interesting aspect of the film that I want you to pay attention to as you watch is the way in which the film makes reference to itself and the process of its own creation (we call this <em>reflexivity</em>). Aside from the most obvious aspect of reflexivity referenced in the film’s title, there will be quite a few other moments in which the film makes reference to itself. At various points throughout, we’ll see the film being shot, edited and projected in front of an audience."
+  - class_name: mwmc_section_3
+    elements:
+      - element: h3
+        text: "KINO-EYE"
+      - text: "As you'll see from some of your reading for this week, Vertov is another filmmaker interested in the idea of a manifesto––in creating a new approach to cinema. Like the <em>dogma</em> movement, he was unhappy with the theatricality of what he terms the &quot;film-factory&quot; approach. He aimed to find &quot;life as it is&quot; by shooting a film with no script, no actors, no sets. He called his approach <em>kino-pravda</em>, or cinema truth, describing his ideal by saying"
+      - text: "&quot;the film is only the sum of the facts recorded on film.&quot;"
+        class: 'attribution'
+      - text: "He also called the camera the <em>kino-eye</em>, saying,"
+      - text: "&quot;I am an eye. I am a mechanical eye. I, a machine, I am showing you a world, the likes of which only I can see.&quot;"
+        class: 'attribution'
+      - text: "After watching parts of John Berger’s <em>Ways of Seeing</em>, you should probably greet these quotes from Vertov with a bit of skepticism. Vertov seems to be suggesting that his way of seeing is unbiased and neutral. In the discussion section for this week, we'll take some time to compare some of Vertov's claims about his filmmaking agenda to the film itself and see how much we agree with his claims."
+  - class_name: mwmc_section_3
+    type: video
+    text: "<em>Man With a Movie Camera</em> is a silent film. There are quite a few different scores for this film floating around. In the version streaming here, the score is by The Cinematic Orchestra. Be aware that the film starts in silence for a few minutes before the sound comes in (you'll understand why when you see it)."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/37628125?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="576" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'

@@ -302,6 +302,8 @@ span.gap {
 .lectureQuestion {
 	@include fullStripe;
 	.commentDisplay {
+		padding-top: 20px;
+		padding-right: 20px;
 		font-size: .8em;
 		border-radius: 5px;
 		background-color: #fff;
@@ -676,12 +678,56 @@ footer {
 	@include backgroundImageStyle('picnic_miranda_rock.jpg');	
 }
 
+.orientation_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('noir.jpg');	
+}
+
 .mwmc_section_1 {
 	@include section(black);
 	@include backgroundImageStyle('mwmc_filmstrip.jpg');	
 }
 
-.orientation_section_1 {
+.mwmc_section_2 {
 	@include section(black);
-	@include backgroundImageStyle('noir.jpg');	
+	@include backgroundImageStyle('mwmc_eye.jpg');	
+}
+
+.mwmc_section_3 {
+	@include section(black);
+	@include backgroundImageStyle('mwmc_eye.jpg');	
+}
+
+@media print {
+	p {
+		font-size: 14px !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	h3 {
+		font-size: 14px !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.secondColumn {
+		display: none !important;
+	}
+	.videoContainer {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.lectureQuestion {
+		display: none;
+	}
+	iframe {
+		display: none;
+	}
+
+	.column {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
 }

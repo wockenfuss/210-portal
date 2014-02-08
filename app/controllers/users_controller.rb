@@ -8,7 +8,16 @@ class UsersController < ApplicationController
 	def show
 		@user = User.find(params[:id])
 		# @units = Unit.current
+		p 'user show'
+		if params[:time_zone]
+			Time.zone = params[:time_zone]
+		end
+		p Time.now
 		@lectures = Lecture.released
+		@lectures.each do |lecture|
+			p lecture.release_date
+			puts lecture.release_date < Time.now
+		end
 	end
 
 	def index

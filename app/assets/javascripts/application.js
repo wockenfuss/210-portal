@@ -11,6 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require detect_timezone
+//= require jquery.detect_timezone
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require_tree .
