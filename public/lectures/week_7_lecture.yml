@@ -54,7 +54,7 @@ sections:
       - text: "In early cinema, films were shot in a continuous take from a single vantage point. There was no editing within a scene. One positive thing about this approach is that the viewer is fully oriented in the &quot;story&quot; being presented. The viewer is aware of his/her location relative to the action presented on screen and is fully oriented as to when those actions are occurring. However, there are also several problems with this approach."
   - class_name: mwmc_section_2
     type: video
-    text: "Watch this scene and think about how it's different from the ways stories would be told today."
+    text: "Watch this scene from Georges Melies’ early silent <em>A Trip to the Moon</em> and think about how it's different from the ways stories would be told today."
     content: 
       - video: '<iframe src="//player.vimeo.com/video/86087174?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   - class_name: mwmc_section_2
