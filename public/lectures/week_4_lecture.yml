@@ -7,39 +7,60 @@ sections:
         class: 'first_paragraph'
       - "In 1995, cinema was roughly a hundred years old. If you've taken Film 114, you'll remember (hopefully) that cinema had its origins in the experiments of the Lumiere brothers and Thomas Edison in the early-to- mid-1890s. Over the course of the ensuing hundred years, the language of cinema (the way people put images together to evoke meaning) evolved dramatically, as did cinema's technology (though fundamentally, the basic aspect of cinema creation––the capture of imagery on film stock and its projection in a theater––had remained remarkably unchanged)."
       - "In its early existence, the cinema relied on heavy and large machinery to capture images. Slower film stocks required a significant amount of light to render an image. These limitations forced filmmakers to work almost exclusively in the highly controlled setting of specially-constructed studios. This reliance on the studio setting is probably responsible for one of the repeated charges against narrative cinema: artificiality."
-      - "The 20th century saw a series of movements which rebelled against what they saw as a sense of disconnectedness, unreality, falsehood in the types of stories cinema generated. The most notable of these were the <em>Kino-pravda</em> (or &quot;cinema truth&quot;) movement of Dziga Vertov; the Italian neo-realists–– rebelling against the so-called &quot;white telephone&quot; melodramas that they saw as disconnected from the everyday lives of real Italians; the direct cinema and <em>cinema-verite</em> movements of the late 1950's; and the French New Wave. All of these movements took advantage of new techniques made possible by technological advances: faster film stocks, smaller, mobile cameras, and the portability of sound recording equipment combined to allow for on-location shooting, and the possibility of a smaller, more intimate crew created a less intrusive filming environment. They also shared a dissatisfaction with the current formula for movie-making and a desire to achieve greater realism."
-      - "This question of realism has haunted cinema from the earliest Edison and Lumiere <em>actualities</em> through to the contemporary phenomenon of &quot;reality television&quot;. How can cinema portray reality? What constitutes reality in cinema? Whatever it is, standards and ideas of what seems realistic have shifted and changed over the course of the century, and each attempt to inject a greater sense of realism is, for a variety of reasons, eventually seen as a failure. A new call, often accompanied by recent technological advance, arises for a dramatic break with the past and a &quot;new&quot; approach which is authentic and real."
-      - "I mentioned that for the first century, the mechanism of cinema had evolved, but in technical essence remained largely unchanged. Images were captured on film, edited on film, printed to film and projected from film. The introduction of video in the 50s and 60s and its expansion into the public marketplace in the 70s and 80s had a certain degree of impact on the cinematic industry––particularly in the area of distribution, with the rise, first of television as competition to the cinema, then of home video as a new market for distribution. However, the impact of video on cinematic production, while it existed, was relatively limited. However, digital video, arriving in the mid-90s, heralded the most dramatic break with established practice and would usher in a revolution in how movies were made."
-      - "There were a number of aspects of digital video that contributed to the impact it had on cinematic production. In all likelihood, digital video’s impact on the post-production process was even greater than its impact on production, but for this class, we’ll be thinking primarily of its role in production."
     powerpoint:
       - - content:
             - "FILM 210 WEEK 4"
             - "Cinematography and Movement"      
   - class_name: 'dogma_section_1'
-    type: 'video'
-    text: "The graphic here illustrates just a few of the ways in which digital cameras altered the traditional production process:"
-    content:
-      - image: 'dogma_lecture_01.jpg'
+    elements:
+      - text: "The 20th century saw a series of movements which rebelled against what they saw as a sense of disconnectedness, unreality, falsehood in the types of stories cinema generated. The most notable of these were the <em>Kino-pravda</em> (or &quot;cinema truth&quot;) movement of Dziga Vertov; the Italian neo-realists–– rebelling against the so-called &quot;white telephone&quot; melodramas that they saw as disconnected from the everyday lives of real Italians; the direct cinema and <em>cinema-verite</em> movements of the late 1950's; and the French New Wave. All of these movements took advantage of new techniques made possible by technological advances: faster film stocks, smaller, mobile cameras, and the portability of sound recording equipment combined to allow for on-location shooting, and the possibility of a smaller, more intimate crew created a less intrusive filming environment. They also shared a dissatisfaction with the current formula for movie-making and a desire to achieve greater realism."
+      - "This question of realism has haunted cinema from the earliest Edison and Lumiere <em>actualities</em> through to the contemporary phenomenon of &quot;reality television&quot;. How can cinema portray reality? What constitutes reality in cinema? Whatever it is, standards and ideas of what seems realistic have shifted and changed over the course of the century, and each attempt to inject a greater sense of realism is, for a variety of reasons, eventually seen as a failure. A new call, often accompanied by recent technological advance, arises for a dramatic break with the past and a &quot;new&quot; approach which is authentic and real."
+      - "I mentioned that for the first century, the mechanism of cinema had evolved, but in technical essence remained largely unchanged. Images were captured on film, edited on film, printed to film and projected from film. The introduction of video in the 50s and 60s and its expansion into the public marketplace in the 70s and 80s had a certain degree of impact on the cinematic industry––particularly in the area of distribution, with the rise, first of television as competition to the cinema, then of home video as a new market for distribution. However, the impact of video on cinematic production, while it existed, was relatively limited. However, digital video, arriving in the mid-90s, heralded the most dramatic break with established practice and would usher in a revolution in how movies were made."
+      - "There were a number of aspects of digital video that contributed to the impact it had on cinematic production. In all likelihood, digital video’s impact on the post-production process was even greater than its impact on production, but for this class, we’ll be thinking primarily of its role in production."
+    powerpoint:
+      - - content:
+            - "REALISM/ARTIFICIALITY"
+            - "Kino-pravda - 20's"
+            - "Italian neo-realism - 40's"
+            - "Direct cinema - late 50's"
+            - "Cinema verite - 60's"
+            - "French new wave - 60's"      
+  - class_name: 'dogma_section_1'
+    elements:
+      - text: "First of all, the recording media (tape) for video, was much cheaper than film. This meant filmmakers could use longer takes and have a higher shooting ratio, theoretically allowing them to capture better material."
+      - text: "The advent of smaller, more portable cameras made filmmakers more mobile. They required smaller crews to operate, so the process of gathering images was less intrusive on the actions being recorded."
+      - text: "Digital video materials were more sensitive to light than much of the film available at the time, so images could be recorded in more natural conditions without the need to impose external, artificial lighting on a scene in order to capture it."
+      - text: "Digital cameras also offered automated controls like auto-focus and auto-exposure. Where film crews previously required multiple people to monitor the focus and exposure in addition to a camera operator, now one person could theoretically rely on the cameras automatic features to take care of some of those tasks. This had the secondary effect of introducing a more “amateur” feel into the cinematic lexicon with some filmmakers making a choice to incorporate drifting auto-focus and changing exposure as part of the cinematography aesthetic."
+      - text: "Lastly, where film required chemical processing in order to see the results of a shot, digital video offered the possibility of immediately viewing the results, eliminating some of the guesswork and faith previously inherent in the process."
+    powerpoint:
+      - - content:
+            - image: 'dogma_lecture_01.jpg'
   - class_name: 'dogma_section_1'
     elements:
       - "As one might guess, much was made of the revolutionary potential for this new medium. And accompanying this new technology was a revival of the old call for a return to cinematic realism in the form of <em>dogma 95</em>."
       - "In 1995 Danish filmmakers Lars von Trier and Thomas Vinterberg, eventually joined by Kristian Levring and Soren Kragh-Jacobsen, wrote a manifesto detailing their dissatisfaction with the current state of cinema and issuing a call to make films according to a strict set of ten rules which they called &quot;the vow of chastity.&quot;"
   - class_name: 'dogma_section_1'
     elements: 
-      - "You'll be reading their manifesto as part of your reading for the week, but here are some of their complaints regarding the state of cinema in 1995:"
+      - "You'll be reading their manifesto as part of your reading for the week, but in summary, their manifesto was a reaction against the <em>auteur</em> theory of the French New Wave, stating that &quot;cinema is not individual&quot;. They believed that cinema had been &quot;cosmeticized to death&quot;, with so much attention paid to polished surfaces and effects that the substance of films had been ignored. They railed against what they called the dominance of illusion and the predictability of superficial action."
+      - "Here is the &quot;vow of chastity&quot;:"
     powerpoint:
-      - - content: 
-            - image: 'dogma_lecture_02.jpg'
+      - - content:
+            - "VOW OF CHASTITY"
+            - "Shooting must be done on location"
+            - "Sound and picture must be recorded together"
+            - "The camera must be hand-held"
+            - "The film must be in color with no &quot;special lighting&quot;"
+            - "Optical work and filters are forbidden"
+            - "No superficial action (murder, weapons, etc.)"
+            - "The film must take place in the present"
+            - "No genre movies"
+            - "The film must be in 35mm"
+            - "The director must not be credited"
   - class_name: 'dogma_section_1'
     elements:
-      - text: "And their vows:"
-        class: 'first_paragraph'
       - "We can relate most of these vows in some way to the desire for realism and authenticity (with perhaps the exception of the insistence on 35mm?)."
       - "It's important when considering the <em>dogma</em> movement, to take the ideas presented with a grain of salt and to recognize that the filmmakers themselves were only half serious. Lars von Trier, the acknowledged ringleader of the group, is a notorious provocateur (his actual name is Lars Trier; he just inserted &quot;von&quot; to make it appear stately and sophisticated), and there's also a bit of self-contradiction involved in their manifesto. The cry against &quot;individual&quot; cinema and the <em>auteur</em> theory––as well as not crediting the director––appear rather naive given that the films certainly still bear the distinctive stylistic stamp of an individual perspective. In a list of contemporary directors who embody the French New Wave's concept of director as <em>auteur</em>, Lars von Trier would have to be near the top. "
       - text: "Another point to note in regard to the filmmakers' commitment to this movement is that the filmmakers themselves each only made a single film in adherence to their own vows of chastity, then returned to making films which did not explicitly follow these rules. In essence we can read this movement, this manifesto, these vows, as the representation of a legitimate and real frustration with certain dominant elements of cinema and as an experiment in trying a different approach: &quot;Let's see what happens if we create a set of constrictions and use those as guidelines for making a film.&quot; What's intriguing to note is that a half-hearted, tongue-in-cheek attempt to define a &quot;new new wave&quot; actually succeeded in spreading throughout cinema and spawning over a hundred films."
-    powerpoint:
-      - - content:
-            - image: 'dogma_lecture_03.jpg'      
   - class_name: 'dogma_section_1'
     elements:
       - element: 'h3'
