@@ -1,3 +1,124 @@
 title: Week 9 Lecture
-subtitle: Editing, Part 2
+subtitle: "Editing, Part 2"
 sections:
+  - class_name: 'birds_section_1'
+    type: 'video'
+    text: "Welcome back after what was hopefully a pleasant spring break. This week we’ll start by watching <em>The Birds</em>, by Alfred Hitchcock, and then we’ll continue our discussion of editing that we began a few weeks ago."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/57414475?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="389" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'birds_section_1'
+    elements:
+      - text: "A few weeks ago, we started a discussion of the editing process. Specifically, we talked about the way an editor generates meaning by exercising control over an image's <em>context</em>. We saw many examples of the use of context to generate meaning in Dziga Vertov’s film <em>Man With a Movie Camera</em>."
+  - class_name: 'birds_section_1'
+    type: video
+    text: "Take another look at this scene from the film:"
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/86957465?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: 'birds_section_1'
+    type: question
+    content: "How does context influence the meaning of these shots? What might some of the individual shots mean if we saw them in a different context?"
+    order_index: 1
+  - class_name: birds_section_1
+    elements:
+      - text: "Vertov is cutting together two separate streams of information: a woman waking up and the morning preparations for the city. If the images of the woman waking and readying for the day happened in isolation, we would most likely see them in a different way. We might wonder who she is or where she is going. We might consider her past or her personality. In this context, however, we don't think of those things at all. Because of the way the images are cut, we make a mental comparison between the woman waking up and the city waking up. She washes her face. The city is being washed. She blinks. The windows blink. We enlarge our sense of context and we equate the city to a living being. This third idea, the city as a huge living organism, is created strictly through the editing and would not be present in either of the sets of shots if they were edited in isolation from each other. Once that idea is created, any images cut into that context seem to be a part of that machinery (even things that might otherwise seem out of place, like shots of homeless people). The idea of a machine issues entirely out of the way that the images are cut together. "
+      - text: "Now that we’ve explored some of the different styles and overarching goals of editing, this week we’ll dig into some specifics about how editors create the appearance of seamless editing, and we’ll look at some examples from <em>The Birds</em> to see how Hitchcock employs editing to create the storyline and impact the audience."
+  - class_name: birds_section_1
+    elements:
+      - element: h3
+        text: "THE CUT "
+      - text: "The root of editing is the cut. In the olden days you had to actually cut the strip of film and splice together two different strands. Of course now with digital post-production, the process is much less complicated. We “splice” two different shots together back to back. The content of these shots determines the impact of the cut. In most cases, there is some kind of connection between the two shots. Your reading for this week from <em>Film Art</em> spends some time discussing four different strategies that can be used to make a smooth and coherent connection between shots. Essentially what we're talking about here is how an editor creates the sense that the cut feels inevitable and appropriate, as if it is supposed to be there. In reality, every cut is relating to these four elements in one way or another. It may be exploiting them, or it may be working against them. I'll just take a moment to illustrate these four approaches that are outlined in the reading before we move on to some subtler aspects of editing."
+  - class_name: birds_section_1
+    type: video
+    text: "GRAPHIC<br /> First, we'll look at an example of using graphic similarities between the subject matter of each shot to tie the two shots together. When we talk about &quot;graphic&quot; similarities, what we’re essentially saying is simply that something in the first shot looks very similar to something in the second shot. In the clip below, we'll see the opening segment from <em>Citizen Kane</em>. In this segment, Orson Welles doesn't actually employ the cut. Instead, he uses cross-dissolves to smooth the transition from one image to another. His primary strategy, though, for connecting each of the shots is to make use of one of the graphical elements contained within the image: the lighted window in Kane's mansion."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/86957468?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="508" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: birds_section_1
+    elements:
+      - text: "Throughout each shot, Welles maintains the same general composition in the upper right corner of the frame. The spire of the mansion retains its general position and provides us with a sense of unity and orientation even though the foreground contents of each shot change completely. Welles even makes use of graphical match (or more accurately, mismatch) in the one break from his established pattern. There's one shot where the bright spot of the window overlaps, but the house itself is inverted in space as we see it in a reflection in water. "
+      - text: "Addit ionally, we're gradually moving closer to the house. The lit window in the upper right corner attracts our attention because of its brightness, so it's been planted in our brain by the first shot and then continually reinforced with each successive shot. This serves two purposes. Not only does it orient us because of the graphical similarity (similar shape occupying similar position onscreen), but it communicates to us that the window is important. And, in fact, it turns out to be our destination. The graphical shape of the window gradually gets larger (though always overlapping the previous spot onscreen). Finally we reach the exterior of the window as it fades in to dominate the frame, and then the light that's been consistent throughout the sequence is abruptly snuffed out in sync with a dramatic horn flourish in the score, leaving the frame mostly dark. This darkness then allows the light in the window to fade back up again, at first appearing to be the same shot that we're currently looking at, but eventually we realize that we've pivoted to the inside of the room. All of these transitions of perspective are linked seamlessly through both the constant graphical shape of the window and the similar position onscreen that's gradually expanded into the center of the frame.  "
+  - class_name: birds_section_1
+    type: video
+    text: "RHYTHMIC<br /> Next we'll look at an example of editing based on rhythm. Here's a short sequence from <em>Man With a Movie Camera</em>."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/86957467?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: birds_section_1
+    elements:
+      - text: "Perhaps at first the pattern of cutting here is a bit disorienting, but very quickly we understand what is happening, and the cuts begin to feel inevitable and &quot;normal&quot; . The reason this happens is because the editing establishes a certain rhythm or speed in which the cuts begin to take place at regular intervals. We can tell that the rhythm is increasing and we expect the cuts to start happening faster and faster. The established rhythm makes the cutting feel inevitable and correct."
+  - class_name: birds_section_1
+    elements:
+      - element: h3
+        text: "SPATIAL AND TEMPORAL"
+      - text: " Next we'll look at connections made through spatial and temporal similarities. In most narrative film, the editor is applying the process of editing to different shots that are connected through the subject matter. They take place in the same space and/or the same time frame. This is what we mean when discussing spatial and temporal connections. Spatially, the second shot gives us a different perspective of the same space that we saw in the previous shot. Temporally, the second shot picks up in time directly where the previous shot left off, with no gaps or overlaps in time."
+  - class_name: birds_section_1
+    type: video
+    text: "Here we see a mashup posted to YouTube where someone utilizes the concept of spatial and temporal connection to connect two scenes that are actually from different films. "
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/86957469?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: birds_section_1
+    elements:
+      - text: "Because of these principles of spatial and temporal connection, we perceive the two scenes as occurring in the same place and time. In this case the result is humor, but it also reveals the power of similarities in space and time (or even the appearance of similarities) to create connections between shots."
+  - class_name: birds_section_1
+    elements: 
+      - text: "Besides simply making cuts seem inevitable or meaningful, editing is also concerned with other, more subtle, tasks. We can also think of editing as something that controls the <em>flow of information</em>.   "
+        class: 'first_paragraph'
+      - text: "Rather than feeding us the whole scene at once in wide shot, the editor controls which details we'll see and focus on as the scene plays out, chopping up the scene into parts and feeding them to us piecemeal. If we're looking at one detail in a scene, then it means that we aren't looking at others. So in addition to showing us important things, the editor is also hiding other things from us, which can be equally important in the emotional impact of a scene. Just like telling a joke well, the full impact of important moments in movies is dependent on critical timing. A director may wish to parse out information in bits and pieces so that we only discover important facts at the &quot;right&quot; time––the time that creates the maximum impact.  "
+      - text: "For example, if a director reveals something to us before it is revealed to a character, we will be in suspense waiting for that character to discover it. However, if a director hides something of fundamental importance from us, only to reveal it at the same time the character learns of it, then it can result instead in surprise. These are two very different emotional states and the director may prefer one over the other for the purposes of the film (in your reading for this week, Hitchcock talks about how he almost always prefers suspense to surprise).  "
+      - text: "The way a director reveals information to us may be happening on a macro scale much larger than the micro scale of scene editing, but at times the editing itself can be used for this purpose. Let's take a look at a few examples of this from <em>The Birds</em>. "
+  - class_name: birds_section_1
+    type: video
+    text: "EDITING IN <em>THE BIRDS</em><br /> Hitchcock is a master of understanding how to make use of the tools of cinematic language to position the viewer in the exact psychological state he desires at each moment of the film. Watch the following scene, paying close attention to what Hitchcock chooses to show you at each moment, but also thinking about what he chooses not to show you."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/37572271?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: birds_section_1
+    type: question
+    content: "Imagine this whole scene playing out in a wide shot from a distance. We could see all the action occurring at once: Melanie sitting on the bench smoking a cigarette while behind her the birds gather on the monkey bars. How would this version feel different from the one that Hitchcock gives us?"
+    order_index: 2
+  - class_name: birds_section_1
+    elements:
+      - text: "The reason this scene has the impact it does is because of the way in which Hitchcock reveals it. First, he establishes a pattern of cutting back and forth between Melanie and the birds. Instead of everything playing out at once, we're given two concurrent lines of action, almost like parallel editing. Melanie is not aware of the birds behind her, but we are. The editing creates expectations that we'll continue the established pattern. We know the birds are going to keep gathering, and we expect to see them continue to gather. However, after establishing that pattern, Hitchcock violates those expectations by holding on Melanie for an unusually long time. This creates suspense because Hitchcock has a created a desire and an expectation that he is not fulfilling (we're waiting for that moment when Melanie's knowledge will match up with our own). Hitchcock elongates this suspense by not updating us further on how the birds are gathering."
+      - text: "It's also interesting to see the way in which Hitchcock finally reveals the birds to us. Instead of just cutting back to the birds gathered en masse after the long break, Hitchcock allows us to discover what's happening at the same time Melanie does. Finally, she notices a bird flying overhead, and the camera follows her gaze to show us all the birds massed behind her. For her, it's a shock, but it also serves as a bit of a surprise for us because the number turns out to be more than we anticipated. So by employing a meticulous editing strategy, Hitchcock is able to create both suspense and surprise in the viewer."
+  - class_name: birds_section_1
+    type: video
+    text: "Let's look at another example."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/37572888?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: birds_section_1
+    elements:
+      - text: "Hitchcock exercises a similar control over the viewer in this scene. After we see the children exit the school, Hitchcock cuts away from them and shows us the birds for an extended period of time. He's created an expectation and desire to see what's happening with the children but he thwarts those expectations by not cutting back to them for what feels like an eternity (suspense). Finally we hear––rather than see––them run and see the birds take off."
+      - text: "  We find Hitchcock choosing a very specific path through the material, one that generates certain expectations and desires in the viewer and then walks a tenuously balanced tightrope of thwarting and fulfilling those desires, timing out the release of information in order to maximize the emotional impact on the viewer. "
+  - class_name: birds_section_1
+    elements:
+      - text: "What else can editing do?"
+      - text: "  Earlier in the semester we raised the question of whose perspective we adopt as we watch each shot. Are we seeing the shot as coming from the neutral perspective of an outsider (objective)? Or is the shot aligned with a specific character, so that we understand that we're seeing it &quot;through&quot; that character (subjective)? One way the filmmaker creates a subjective shot is through the use of POV shots. But, through careful editing, its also possible for us to &quot;read&quot; a shot as coming through a character's perspective even if the shot is not a POV. "
+  - class_name: birds_section_1
+    type: video
+    text: "Let's take a look at another scene from <em>The Birds</em> and try to decipher, first, whose perspective the scene is presenting, and, second, how Hitchcock imposes that perspective on the shot. Pay careful attention to which details in the scene Hitchcock shows to you and why."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/37573059?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: birds_section_1
+    type: question
+    content: "Again, here, we can imagine this scene playing out in a wide shot, essentially as a stage play, with all the action visible at once. The scene would be objective or &quot;neutral.&quot; We wouldn't see the scene as aligned with any specific character. Our focus in the scene would be on what's being said between the characters. How is Hitchcock's version of the scene different? What are you thinking about as the scene plays out? What are you focused on? Do you see the scene &quot;through&quot; any of the characters despite the fact that there are no POV shots?"
+    order_index: 3
+  - class_name: birds_section_1
+    elements: 
+      - text: "We get a dramatically different sense of this scene from Hitchcock's staging than we would from a wide shot. Perhaps as you watched the scene, you weren't paying particular attention to what is being said by Mitch and the sheriff. You may have been thinking about the apparently disturbed mental state of the mother. Why? Certainly it's partly because the editor chooses to focus on that detail for part of the scene. But it's also because that's what Melanie is thinking about (interesting that we can say with relative certainty what Melanie is thinking without any &quot;internal&quot; information). Because the editor cuts in several &quot;eyeline match&quot; shots of Melanie watching the mother, we align ourselves with her perspective and essentially see the scene through her eyes. The details that the editor chooses to present to us over the course of the scene are either the things Melanie is looking at or Melanie herself."
+      - text: "In your reading for this week, Hitchcock mentions this scene, and he discusses one particular shot. After Melanie observes the mother, she walks over to Mitch to tell her that she thinks she should stay. This shot could be presented in any number of ways. It probably makes most sense (if our goal is to maintain the viewer's sense of spatial orientation) to show it in a wide shot so that we understand the layout of the space represented. However, Hitchcock says that he chose to keep Melanie in medium closeup and to pan with her across the room. The MCU instead of a long shot is critical, says Hitchcock, in keeping our focus on Melanie's emotional reading of the mother. Most likely while watching the film, none of us noticed that shot at all, or thought about its impact, but the shot Hitchcock-the-editor chooses is subtly effective in creating the emotional state in the viewer that he desires."
+  - class_name: birds_section_1
+    type: video
+    text: "Let's take a look at one more brief clip that demonstrates the ways editing influences our sense of perspective. As in the scene above, much of the film presents events from Melanie's perspective––that is, the camera often chooses to &quot;align&quot; itself with her viewpoint, giving us eyeline matches that demonstrate that the things we're looking at are things that Melanie is looking at. However, there are times when Hitchcock shifts the perspective in subtle ways."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/37613742?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: birds_section_1
+    elements:
+      - text: "In this scene Hitchcock again uses a subjective camera. We get eyeline match shots, first of the school building, then of the crows in the playground. Both Mitch and Melanie are looking, so the shots could represent either of their perspectives (or both), but most likely we'll read this as Melanie's perspective due to the fact that she's the main character and we've aligned ourselves with her so often thus far. This alignment is cemented even further by showing Mitch and Melanie slowly walking past the playground, then cutting to several slow tracking shots of the playground moving in the same direction as Mitch and Melanie. Then we get a slow tracking shot approaching the house. The camera slowly tracks and peers around the fence to see the body on the ground. Then we cut to Mitch and Melanie, and we realize that we've been getting Mitch's perspective all along. He's stretched out looking ahead, and Melanie has clearly not yet seen the body. Hitchcock uses editing to manipulate perspective in complicated ways throughout the film. Sometimes Melanie is the subject, meaning we see things from her perspective, and sometimes she is the object, meaning we are seeing things done to her (a subtle but important distinction). "
+      - text: "These subtle details of presentation may seem too small to be important, but they reveal how meticulous a craftsman Hitchcock was, how much care and thought he took to arrange the materials in what he felt was exactly the right way. And this attention to detail and awareness of the various complex effects that are possible in filmic language are the things that make Hitchcock's films so emotionally engaging (&quot;manipulative&quot; might be a better term)."
+
+  - class_name: birds_section_1
+    type: question
+    content: "MACGUFFIN<br />The last thing we'll consider this week is the ending of the film. We've talked about narrative structure in the context of a few different films, and I want to add this film to that list. Hitchcock is famous for his discussion of what he termed the &quot;MacGuffin.&quot; Anyone want to fill us in on what a MacGuffin is?"
+    order_index: 4
+  - class_name: birds_section_1
+    elements: 
+      - text: "The concept of the MacGuffin has actually expanded since Hitchcock introduced it to include a few different but related meanings, but we'll primarily consider Hitchcock's meaning. In Hitchcock's words, a MacGuffin is the thing about which the characters care deeply and which drives the narrative action. However, it's something that is ultimately of no consequence for the audience. A famous nod to this idea is the briefcase in <em>Pulp Fiction</em>. The action of the movie revolves around the briefcase, but [spoiler alert] we never find out what is inside, and actually what is inside is irrelevant (Don't worry. I don't think that qualifies as a spoiler). The briefcase is just an excuse to create the actions that are important to Tarantino."
+      - text: "I bring up the MacGuffin because it ties in to something we talked about a few times earlier in the semester which is the question &quot;Why are we, as viewers, watching a film?&quot; We sometimes think we're watching it to find out specific facts. In <em>Pulp Fiction</em>, as we go along, we might think that we'll find out why the briefcase is so important, that it is critical to what the story is about (well, you won't be thinking that now, when we watch the film at the end of the semester). In <em>Stagecoach</em> we thought we were watching to find out if the passengers would arrive safely. In <em>Picnic at Hanging Rock</em>, we think we're watching to find out what happened to the girls. And here in <em>The Birds</em>, we think we're watching to discover why these birds are attacking. In all these films, it turns out that those reasons were MacGuffins. They were excuses to drive the action which, in itself, was the important part of the film."
+      - text: "As we mentioned with <em>Picnic at Hanging Rock</em>, this can lead to tension when the viewer's goals for a film do not line up with the filmmaker's. There might be a sense of frustration or disappointment in the viewer in not fulfilling his/her goals for the film. The viewer may have to re-calibrate his/her expectations retroactively and re-examine the film to determine what really was the theme the filmmaker was addressing. This is one of the things we'll examine in the discussion for this week."

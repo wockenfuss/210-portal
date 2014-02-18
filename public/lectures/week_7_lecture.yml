@@ -86,7 +86,14 @@ sections:
     elements:
       - element: h3
         text: "DISCONTINUITY EDITING"
-      - text: "Continuity and parallel editing are designed to help the editing disappear from the viewer’s consciousness. The process melts into the content. Some filmmakers may take a different approach to editing where they intentionally violate the laws of continuity. We’ll call this discontinuity editing and it can take a few different forms.  Discontinuity editing can be applied to traditional narrative situations, in which case it takes on the characteristic of jump cuts. It’s an approach to the single timeline and single space scene that ignores the idea of maintaining viewer orientation. We saw this in <em>The Celebration</em> as cuts happen abruptly in succession and there is little effort to hide them from the viewer."
+      - text: "Continuity and parallel editing are designed to help the editing disappear from the viewer’s consciousness. The process melts into the content. Some filmmakers may take a different approach to editing where they intentionally violate the laws of continuity. We’ll call this discontinuity editing and it can take a few different forms.  Discontinuity editing can be applied to traditional narrative situations, in which case it takes on the characteristic of jump cuts. It’s an approach to the single timeline and single space scene that ignores the idea of maintaining viewer orientation. "
+  - class_name: mwmc_section_2
+    type: video
+    text: "We saw this in <em>The Celebration</em> as cuts happen abruptly in succession and there is little effort to hide them from the viewer."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/86957464?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: mwmc_section_2
+    elements:
       - text: "It violates traditional ideas of continuity in drawing a viewer into the world of the story, but as we saw with <em>The Celebration</em> it can still create a world that we invest in emotionally if the style is consistent."
   - class_name: mwmc_section_2
     elements:

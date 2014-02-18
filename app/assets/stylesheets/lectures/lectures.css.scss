@@ -698,6 +698,11 @@ footer {
 	@include backgroundImageStyle('mwmc_eye.jpg');	
 }
 
+.birds_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('birds_playground.jpg');
+}
+
 @media print {
 	p {
 		font-size: 14px !important;
