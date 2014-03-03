@@ -703,6 +703,16 @@ footer {
 	@include backgroundImageStyle('birds_playground.jpg');
 }
 
+.conversation_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('conversation_2.jpg');
+}
+
+.conversation_section_2 {
+	@include section(black);
+	@include backgroundImageStyle('theconversation.jpg');
+}
+
 @media print {
 	p {
 		font-size: 14px !important;

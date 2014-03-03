@@ -1,3 +1,131 @@
 title: Week 10 Lecture
 subtitle: Sound, Part 1
 sections:
+  - class_name: 'conversation_section_1'
+    elements:
+      - text: "So far in the semester, we've primarily been thinking about components of the film process that manifest themselves visually. This week we'll be thinking about how different aspects of sound influence our experience of a film."
+        class: 'first_paragraph'
+    powerpoint:
+      - - content:
+            - "FILM 210 WEEK 10"
+            - "Sound, part 1"
+  - class_name: 'conversation_section_1'
+    elements:
+      - text: "Of course, we're all aware that cinema originated in silence; that it wasn't until 1927 that the first &quot;sound&quot; motion picture appeared; that cinema can tell stories effectively in a primarily visual fashion without dependence on sound (for evidence we need only to point to the fairly recent success of <em>The Artist</em>, an old-fashioned, black-and-white &quot;silent&quot; film). "
+      - text: "In reality, though, the above statements aren't quite true. Since its inception, cinema has been projected almost exclusively with some sort of aural accompaniment, usually in the form of a musical score that attempted to match, to greater or lesser degree, the mood of the action occurring in the film. Even in so-called &quotsilent&quot; films, sound has typically played a role."
+      - text: "The fact that we overlook the presence of the (sometimes overbearing) musical score of a silent film typifies the attitude most of us have toward the role of sound in cinema. If we notice it at all, we might think of it as perfunctory, simply providing the sounds that correspond to the actions we see on screen. Over the next few weeks, we'll attempt to pay closer attention to sound and to think about what it contributes to our experience of a film. "
+      - text: "Let's start by delineating some of the different categories of sound that we encounter in a film. How would you break down into various categories the types of sounds that occur in films? "
+  - class_name: conversation_section_1
+    elements:
+      - text: "Most of the sounds you’ll find in film fit into five different categories:"
+      - text: " <strong><em>Dialog</em></strong>: spoken words between characters in a scene.<br /><strong><em>Sound effects</em></strong>: the non-verbal sounds that objects and people/animals etc. make in a physical environment (a key in a lock, a glass being set on a table). <br /><strong><em>Ambience/presence</em></strong>: the background noise of a space. Even in total &quot;silence&quot; there are audible sounds: hum, rumble, hiss, etc.<br /><strong><em>Narration</em></strong>: voiceover.<br /><strong><em>Music</em></strong>: external soundtrack added to the scene."
+  - class_name: conversation_section_1
+    elements:
+      - element: h3
+        text: "DIEGETIC & NON-DIEGETIC"
+  - class_name: "conversation_section_1"
+    type: "question"
+    content: "We can fit these five different categories into two larger categories: diegetic and non-diegetic.  What is the distinction between these two terms?"
+    order_index: 1
+  - class_name: conversation_section_1
+    elements:
+      - text: "Diegetic sounds are those that take place in the world of the film (dialog, sound effects and ambience), whereas non-diegetic sounds are separated from that world. Voiceover and soundtrack music are not audible to the characters of the film itself (<em>Inception</em> and <em>Stranger Than Fiction</em> notwithstanding)."
+  - class_name: conversation_section_1
+    elements: 
+      - element: h3
+        text: "DIEGETIC (SOUNDS IN SPACE)"
+      - text: "One of the important things to be aware of about diegetic sounds––one of the subtle things that we may not consider consciously––is the fact that diegetic sounds are imprinted with the spatial characteristics of the environment in which they occur. A phrase spoken in a quiet forest will sound very different from the same phrase spoken in a gymnasium, where the initial sound of the voice will be mixed together with the many echoes and reflections of the voice bouncing off the reverberant walls. This is something we may not pay attention to, but it’s an aspect of audio that we are tremendously reliant on. Our brains are constantly &quot;reading&quot; the spatial cues of sounds as a means of orienting ourselves within a scene. These spatial characteristics communicate distance and subtleties of space."
+      - text: "In addition, the spatial cues that are imprinted on a sound usually correspond to the perceived distance that the source of that sound is from us (the reading for this week refers to this as sound perspective: a sound whose source is far away from the camera typically sounds far away and vice versa). Take for example this scene from <em>The Birds</em> where Melanie and the other characters are watching the spilling gas during the bird attack. As you watched this scene in the film, you probably gave little conscious thought to the sound."
+  - class_name: conversation_section_1
+    type: video
+    text: "Watch it again, this time paying attention to the various sounds and how they are located in space. How do you know where they are located?"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/37881301?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'      
+  - class_name: conversation_section_1
+    elements:
+      - text: "The camera locates us outside of the diner and the sound corresponds to the physical position of the camera. We see and hear the characters through the glass window. Melanie’s voice sounds muffled until she opens the window and then we hear the voices with different spatial characteristics. It’s a subtle detail, but one that the sound designer had to be conscious of in creating the sound mix for the scene. If the cues in the sound don’t match the visual cues, the result can be disorienting and perhaps damage our emotional engagement in the story (i.e. break the narrative spell we've been weaving)."
+      - text: "We've made mention previously of the fact that cinema is, through very limited means, trying to re-create a three-dimensional, boundless reality on a two-dimensional screen with very definite boundaries. In addition to all the various aspects of the camera and editing that allow us to make sense out of space, the spatial cues embedded in sound are another significant contributor to fleshing out that three-dimensional reality."
+  - class_name: conversation_section_1
+    elements:
+      - element: h3
+        text: "NON-DIEGETIC (SOUNDS OUTSIDE OF SPACE)"
+      - text: "Non-diegetic sounds are not typically imprinted with spatial characteristics. Since they are happening outside the world of the film, they typically sound &quot;dry,&quot; as if they were happening in a vacuum or inside your own head. Soundtrack music typically is used for the purpose of emphasizing or imposing an emotional response to the current scene. Voiceover can be used for a variety of purposes, from keeping a viewer oriented in space and time to dispensing important narrative information."
+      - text: "A few weeks ago we talked a bit about the Peter Weir's use of non-diegetic sound in <em>Picnic at Hanging Rock</em>. At various times he makes use of unnatural electronic sounds and low-end bass rumbling to impose an eerie quality on the image, and at other times he uses the ethereal pan flute music to create a more upbeat, airy, yet still slightly unworldly atmosphere."
+  - class_name: conversation_section_1
+    type: video
+    text: "In the clip here he uses both of these back-to-back to pivot us from one mood to another while the girls make their climb up the rocks."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/88023376?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="435" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: conversation_section_1
+    type: video
+    text: "Perhaps you'll also remember from week two one of the more garish uses of non-diegetic music that we'll encounter this semester: "
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/88023375?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: conversation_section_1
+    elements: 
+      - text: "In reading about <em>The Birds</em> last week, you discovered that one of the decisions Hitchcock made was that he would not use a musical score to emphasize the emotional moments of a scene. It's not that he was <a href='http://www.youtube.com/watch?v=vfthzU3V4zo' target='_blank'>afraid to do so</a> (we’re all familiar with perhaps one of the most iconic musical cues of all time). It’s just that he makes a calculated decision with this film to try for a different effect."
+      - text: "In <em>The Birds</em>, Hitchcock uses almost exclusively diegetic sounds. He does incorporate an electronic soundtrack, but this is used to emulate the sounds of the birds. So even his non-diegetic sounds are given diegetic &quot;motivation.&quot; "
+  - class_name: conversation_section_1
+    type: video
+    text: "Let’s watch this scene again. We’ve seen it before. This time, instead of thinking about the editing, listen carefully to what the sounds are and think about their effect."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/37572271?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: conversation_section_1
+    type: question
+    content: "THE BIRDS - DIEGETIC SOUND<br />Is there anything that sticks out to you about the sound? Is there anything the sound is contributing to the image that you don't get from the visuals alone?"
+    order_index: 2
+  - class_name: conversation_section_1
+    elements:
+      - text: "The sounds of the children singing serve two purposes here. One, they drive the narrative. The children are in the middle of singing, so Melanie has to wait outside for them, and this allows us to see the birds accumulate. But the singing also adds to the suspense of the scene. If we imagine this scene happening with just the typical outdoor sounds without being able to hear the children, it would impress itself on us differently. The tension is emphasized because we get this repetitive reminder of the contrast in mood. The children’s song is lighthearted, oblivious to what's happening outside. This serves to make us all the more aware of the accumulating danger. In this scene, sound is not merely functional. The audio is adding a layer of meaning and emotional impact to the scene that would not otherwise be there. "
+  - class_name: conversation_section_1
+    type: video
+    text: "We can also use this scene as an illustration of the effects of Hitchcock's decision not to make use of non-diegetic music in the film. Typically, we might expect to hear some sort of audio accompaniment to increase the shock of Melanie’s discovery. Something like this:"
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/37881218?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: conversation_section_1
+    elements:
+      - text: "Instead we just get a continuation of the children singing. This contradiction of our expectations serves to heighten the suspense by making the scene seem more realistic and less of a &quot;Hollywood-ized&quot; moment."
+  - class_name: conversation_section_1
+    type: video
+    text: "There is a similar approach in the scene where the mother discovers the farmer’s body."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38113908?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: conversation_section_1
+    elements:
+      - text: "In this scene, again, we get a somewhat atypical approach to sound. We're used to getting audio cues that heighten the suspense of the moment (for example when the mother notices the broken teacups, you can almost hear the slightly discordant strings or horns that would typically fade in here). "
+      - text: "When she finally finds the farmer, the moment is punctuated by cuts in to a closeup of the face, but it's lacking the typical audio punctuation, playing out in almost complete silence. The horror becomes more palpable because the woman does not scream, in fact cannot scream. "
+      - text: "The moment plays out mute, and the silence emphasizes the horror. These two clips provide interesting examples of a director breaking with convention by skewing the sound mix in favor of diegetic sounds."
+  - class_name: conversation_section_1
+    type: video
+    text: "The following clip from P.T. Anderson's film <em>Magnolia</em> provides an example from the other side of the spectrum:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38127298?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: conversation_section_1
+    elements: 
+      - text: "This clip picks up right after there's been a long monologue by the dying character. The monologue began as diegetic sound, then crossed over into non-diegetic as it was presented over images of all the various characters in the film in their different spatial locations, uniting them in the &quot;present&quot; moment. "
+      - text: "The sound returns to exclusively diegetic effects for the beginning of this clip. The sounds presented are close-mic'ed, vividly emphasized details of the movements and sounds made by the two characters. At the very end of the sequence, non-diegetic sound in the form of soundtrack music enters, leading us into the next sequence, a montage continuing with all the characters in their current state as we were introduced to them during the previous voiceover segment. In addition to the non-diegetic soundtrack, we also hear, relatively low in the mix but still audible, the diegetic sounds of the shot. "
+      - text: "Then there's a strange moment where the character begins to sing along with the non-diegetic soundtrack. As we continue with the montage, each character sings along with the music in a strange interlude where we step away from the story into something like a music video. This odd crossover between the diegetic and non-diegetic worlds serves to emphasize the primary theme of the film: the sense of mysterious connection between all these disparate characters' stories that we've seen interwoven throughout the film thus far."
+  - class_name: conversation_section_2
+    elements:
+      - element: h3
+        text: "PERSPECTIVE"
+      - text: "Throughout the semester, we've been returning to the idea of perspective. From whose perspective do we see the events of the film? Are we seeing the film from the perspective of outsiders (objectivity) or are we aligned with specific characters, seeing the film from their perspective (subjectivity). In Peter Weir's <em>Picnic at Hanging Rock</em>, many of you mentioned that you found it difficult to connect with any of the characters in the film. One of the primary reasons for this is because throughout the film we're given an exclusively objective viewpoint. We're never aligned with the perspective of any one specific character (at least on a consistent enough basis), and so, though we might develop certain sympathies, we never really attach ourselves to, or project ourselves into, or identify directly with any of the characters."
+  - class_name: conversation_section_2
+    type: video
+    text: "We've discussed some of the visual ways in which a director might choose to align us with a character's perspective, but sound can also be used to make a shot subjective. Take a look at the following clip from P.T. Anderson's <em>There Will Be Blood</em>:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38183701?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: conversation_section_2
+    elements:
+      - text: "We're given objective diegetic sound for the first section of the clip. Then the boy gets knocked over by the loud explosion, and when he lands, the sound switches into an approximation of his aural perspective. Nothing in the treatment of the visuals has changed, but as the sound switches into the filtered, muffled version, we as viewers switch over into experiencing the film, however briefly, from the boy's subjective perspective."
+  - class_name: conversation_section_2
+    elements:
+      - element: h3
+        text: "<em>THE CONVERSATION</em>"
+      - text: "If the question of objectivity and subjectivity seems hazy to you, this week's film should help to flesh out the differences between them, and why they're important. <em>The Conversation</em>, by Francis Ford Coppola, from 1974 revolves around Harry Caul, a lonely, middle-aged professional wiretapper and surveillance expert. In the first scene, Caul records a conversation between two lovers and spends the rest of the film trying to unravel both the contents of the conversation and its meaning. On the surface, the film appears to be presented by and large in a traditional, fairly objective manner. Although Harry is the main character and we therefore spend the majority of our time watching his actions, we don't feel as though we are seeing or hearing the world through his eyes and ears. As the film progresses, though, we begin to get hints that perhaps our view of things is less objective than we first thought."
+      - text: "  When a film's record is objective, we can trust what we see as being a faithful representation of what actually occurred in the story. When a film is presented subjectively, however, we are then seeing events through the brain of another character. The record that we're presented may in fact be unreliable, skewed by that character's biases or mental instability (think of <em>Memento</em> and the way that you first trust the story that Leonard presents to you, then over time you begin to realize that his version of events has been skewed by his anterograde amnesia and is therefore unreliable)."
+  - class_name: conversation_section_2
+    type: video
+    text: "This week's film revolves around sound on a plot level, but it also makes careful use of audio to lead you through your understanding of its events. As you watch, observe the way that sound is used, how it's manipulated, and how it affects your understanding of events. In the discussion for this week, we'll try to draw out the ways in which sound fluctuates between an objective and subjective record."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38377295?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
