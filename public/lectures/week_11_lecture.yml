@@ -1,3 +1,112 @@
 title: Week 11 Lecture
 subtitle: Sound, Part 2
 sections:
+  - class_name: 'prestige_section_1'
+    type: video
+    text: "First things first: You should make sure to watch this week's film, <em>The Prestige</em>, before you do the reading or read the lecture for this week, as there are significant spoilers in the reading, and the experience of the film will be richer without knowing too much about it the first time through."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/57539546?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: prestige_section_1
+    elements:
+      - element: h3
+        text: "THE CONVERSATION"
+        class: 'first_paragraph'
+      - text: "Last week, we looked at a few different aspects of film sound and how they can impact the film: whether the sound source is diegetic or non-diegetic, and how sound can align us with a specific character's perspective."
+    powerpoint:
+      - - content:
+            - "FILM 210 WEEK 11"
+            - "Sound, part 2"
+  - class_name: prestige_section_1
+    type: video
+    text: "Some of you may have discussed aspects of the sound in the opening sequence of <em>The Conversation</em> as part of last week's discussion, but I want to take a few moments to revisit the opening scene of the film to make some of these ideas about subjectivity explicit."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38389951?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: prestige_section_1
+    type: question
+    content: " Did you notice anything relating to the use of sound in this clip seeing it for the second time? "
+    order_index: 1
+  - class_name: prestige_section_1
+    elements:
+      - text: "As the scene begins, we're given a bird's-eye view of the plaza. The sounds that we hear are given the &quot;correct&quot; sound perspective to match our vantage point. The volume of the sound, the amount of reverberation, the timbre of the sound, all replicate sound heard from a significant distance. The film seems to be establishing a naturalistic pattern that suggests objectivity, meaning that the sights we see and sounds we hear seem to be from a neutral perspective. However, something intrudes on this. As the camera zooms in on the action in the plaza, the sound is occasionally interrupted by a sort of electronic distortion. Gradually, this distortion becomes more frequent and intrudes more often onto the general background of the band and the sounds in the plaza."
+      - text: "This subtle detail is critical to the progression of the entire film. That electronic distortion means that we are not actually listening to a neutral or objective record of events. We're actually hearing the audio through the microphones that Harry and his crew are using to record the conversation. In effect, what we're hearing throughout the entirety of this scene is Stan's perspective in the truck as he monitors all the different audio feeds. The significance of this is that the record of events that we're getting is mediated. It's subject to errors and glitches and signal dropouts."
+      - text: " This subtle deception that's happening in the opening scene––we think we're hearing an objective record when actually we're hearing a subjective one––mirrors the critical element on which the film's &quot;twist&quot; is founded. Throughout most of the action, we think that what we're hearing and seeing is objective and neutral, but when Harry sees that the woman he thought had been killed is still alive, suddenly we have to reevaluate and to realize that all the things we saw and heard were through Harry's perspective and were skewed by his paranoia and fear of repeating a past mistake. When we heard one of the lovers say &quot;He'd <em>kill</em> us if he had the chance,&quot; we heard the emphasis that Harry's subconscious heard. Only after the deception is revealed do we get the &quot;actual&quot; rendering with the correct stress: &quot;He'd kill <em>us</em> if he had the chance.&quot; (Of course, there's still the question of whether that is the actual rendering. The film wants to leave open the question of whether there really is any objective record.)"
+      - text: "  Our entire experience of the film is built around that subtle distinction in stress. It becomes a plausible mistake on Harry's part due to all the struggle that Harry has to go through to decode that part of the recording. The point I'm trying to make here is that Coppola's carefully structured subtle manipulations of certain characteristics of the sound are the most important part of the film, and the part that most accounts for the way we as viewers experience it. "
+  - class_name: prestige_section_1
+    elements:
+      - element: h3
+        text: "DIMENSIONS OF SOUND"
+      - text: "In your reading for this week, Bordwell and Thompson create four different categories––what they call <em>dimensions</em>––of sound: rhythm, fidelity, space and time. We'll look at a few clips this week to further illustrate these different categories and to spend more time looking at specific effects of certain audio strategies."
+  - class_name: prestige_section_1
+    type: video
+    text: "RHYTHM<br />Watch the following clip from <em>2001: A Space Odyssey</em>, by Stanley Kubrick. Try to identify how many different sound sources are used."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/37091890?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="324" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: prestige_section_1
+    type: question
+    content: "Are the sounds diegetic or non-diegetic? What properties of sound is Kubrick making use of? How does the sound impact your experience of the scene? In what ways does sound contribute to the rhythm of the scene?"
+    order_index: 2
+  - class_name: prestige_section_1
+    elements:
+      - text: "There are essentially only three sonic elements in use for the duration of this scene: A constant high-pitched hiss, Frank's breathing, and the intermittent room tone when we see Dave in the control room. All of these sources are essentially diegetic (the hiss most likely represents the oxygen feeding into Frank's suit), but the hiss and breathing sounds are used in a non-diegetic way, carrying over into shots where Frank isn't actually present. Those sounds are also presented with an unrealistic &quot;sound perspective&quot; (we'd probably have to be inside the spacesuit with Frank in order to hear these sounds in this way). So we're being given Frank's subjective aural perspective even though, again, he isn't even present in all the shots, and when he is, Kubrick doesn't make use of any visual POV shots."
+      - text: "We may not be consciously aware of the fact that Kubrick is aurally putting us inside Frank's spacesuit, but the rhythmic breathing sounds do have a physiological effect on us. Most likely, while watching the scene we sub-consciously begin to breathe in rhythm together with Frank (apparently this is something that's been tested scientifically–– google &quot;Milton Erickson&quot; and &quot;subliminal auditory stimulation&quot;). Through his use of sound, Kubrick is putting us into Frank's position so that when the oxygen is cut off, stopping both the hiss and the breathing, it's almost as if we stop breathing ourselves. The repeating rhythmic pattern in the sound and the constant loud hiss also make the complete silence that follows that much more eerie because of its sharp contrast."
+      - text: "Also interesting to note in this scene: If you've seen <em>2001</em>, you know that Kubrick is not afraid to employ music. He uses it bombastically and dramatically at many points in the film. In this scene, we have one of the most critical sequences of the film, yet instead of employing music to perk our attention and underscore the moment, Kubrick essentially goes the opposite route. Instead of layering sound on sound to build the viewer's emotional investment in a scene to maximal impact, he strips away layer after layer until at the emotional climax of the scene we end up with complete silence, one of the rarer states in all of narrative cinema."
+  - class_name: prestige_section_1
+    type: video
+    text: "FIDELITY<br />Bordwell and Thompson define their use of the term <em>sound fidelity</em> as whether or not a sound that we hear &quot;matches up&quot; with the visual source of the sound. The following clip from <em>Duck Amuck</em> illustrates sounds that break with their idea of fidelity:"      
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38339091?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: prestige_section_1
+    elements: 
+      - text: "The sounds that we hear don't actually have anything to do with the image. But the illusion created by synchronicity causes us to fuse the sound with the source. We don't think that a rooster happens to be crowing offscreen at the same time Daffy Duck opens his mouth. To us, Daffy is actually crowing like a rooster."
+      - text: "This break in fidelity exposes the fact that typically in narrative films, very few of the sounds are actually made by the objects or people onscreen. Most often, &quot;fidelity&quot; is an illusion. Dialog is often replaced in post. Sound effects are usually generated after the fact, and very often, the sound effects are composites of wildly different and unrelated sounds."
+      - text: "But this phenomenon of fusion that the brain does, as illustrated above, opens up all sorts of varying possibilities for how filmmakers can employ sound, and how they can tease the brain."
+  - class_name: prestige_section_1
+    elements: 
+      - text: "SPACE<br />When we talked about the frame, we discussed a little about how cinema makes use of space. Sound also contributes a lot to the sense of space we have while watching a film. Last week we mentioned how the character of the sound makes us aware of certain spatial cues, but sound can also open up a larger world for us, communicating a huge range of events that occur out of view of the camera."
+  - class_name: prestige_section_1
+    type: video
+    text: "In another section of <em>Duck Amuck</em>, Chuck Jones makes use of offscreen sound as a way to suggest violence rather than depict it visually, as if the camera decides to look away to spare the squeamish."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38410846?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: prestige_section_1
+    elements:
+      - text: "We see that sound can be used as a way to communicate information but also to leave certain details up to the viewer's imagination."
+  - class_name: prestige_section_1
+    type: video
+    text: "Then there's this scene, mentioned in the reading, from <em>Stagecoach</em>:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38406602?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: prestige_section_1
+    elements:
+      - text: "It's a pivotal scene in the climactic sequence: the moment when certain death turns into rescue as the cavalry arrive. But rather than mark that moment visually by cutting from menacing &quot;natives&quot; to oncoming cavalry, Ford chooses to present the arrival of the cavalry first through sound (there's also the somewhat unusual way, mentioned in the reading, in which non-diegetic music mixes with and transitions into diegetic music)."
+  - class_name: prestige_section_1
+    elements:
+      - text: "TIME<br /><em>The Prestige</em> (like many of Christopher Nolan's films) is a puzzle film, meaning that while some elements of the story are presented to the viewer, other important parts are strategically withheld in order to create something like a riddle. At some point near the end of the film, the solution to the riddle is revealed. In puzzle films, even more than in &quot;regular&quot; ones, the order in which events are presented is critically important. If we examine the chronology of <em>The Prestige</em>, we'll find it to be a very convoluted tangle of intersecting timelines. Within the first ten minutes alone, we're presented with moments from at least seven separate moments in the overall story, several of them presented out of chronological order and with little clue as to where these events occur in the overall sequence of events. Not only are moments presented out of order, but scenes are often cut off or begun in the middle to prevent us from seeing critical causes and effects. Only later do we return to fill in the gaps."
+      - text: "As mentioned in the reading for this week, one of the tools that Nolan uses to orient the viewer in this jumbled timeline is sound––in particular, voiceover. By beginning a voiceover in one moment and having it carry over across a cut to a different timeline, Nolan provides an audio bridge that helps keep us from becoming disoriented."
+  - class_name: prestige_section_1
+    type: video
+    text: "As demonstrated in the following clip, this is employed most frequently in conjunction with the two diaries that lead us through the various flashbacks and flashbacks within flashbacks."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38609166?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: prestige_section_1
+    elements:
+      - text: "After the opening jumble of timelines that are largely occurring near the end of the story, Borden receives Angier's diary. This sends us back into the middle section of the story. Then in that timeline, Angier begins deciphering Borden's diary that takes us back to arrive finally at the story's beginning."
+  - class_name: prestige_section_1
+    type: video
+    text: "In addition, spoken dialog often sets up a transition by referring to something that is then answered, either visually or aurally, in the next shot, as here:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38611313?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: prestige_section_1
+    elements:
+      - text: "Hopefully from these different examples, you begin to see just how much of the &quot;work&quot; of a film is done by the audio. Each of these different dimensions of sound present the filmmaker with another way of using sound to contribute to the viewer's overall experience."
+      - text: "Additionally, It's interesting to me that in examining each of the various aspects of filmmaking we've been discussing this semester––the use of the frame, lighting, mise-en-scene, editing and sound––just how much of the effort relating to each of these things revolves around controlling the viewer's sense of orientation in space and time. Because these two elements play such a significant role in the &quot;successful&quot; telling of a story, we'll spend the last few weeks of the semester looking at them more in-depth from a few different angles."
+  - class_name: prestige_section_1
+    elements:
+      - element: h3
+        text: "CINEMA AND MAGIC"
+      - text: "Lastly this week, I want to look at one other facet of <em>The Prestige</em>: the way in which the film mirrors its own construction, and in fact, mirrors cinema in general. The story told in the film functions on its own surface level. It presents a fairly engaging tale of obsession and revenge. The film revolves around magic and magicians for the purpose of developing this plot. But Nolan is also careful to present the plot in such a way as to call attention to the filmmaking process itself. He is telling us a story about magicians doing magic tricks, but he is also, in the process, doing a magic trick himself. The strategies and techniques of the magicians––misdirection, deception, illusion, style of presentation––all mirror the techniques that Nolan is using to perform his trick on us."
+      - text: "He begins the film by asking us &quot;Are you watching closely?&quot; Perhaps we think it is foreshadowing something that will happen in the story. It is of course Borden saying it, and we hear him repeat it later, but Nolan is making use of Borden's voice (or Christian Bale's if you prefer) to ask that question of us, the viewers, because he is about to perform a trick for us over the next two hours. In fact, a number of times Nolan is using the characters as mouthpieces to talk directly to us, the viewers, as when Cutter often chastises or teaches his various pupils: &quot;You're not really looking!&quot; Just as the magicians in the story use sleight-of-hand and identical-looking birds to perform an illusion, killing one bird while one goes free, Nolan performs the same trick using &quot;sleight-of-editing,&quot; killing one brother and letting the other go free."
+      - text: "Additionally, besides serving as a metaphor for this particular film, the magic presented in the story is also referring to the entire spectacle of cinema. It isn't just that Nolan is making use of magic in this film, <em>all</em> films are creating for us a magical illusion. It's no coincidence that one of the first showmen to see the potentials of cinema was himself a magician and used cinema as a means of performing magic tricks (if you've seen <em>Hugo</em> or were paying attention in 114 last semester, you should recognize this as Georges Melies). <em>The Prestige</em> functions on three parallel layers to tell us a carefully crafted story, but also to expose its own construction and to present a parable of the way cinema delights and deceives its viewers."
+      - text: "This strikes me as an interesting form of reflexivity. In a way it's rather similar to the parts in <em>Man With a Movie Camera</em> where Vertov would pull out of the film to reveal the film being made––as the editor looks at stills from the moving shots we've just been watching or the theater-goers watch the film projected on the screen in front of them. Many of you commented on the way that those moments caused you to break with the flow of the &quot;narrative&quot; in a slightly jarring way. Here we have the same idea, the filmmaker presenting moments that are intended to make you aware that you're watching a film, as if the director is saying, &quot;I know it feels like you've been drawn into another world, but this world is actually a manufactured illusion.&quot;"
+      - text: "However in this case, those moments are woven rather deftly into the structure of the narrative so that there's a much softer &quot;break&quot; with the flow of the story (or perhaps no break at all, since its possible to ignore the larger picture and just read each moment as part of the narrative world). Still, it's another version of the objectivity/subjectivity dichotomy that we've been addressing at various times through the semester. We see another director interested in both creating an illusion of an objective viewing of the world while constantly weaving in reminders that what we're watching is a highly subjective manipulation."
+

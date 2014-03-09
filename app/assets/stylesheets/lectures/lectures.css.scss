@@ -713,6 +713,11 @@ footer {
 	@include backgroundImageStyle('theconversation.jpg');
 }
 
+.prestige_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('prestige_2.jpg');
+}
+
 @media print {
 	p {
 		font-size: 14px !important;
