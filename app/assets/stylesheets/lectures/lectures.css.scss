@@ -718,6 +718,11 @@ footer {
 	@include backgroundImageStyle('prestige_2.jpg');
 }
 
+.lange_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('lange1.jpg');
+}
+
 @media print {
 	p {
 		font-size: 14px !important;

@@ -1,3 +1,198 @@
 title: Week 12 Lecture
 subtitle: Narrative and Space
 sections:
+  - class_name: lange_section_1
+    elements:
+      - element: h3
+        text: "TIME AND SPACE"
+        class: 'first_paragraph'
+      - text: "Most of the decisions a narrative filmmaker has to make can be divided into two categories: how to deal with <em>time</em> and how to deal with <em>space</em>."
+      - text: "As we've worked our way through various technical aspects of filmmaking this semester, one of the topics that has recurred is how each of the techniques contributes to solving one of the fundamental problems of cinema: how do we replicate events occurring in a boundless three-dimensional world on a two-dimensional screen?"
+      - text: "I want to invert our perspective and approach the problem of space head-on this week, looking at some of the various things we've discussed previously––but this time from a slightly different vantage point. Revisiting ideas from different angles will ultimately give us a fuller, more-rounded portrait."
+    powerpoint:
+      - - content:
+            - "FILM 210 WEEK 12"
+            - "Narrative and Space"
+  - class_name: lange_section_1
+    type: video
+    text: "CONSTRUCTING A SPACE THROUGH EDITING<br />In the days of early cinema, filmmakers solved the problem of fitting three dimensions into two very simply: They shot everything from a theatrical perspective; each scene was presented in wide shot in a single take from a fixed vantage point (AKA, the proscenium) in what amounts to a &quot;pre-compression&quot; of space. From the distance of an average theater-goer, everything on the stage is, for all practical purposes, two-dimensional.<br /><br />However, as we've discussed previously, this theatrical perspective lacks emotional engagement. It lacks specificity of vision. It lacks a sense of pacing. Simply put, it's lacking. "
+    content:
+      - image: 'moon.jpg'
+  - class_name: lange_section_1
+    elements:
+      - text: "Very quickly, filmmakers began to expand their vocabulary as a way to address these problems, cutting together multiple vantage points and varying frame sizes. Instead of being fixed to a single vantage point some distance from the action, the camera essentially moves onto the stage and is now able to move among the actors, viewing the action from all angles."
+      - text: "This allows for a more expressive cinematic language that generates the ability for a filmmaker to create a diegesis: a believable world into which the viewer can project him/herself. However, putting the camera in the midst of the action creates some new problems; in particular, the possibility that viewers will become disoriented, not following the switching vantage points as they jump around to different perspectives around the actors."
+      - text: "This set of new potential problems gave rise to the continuity editing system––as we've discussed previously–– as a set of patterns that allow viewers to follow the action clearly. We now have a system that allows for the construction of the space of the scene, even allowing the construction of spaces which don't actually exist (remember Neo-Lebowski?)."
+  - class_name: lange_section_1
+    elements: 
+      - element: h3
+        text: "DEEP SPACE"
+      - text: "So we've identified a system for dealing with 3D space by cutting together multiple shots. How do we go about dealing with 3D space within a single shot? How does a filmmaker deal with foreground, middle ground, and background when they’re all compressed into a flat image?"
+  - class_name: lange_section_1
+    type: video
+    text: "As an illustration of this problem, take a look at the opening shot from Werner Herzog’s film <em>Aguirre: The Wrath of God</em> :"
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38812247?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    elements:
+      - text: "Here’s the problem confronting Herzog with this shot: How does one create a sense of scope with a relatively small field of view and no way to tell exactly how far away elements in a scene are?"
+      - text: "Herzog desires to create a sense of the enormity of the expanse of space here. But the difficulty is that in the opening we have no idea what we’re looking at. For all we know, it could be a rock that’s only a few feet tall."
+      - text: "Herzog solves this problem by using the human figure as a reference point. We see human figures against the side of the mountain and immediately get a sense of how large the mountain is. Then he follows a long string of people with the camera as the line snakes through the depths of the space and into the foreground."
+      - text: "He’s measuring out the distance between foreground and background with a long meandering string of bodies."
+  - class_name: lange_section_1
+    elements:
+      - element: h3
+        text: FOCAL LENGTH
+      - text: "In order to work with deep space, we need to have a good understanding of the way that the camera perceives and compresses space. The aspect of the camera that determines the way that depth is compressed is the lens."
+      - text: "Let's look at a few different examples of how various lenses compress space. All of these shots are two-dimensional, but they capture different relationships of perspective which create different senses of depth."
+  - class_name: lange_section_1
+    type: video
+    text: "<em>Normal lens</em><br />This scene is shot with what's called a &quot;normal&quot; lens. It's called a normal lens because it captures the same relationships between foreground and background that we're used to seeing with our eyes.<br /><br />This shot looks more or less the same way it would if we were sitting next to Bill Murray at the table, meaning that foreground objects (Bill Murray's character) look as large as they would to our eye and that background objects (the kids at the table) are as small as they would look to our eye."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38702273?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    type: video
+    text: "<em>Wide angle lens</em><br />Compare that scene to these shots, taken with a wide angle lens:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38867065?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="424" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    type: question
+    content: "What do you notice about the visual relationships in these shots?"
+    order_index: 1
+  - class_name: lange_section_1
+    elements:
+      - text: "Notice the forced perspective. All the shots are positioned in a way that exaggerates the relationships between foreground and background. Things that are close to us look larger than they would to our naked eye, and things far away are much smaller than they would be to the eye. Note the way that characters moving from foreground to background change in size rather dramatically."
+  - class_name: lange_section_1
+    type: video
+    text: "<em>Telephoto lens</em><br />Now let's look at a shot taken with a telephoto lens, which compresses the sense of depth."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38702562?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    elements:
+      - text: "The foreground looks to be near the same plane as the background. As Dustin Hoffmann runs, he doesn't seem to get any closer to us for a very long time. Its only once he finally gets into the foreground that he begins to change size. Then notice the following shot when the two characters run toward the camera in telephoto, not getting any larger. Suddenly we cut to a wide angle and see a dramatic change in size as they approach the camera."
+  - class_name: lange_section_1
+    type: video
+    text: "Here's a clip that pulls all three of these lenses together, employing a zoom lens that starts in a slightly wide angle and then moves through a normal focal length into a telephoto focal length."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38702617?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="397" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    elements:
+      - text: "Note the car in the background and the way it changes size. As the lens zooms in toward telephoto, it looks as though the background plane is being pulled closer into the foreground. By the end of the shot, the car is much larger in size and feels much closer to the two characters."
+      - text: "We start with a set of wide angle perspective relationships where distances appear to be exaggerated, then we end on a set of telephoto perspective relationships with distances compressed."
+  - class_name: lange_section_1
+    elements:
+      - element: h3
+        text: "DEEP SPACE AND DEPTH-OF-FIELD"
+      - text: "In thinking about shooting in <em>deep space</em> (shots that make use of multiple planes: foreground, background, etc.) there’s also the question of which of those planes are in focus and which are out of focus( this is known as <em>depth-of-field</em>––be careful not to confuse these two terms). If a shot has shallow depth-of-field, typically only one plane is in focus with everything else blurry. If all the planes are in focus, then the clip makes use of extended depth-of-field."
+  - class_name: lange_section_1
+    type: video
+    text: "In this scene from <em>Citizen Kane</em>, Orson Welles chooses to make use of foreground, middle ground and background throughout the scene  (composition in deep space), with aspects of the action spread throughout all the planes. In addition, he keeps all the planes in focus (extended depth-of-field, or deep focus), something that was difficult to do at the time because of the optics of most lenses."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38814866?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="508" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    type: question
+    content: "How do deep space and deep focus contribute to your understanding of the scene?"
+    order_index: 2
+  - class_name: lange_section_1
+    elements: 
+      - text: "You can imagine this scene shot without seeing the young child playing in the background. It's not necessary for the plot-level action between the mother, lawyer and father for the boy Kane to be visible in the frame. However, because we see the boy clearly in focus playing in the background, but essentially in the midst of all the characters, the argument between the mother and father over the boy’s future becomes much more poignant than if he weren’t visible in the shot."
+  - class_name: lange_section_1
+    type: video
+    text: "Welles makes use of deep space combined with deep focus throughout the film, as you can see in these other isolated stills. By keeping both foreground and background in focus, the background elements continue to hold our attention and contribute to the scene."
+    content:
+      - image: 'kane1.jpg'
+      - image: 'kane2.jpg'
+  - class_name: lange_section_1
+    type: video
+    text: "A more traditional treatment of space might be the way that Welles uses deep space elsewhere in the film, still incorporating both foreground and background into the composition, but allowing one of the planes (often background) to go out of focus by using shallow depth-of-field.<br /><br />Unlike the previous shots, where we were conscious of the characters in both foreground and background, here we don't think about the other patients. Because they’re out of focus, our attention stays on Joseph Cotten’s character."
+    content:
+      - image: 'kane3.jpg'
+  - class_name: lange_section_1
+    type: video
+    text: "RACK FOCUS<br />A filmmaker may choose to make strategic use of the phenomenon of shallow depth-of-field, as in this scene, again from <em>Rushmore</em>."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38702295?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    type: question
+    content: "What’s the effect of the rack focus here? Why is it used?"
+    order_index: 3
+  - class_name: lange_section_1
+    elements:
+      - text: "Wes Anderson’s intention in this scene is to demonstrate the isolation between the characters. This could be accomplished through cutting to each of them in separate frames, but this shot effectively illustrates the separation. Even though they are in the same space, they are still isolated from each other. It's almost as if Anderson is saying that they are so distant from one another that they can't be contained in the same focal plane. It’s as if the focal plane moving from one to the other gives visible evidence of the distance between them. When the camera racks back to Bill Murray’s character, it’s as if the wife dissolves from view and Murray is left alone again."
+  - class_name: lange_section_1
+    elements:
+      - element: h3
+        text: "CAMERA PLACEMENT IN SPACE"
+      - text: "Here’s another question for a filmmaker relating to space: How does one decide where to place the camera in relation to the subject and the objects around it?"
+  - class_name: lange_section_1
+    type: video
+    text: "Here’s one answer to that question:"
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38814932?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    type: question
+    content: "What do you notice about the way Anderson here positions his camera in relation to his subjects?"
+    order_index: 4
+  - class_name: lange_section_1
+    elements:
+      - text: "The scene is chaotic, and yet throughout, the camera is almost exclusively placed at a position either parallel to the subject or at right angles (and occasionally executing a 90-degree whip pan from one perspective to the other). This approach has been described by David Bordwell as &quot;planimetric&quot; composition. The effect of this approach is that it feels &quot;bigger than life.&quot; This scene does not feel like a documentary. It doesn’t feel as though we are there. It feels stylized. It feels composed."
+      - text: "The reason for this effect is that in real life we typically find ourselves in completely haphazard relationships with other people and objects. It’s rare that we find ourselves in geometrically precise relationships, so this approach by Anderson feels unusual. It’s part of his signature look. His films would feel significantly different to us if they were all shot with a less geometrically-precise approach."
+  - class_name: lange_section_1
+    type: video
+    text: "Here's another example of planimetric camera positioning, this time from <em>The Godfather II</em>:<br /><br />Again, the shots where the camera tracks parallel with DeNiro's character while positioned directly in front of him feel highly formal."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38864472?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    type: video
+    text: "Contrast the positioning of the camera in that sequence with the more haphazard positioning of the camera in another sequence from the same film:<br /><br />We're not dealing with a handheld camera. This is still a carefully composed sequence using a slow tracking shot. However, the camera is always facing the characters at an oblique angle, and so the shot feels more natural and less like a formal composition."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/38864855?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    elements:
+      - text: "These are certainly subtleties, but they’re subtleties that have rather significant impact on the way the viewer perceives the scene."
+  - class_name: lange_section_1
+    elements: 
+      - element: h3
+        text: "MOVING CAMERA"
+      - text: "We talked in week four about camera movement in relation to digital cinema. In that context we weren’t thinking so much about how the camera relates to or captures space, but about the sense of perspective imposed by the camera and the greater freedom allowed by the technology. This week we’ll examine the different ways a filmmaker can go about moving the camera through space."
+  - class_name: lange_section_1
+    type: video
+    text: "DOLLY<br />We’ve talked about how using a dolly or crane allows for smooth and inhuman motion through space. In this scene from Orson Welles’ film, <em>Touch of Evil</em>, the opening shot is a long single take with the camera mounted on a tracking crane (it’s actually operated handheld while standing on a crane, but except for the first few seconds of the shot, the motion is smooth and dolly-like)."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38827521?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    type: question
+    content: "Welles could have chosen to present this sequence as a series of cuts from fixed cameras edited together in the usual fashion. Why do you think he uses a continuous tracking shot? How is this scene different from what it would be if edited? "
+    order_index: 5
+  - class_name: lange_section_1
+    elements:
+      - text: "One of the ways this differs from an edited version, is that we get a fuller sense of the proximity of all of these spaces. The events in this movie jump back and forth across the U.S. - Mexico border. In our mind’s eye, most likely we would separate these events further from one another spatially. We would consider cuts to be excising space. The border would loom in our subconscious as occupying a greater distance than it actually does (for example, there’s a border crossing scene in <em>No Country For Old Men</em>, but because it’s presented in bits and pieces, the occurrences on either side of the border feel, at least to me, to be miles apart and completely isolated from one another). But through this scene we see how close the various areas that will recur later in the film are."
+      - text: "The tracking shot also is important in relation to time, which we’ll be talking about more next week. The shot begins with a ticking timer which establishes a roughly three-minute countdown. So by making this shot a continuous take, we feel the seconds counting down in real time and it increases the sense of drama and suspense."
+      - text: "It also allows Welles to tease us by intertwining the paths of the two main characters with the path of the car containing the bomb. As the characters separate from the car, we feel a slight sense of relief, but then the car catches back up to them, again increasing the anxiety (unless you’re rooting for Charlton Heston in &quot;brown face&quot; playing a Mexican to get blown up, in which case I couldn't really blame you)."
+  - class_name: lange_section_1
+    type: video
+    text: "STEADICAM<br />Here’s a camera moving through space in a sequence from Martin Scorsese’s <em>Goodfellas</em>."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38811872?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="397" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    type: question
+    content: "Why does Scorcese choose to shoot this sequence in a single take? How does the effect of the scene differ from shooting it from multiple angles?"
+    order_index: 6
+  - class_name: lange_section_1
+    elements:
+      - text: "Although this isn’t a POV shot, the use of the Steadicam makes it <em>feel</em> like a POV shot. It’s as if we’re following along behind them. By using the camera moving through space, we experience the full duration of the movement and the somewhat overwhelming progression of friends in the same way that Karen does."
+      - text: "We’re given the next best thing to her overt point of view (actually better than her POV since we get a better view of all the people greeting Henry. The Steadicam imposes a subjective perspective, but still gives us the best angle for the action)."
+      - text: "The duration of the scene and the length of the shot are entirely the point. By the end we’re overwhelmed to such an extent that it gives the last line of the scene a comedic punch it otherwise wouldn’t have."
+  - class_name: lange_section_1
+    type: video
+    text: "HANDHELD<br />The motion of the handheld camera is the most jarring and abrasive of all the styles of movement. However, because it so vividly evokes the sense of the body that we are all used to, the motion does not feel alien or abstract. We identify with the humanity and are able to orient to the movement through space."
+    content: 
+      - video: '<iframe src="//player.vimeo.com/video/38827470?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: lange_section_1
+    elements:
+      - element: h3
+        text: "<em>THE CRIME OF MONSIEUR LANGE</em>"
+      - text: "In this week’s film, we’ll seen an example of a marriage of style and theme that makes use of a mobile camera to underscore one of the overriding interests of the director."
+      - text: "One of your readings for the week discusses in depth the camerawork of <em>M. Lange</em> and how it relates to the political and social content of the film. The reading draws out the way that Renoir incorporates the circular structure of the courtyard into the action, delving in particular detail into the way a highly choreographed roaming camera on a crane influences the way the climactic scene plays out."
+      - text: "As you watch the film, pay attention to the mobile camera, and think about how Renoir uses the camera to underscore the thematic focus of the film. How does Renoir’s technique differ from other directors that we’ve watched thus far this semester?"
+      
