@@ -194,5 +194,9 @@ sections:
         text: "<em>THE CRIME OF MONSIEUR LANGE</em>"
       - text: "In this week’s film, we’ll seen an example of a marriage of style and theme that makes use of a mobile camera to underscore one of the overriding interests of the director."
       - text: "One of your readings for the week discusses in depth the camerawork of <em>M. Lange</em> and how it relates to the political and social content of the film. The reading draws out the way that Renoir incorporates the circular structure of the courtyard into the action, delving in particular detail into the way a highly choreographed roaming camera on a crane influences the way the climactic scene plays out."
-      - text: "As you watch the film, pay attention to the mobile camera, and think about how Renoir uses the camera to underscore the thematic focus of the film. How does Renoir’s technique differ from other directors that we’ve watched thus far this semester?"
+  - class_name: lange_section_1
+    type: video
+    text: "As you watch the film, pay attention to the mobile camera, and think about how Renoir uses the camera to underscore the thematic focus of the film. How does Renoir’s technique differ from other directors that we’ve watched thus far this semester?"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/39022055?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
       
