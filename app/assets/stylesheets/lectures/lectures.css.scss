@@ -727,6 +727,7 @@ footer {
 	@include section(black);
 	@include backgroundImageStyle('lange1.jpg');
 }
+
 @media print {
 	p {
 		font-size: 14px !important;
