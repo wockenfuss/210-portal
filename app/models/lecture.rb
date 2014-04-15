@@ -25,7 +25,7 @@ class Lecture < ActiveRecord::Base
   def self.find_with_content(id)
     lecture = Lecture.find(id)
     lecture.content = lecture_content(lecture)
-    # create_or_update_questions(lecture) if lecture.content['sections']
+    create_or_update_questions(lecture) if lecture.content['sections']
     lecture
   end
 
