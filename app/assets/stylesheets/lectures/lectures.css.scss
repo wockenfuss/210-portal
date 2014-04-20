@@ -728,6 +728,11 @@ footer {
 	@include backgroundImageStyle('elephant_3.jpg');
 }
 
+.fiction_section_1 {
+	@include section(black);
+	@include backgroundImageStyle('pulp_fiction_01.jpg');
+}
+
 @media print {
 	p {
 		font-size: 14px !important;

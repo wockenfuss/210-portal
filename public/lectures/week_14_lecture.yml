@@ -1,3 +1,139 @@
 title: Week 14 Lecture
-subtitle: Narrative and Time
+subtitle: Narrative and time, part 2
 sections:
+  - class_name: fiction_section_1
+    type: video
+    text: "This week we’ll conclude the lecture portion of the semester by wrapping up our discussion of different ways that filmmakers choose to make use of time. We’ll be talking about time in the context of this week’s film, <em>Pulp Fiction</em>, by Quentin Tarantino, a film that liberally rearranges the story’s chronology to dramatic effect."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/64850358?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: fiction_section_1
+    elements: 
+      - element: h3
+        text: "TYPES OF TIME"
+      - text: "In order to address how cinema manipulates time we should first define some terms for our discussion. When we talk about time in a narrative film, we’re usually talking about one of three different categories: <em>story time, plot time</em> or<em> screen time</em>. Story time refers to the range of time encompassing all the events that are either depicted in a film or simply referred to in the story (In <em>The Conversation</em>, Harry’s previous job, which resulted in people being killed, is part of the story, since it’s referred to, but it’s not part of the plot). Plot time refers to the time from the first depicted event to the last depicted event. And screen time refers to the actual duration of the film. Story time is the longest of these three, and plot time is almost always longer than screen time, since almost all films (<em>High Noon, Russian Ark, Rope</em> and a few others excepted) cut out some mundane events from the plot to condense it to a digestible length."
+      - text: "Practically speaking, every filmmaker must manipulate time, choosing which moments from the overall story to include (and from whose perspective) and which to exclude. Each filmmaker is answering the question &quot;Which moments do we dig into and which do we gloss over or eliminate completely?&quot; The answer to this question is determined largely by how the filmmaker wants the audience to feel at any given point during the story."
+      - text: "Last week we looked at how <em>Elephant</em> addressed the order, duration, and frequency of events. We'll revisit these categories a little more in-depth this week and look at some of the different reasons a filmmaker may manipulate those things."
+  - class_name: fiction_section_1
+    type: video
+    text: "ORDER OF EVENTS<br />The diagram here illustrates some of the different ways in which the order of events can be presented by a filmmaker."
+    content:
+      - image: 'fiction_1.jpg'
+  - class_name: fiction_section_1
+    elements:
+      - text: "The most traditional way to treat time would be to present events in chronological order, the order in which they occur in the story. We saw this with <em>Stagecoach, The Celebration</em>, and a number of other films. It tends to be the most neutral or natural presentation of events since it corresponds to how we experience &quot;clock time.&quot;"
+      - text: "A filmmaker can also choose to present events out of chronological order. He/she may choose to do this in a linear fashion so that, although events are presented out of order, we're still aware of the overarching forward progression of the story through time. Both <em>Killer's Kiss</em> and <em>The Crime of Monsieur Lange</em> break with chronological order, but the events are clearly presented as a flashback. The only difference in chronology are the framing events that bookend the films."
+      - text: "Gus Van Sant also makes use of flashbacks in <em>Elephant</em> when we return to previous days to see Alex being pelted with spitballs or planning in the cafeteria. However, in these instances, we're given no cue that the shot is a flashback. The viewer has to piece this information together from context and still has no idea exactly how far into the past the events stretch. Even with the intense rearrangement of chronology happening in <em>Elephant</em>, there is still a sense of linear forward movement through a defined chronology. We know that we are consistently moving forward to the moment of the shootings and that all the other temporal rearrangements along the way are temporary detours."
+      - text: "However, as we saw with <em>The Prestige</em>, filmmakers may present events in a non-linear fashion. The film opens with a shot of the duplicated top hats at Tesla's mountain top laboratory from the later third of the film's chronology; then quickly leaps to Cutter with Borden's daughter showing her a magic trick from the very tail end of the film's chronology. The film then makes several more leaps before finally settling into the earliest events as detailed in Borden's diary. At the time, we have no idea how those events fit together.  With this week's film, <em>Pulp Fiction</em>, we see another example of a filmmaker reordering time in a non-linear fashion."
+  - class_name: fiction_section_1
+    type: video
+    text: "As a way of thinking about the way the order of events affects how the audience receives them, let's do a little exercise. The graphic here lists a sample chain of cause-and-effect events in chronological order from the story we're going to tell."
+    content:
+      - image: 'fiction_2.jpg'
+  - class_name: fiction_section_1
+    elements:
+      - text: "Character X (let's call him &quot;Bill&quot;) is injured when a policeman chasing a criminal crashes into his car. Because of this injury, Bill loses his job (and health care benefits). Because Bill needs money for an operation for his sick child (yes, a bit melodramatic––perhaps this is an Almodovar film), he obtains a loan from the mafia. Because Bill needs money to pay the mafia, he robs a liquor store. Because he robbed a liquor store, Bill is killed when his getaway vehicle crashes during the escape attempt."
+      - text: "This chain of events constitutes our story. Now we need to answer some questions about time in order to figure out how we'll go about telling our story. First off, let's think about in what order we might want to present these events to our audience. The most obvious choice would be to present them chronologically. That tends to be the de facto option since it corresponds with our human experience of the real world."
+      - text: "However, let's think about the emotional effect on the audience this arrangement of events would have. Our first experience of the character would be seeing him as a victim who is suffering because of an accident. Our natural human response to this would be to feel sympathy for the character since we understand that his struggles are not his own fault and are essentially &quot;unjust,&quot; the result of bad luck. Each further link in the cause-effect chain would reinforce that sympathy: losing his job, having a sick child, etc. We would see the robbery as an act of a desperate and unlucky man, and all throughout the film we would be rooting for him to succeed in some way. When he dies, we feel the full emotional impact of the tragedy."
+      - text: "Let's consider what happens if we present these events in a different order. We could start the film of the above story during the robbery. By doing this, it might cause us to see the character as unsympathetic: a thug or petty criminal. When we see him killed in the car crash after the robbery, we might feel a sense of satisfaction, thinking that he had it coming, or, at the least, we might not consider it much of a tragedy. Then we might flash back to the events leading up to the robbery, and we would slowly be forced to change our feelings about the character as we get more information. We would start to feel sympathy for the character and perhaps even feel guilty for having judged him prematurely."
+      - text: "There's one more variation we could try here. If we still wanted to force the viewers to go through the process of reevaluating their judgment of the character, but we also wanted to retain the tragic emotional punch of the ending, we could present the events in a slightly different order. We could again start at the robbery, but then before we reach the crash during the getaway, we could flash back to the events leading up to the robbery. Then we could, at the end, jump ahead to the getaway and see the tragedy play out."
+      - text: "The chronological version gives us the familiar sense of connection with&mdash;and sympathy for&mdash;a character. But the rearrangement of chronology adds a new range of emotions to the audience's experience of the story that don't enter the equation in the chronological version. There's not any one &quot;correct&quot; order to present the events, but depending on how we want the viewer to feel, we could choose a different option."
+  - class_name: fiction_section_1
+    elements:
+      - element: h3
+        text: "MOTIVATION FOR MANIPULATING CHRONOLOGY"
+      - text: "Last week we saw why Gus Van Sant re-ordered the events: to throw the viewer off guard and to allow for the possibility of surprise in a plot already known to the viewer. With <em>The Prestige</em>, we saw Christopher Nolan re-order events to meter out the information in a way that would preserve the central mystery of the film until the end. In this week's film, Quentin Tarantino's <em>Pulp Fiction</em>, we saw another example of a non-linear rearrangement of time. Let's see if we can figure out why Tarantino decides to present the material out of order."
+  - class_name: fiction_section_1
+    type: video
+    text: "The graphic here illustrates the order in which events are presented in the film. The number above each scene indicates the order of events in relation to their actual chronology."
+    content:
+      - image: 'fiction_3.jpg'
+  - class_name: fiction_section_1
+    type: video
+    text: "This graphic shows the chronological order of events."
+    content:
+      - image: 'fiction_4.jpg'
+  - class_name: fiction_section_1
+    type: video
+    text: "If we lay the typical three-act structure of over the chronological order, we can get a sense of how the emotional arc of the film would be different if events were presented this way."
+    content:
+      - image: 'fiction_5.jpg'
+  - class_name: fiction_section_1
+    elements:
+      - text: "In chronological order, Vincent and Jules would be secondary characters who function primarily to lead us into the conflict between Butch and Marsellus (Jules would be gone from the film by the third scene and a distant memory by the time the film ended). Since we attach more emotional weight to characters and events involved in the climax of the film, Bruce Willis would end up as the main character and the climax would be the scene with Zed and the gimp."
+  - class_name: fiction_section_1
+    type: video
+    text: "By re-ordering the events, Tarantino is able to give more emotional weight to the exchange in the cafe between Vincent and Jules. Now Jules decision to leave the &quot;business&quot; becomes the central action of the film. Because we've seen Vincent's eventual fate, we realize the stakes involved in the decision. Vincent and Jules end up as central figures and the conflict between Butch and Marsellus just serves to provide a contrast for the choices that Vincent and Jules make."
+    content: 
+      - image: 'fiction_6.jpg' 
+  - class_name: fiction_section_1
+    elements:
+      - text: "Tarantino places events not in chronological order but in the order that fits best with their emotional weight in the story. He starts with the traditional emotional arc of the three-act structure, then fits in the pieces where they match up emotionally. It isn't just the events of the film themselves which determine the emotional impact they have on us, it's also decisions that the filmmaker makes about where to place the events in the film's structure."
+  - class_name: fiction_section_1
+    type: video
+    text: "DURATION OF EVENTS<br />Once we've decided on the order in which we're going to present the events of the story, then we can move on to deciding on how we're going to depict the events' durations. In dealing with the duration of events, a filmmaker has three main options: to condense them, present them in real time, or to elongate them. The graphic here shows all the options available to a filmmaker."
+    content:
+      - image: 'fiction_7.jpg'
+  - class_name: fiction_section_1
+    elements:
+      - element: h3
+        text: "CONDENSED DURATION"
+      - text: "Events are normally presented as mere snippets that stand in for their full duration. The reason for this is that typically an event is just one of many small details that are required to forward the progression of the plot. As soon as we understand what's happening in that moment, the event has served it's purpose, and we can move on to the next event. In this way a short amount of screen time can be made to stand in for a long duration of plot or story time. The extreme version of this which condenses time the most is summary. One version of summary is the &quot;montage.&quot; Think of the &quot;classic&quot; training sequences from the <em>Rocky</em> films. Gus Van Sant's use of time-lapse shots also falls into this category of summary."
+      - text: "Another way that filmmakers condense time is to make use of ellipses, or gaps in time. This is the most common manipulation of time you'll find in cinema. If one of our characters is moving from one location to another, we most likely don't need to see the entire process of movement. We might watch them leave their present location, then see them as they travel, then see them arrive at their destination. In this case, two ellipses are used to cut out the bulk of the travel time. An even shorter amount of screen time can be used by simply showing the character in one location, then cutting to the character in a different location. The ellipsis then cuts out the entire duration of the travel, and, depending on the context, hopefully the audience is able to orient themselves to the story's timeline. These &quot;micro&quot; ellipses occur within a scene."
+      - text: "Another way in which ellipses are often used is to cut out larger stretches of time between scenes. Christopher Nolan makes use of these sorts of &quot;macro&quot; ellipses to cut from one moment in time to another, excising a large number of events that might otherwise spoil the surprise of the film's twist. This kind of strategic ellipsis is part of <em>Pulp Fiction</em>'s structure as well. In the &quot;Hula burger&quot; scene near the beginning of the film, Jules, after much conversation, shoots Brett. The film then cuts to black and we begin a new section."
+      - text: "The shooting seems like the dramatic point of the scene and so when we cut away it seems like Tarantino is simply cutting out the unimportant parts of the story. The next scene picks up some time later and we see Jules and Vincent meet up with Marsellus. The fact that they're wearing an unusual wardrobe is our hint that perhaps the ellipsis has jumped over something of greater import than just the interstitial moments that are normally cut out of a film. This is, in fact, the case, and we'll eventually jump back to fill in those details."
+  - class_name: fiction_section_1
+    elements:
+      - element: h3
+        text: "ACTUAL DURATION"
+      - text: "Even though we are used to seeing a condensed version of events, there are times when a filmmaker may believe it necessary to see actions play out in their entirety. Last week we saw some examples of scenes occurring in real time. Van Sant refuses to make use of ellipses as his characters move through the hallways of the school, instead showing us the entire duration of their travel."
+      - text: "We've talked about a few different reasons for this, but here's one we haven't yet discussed: when the viewer knows that something important is going to occur soon (either through foreshadowing or, as in <em>Elephant</em>, because he/she is already familiar with the events) the viewer is willing to wait for it. Drawing out the arrival of that event interminably by focusing on otherwise mundane events will actually be an effective strategy (not boring, as we might suspect) for pulling the viewer further into a story."
+      - text: "This strategy is better known to us by the name &quot;suspense,&quot; but we don’t always think of suspense as incorporating the mundane. Delaying the arrival of the expected, even by concentrating on &quot;boring&quot; things, actually makes the movie more effective and pleasurable for the viewer."
+  - class_name: fiction_section_1
+    type: video
+    text: "Here's another example of making use of &quot;real time&quot; from Kelly Reichardt's film <em>Meek's Cutoff</em>:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/39903307?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name:  fiction_section_1
+    elements:
+      - text: "In the story, Michelle Williams' character stumbles across an &quot;Indian&quot; and needs to fire off two warning shots to get the &quot;menfolk&quot; who are out scouting to return. If the main point of this scene was the drama of the impending danger, Reichardt would have chosen to condense this moment down to a few seconds. We could see an angle presenting the first shot, then a second or two devoted to reloading the gun (strictly perfunctory for the sake of verisimilitude) and then the firing of the second shot. Instead we get the entire process of reloading the gun presented in &quot;real time,&quot; and it seems like an (unnecessary?) eternity."
+      - text: "The reason for this is that the duration of the time it takes to reload the gun is almost entirely the point of this scene, because it underscores one of the central thematic preoccupations of the film. It's true that the discovery of the &quot;Indian&quot; will play a pivotal role in the plot, but one of the central themes of this film is an exploration of the stark contrast of early settler lifestyle with our own contemporary lifestyles."
+      - text: "In seeing just how much time is required to perform even the simplest of tasks in this world, we're placed into a more authentic relationship with that time period, and we begin to understand how much we take even the simplest aspects of our lives for granted. In a similar way to Van Sant's approach in <em>Elephant</em>, because the &quot;real time&quot; technique breaks from our normal experience of film time, we're forced to ask why the filmmaker makes use of it."
+  - class_name: fiction_section_1
+    elements:
+      - text: "The continuity editing system can also be used in real time. Instead of using &quot;micro&quot; ellipses within a scene, the cuts to various wide shots, close-ups and changes of angle pick up in time immediately after the previous shot. This is the technique used in the film <em>High Noon</em> which famously takes place in real time, showing the ninety minutes prior to the titular noon hour when a conflict will occur."
+  - class_name: fiction_section_1
+    elements:
+      - element: h3
+        text: "EXPANDED DURATION"
+      - text: "Sometimes filmmakers wish to expand time rather than to contract it. In this case they can stretch time either by slowing down the apparent speed of the moment by over-cranking the camera, or they can show the same moment occurring multiple times (both of which techniques are used by Van Sant in <em>Elephant</em>)."
+  - class_name: fiction_section_1
+    type: video
+    text: "Lastly, (and somewhat rarely) the plot time of a story may come to a complete halt while screen time continues. This pause approach includes the famous freeze frame at the end of <em>400 Blows</em> (shown here), as well as the &quot;bullet time&quot; shots from <em>The Matrix</em>."
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/40897077?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="411" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: fiction_section_1
+    elements:
+      - element: h3
+        text: "FREQUENCY OF EVENTS"
+      - text: "The last way that filmmakers manipulate time that we discussed last week is in the frequency of events."
+  - class_name: fiction_section_1
+    elements:
+      - element: h3
+        text: "FREQUENCY OF EVENTS"
+      - text: "The last way that filmmakers manipulate time that we discussed last week is in the frequency of events."
+      - text: "As we saw with <em>Elephant</em> last week, an event may occur once but be depicted multiple times. Often this technique is used in order to reveal more information about the event, presenting it from a slightly different perspective. Or more simply, the repetition may just be used to establish the moment as a significant reference point."
+      - text: "A second treatment of events is to present an event fewer times than it actually occurs. This is another means of condensing time as we've discussed above."
+  - class_name: fiction_section_1
+    type: video
+    text: "In the following shot from Wong Kar-Wai's film <em>In the Mood for Love</em> the two main characters pass one another while going out for noodles:"
+    content:
+      - video: '<iframe src="//player.vimeo.com/video/40961942?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  - class_name: fiction_section_1
+    elements:
+      - text: "This scene is meant to communicate that this is a repeating occurrence for the two of them. In order to create this impression, Wong uses several techniques to keep the moment from feeling unique. By using slow motion to expand the duration of the moment and by removing any diegetic sound and replacing it with languid music, Wong distances us from the immediacy of the moment. It no longer feels like we're watching something occur &quot;right now.&quot; Instead it feels more like we're reflecting back on a moment in memory. The moment becomes an archetype, a stylized version standing in for the real thing."
+  - class_name: fiction_section_1
+    elements: 
+      - text: "Lastly, events can be depicted as many times as they occur. This is, of course, the most common and neutral way to make use of the frequency of events."
+  - class_name: fiction_section_1
+    elements: 
+      - text: "In our discussion for this week, we'll do a bit of in-depth analysis of one scene from <em>Pulp Fiction</em>, taking some time to think about the choices Tarantino makes regarding which moments of time he chooses to include in the scene and how those moments control the viewer's emotional reaction."                
