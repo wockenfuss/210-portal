@@ -29,7 +29,12 @@ sections:
       - element: h3
         text: "OFFSCREEN SPACE"
       - text: "At times throughout this film, we do see the villain of this movie, a child murderer, onscreen. However, Lang also gives the character a distinctive signature in the form of his repetitive whistling of Edvard Grieg’s <em>In the Hall of the Mountain King</em>. In this scene, we only know of the presence of the character because of his whistle (we see his shadow briefly, but without the whistle, we wouldn’t know whose shadow it was). Because of this sound, the blind balloon salesman is able to recognize him as the murderer. As the scene plays out, we’re made aware of number of activities occurring offscreen through the use of sound. Instead of cutting to a shot of the man in the distance bending down to talk to a little girl, the information is conveyed through sound and we &quot;see&quot; it occurring through our imagination."
-      - text: "Why do you think Lang chooses to present this scene this way? Is he too lazy to set up an eyeline match shot to show us what the young man is seeing? Shouldn’t the story work better if we actually get to see the details? Is there anything Lang might be gaining by not showing the action to us?"
+  - class_name: elephant_section_1
+    type: question
+    content: "Why do you think Lang chooses to present this scene this way? Is he too lazy to set up an eyeline match shot to show us what the young man is seeing? Shouldn’t the story work better if we actually get to see the details? Is there anything Lang might be gaining by not showing the action to us?"
+    order_index: 2
+  - class_name: elephant_section_1
+    elements:
       - text: "Violence is occasionally treated this way (and usually this kind of violence––suggested, but not seen––is far more harrowing than gore). We are shown the implements involved in the violence, and we might be shown the aftermath, but the violent act itself is left to our imagination (think of the &quot;ear scene&quot; in <em>Reservoir Dogs</em>) and only suggested through sound."
   - class_name: elephant_section_1
     elements:
